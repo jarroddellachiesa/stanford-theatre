@@ -13,7 +13,7 @@ e=html.escape
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
 def page(title,body,root=""):
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><link rel="stylesheet" href="{root}style.css"></head><body>
-<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div><div class="m2">PALO ALTO · NOW SHOWING</div></a><nav class="nav"><a href="{root}index.html#now">Now Showing</a><span class="nl">Festivals:</span><a href="{root}festivals/remembering-eva-marie-saint.html">Eva Marie Saint</a><a href="{root}festivals/mary-poppins-the-wizard-of-oz.html">Poppins / Oz</a><a href="{root}search.html">Search</a></nav></header><main>{body}</main>
+<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div><div class="m2">PALO ALTO · NOW SHOWING</div></a><nav class="nav"><a href="{root}index.html#now">Now Showing</a><a href="{root}index.html#upcoming">Upcoming</a><a href="{root}past.html">Past</a><a href="{root}search.html">Search</a></nav></header><main>{body}</main>
 <footer><a href="{MAP}">Stanford Theatre, 221 University Ave, Palo Alto, CA 94301</a><div class="sm">Schedules subject to change — check <a href="https://www.stanfordtheatre.org/calendar.html">stanfordtheatre.org</a>.</div></footer></body></html>'''
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
 
@@ -35,17 +35,25 @@ def blk(b):
 live=sorted([b for b in NB if b[3]>=TODAY],key=lambda b:b[2])
 h=['<section id="now"><h1>Now Showing</h1>']
 if live: h.append(blk(live[0]))
-h.append('</section><section id="coming"><h1>Coming Up</h1>')
+h.append('</section><section id="upcoming"><h1>Upcoming</h1>')
 for name,dr,url,groups,films in FEST:
     bs=[b for b in live[1:] if b[0]==url]
     if bs: h.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)} →</a></h2><div class="dr">{dr}</div>'+"".join(blk(b) for b in bs)+'</div>')
 h.append('</section>')
 h.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
 var all=[].slice.call(document.querySelectorAll('.blk'));all.forEach(function(b){if(b.dataset.end<t)b.remove();});
-var now=document.getElementById('now');if(!now.querySelector('.blk')){var r=[].slice.call(document.querySelectorAll('#coming .blk')).sort(function(a,b){return a.dataset.start<b.dataset.start?-1:1;});if(r[0])now.appendChild(r[0]);}
+var now=document.getElementById('now');if(!now.querySelector('.blk')){var r=[].slice.call(document.querySelectorAll('#upcoming .blk')).sort(function(a,b){return a.dataset.start<b.dataset.start?-1:1;});if(r[0])now.appendChild(r[0]);}
 document.querySelectorAll('.fgrp').forEach(function(g){if(!g.querySelector('.blk'))g.remove();});
-if(!document.querySelector('#coming .blk'))document.getElementById('coming').style.display='none';})();</script>""")
+if(!document.querySelector('#upcoming .blk'))document.getElementById('upcoming').style.display='none';})();</script>""")
 open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h)))
+P=['<section id="past"><h1>Past</h1><p class="sm" style="text-align:center">Finished programs, newest first.</p>']
+for b in sorted(NB,key=lambda b:b[3],reverse=True):
+    x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
+    P.append(x)
+P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
+P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
+document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
+open('past.html','w').write(page("Past — Stanford Theatre","".join(P)))
 for s,k in K.items():
     f=F[s];t=T[k]
     fest=[x for x in FEST if s in x[4]][0]
