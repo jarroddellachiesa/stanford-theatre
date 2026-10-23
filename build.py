@@ -99,9 +99,9 @@ for name,dr,url,groups,films in FEST:
 
 # ---- search page ----
 TICKET='<svg class="tk" viewBox="0 0 48 28" width="34" height="20" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6dc8a"/><stop offset="1" stop-color="#c39a2c"/></linearGradient></defs><path d="M3 2h42v8a4 4 0 0 0 0 8v8H3v-8a4 4 0 0 0 0-8z" fill="url(#g)" stroke="#7a5a12" stroke-width="1.2"/><path d="M12 4v20" stroke="#7a5a12" stroke-dasharray="2 2"/><path d="M16 9l2-3 2 3M28 9l2-3 2 3" fill="none" stroke="#5a0a12" stroke-width="1.2"/><text x="29" y="19" font-size="7.5" font-family="Georgia,serif" font-weight="700" fill="#5a0a12" text-anchor="middle">ADMIT ONE</text><path d="M18 22h22" stroke="#5a0a12" stroke-width=".8"/></svg>'
-sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Every billing from the theatre's history pages (1925–1961) plus Tile box-office history for the current films.</p>
+sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Every billing from the theatre's history pages (1925–1961) plus Tile box-office history. Original Run marks a film's first billing here.</p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
-<div class="legend"><span class="badge" title="From the Stanford Theatre's original billings">{TICKET}Original Run</span> = From the Stanford Theatre's original billings &nbsp; <span class="src">Tile</span> = Tile box-office records</div>
+<div class="legend"><span class="badge" title="From the Stanford Theatre's original billings">{TICKET}Original Run</span> = From the Stanford Theatre's original billings &nbsp; <span class="src">Original billings</span> = later billings in the theatre's history pages &nbsp; <span class="src">Tile</span> = Tile box-office records</div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js"></script><script>
 var T={json.dumps(TICKET)};var D=window.SHOWINGS,q=document.getElementById('q'),R=document.getElementById('res'),C=document.getElementById('count');
@@ -109,7 +109,7 @@ function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return{{'&':'&a
 function go(){{var v=q.value.trim().toLowerCase();if(v.length<2){{R.innerHTML='';C.textContent=D.length.toLocaleString()+' showings indexed. Type at least 2 characters.';return}}
 var m=D.filter(function(o){{return (o.title+' '+o.note+' '+o.start).toLowerCase().indexOf(v)>=0}});C.textContent=m.length.toLocaleString()+' matches'+(m.length>300?' (showing first 300)':'');
 R.innerHTML=m.slice(0,300).map(function(o){{var d=o.source=='Tile'?(o.start+(o.end!=o.start?' – '+o.end:'')):o.date_text;
-var b=o.badge?'<span class="badge" title="From the Stanford Theatre\\'s original billings">'+T+'Original Run</span>':'<span class="src">Tile</span>';
+var b=o.badge?'<span class="badge" title="From the Stanford Theatre\\'s original billings">'+T+'Original Run</span>':'<span class="src">'+esc(o.label||o.source)+'</span>';
 return '<li><div class="rt"><a href="'+esc(o.url)+'">'+esc(o.title)+'</a> '+b+'</div><div class="rd2">'+esc(d)+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+'</div>'+(o.note?'<div class="rn">'+esc(o.note)+'</div>':'')+'</li>'}}).join('')}}
 q.addEventListener('input',go);var u=new URLSearchParams(location.search).get('q');if(u)q.value=u;go();</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb))
