@@ -13,16 +13,16 @@ e=html.escape
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
 def page(title,body,root=""):
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><link rel="stylesheet" href="{root}style.css"></head><body>
-<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div><div class="m2">PALO ALTO · NOW SHOWING</div></a></header><main>{body}</main>
+<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div><div class="m2">PALO ALTO · NOW SHOWING</div></a><nav class="nav"><a href="{root}index.html">Now Showing</a><span class="nl">Festivals:</span><a href="{root}festivals/remembering-eva-marie-saint.html">Eva Marie Saint</a><a href="{root}festivals/mary-poppins-the-wizard-of-oz.html">Poppins / Oz</a></nav></header><main>{body}</main>
 <footer><a href="{MAP}">Stanford Theatre, 221 University Ave, Palo Alto, CA 94301</a><div class="sm">Schedules subject to change — check <a href="https://www.stanfordtheatre.org/calendar.html">stanfordtheatre.org</a>.</div></footer></body></html>'''
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
 h=['<section class="intro"><h1>Upcoming Programs</h1></section>']
 for name,dr,url,groups,films in FEST:
-    h.append(f'<section class="fest"><h2><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2><div class="dr">{dr}</div><div class="cols">')
+    h.append(f'<section class="fest"><h2><a href="festivals/{SLUG[url]}.html">{e(name)} →</a></h2><div class="dr">{dr}</div><div class="cols">')
     for s in films:
         st="".join(f'<div class="dg">{d}</div><div class="tm">{t}</div>' for d,items in groups for a2,t in items if a2==s)
         h.append(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a>{st}</div>')
-    h.append('</div></section>')
+    h.append(f'</div><a class="btn" href="festivals/{SLUG[url]}.html">Festival page →</a></section>')
 open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h)))
 for s,k in K.items():
     f=F[s];t=T[k]
@@ -32,7 +32,7 @@ for s,k in K.items():
     li=lambda L:"".join(f'<li>{x}</li>' for x in L)
     b=f'''<article class="film"><div class="top"><img class="poster" src="../posters/{s}.jpg" alt="{e(f['t'])} poster">
 <div><h1>{e(f['t'])}</h1><div class="meta">{f['y']} ★ {f['rt']} min</div><p class="cr">{e(f['credit'])}</p><p class="plot">{e(f['plot'])}</p></div></div>
-<section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])}</a> · {fest[1]}</div>{sched}</section>
+<section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])} →</a> · {fest[1]}</div>{sched}<a class="btn" href="../festivals/{SLUG[fest[2]]}.html">Festival page →</a></section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
 <section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p><h3>Past runs (since '03):</h3><ul class="runs">{runs}</ul></section>
