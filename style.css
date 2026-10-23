@@ -41,3 +41,8 @@ footer{text-align:center;padding:24px 12px 40px;border-top:4px double #d4af37;ma
 #now>h1,#coming>h1{margin-bottom:0}#coming .bf{display:none}#coming .blk{margin:12px 0}.gh{margin-top:18px}.gh a{color:#d4af37}
 .bl{text-align:center;font-size:22px;color:#fff1cc}.tba{text-align:center;font-size:22px;font-weight:700}
 .fgrp{border-top:2px solid #d4af3766;margin-top:24px;padding-top:4px}
+#q{width:100%;font-size:22px;padding:12px 14px;border-radius:8px;border:2px solid #d4af37;background:#fff8e8;color:#2a0508;margin:10px 0}
+.legend{font-size:16px;color:#e9d7ad;margin:6px 0 10px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:14px;font-weight:800;color:#f6dc8a;letter-spacing:.5px;vertical-align:middle;white-space:nowrap}
+.src{display:inline-block;font-size:13px;font-weight:700;border:1px solid #e9d7ad;color:#e9d7ad;border-radius:4px;padding:0 6px;vertical-align:middle}
+.res{list-style:none;padding:0}.res li{border-bottom:1px dotted #d4af3755;padding:10px 0}.rt{font-weight:700;font-size:20px}.rd2{color:#ffe08a;font-size:17px}.rn{color:#e9d7ad;font-size:16px}

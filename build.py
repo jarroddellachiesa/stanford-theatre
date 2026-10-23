@@ -13,7 +13,7 @@ e=html.escape
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
 def page(title,body,root=""):
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><link rel="stylesheet" href="{root}style.css"></head><body>
-<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div><div class="m2">PALO ALTO · NOW SHOWING</div></a><nav class="nav"><a href="{root}index.html#now">Now Showing</a><span class="nl">Festivals:</span><a href="{root}festivals/remembering-eva-marie-saint.html">Eva Marie Saint</a><a href="{root}festivals/mary-poppins-the-wizard-of-oz.html">Poppins / Oz</a></nav></header><main>{body}</main>
+<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div><div class="m2">PALO ALTO · NOW SHOWING</div></a><nav class="nav"><a href="{root}index.html#now">Now Showing</a><span class="nl">Festivals:</span><a href="{root}festivals/remembering-eva-marie-saint.html">Eva Marie Saint</a><a href="{root}festivals/mary-poppins-the-wizard-of-oz.html">Poppins / Oz</a><a href="{root}search.html">Search</a></nav></header><main>{body}</main>
 <footer><a href="{MAP}">Stanford Theatre, 221 University Ave, Palo Alto, CA 94301</a><div class="sm">Schedules subject to change — check <a href="https://www.stanfordtheatre.org/calendar.html">stanfordtheatre.org</a>.</div></footer></body></html>'''
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
 
@@ -88,3 +88,20 @@ for name,dr,url,groups,films in FEST:
 <p class="sm">{NOTE}</p></section>
 <p class="orig"><a href="{url}">Original Stanford Theatre page</a> · <a href="archive/{ARCH[url]}">archived HTML</a></p>'''
     open(f'festivals/{SLUG[url]}.html','w').write(page(f"{name} — Stanford Theatre",b,"../"))
+
+# ---- search page ----
+TICKET='<svg class="tk" viewBox="0 0 48 28" width="34" height="20" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6dc8a"/><stop offset="1" stop-color="#c39a2c"/></linearGradient></defs><path d="M3 2h42v8a4 4 0 0 0 0 8v8H3v-8a4 4 0 0 0 0-8z" fill="url(#g)" stroke="#7a5a12" stroke-width="1.2"/><path d="M12 4v20" stroke="#7a5a12" stroke-dasharray="2 2"/><path d="M16 9l2-3 2 3M28 9l2-3 2 3" fill="none" stroke="#5a0a12" stroke-width="1.2"/><text x="29" y="19" font-size="7.5" font-family="Georgia,serif" font-weight="700" fill="#5a0a12" text-anchor="middle">ADMIT ONE</text><path d="M18 22h22" stroke="#5a0a12" stroke-width=".8"/></svg>'
+sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Every billing from the theatre's history pages (1925–1961) plus Tile box-office history for the current films.</p>
+<input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
+<div class="legend"><span class="badge" title="From the Stanford Theatre's original billings">{TICKET}Original Run</span> = From the Stanford Theatre's original billings &nbsp; <span class="src">Tile</span> = Tile box-office records</div>
+<div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
+<script src="data/showings.js"></script><script>
+var T={json.dumps(TICKET)};var D=window.SHOWINGS,q=document.getElementById('q'),R=document.getElementById('res'),C=document.getElementById('count');
+function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return{{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}})}}
+function go(){{var v=q.value.trim().toLowerCase();if(v.length<2){{R.innerHTML='';C.textContent=D.length.toLocaleString()+' showings indexed. Type at least 2 characters.';return}}
+var m=D.filter(function(o){{return (o.title+' '+o.note+' '+o.start).toLowerCase().indexOf(v)>=0}});C.textContent=m.length.toLocaleString()+' matches'+(m.length>300?' (showing first 300)':'');
+R.innerHTML=m.slice(0,300).map(function(o){{var d=o.source=='Tile'?(o.start+(o.end!=o.start?' – '+o.end:'')):o.date_text;
+var b=o.badge?'<span class="badge" title="From the Stanford Theatre\\'s original billings">'+T+'Original Run</span>':'<span class="src">Tile</span>';
+return '<li><div class="rt"><a href="'+esc(o.url)+'">'+esc(o.title)+'</a> '+b+'</div><div class="rd2">'+esc(d)+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+'</div>'+(o.note?'<div class="rn">'+esc(o.note)+'</div>':'')+'</li>'}}).join('')}}
+q.addEventListener('input',go);var u=new URLSearchParams(location.search).get('q');if(u)q.value=u;go();</script>'''
+open('search.html','w').write(page("Search — Stanford Theatre",sb))

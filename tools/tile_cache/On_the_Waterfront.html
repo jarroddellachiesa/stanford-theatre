@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>Tile</title>
+    <link href="/static/css/tile.css" rel="stylesheet">
+    <script src="/static/js/jquery.min.js" type="d6f424cb0c1885bdef6c8bd2-text/javascript"></script>
+    <script src="/static/js/boxoffice.js" type="d6f424cb0c1885bdef6c8bd2-text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-comic-sans" style="background-image: url('/static/papyrus.jpg'); background-repeat: repeat;">
+<div id="main" class="tile container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4">Tile Program</h2>
+
+    <form action="/tile" class="mb-4">
+        <input type="text" name="q" title="query" autofocus class="border p-2 mr-2">
+        <input type="submit" value="Find Title" class="bg-blue-500 text-white p-2 rounded">
+    </form>
+
+        <div id="festivals">
+            <h3 class="text-xl font-bold">
+                <strong class="title">On the Waterfront</strong>
+                <small>has played
+                    <span class="tc">27</span> times (in
+                    <span class="fc">8</span> festivals) with
+                    <span class="tickets">8,756</span> tickets sold at the Stanford Theatre.
+                </small>
+            </h3>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=737">Gentleman&#x27;s Agreement</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">893</td>
+                                <td class="mnth">May 13 &#x27;93</td>
+                                <td class="wkday">Thu</td>
+                                <td class="attnd num">319</td>
+                                <td class="revenue num">$1,538</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">893</td>
+                                <td class="mnth">May 14 &#x27;93</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">572</td>
+                                <td class="revenue num">$2,797</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=50">North by Northwest</a></span>
+                                <span class="df"><a href="/tile?id=585">To Catch a Thief</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">2036</td>
+                                <td class="mnth">Apr 7 &#x27;00</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">1,137</td>
+                                <td class="revenue num">$11,370</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=1076">To Kill a Mockingbird</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">2072</td>
+                                <td class="mnth">Jul 20 &#x27;00</td>
+                                <td class="wkday">Thu</td>
+                                <td class="attnd num">385</td>
+                                <td class="revenue num">$2,056</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">2072</td>
+                                <td class="mnth">Jul 21 &#x27;00</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">789</td>
+                                <td class="revenue num">$4,245</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=936">A Streetcar Named Desire</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">2809</td>
+                                <td class="mnth">Oct 15 &#x27;04</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">309</td>
+                                <td class="revenue num">$1,626</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">2809</td>
+                                <td class="mnth">Oct 16 &#x27;04</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">461</td>
+                                <td class="revenue num">$2,422</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">2809</td>
+                                <td class="mnth">Oct 17 &#x27;04</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">283</td>
+                                <td class="revenue num">$1,501</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">2809</td>
+                                <td class="mnth">Oct 18 &#x27;04</td>
+                                <td class="wkday">Mon</td>
+                                <td class="attnd num">54</td>
+                                <td class="revenue num">$284</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">2809</td>
+                                <td class="mnth">Oct 19 &#x27;04</td>
+                                <td class="wkday">Tue</td>
+                                <td class="attnd num">74</td>
+                                <td class="revenue num">$392</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">2809</td>
+                                <td class="mnth">Oct 20 &#x27;04</td>
+                                <td class="wkday">Wed</td>
+                                <td class="attnd num">107</td>
+                                <td class="revenue num">$538</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">2809</td>
+                                <td class="mnth">Oct 21 &#x27;04</td>
+                                <td class="wkday">Thu</td>
+                                <td class="attnd num">160</td>
+                                <td class="revenue num">$870</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=1439">A Face in the Crowd</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">4150</td>
+                                <td class="mnth">Oct 26 &#x27;11</td>
+                                <td class="wkday">Wed</td>
+                                <td class="attnd num">154</td>
+                                <td class="revenue num">$903</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">4150</td>
+                                <td class="mnth">Oct 27 &#x27;11</td>
+                                <td class="wkday">Thu</td>
+                                <td class="attnd num">160</td>
+                                <td class="revenue num">$984</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">4150</td>
+                                <td class="mnth">Oct 28 &#x27;11</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">263</td>
+                                <td class="revenue num">$1,614</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=1075">Guys and Dolls</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">4432</td>
+                                <td class="mnth">May 4 &#x27;13</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">663</td>
+                                <td class="revenue num">$3,965</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">4432</td>
+                                <td class="mnth">May 5 &#x27;13</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">544</td>
+                                <td class="revenue num">$3,365</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=936">A Streetcar Named Desire</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">4900</td>
+                                <td class="mnth">Apr 28 &#x27;16</td>
+                                <td class="wkday">Thu</td>
+                                <td class="attnd num">140</td>
+                                <td class="revenue num">$844</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">4900</td>
+                                <td class="mnth">Apr 29 &#x27;16</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">307</td>
+                                <td class="revenue num">$1,938</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">4900</td>
+                                <td class="mnth">Apr 30 &#x27;16</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">490</td>
+                                <td class="revenue num">$3,025</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">4900</td>
+                                <td class="mnth">May 1 &#x27;16</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">326</td>
+                                <td class="revenue num">$2,024</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=50">North by Northwest</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">6209</td>
+                                <td class="mnth">Oct 16 &#x27;26</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">255</td>
+                                <td class="revenue num">$1,577</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6209</td>
+                                <td class="mnth">Oct 17 &#x27;26</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">434</td>
+                                <td class="revenue num">$2,628</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6209</td>
+                                <td class="mnth">Oct 18 &#x27;26</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">370</td>
+                                <td class="revenue num">$2,182</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6209</td>
+                                <td class="mnth">Oct 23 &#x27;26</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6209</td>
+                                <td class="mnth">Oct 24 &#x27;26</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6209</td>
+                                <td class="mnth">Oct 25 &#x27;26</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                    </table>
+                </div>
+        </div>
+
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d6f424cb0c1885bdef6c8bd2-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4f125d47942f60e',t:'MTc5Mjc2Mjc2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

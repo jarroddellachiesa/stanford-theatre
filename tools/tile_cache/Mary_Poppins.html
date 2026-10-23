@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>Tile</title>
+    <link href="/static/css/tile.css" rel="stylesheet">
+    <script src="/static/js/jquery.min.js" type="09fe2349f4104ec21f54c0a3-text/javascript"></script>
+    <script src="/static/js/boxoffice.js" type="09fe2349f4104ec21f54c0a3-text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-comic-sans" style="background-image: url('/static/papyrus.jpg'); background-repeat: repeat;">
+<div id="main" class="tile container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4">Tile Program</h2>
+
+    <form action="/tile" class="mb-4">
+        <input type="text" name="q" title="query" autofocus class="border p-2 mr-2">
+        <input type="submit" value="Find Title" class="bg-blue-500 text-white p-2 rounded">
+    </form>
+
+        <div id="festivals">
+            <h3 class="text-xl font-bold">
+                <strong class="title">Mary Poppins</strong>
+                <small>has played
+                    <span class="tc">14</span> times (in
+                    <span class="fc">2</span> festivals) with
+                    <span class="tickets">4,071</span> tickets sold at the Stanford Theatre.
+                </small>
+            </h3>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=356">Sitting Pretty</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">6203</td>
+                                <td class="mnth">Dec 6 &#x27;24</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">225</td>
+                                <td class="revenue num">$1,432</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6203</td>
+                                <td class="mnth">Dec 7 &#x27;24</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">1,335</td>
+                                <td class="revenue num">$3,264</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6203</td>
+                                <td class="mnth">Dec 8 &#x27;24</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">705</td>
+                                <td class="revenue num">$2,933</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6203</td>
+                                <td class="mnth">Dec 13 &#x27;24</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">365</td>
+                                <td class="revenue num">$1,599</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6203</td>
+                                <td class="mnth">Dec 14 &#x27;24</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">677</td>
+                                <td class="revenue num">$3,321</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6203</td>
+                                <td class="mnth">Dec 15 &#x27;24</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">764</td>
+                                <td class="revenue num">$3,667</td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="festival mt-4">
+                    <h4 class="double">
+                            Plays with <i>
+                                <span class="df"><a href="/tile?id=1">The Wizard of Oz</a></span>
+                        </i>
+                    </h4>
+                    <table class="ml-8 mt-2 mb-4 border-collapse">
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Oct 29 &#x27;26</td>
+                                <td class="wkday">Thu</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Oct 30 &#x27;26</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Oct 31 &#x27;26</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Nov 1 &#x27;26</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Nov 5 &#x27;26</td>
+                                <td class="wkday">Thu</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Nov 6 &#x27;26</td>
+                                <td class="wkday">Fri</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Nov 7 &#x27;26</td>
+                                <td class="wkday">Sat</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                            <tr>
+                                <td class="bid">6206</td>
+                                <td class="mnth">Nov 8 &#x27;26</td>
+                                <td class="wkday">Sun</td>
+                                <td class="attnd num">0</td>
+                                <td class="revenue num">$0</td>
+                            </tr>
+                    </table>
+                </div>
+        </div>
+
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="09fe2349f4104ec21f54c0a3-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4f125d6d858c65d',t:'MTc5Mjc2Mjc2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
