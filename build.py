@@ -25,6 +25,7 @@ NB=[(EMS,"October 16–18","2026-10-16","2026-10-18",[("north-by-northwest","7:3
 (PW,"October 29–November 1","2026-10-29","2026-11-01",[("mary-poppins","7:30 (plus 3:05 Sat/Sun)"),("the-wizard-of-oz","5:35, 10:00")]),
 (PW,"November 5–8","2026-11-05","2026-11-08",[("mary-poppins","7:30 (plus 3:05 Sat/Sun)"),("the-wizard-of-oz","5:35, 10:00")])]
 FN={x[2]:(x[0],x[1]) for x in FEST}
+NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
 def blk(b):
     url,lab,st,en,items=b; nm,dr=FN[url]; sl=SLUG[url]
     head=f'<div class="bf"><h2><a href="festivals/{sl}.html">{e(nm)} →</a></h2><div class="dr">{dr}</div></div>'
@@ -74,8 +75,7 @@ SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
 ARCH={EMS:'eva-marie-saint.html',PW:'poppins-wizard-2026.html'}
 PRES={EMS:dict(title="Remembering Eva Marie Saint",sub="October 2026",days="Friday · Saturday · Sunday",
   blocks=[("October 16-18",[("North by Northwest (1959)","tt0053125","7:30 (plus 3:00 Sat/Sun)"),("On the Waterfront (1954)","tt0047296","5:30, 10:00")]),
-          ("October 23-25",[("North by Northwest (1959)","tt0053125","7:30 (plus 3:00 Sat/Sun)"),("On the Waterfront (1954)","tt0047296","5:30, 10:00")]),
-          ("October 30-November 1",[("To Be Announced",None,"")])]),
+          ("October 23-25",[("North by Northwest (1959)","tt0053125","7:30 (plus 3:00 Sat/Sun)"),("On the Waterfront (1954)","tt0047296","5:30, 10:00")])]),
  PW:dict(title=None,sub=None,days="Thursday · Friday · Saturday · Sunday",
   blocks=[("October 29 - November 1",[("Mary Poppins (1964)","tt0058331","7:30 (plus 3:05 Sat/Sun)"),("The Wizard of Oz (1939)","tt0032138","5:35, 10:00")]),
           ("November 5-8",[("Mary Poppins (1964)","tt0058331","7:30 (plus 3:05 Sat/Sun)"),("The Wizard of Oz (1939)","tt0032138","5:35, 10:00")])])}
