@@ -62,6 +62,10 @@ for f in sorted(glob.glob('cache/cal/*')):
             rng=pd(dtxt,y) if y else None
             blocks.append(dict(dates=dtxt,start=rng[0] if rng else None,end=rng[1] if rng else None,films=films))
             if not rng: gaps.append((fn,dtxt))
+    if not name or 'University Ave' in name or len(name)>100:
+        name=re.sub(r'%20',' ',fn.rsplit('.',1)[0])
+    for b in blocks:
+        for fm in b['films']: fm['times']=re.sub(r'^\s*\((?:19|20)\d\d\)\s*','',fm['times']).strip()
     if blocks: F.append(dict(name=name or fn.rsplit('.',1)[0],file=fn,year=y,blocks=blocks,start=min((b['start'] for b in blocks if b['start']),default=None),end=max((b['end'] for b in blocks if b['end']),default=None)))
     else: gaps.append((fn,'no bills parsed'))
 os.makedirs('stanford-site/data',exist_ok=True)

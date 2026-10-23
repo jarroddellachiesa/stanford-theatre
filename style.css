@@ -51,3 +51,7 @@ footer{text-align:center;padding:24px 12px 40px;border-top:4px double #d4af37;ma
 .badge.s1{color:#e6eaee}.badge.rt{color:#ff8a80}
 details.arch{padding:12px 18px;margin:10px 0}details.arch summary{cursor:pointer;list-style:none}.an{font-weight:700;font-size:20px;color:#fff1cc}.arch .dr{font-size:16px}.abl{font-size:17px;line-height:1.45;padding-left:18px}.abl li{margin:4px 0}
 .bf h2,.bf .dr,.gh,.fgrp>.dr,.fest>h2,.fest>.dr{text-align:center}
+.fg{border-bottom:1px solid #d4af3755;padding:12px 0!important}.fh{font-family:Playfair,serif;font-weight:700;font-size:23px;color:#fff1cc}.fh a{color:#ffe08a}.fc{font-family:OpenSans,sans-serif;font-size:15px;font-weight:600;color:#e9d7ad}
+.fl{list-style:none;padding:4px 0 0 4px;margin:0}.fl li{padding:3px 0;font-size:17px;line-height:1.35;border:0}.fl .tk{vertical-align:-5px}.sd{color:#ffe08a}.fl .rn{color:#e9d7ad;font-size:15px}
+@media(max-width:600px){.fh{font-size:20px}.fl li{font-size:15px}.fl .tk{width:34px;height:20px}}
+.legend{gap:6px 16px}.legend .li{white-space:nowrap;display:inline-flex;align-items:center;gap:6px}

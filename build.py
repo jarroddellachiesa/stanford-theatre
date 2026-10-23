@@ -110,22 +110,10 @@ def tk(txt,c1,c2,gid): return f'<svg class="tk" viewBox="0 0 40 24" width="42" h
 OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor"); S1=tk("1st","#f4f6f8","#9aa3ab","gs1")
 TOG="From the Stanford Theatre&#39;s original billings"; TOR="Original Run — shown during the film&#39;s first release"
 TICKET=OR
+SJS=open('tools/search.js').read()
 sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925–1961), its archived calendars (1997–present) and Tile box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
-<div class="legend"><span class="badge og" title="{TOG}">{OG}OG</span> = from the Stanford Theatre&#39;s original billings (history pages) &nbsp; <span class="badge or" title="{TOR}">{OR}OR</span> = Original Run, shown during the film&#39;s first release &nbsp; <span class="src">Calendar</span> = stanfordtheatre.org past calendars (1997–) &nbsp; <span class="badge s1">{S1}1st</span> = first showing in Tile records &nbsp; <span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}#5</span> = Nth time shown (Tile records)</div>
+<div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> original billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run (first release)</span><span class="li"><span class="src">Calendar</span> theatre calendars (1997–)</span><span class="li"><span class="badge s1">{S1}</span> first Tile run</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth Tile run</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
-<script src="data/showings.js"></script><script>
-var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};var D=window.SHOWINGS,q=document.getElementById('q'),R=document.getElementById('res'),C=document.getElementById('count');
-function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return{{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}})}}
-function N(s){{s=String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/['’`]/g,'').replace(/[^a-z0-9]+/g,' ');return s.split(' ').filter(function(w){{return w&&w!='the'&&w!='a'&&w!='an'}}).map(function(w){{return w.length>4&&/ing$/.test(w)?w.slice(0,-1):w}}).join(' ')}}
-function TK(s){{return s?s.split(' '):[]}}
-function ED(a,b,k){{if(Math.abs(a.length-b.length)>k)return false;var p=[],i,j;for(j=0;j<=b.length;j++)p[j]=j;for(i=1;i<=a.length;i++){{var c=[i],mn=i;for(j=1;j<=b.length;j++){{c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]==b[j-1]?0:1));if(c[j]<mn)mn=c[j]}}if(mn>k)return false;p=c}}return p[b.length]<=k}}
-function go(){{var v=q.value.trim().toLowerCase();if(v.length<2){{R.innerHTML='';C.textContent=D.length.toLocaleString()+' showings indexed. Type at least 2 characters.';return}}
-var nq=N(v),qa=TK(nq),qt=qa.filter(function(q){{return q.length>=4}});if(!qt.length)qt=qa;var m1=[],m2=[];D.forEach(function(o){{if(!o._n){{o._n=N(o.title+' '+o.note+' '+o.start);o._t=TK(N(o.title))}}
-if(nq&&o._n.indexOf(nq)>=0)m1.push(o);else if(qt.length&&qt.every(function(q){{return o._t.some(function(w){{return w.indexOf(q)==0||(q.length>=4&&ED(q,w,q.length>=7?2:1))}})}}))m2.push(o)}});var m=m1.concat(m2);C.textContent=m.length.toLocaleString()+' matches'+(m.length>300?' (showing first 300)':'');
-R.innerHTML=m.slice(0,300).map(function(o){{var d=o.source=='Tile'?(o.start+(o.end!=o.start?' – '+o.end:'')):o.date_text;
-function ord(n){{var s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])}}
-var b=o.source=='Stanford Theatre calendars'?'<span class="src">Calendar</span>'+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':''):(o.source=='Tile'?(o.n==1?'<span class="badge s1" title="First showing in Tile records">'+S1+'1st</span>':'<span class="badge rt" title="'+ord(o.n)+' time shown (Tile records)">'+RT.replace('@N@',o.n)+'#'+o.n+'</span>'):'<span class="badge og" title="'+TOG+'">'+OG+'OG</span>')+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':'');
-return '<li><div class="rt">'+b+' <a href="'+esc(o.url)+'">'+esc(o.title)+'</a></div><div class="rd2">'+esc(d)+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+'</div>'+(o.note?'<div class="rn">'+esc(o.note)+'</div>':'')+'</li>'}}).join('')}}
-q.addEventListener('input',go);var u=new URLSearchParams(location.search).get('q');if(u)q.value=u;go();</script>'''
+<script src="data/showings.js"></script><script>var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};'''+SJS+'''</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb))
