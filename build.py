@@ -1,4 +1,4 @@
-import json,html,datetime
+import json,html,datetime,urllib.parse
 src=open('/workspace/stanford-infographics/gen.py').read(); ns={}
 exec(src[:src.index('CSS=')],ns); F={f['slug']:f for f in ns['F']}
 T=json.load(open('/workspace/tile.json'))
@@ -51,6 +51,14 @@ P=['<section id="past"><h1>Past</h1><p class="sm" style="text-align:center">Fini
 for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
     P.append(x)
+FJ=json.load(open('data/festivals.json'))
+P.append('<h2 style="text-align:center;margin-top:30px">Festival archive</h2><p class="sm" style="text-align:center">From the Stanford Theatre&#39;s past calendars, newest first. Tap a festival for its bills.</p>')
+for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-31' if x['year'] else '0000')),reverse=True):
+    en=fe['end'] or ''
+    if en and en>=TODAY: continue
+    dr=(fe['start']+' – '+fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
+    bl=''.join('<li><b>'+e(b['dates'])+'</b>: '+' / '.join(e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' '+e(f['times']) if f['times'] else '') for f in b['films'])+'</li>' for b in fe['blocks'])
+    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="an">{e(fe["name"][:110])}</span> <span class="dr">{dr} · {len(fe["blocks"])} bills</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
 document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
@@ -102,9 +110,9 @@ def tk(txt,c1,c2,gid): return f'<svg class="tk" viewBox="0 0 40 24" width="42" h
 OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor"); S1=tk("1st","#f4f6f8","#9aa3ab","gs1")
 TOG="From the Stanford Theatre&#39;s original billings"; TOR="Original Run — shown during the film&#39;s first release"
 TICKET=OR
-sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Every billing from the theatre's history pages (1925–1961) plus Tile box-office history. </p>
+sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925–1961), its archived calendars (1997–present) and Tile box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
-<div class="legend"><span class="badge og" title="{TOG}">{OG}OG</span> = from the Stanford Theatre&#39;s original billings (history pages) &nbsp; <span class="badge or" title="{TOR}">{OR}OR</span> = Original Run, shown during the film&#39;s first release &nbsp; <span class="badge s1">{S1}1st</span> = first showing in Tile records &nbsp; <span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}#5</span> = Nth time shown (Tile records)</div>
+<div class="legend"><span class="badge og" title="{TOG}">{OG}OG</span> = from the Stanford Theatre&#39;s original billings (history pages) &nbsp; <span class="badge or" title="{TOR}">{OR}OR</span> = Original Run, shown during the film&#39;s first release &nbsp; <span class="src">Calendar</span> = stanfordtheatre.org past calendars (1997–) &nbsp; <span class="badge s1">{S1}1st</span> = first showing in Tile records &nbsp; <span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}#5</span> = Nth time shown (Tile records)</div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js"></script><script>
 var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};var D=window.SHOWINGS,q=document.getElementById('q'),R=document.getElementById('res'),C=document.getElementById('count');
@@ -113,7 +121,7 @@ function go(){{var v=q.value.trim().toLowerCase();if(v.length<2){{R.innerHTML=''
 var m=D.filter(function(o){{return (o.title+' '+o.note+' '+o.start).toLowerCase().indexOf(v)>=0}});C.textContent=m.length.toLocaleString()+' matches'+(m.length>300?' (showing first 300)':'');
 R.innerHTML=m.slice(0,300).map(function(o){{var d=o.source=='Tile'?(o.start+(o.end!=o.start?' – '+o.end:'')):o.date_text;
 function ord(n){{var s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])}}
-var b=(o.source=='Tile'?(o.n==1?'<span class="badge s1" title="First showing in Tile records">'+S1+'1st</span>':'<span class="badge rt" title="'+ord(o.n)+' time shown (Tile records)">'+RT.replace('@N@',o.n)+'#'+o.n+'</span>'):'<span class="badge og" title="'+TOG+'">'+OG+'OG</span>')+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':'');
+var b=o.source=='Stanford Theatre calendars'?'<span class="src">Calendar</span>'+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':''):(o.source=='Tile'?(o.n==1?'<span class="badge s1" title="First showing in Tile records">'+S1+'1st</span>':'<span class="badge rt" title="'+ord(o.n)+' time shown (Tile records)">'+RT.replace('@N@',o.n)+'#'+o.n+'</span>'):'<span class="badge og" title="'+TOG+'">'+OG+'OG</span>')+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':'');
 return '<li><div class="rt"><a href="'+esc(o.url)+'">'+esc(o.title)+'</a> '+b+'</div><div class="rd2">'+esc(d)+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+'</div>'+(o.note?'<div class="rn">'+esc(o.note)+'</div>':'')+'</li>'}}).join('')}}
 q.addEventListener('input',go);var u=new URLSearchParams(location.search).get('q');if(u)q.value=u;go();</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb))

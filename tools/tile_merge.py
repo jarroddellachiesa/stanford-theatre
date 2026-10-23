@@ -1,6 +1,11 @@
 import re,html,json,glob,datetime as dt,urllib.parse
 p='stanford-site/data/showings.json'
-d=[o for o in json.load(open(p)) if o['source']!='Tile']
+d=[o for o in json.load(open(p)) if o['source'] not in ('Tile','Stanford Theatre calendars')]
+FJ=json.load(open('stanford-site/data/festivals.json'))
+for fe in FJ['festivals']:
+    for b in fe['blocks']:
+        for fm in b['films']:
+            d.append(dict(title=fm['title'],note=(fe['name'][:80]+' · '+fm['times']).strip(' ·'),start=b['start'] or (str(fe['year'])+'-00-00' if fe['year'] else '0000-00-00'),end=b['end'] or '',date_text=b['dates']+(', '+str(fe['year']) if fe['year'] else ' (year not given)'),fyear=fm['year'],source='Stanford Theatre calendars',url='festivals/archive/cal/'+fe['file']))
 YR={}
 for f in glob.glob('cache/cal/*'):
     for a in re.findall(r'<a [^>]*imdb[^>]*>([^<]{2,100})</a>',open(f,errors='replace').read()):
@@ -45,11 +50,14 @@ for o in out:
     k=o['title'].strip().lower(); o['badge']=''; o.pop('label',None)
     if o['source']=='Tile':
         cnt[k]=cnt.get(k,0)+1; o['n']=cnt[k]
+    elif o['source']=='Stanford Theatre calendars':
+        y=o.get('fyear') or YR.get(k)
+        if y and o['start'][:4].isdigit() and int(o['start'][:4])>1000 and 0<=int(o['start'][:4])-y<=2: o['badge']='Original Run'
     else:
         if k not in first:
             first.add(k); y=YR.get(k)
             if y is None or int(o['start'][:4])-y<=2: o['badge']='Original Run'
 json.dump(out,open(p,'w'),ensure_ascii=False); open('stanford-site/data/showings.js','w').write('window.SHOWINGS='+json.dumps(out,ensure_ascii=False)+';')
-for s in ['Tile','Stanford Theatre history page']:
+for s in ['Tile','Stanford Theatre history page','Stanford Theatre calendars']:
     x=[o for o in out if o['source']==s]; print(s,'runs',len(x),'films',len(set(o['title'].lower() for o in x)),x[0]['start'],x[-1]['start'])
 print('OR',sum(1 for o in out if o['badge']))
