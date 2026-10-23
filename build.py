@@ -17,10 +17,11 @@ def page(title,body,root=""):
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
 h=['<section class="intro"><h1>Upcoming Programs</h1></section>']
 for name,dr,url,groups,films in FEST:
-    h.append(f'<section class="fest"><h2><a href="{url}">{e(name)}</a></h2><div class="dr">{dr}</div><div class="fx"><div class="sc">')
-    for d,items in groups:
-        h.append(f'<h3>{d}</h3><ul class="sched">'+"".join(f'<li><a href="films/{s}.html">{ft(s)}</a>: <b>{t}</b></li>' for s,t in items)+'</ul>')
-    h.append('</div><div class="cards">'+"".join(f'<a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a>' for s in films)+'</div></div></section>')
+    h.append(f'<section class="fest"><h2><a href="{url}">{e(name)}</a></h2><div class="dr">{dr}</div><div class="cols">')
+    for s in films:
+        st="".join(f'<div class="dg">{d}</div><div class="tm">{t}</div>' for d,items in groups for a2,t in items if a2==s)
+        h.append(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a>{st}</div>')
+    h.append('</div></section>')
 open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h)))
 for s,k in K.items():
     f=F[s];t=T[k]
