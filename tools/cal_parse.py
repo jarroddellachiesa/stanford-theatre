@@ -20,11 +20,13 @@ def pd(s,y):
         return a.isoformat(),b.isoformat()
     except Exception: return None
 F=[];gaps=[]
+OV=json.load(open('stanford-site/data/festival_overrides.json')) if os.path.exists('stanford-site/data/festival_overrides.json') else {}
 for f in sorted(glob.glob('cache/cal/*')):
     fn=os.path.basename(f); t=open(f,errors='replace').read()
     ban=re.search(r'(?s)<div class="banner">(.*?)</div>',t)
     name=txt(re.sub(r'(?s)<a .*?</a>','',ban.group(1))) if ban else ''
-    y=yearof(fn,t); blocks=[]
+    slug=re.sub(r'%20',' ',fn.rsplit('.',1)[0]); ov=OV.get(slug,{})
+    y=ov.get('year') or yearof(fn,t); blocks=[]
     cells=re.split(r'<td class="playdate"',t)[1:]
     for cell in cells:
         cell=re.split(r'(?i)</table',cell)[0]
@@ -66,6 +68,7 @@ for f in sorted(glob.glob('cache/cal/*')):
         name=re.sub(r'%20',' ',fn.rsplit('.',1)[0])
     for b in blocks:
         for fm in b['films']: fm['times']=re.sub(r'^\s*\((?:19|20)\d\d\)\s*','',fm['times']).strip()
+    if ov.get('name'): name=ov['name']
     if blocks: F.append(dict(name=name or fn.rsplit('.',1)[0],file=fn,year=y,blocks=blocks,start=min((b['start'] for b in blocks if b['start']),default=None),end=max((b['end'] for b in blocks if b['end']),default=None)))
     else: gaps.append((fn,'no bills parsed'))
 os.makedirs('stanford-site/data',exist_ok=True)
