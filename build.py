@@ -98,21 +98,22 @@ for name,dr,url,groups,films in FEST:
     open(f'festivals/{SLUG[url]}.html','w').write(page(f"{name} — Stanford Theatre",b,"../"))
 
 # ---- search page ----
-def tk(txt,c1,c2,gid): return f'<svg class="tk" viewBox="0 0 40 24" width="30" height="18" aria-hidden="true"><defs><linearGradient id="{gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient></defs><path d="M2 2h36v6a4 4 0 0 0 0 8v6H2v-6a4 4 0 0 0 0-8z" fill="url(#{gid})" stroke="#4a3a0a" stroke-width="1"/><path d="M10 4v16" stroke="#4a3a0a" stroke-width=".8" stroke-dasharray="1.6 1.6"/><text x="24" y="16" font-size="10" font-family="Georgia,serif" font-weight="700" fill="#3a0608" text-anchor="middle">{txt}</text></svg>'
-OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor")
+def tk(txt,c1,c2,gid): return f'<svg class="tk" viewBox="0 0 40 24" width="42" height="25" aria-hidden="true"><defs><linearGradient id="{gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient></defs><path d="M2 2h36v6a4 4 0 0 0 0 8v6H2v-6a4 4 0 0 0 0-8z" fill="url(#{gid})" stroke="#4a3a0a" stroke-width="1"/><path d="M10 4v16" stroke="#4a3a0a" stroke-width=".8" stroke-dasharray="1.6 1.6"/><text x="24" y="16" font-size="11" font-family="Georgia,serif" font-weight="700" fill="#3a0608" text-anchor="middle">{txt}</text></svg>'
+OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor"); S1=tk("1st","#f4f6f8","#9aa3ab","gs1")
 TOG="From the Stanford Theatre&#39;s original billings"; TOR="Original Run — shown during the film&#39;s first release"
 TICKET=OR
 sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Every billing from the theatre's history pages (1925–1961) plus Tile box-office history. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
-<div class="legend"><span class="badge og" title="{TOG}">{OG}OG</span> = from the Stanford Theatre&#39;s original billings (history pages) &nbsp; <span class="badge or" title="{TOR}">{OR}OR</span> = Original Run, shown during the film&#39;s first release &nbsp; <span class="src">Tile</span> = Tile box-office records</div>
+<div class="legend"><span class="badge og" title="{TOG}">{OG}OG</span> = from the Stanford Theatre&#39;s original billings (history pages) &nbsp; <span class="badge or" title="{TOR}">{OR}OR</span> = Original Run, shown during the film&#39;s first release &nbsp; <span class="badge s1">{S1}1st</span> = first showing in Tile records &nbsp; <span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}#5</span> = Nth time shown (Tile records)</div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js"></script><script>
-var OG={json.dumps(OG)},OR={json.dumps(OR)},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};var D=window.SHOWINGS,q=document.getElementById('q'),R=document.getElementById('res'),C=document.getElementById('count');
+var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};var D=window.SHOWINGS,q=document.getElementById('q'),R=document.getElementById('res'),C=document.getElementById('count');
 function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return{{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}})}}
 function go(){{var v=q.value.trim().toLowerCase();if(v.length<2){{R.innerHTML='';C.textContent=D.length.toLocaleString()+' showings indexed. Type at least 2 characters.';return}}
 var m=D.filter(function(o){{return (o.title+' '+o.note+' '+o.start).toLowerCase().indexOf(v)>=0}});C.textContent=m.length.toLocaleString()+' matches'+(m.length>300?' (showing first 300)':'');
 R.innerHTML=m.slice(0,300).map(function(o){{var d=o.source=='Tile'?(o.start+(o.end!=o.start?' – '+o.end:'')):o.date_text;
-var b=(o.source=='Tile'?'<span class="src">Tile</span>':'<span class="badge og" title="'+TOG+'">'+OG+'OG</span>')+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':'');
+function ord(n){{var s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])}}
+var b=(o.source=='Tile'?(o.n==1?'<span class="badge s1" title="First showing in Tile records">'+S1+'1st</span>':'<span class="badge rt" title="'+ord(o.n)+' time shown (Tile records)">'+RT.replace('@N@',o.n)+'#'+o.n+'</span>'):'<span class="badge og" title="'+TOG+'">'+OG+'OG</span>')+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':'');
 return '<li><div class="rt"><a href="'+esc(o.url)+'">'+esc(o.title)+'</a> '+b+'</div><div class="rd2">'+esc(d)+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+'</div>'+(o.note?'<div class="rn">'+esc(o.note)+'</div>':'')+'</li>'}}).join('')}}
 q.addEventListener('input',go);var u=new URLSearchParams(location.search).get('q');if(u)q.value=u;go();</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb))

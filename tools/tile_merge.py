@@ -1,0 +1,55 @@
+import re,html,json,glob,datetime as dt,urllib.parse
+p='stanford-site/data/showings.json'
+d=[o for o in json.load(open(p)) if o['source']!='Tile']
+YR={}
+for f in glob.glob('cache/cal/*'):
+    for a in re.findall(r'<a [^>]*imdb[^>]*>([^<]{2,100})</a>',open(f,errors='replace').read()):
+        m=re.match(r'(.*?)\s*\(((?:19|20)\d\d)\)\s*$',html.unescape(a).strip())
+        if m: YR.setdefault(m.group(1).strip().lower(),int(m.group(2)))
+YR.update({'north by northwest':1959,'on the waterfront':1954,'mary poppins':1964,'the wizard of oz':1939})
+def parse(t):
+    L=[x.strip() for x in html.unescape(re.sub(r'<[^>]+>','\n',t)).split('\n') if x.strip()]
+    if 'has played' not in L: return None,[]
+    title=L[L.index('has played')-1]; pair=[]; runs={}; i=0
+    while i<len(L):
+        if L[i]=='Plays alone': pair=[]
+        elif L[i]=='Plays with':
+            pair=[];j=i+1
+            while j<len(L) and not re.fullmatch(r'\d+',L[j]): pair.append(L[j]); j+=1
+            i=j; continue
+        if i+4<len(L) and re.fullmatch(r'\d+',L[i]) and re.fullmatch(r"[A-Z][a-z]{2} \d+ '\d\d",L[i+1]):
+            mo,dd,yy=re.match(r"(\w+) (\d+) '(\d\d)",L[i+1]).groups(); y=int(yy); y+=1900 if y>=80 else 2000
+            dd_=dt.datetime.strptime(f"{mo} {dd} {y}","%b %d %Y").date()
+            r=runs.setdefault(L[i],dict(pair=list(pair),dates=[],tickets=0)); r['dates'].append(dd_)
+            try: r['tickets']+=int(L[i+3].replace(',',''))
+            except: pass
+            i+=5; continue
+        i+=1
+    return title,list(runs.values())
+T={}
+for f in glob.glob('cache/tileq/*.html')+glob.glob('tile/*.html'):
+    title,runs=parse(open(f,errors='replace').read())
+    if title and runs: T[title]=runs
+tile=[]
+for title,runs in T.items():
+    q=urllib.parse.quote_plus(title)
+    for r in sorted(runs,key=lambda r:min(r['dates'])):
+        tile.append(dict(title=title,note=('w/ '+', '.join(r['pair'])) if r['pair'] else '',start=min(r['dates']).isoformat(),end=max(r['dates']).isoformat(),days=len(r['dates']),tickets=r['tickets'],source='Tile',url=f'https://tile.stanfordtheatre.org/tile?q={q}'))
+seen=set();out=[]
+for o in sorted(d+tile,key=lambda o:(o['start'],o['source']!='Tile')):
+    k=(o['title'].lower(),o['start'],o['source'])
+    if k in seen: continue
+    seen.add(k); out.append(o)
+first=set();cnt={}
+for o in out:
+    k=o['title'].strip().lower(); o['badge']=''; o.pop('label',None)
+    if o['source']=='Tile':
+        cnt[k]=cnt.get(k,0)+1; o['n']=cnt[k]
+    else:
+        if k not in first:
+            first.add(k); y=YR.get(k)
+            if y is None or int(o['start'][:4])-y<=2: o['badge']='Original Run'
+json.dump(out,open(p,'w'),ensure_ascii=False); open('stanford-site/data/showings.js','w').write('window.SHOWINGS='+json.dumps(out,ensure_ascii=False)+';')
+for s in ['Tile','Stanford Theatre history page']:
+    x=[o for o in out if o['source']==s]; print(s,'runs',len(x),'films',len(set(o['title'].lower() for o in x)),x[0]['start'],x[-1]['start'])
+print('OR',sum(1 for o in out if o['badge']))
