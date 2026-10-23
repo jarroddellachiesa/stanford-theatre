@@ -28,7 +28,7 @@ FN={x[2]:(x[0],x[1]) for x in FEST}
 NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
 def blk(b):
     url,lab,st,en,items=b; nm,dr=FN[url]; sl=SLUG[url]
-    head=f'<div class="bf"><h2><a href="festivals/{sl}.html">{e(nm)} →</a></h2><div class="dr">{dr}</div></div>'
+    head=f'<div class="bf"><h2><a href="festivals/{sl}.html">{e(nm)}</a></h2><div class="dr">{dr}</div></div>'
     if items:
         body='<div class="cols">'+"".join(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a><div class="tm">{t}</div></div>' for s,t in items)+'</div>'
     else: body='<p class="tba">To Be Announced</p>'
@@ -39,7 +39,7 @@ if live: h.append(blk(live[0]))
 h.append('</section><section id="upcoming"><h1>Upcoming</h1>')
 for name,dr,url,groups,films in FEST:
     bs=[b for b in live[1:] if b[0]==url]
-    if bs: h.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)} →</a></h2><div class="dr">{dr}</div>'+"".join(blk(b) for b in bs)+'</div>')
+    if bs: h.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2><div class="dr">{dr}</div>'+"".join(blk(b) for b in bs)+'</div>')
 h.append('</section>')
 h.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
 var all=[].slice.call(document.querySelectorAll('.blk'));all.forEach(function(b){if(b.dataset.end<t)b.remove();});
@@ -71,7 +71,7 @@ for s,k in K.items():
     li=lambda L:"".join(f'<li>{x}</li>' for x in L)
     b=f'''<article class="film"><div class="top"><img class="poster" src="../posters/{s}.jpg" alt="{e(f['t'])} poster">
 <div><h1>{e(f['t'])}</h1><div class="meta">{f['y']} ★ {f['rt']} min</div><p class="cr">{e(f['credit'])}</p><p class="plot">{e(f['plot'])}</p></div></div>
-<section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])} →</a> · {fest[1]}</div>{sched}<a class="btn" href="../festivals/{SLUG[fest[2]]}.html">Festival page →</a></section>
+<section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])}</a> · {fest[1]}</div>{sched}<a class="btn" href="../festivals/{SLUG[fest[2]]}.html">Festival page →</a></section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
 <section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p><h3>Past runs (since '03):</h3><ul class="runs">{runs}</ul></section>
@@ -122,6 +122,6 @@ var m=D.filter(function(o){{return (o.title+' '+o.note+' '+o.start).toLowerCase(
 R.innerHTML=m.slice(0,300).map(function(o){{var d=o.source=='Tile'?(o.start+(o.end!=o.start?' – '+o.end:'')):o.date_text;
 function ord(n){{var s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])}}
 var b=o.source=='Stanford Theatre calendars'?'<span class="src">Calendar</span>'+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':''):(o.source=='Tile'?(o.n==1?'<span class="badge s1" title="First showing in Tile records">'+S1+'1st</span>':'<span class="badge rt" title="'+ord(o.n)+' time shown (Tile records)">'+RT.replace('@N@',o.n)+'#'+o.n+'</span>'):'<span class="badge og" title="'+TOG+'">'+OG+'OG</span>')+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'OR</span>':'');
-return '<li><div class="rt"><a href="'+esc(o.url)+'">'+esc(o.title)+'</a> '+b+'</div><div class="rd2">'+esc(d)+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+'</div>'+(o.note?'<div class="rn">'+esc(o.note)+'</div>':'')+'</li>'}}).join('')}}
+return '<li><div class="rt">'+b+' <a href="'+esc(o.url)+'">'+esc(o.title)+'</a></div><div class="rd2">'+esc(d)+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+'</div>'+(o.note?'<div class="rn">'+esc(o.note)+'</div>':'')+'</li>'}}).join('')}}
 q.addEventListener('input',go);var u=new URLSearchParams(location.search).get('q');if(u)q.value=u;go();</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb))
