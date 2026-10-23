@@ -11,14 +11,25 @@ def yearof(fn,body):
         y=int(m.group(1)); return y if y>1900 else (1900+y if y>=80 else 2000+y)
     b=re.sub(r'\((?:19|20)\d\d\)','',txt(body)); m=re.search(r'\b(198[7-9]|199\d|20[0-2]\d)\b',b); return int(m.group(1)) if m else None
 def pd(s,y):
-    s=s.replace('–','-').replace('—','-'); s=re.sub(r'^(?:(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day[s]?[-, ]*(?:(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day)?[, ]*)+','',s.strip())
-    m=re.match(r'([A-Z][a-z]+)\.? (\d+)(?: ?- ?(?:([A-Z][a-z]+)\.? )?(\d+))?',s)
+    s=s.replace('–','-').replace('—','-').strip()
+    s=re.sub(r'^uly\b','July',s)
+    s=re.sub(r'^(?:(?:Mon|Tue|Tues|Wed|Wednes|Thu|Thur|Thurs|Fri|Sat|Satur|Sun)(?:day)?s?\b\.?\s*(?:[-,/&]|and)?\s*)+','',s)
+    s=re.sub(r'^([A-Z][a-z]+)\.?(\d)',r'\1 \2',s)
+    ym=re.search(r',\s*((?:19|20)\d\d)\b',s)
+    if ym: y=int(ym.group(1)); s=re.sub(r',\s*(?:19|20)\d\d\b','',s)
+    m=re.match(r'([A-Z][a-z]+)\.? (\d+)(?: ?[-,] ?(?:([A-Z][a-z]+)\.? )?(\d+))?',s)
     if not m or m.group(1) not in M or (m.group(3) and m.group(3) not in M): return None
     try:
         a=dt.date(y,M[m.group(1)],int(m.group(2))); mb=M[m.group(3)] if m.group(3) else a.month
         b=dt.date(y+(1 if mb<a.month else 0),mb,int(m.group(4))) if m.group(4) else a
         return a.isoformat(),b.isoformat()
     except Exception: return None
+def fixt(t):
+    t=re.sub(r'\s*\(\d{4}\)\s*$','',t); m=re.search(r'\s*\(\s*([^()]*?)\s*,?\s*((?:19|20)\d\d)\s*\)\s*$',t); ey=None
+    if m:
+        ey=int(m.group(2)); inner=m.group(1).strip(' ,')
+        t=t[:m.start()].strip()+(' ('+inner+')' if inner else '')
+    return t.strip(),ey
 F=[];gaps=[]
 OV=json.load(open('stanford-site/data/festival_overrides.json')) if os.path.exists('stanford-site/data/festival_overrides.json') else {}
 for f in sorted(glob.glob('cache/cal/*')):
@@ -41,7 +52,7 @@ for f in sorted(glob.glob('cache/cal/*')):
                 yr=re.search(r'\(((?:19|20)\d\d)\)',txt(p))
                 nxt=ps[i+1] if i+1<len(ps) else ''
                 times=txt(nxt) if nxt and 'imdb' not in nxt and re.search(r'\d:\d\d',nxt) else ''
-                films.append(dict(title=re.sub(r'\s*\(\d{4}\)\s*$','',txt(a.group(1))),year=int(yr.group(1)) if yr else None,times=times)); i+=2 if times else 1; continue
+                tt,ey=fixt(txt(a.group(1))); films.append(dict(title=tt,year=(int(yr.group(1)) if yr else ey),times=times)); i+=2 if times else 1; continue
             i+=1
         rng=pd(dtxt,y) if y else None
         if films:
@@ -59,15 +70,38 @@ for f in sorted(glob.glob('cache/cal/*')):
                 for a,rest in re.findall(r'(?s)<a [^>]*imdb[^>]*>(.*?)</a>([^<]*)',p):
                     yr=re.search(r'\((\d{4})\)',p); href=re.search(r'href="([^"]*imdb[^"]*)"',p)
                     yy=re.search(r'%28(\d{4})%29|\((\d{4})\)',href.group(1) if href else '')
-                    films.append(dict(title=txt(a),year=int(yy.group(1) or yy.group(2)) if yy else None,times=txt(rest)))
+                    films.append(dict(title=fixt(txt(a))[0],year=int(yy.group(1) or yy.group(2)) if yy else None,times=txt(rest)))
             if not films: continue
             rng=pd(dtxt,y) if y else None
             blocks.append(dict(dates=dtxt,start=rng[0] if rng else None,end=rng[1] if rng else None,films=films))
             if not rng: gaps.append((fn,dtxt))
+    if not blocks:
+        T=txt(t); dm=re.search(r'([A-Z][a-z]+ \d+(?:\s*-\s*\d+)?,\s*(?:19|20)\d\d)',T)
+        fl=re.findall(r'(\d{1,2}:\d\d)\s+([^()]+?)\s+\(((?:19|20)\d\d)\)',T)
+        if dm and fl:
+            r=pd(dm.group(1),y or 2000)
+            blocks.append(dict(dates=dm.group(1),start=r[0] if r else None,end=r[1] if r else None,films=[dict(title=a.strip(),year=int(c),times=tm) for tm,a,c in fl]))
+            gaps[:]=[g for g in gaps if g[0]!=fn]
     if not name or 'University Ave' in name or len(name)>100:
         name=re.sub(r'%20',' ',fn.rsplit('.',1)[0])
     for b in blocks:
         for fm in b['films']: fm['times']=re.sub(r'^\s*\((?:19|20)\d\d\)\s*','',fm['times']).strip()
+    for b in [b for b in blocks if not b['start']]:
+        m=re.search(r'(?:Starting|Beginning)\s+(?:\w+day\s+)?([A-Z][a-z]+ \d+)',b['dates'])
+        if not m:
+            m=re.search(r'(?:Starting|Beginning)\s+(?:\w+day\s+)?([A-Z][a-z]+ \d+)\s*:?\s*(?:<[^>]*>\s*)*'+re.escape(b['dates'][:20]),txt(t)) if b['dates'] else None
+        r=pd(m.group(1),y) if m and y else None
+        if r: b['start'],b['end']=r; b['dates']=m.group(1); b['films']=[f for f in b['films']]; gaps[:]=[g for g in gaps if g!=(fn,b['dates'])]
+    note=[b for b in blocks if not b['start'] and all(f['title'].lower().startswith('superman') for f in b['films'])]
+    for b in note:
+        blocks.remove(b)
+        star=any('*' in f['times'] for o in blocks for f in o['films'])
+        for o in blocks:
+            if not star and o['start']:
+                a=dt.date.fromisoformat(o['start']); e=dt.date.fromisoformat(o['end'])
+                if any((a+dt.timedelta(k)).weekday() in (3,4) for k in range((e-a).days+1)): o['short']='Thursday & Friday 7:30 show starts with an episode of the 1948 serial Superman'
+            elif any(f['title'].startswith('*') or f['title'].endswith('*') or '*' in f['times'] for f in o['films']): o['short']='Preceded by the 1948 serial Superman'
+    gaps[:]=[g for g in gaps if g[0]!=fn or any(b['dates']==g[1] and not b['start'] for b in blocks) or g[1]=='no bills parsed']
     if ov.get('name'): name=ov['name']
     if blocks: F.append(dict(name=name or fn.rsplit('.',1)[0],file=fn,year=y,blocks=blocks,start=min((b['start'] for b in blocks if b['start']),default=None),end=max((b['end'] for b in blocks if b['end']),default=None)))
     else: gaps.append((fn,'no bills parsed'))
