@@ -38,3 +38,6 @@ footer{text-align:center;padding:24px 12px 40px;border-top:4px double #d4af37;ma
 .btn{display:inline-block;margin:16px auto 2px;padding:10px 22px;background:linear-gradient(#f1d27a,#c9a031);color:#2a0508!important;font-weight:800;font-size:19px;border-radius:30px;text-decoration:none;box-shadow:0 2px 8px #000a}
 .fest{text-align:left}.fest .btn{display:table;margin:16px auto 2px}
 .nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;margin-top:12px;font-weight:700;font-size:17px}.nav a{color:#ffe08a}.nl{color:#e9d7ad}
+#now>h1,#coming>h1{margin-bottom:0}#coming .bf{display:none}#coming .blk{margin:12px 0}.gh{margin-top:18px}.gh a{color:#d4af37}
+.bl{text-align:center;font-size:22px;color:#fff1cc}.tba{text-align:center;font-size:22px;font-weight:700}
+.fgrp{border-top:2px solid #d4af3766;margin-top:24px;padding-top:4px}
