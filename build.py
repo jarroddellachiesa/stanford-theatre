@@ -106,6 +106,7 @@ for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
     P.append(x)
 FJ=json.load(open('data/festivals.json'))
+def PSLUG(fe): return _re0.sub(r'[^a-z0-9]+','-',urllib.parse.unquote(fe['file']).rsplit('.',1)[0].lower()).strip('-')
 def hr(a,b):
     A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%B')+' '+str(d.day)
     if A==B: return f"{m(A)}, {A.year}"
@@ -128,7 +129,7 @@ for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-
     if en and en>=TODAY: continue
     dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
     bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+''.join('<span class="bf2">'+e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
-    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an">{e(fe["name"][:110])}</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
+    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an"><a class="pfl" href="festivals/past/{PSLUG(fe)}.html">{e(fe["name"][:110])}</a></span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
 document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
@@ -252,3 +253,26 @@ sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1><p class="sm">Bi
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js"></script><script>var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};'''+SJS+'''</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb,"","search"))
+
+# ---- past festival pages ----
+import os as _os
+_os.makedirs('festivals/past',exist_ok=True)
+for _f in [x for x in _os.listdir('festivals/past') if x.endswith('.html')]: _os.remove('festivals/past/'+_f)
+_PF={}
+for s_ in F: _PF[(NJ(F[s_]['t']),F[s_]['y'])]=s_
+NPAST=0
+def _pcard(fm):
+    sl_=_PF.get((NJ(fm['title']),fm.get('year')))
+    yr=f" ({fm['year']})" if fm.get('year') else ''
+    tm=''
+    if sl_:
+        return f'<div class="col"><a class="card" href="../../films/{sl_}.html"><img src="../../posters/{sl_}.jpg" alt="{e(F[sl_]["t"])} poster"><span>{e(F[sl_]["t"])} ({F[sl_]["y"]})</span><small>{F[sl_]["rt"]} min</small></a>{tm}</div>'
+    return f'<div class="col"><div class="card noimg"><span>{e(fm["title"])}{yr}</span></div>{tm}</div>'
+for fe in FJ['festivals']:
+    if not fe['blocks']: continue
+    dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'Year not given')
+    bills=''.join(f'<section class="fest blk"><h3 class="bl">{e(fullmo(b["dates"]))}</h3><div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
+    q=urllib.parse.quote(fe['file'])
+    body=f'<section class="fest"><div class="dr dtop" style="text-align:center">{e(dr)}</div><h1>{e(fe["name"])}</h1><p class="sm" style="text-align:center">{len(fe["blocks"])} bill{"s" if len(fe["blocks"])!=1 else ""}</p></section>'+bills+f'<p class="sm" style="text-align:center"><a href="../archive/cal/{q}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{q}">Original</a> · <a href="../../past.html">All past festivals</a></p>'
+    open(f'festivals/past/{PSLUG(fe)}.html','w').write(page(f"{fe['name']} — Stanford Theatre",body,"../../","past")); NPAST+=1
+print('PASTPAGES',NPAST)
