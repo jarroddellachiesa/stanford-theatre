@@ -381,7 +381,7 @@ print('PASTPAGES',NPAST)
 _OR=sorted([o for o in SH if o.get('badge')=='Original Run'],key=lambda o:(o['start'],o.get('n',0)))
 _YRS={}
 for o in _OR: _YRS.setdefault(o['start'][:4],[]).append(o)
-Y=['<section class="fest oryrs" id="original-runs"><h2 style="text-align:center;margin-top:30px">Original Runs by Year</h2><p class="sm" style="text-align:center">The theatre&#39;s first-run billings, '+min(_YRS)+'–'+max(_YRS)+', from its history pages. Labels mark shorts, newsreels, stage acts, special events, and entries not yet verified as films.</p><nav class="yrnav">'+''.join(f'<a href="#y{y}">{y}</a>' for y in sorted(_YRS))+'</nav>']
+Y=['<section class="fest oryrs" id="original-runs"><h2 style="text-align:center;margin-top:30px">Original Runs by Year</h2><p class="sm" style="text-align:center">The theatre&#39;s first-run billings, '+min(_YRS)+'–'+max(_YRS)+', from its history pages. Labels mark shorts, newsreels, stage acts, special events, and entries not yet verified as films.</p>']
 for y in sorted(_YRS):
     li=''
     for o in _YRS[y]:
