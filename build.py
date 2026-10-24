@@ -165,6 +165,13 @@ for s,k in K.items():
     sched="".join(f'<h3>{d}</h3><ul class="sched">'+"".join(f'<li>{"<b>" if a==s else ""}{ft(a)}: {tt}{"</b>" if a==s else ""}</li>' for a,tt in items)+'</ul>' for d,items in fest[3])
     FR_=FILMRUNS(f['t'])
     runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
+    OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]
+    ORR=[o for o in FR_ if o.get('badge')]
+    OGS=''
+    if OGR:
+        rng=FRp(OGR[0]['start'],max((o.get('end') or o['start']) for o in OGR)) if len(OGR)>1 else FRp(OGR[0]['start'],OGR[0].get('end'))
+        OGS+=f'<p class="big ogsum"><span class="badge og" title="{TOG}">{OG}</span> Original Billings: {len(OGR)} run{"s" if len(OGR)!=1 else ""} ({rng})</p>'
+        if ORR: OGS+=f'<p class="big ogsum"><span class="badge or" title="{TOR}">{OR}</span> Original Run: {e(DD(ORR[0]))}</p>'
     print('FILMRUNS',f['t'],len(FR_),'old',len(t['runs']))
     li=lambda L:"".join(f'<li>{x}</li>' for x in L)
     b=f'''<article class="film"><div class="top"><img class="poster" src="../posters/{s}.jpg" alt="{e(f['t'])} poster">
@@ -172,7 +179,7 @@ for s,k in K.items():
 <section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])}</a> · {fest[1]}</div>{sched}</section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
-<section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p><h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
+<section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p>{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li><li><a href="../infographics/{s}.png" download>Download infographic (PNG)</a></li></ul><a href="../infographics/{s}.png"><img class="ig" src="../infographics/{s}.png" alt="{e(f['t'])} infographic"></a></section></article>'''
     open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../"))
 

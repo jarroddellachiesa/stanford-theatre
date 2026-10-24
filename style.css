@@ -86,3 +86,5 @@ border:5px solid #c8102e;border-radius:3px;box-shadow:0 0 0 2px #5a0610,0 0 0 6p
 h1.mqh::before,h1.mqh::after{content:"";position:absolute;left:4px;right:4px;height:4px;background:radial-gradient(circle,#fff6c8 0 1.6px,#ffcf5a 1.7px 2px,transparent 2.1px) 0 0/10px 4px repeat-x;filter:drop-shadow(0 0 2px #ffd36b)}
 h1.mqh::before{top:-17px}h1.mqh::after{bottom:-17px}
 h1.mqh{margin:26px auto 28px;font-size:clamp(24px,7.8vw,44px)}
+
+.ogsum{display:block;font-size:.8em}.ogsum .badge{vertical-align:middle;margin-right:6px}
