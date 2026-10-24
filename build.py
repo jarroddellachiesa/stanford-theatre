@@ -34,12 +34,15 @@ _MF0={k:v for v in "January February March April May June July August September 
 def _sp(t):
     t=_re0.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b\.?(?=\s*\d)',lambda m:_MF0.get(m.group(1),m.group(1)),t)
     return _re0.sub(r'\s*[-–—]\s*',' - ',t)
-def _dr(t,a,b):
-    f=_sp(t)
-    if len(f)<=38: return f
-    A=_dt.date.fromisoformat(a);B=_dt.date.fromisoformat(b);g=lambda d:f"{d.month}/{d.year%100:02d}"
-    return g(A)+' - '+g(B)
-_rng={u:(min(b[2] for b in NB if b[0]==u),max(b[3] for b in NB if b[0]==u)) for u in {b[0] for b in NB}}
+def STDR(a,b=None):
+    """Standard festival/run date range from ISO dates."""
+    A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%B')+' '+str(d.day)
+    if A==B: return f"{m(A)}, {A.year}"
+    if A.year!=B.year: return f"{m(A)}, {A.year} - {m(B)}, {B.year}"
+    if A.month==B.month: return f"{m(A)} - {B.day}, {A.year}"
+    return f"{m(A)} - {m(B)}, {A.year}"
+def _dr(t,a,b): return STDR(a,b)
+_rng={u:(min(b[2] for b in NB if b[0]==u and (b[4] or not any(c[0]==u and c[4] for c in NB))),max(b[3] for b in NB if b[0]==u and (b[4] or not any(c[0]==u and c[4] for c in NB)))) for u in {b[0] for b in NB}}  # range from scheduled bills
 FEST=[(n,_dr(d,*_rng[u]),u,[(_sp(g),it) for g,it in gs],fl) for n,d,u,gs,fl in FEST]
 NB=[(u,_sp(l),a,b,it) for u,l,a,b,it in NB]
 _MN='January|February|March|April|May|June|July|August|September|October|November|December'
@@ -130,10 +133,7 @@ def hr(a,b):
     return f"{m(A)} - {m(B)}, {A.year}"
 DRMAX=38
 def hr2(a,b,n):
-    tail=f" · {n} bill"+("" if n==1 else "s"); full=hr(a,b)+tail
-    if len(full)<=DRMAX: return full
-    A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); f=lambda d:f"{d.month}/{d.year%100:02d}"
-    return (f(A) if f(A)==f(B) else f(A)+' - '+f(B))+tail
+    return hr(a,b)+f" · {n} bill"+("" if n==1 else "s")
 import re as _re
 _MF={k:v for v in "January February March April May June July August September October November December".split() for k in (v[:3],v[:4])}
 def fullmo(t): return _re.sub(r'\s*[-–—]\s*',' - ',_fm(t))
@@ -193,8 +193,6 @@ def FRp(a,b):
     elif A[0]!=B[0]: f=f"{m(A)}, {A[0]} - {m(B)}, {B[0]}"
     elif A[1]==B[1]: f=f"{m(A)} - {B[2]}, {A[0]}"
     else: f=f"{m(A)} - {m(B)}, {A[0]}"
-    if len(f)>38:
-        g=lambda x:f"{x[1]}/{x[0]%100:02d}"; f=g(A) if g(A)==g(B) else g(A)+' - '+g(B)
     return f
 def ORD(n): return str(n)+({1:'st',2:'nd',3:'rd'}.get(n%10 if n%100 not in(11,12,13) else 0,'th'))
 def BADGE(o):
