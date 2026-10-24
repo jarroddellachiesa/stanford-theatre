@@ -45,7 +45,7 @@ def DT(t):
 FN={x[2]:(x[0],x[1]) for x in FEST}
 NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
 
-SITE="https://jarroddellachiesa.github.io/stanford-theatre/"
+SITE="https://stanfordtheatre.dellachiesa.us/"
 def _times(t,wd):
     base=_re0.sub(r'\(.*?\)','',t); out=[x for x in _re0.findall(r'\d{1,2}:\d\d',base)]
     for m in _re0.finditer(r'\(plus ([^)]*?)\s*Sat/Sun\)',t):
