@@ -15,7 +15,8 @@ def SK(t):
     return s.replace(' ','')
 src=collections.defaultdict(collections.Counter); dates=collections.defaultdict(list)
 for o in d:
-    src[o['title']][o['source']]+=1; dates[o['title']].append(o['start'])
+  for _t in {o['title'],o.get('orig_title') or o['title']}:
+    src[_t][o['source']]+=1; dates[_t].append(o['start'])
 byNK=collections.defaultdict(set)
 for t in src: byNK[NK(t)].add(t)
 byS=collections.defaultdict(set)

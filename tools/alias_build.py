@@ -26,7 +26,10 @@ for bad,good in FIX.items():
 for t in src:
     c=CANON.get(NK(AL.get(t,t)))
     if c: AL[t]=c
+AL.update({'Sunset Blvd':'Sunset Boulevard','Sunset Blvd.':'Sunset Boulevard','Sherlock, Jr.':'Sherlock Jr.','The Little Kidnappers (The Kidnappers)':'The Kidnappers','The Seven Samurai':'Seven Samurai','100 Men and a Girl':'One Hundred Men and a Girl'})
 AL={k:v for k,v in AL.items() if k!=v}
 REMAKES={'beau geste':[1926,1939],'cat and canary':[1927,1939],'monkey business':[1931,1952],'waterloo bridge':[1931,1940],'merry widow':[1925,1934],'mark of zorro':[1920,1940],'man who knew too much':[1934,1956],'lover come back':[1946,1961],'little women':[1933,1949],'liliom':[1930,1934],'state fair':[1933,1945],'imitation of life':[1934,1959],'kismet':[1944,1955],'cleopatra':[1934,1963],'stella dallas':[1925,1937],'importance of being earnest':[1952],'phantom of opera':[1925,1943]}
+_old=json.load(open('data/title_aliases.json'))['aliases'] if __import__('os').path.exists('data/title_aliases.json') else {}
+_old.update(AL); AL=_old
 json.dump(dict(aliases=dict(sorted(AL.items())),remakes=REMAKES),open('data/title_aliases.json','w'),indent=1,ensure_ascii=False)
 print('aliases',len(AL))

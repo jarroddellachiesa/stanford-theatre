@@ -25,6 +25,8 @@ def pd(s,y):
         return a.isoformat(),b.isoformat()
     except Exception: return None
 def fixt(t):
+    m0=re.search(r'\s*\(((?:19|20)\d\d)\s*$',t)
+    if m0: return t[:m0.start()].strip(),int(m0.group(1))
     t=re.sub(r'\s*\(\d{4}\)\s*$','',t); m=re.search(r'\s*\(\s*([^()]*?)\s*,?\s*((?:19|20)\d\d)\s*\)\s*$',t); ey=None
     if m:
         ey=int(m.group(2)); inner=m.group(1).strip(' ,')

@@ -323,6 +323,9 @@ for k,v in COV.items():
 <section><h2>More</h2><ul>{more}</ul></section></article>'''
     open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../")); NFP+=1
 print('COVERPAGES',NFP)
+REDIR={'bread':'bread-love-and-dreams-pane-amore-e-fantasia','the-little-kidnappers-the-kidnappers':'the-kidnappers','steamboat-bill':'steamboat-bill-jr'}
+for a_,b_ in REDIR.items():
+    open(f'films/{a_}.html','w').write(f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{SITE}films/{b_}.html"><meta http-equiv="refresh" content="0; url={b_}.html"></head><body><p>This page moved to <a href="{b_}.html">{b_}.html</a>.</p></body></html>')
 FPM=dict({k:'films/'+s_+'.html' for k,s_ in FEATK.items()},**{k:'films/'+v['slug']+'.html' for k,v in COV.items()})
 # ---- search page ----
 SJS=open('tools/search.js').read(); SJS=_re0.sub(r'^var FP=\{.*?\};','var FP='+json.dumps(FPM)+';',SJS,count=1,flags=_re0.M)

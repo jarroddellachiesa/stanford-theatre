@@ -70,12 +70,26 @@ for o in out:
 tl={}
 for o in out:
     if o['source']=='Tile': tl.setdefault(NK(o['title']),[]).append(o)
+KNOWN={NK(x['title']) for x in out}
+def SPLITP(s):
+    parts=s.split(', '); R=[]; i=0
+    while i<len(parts):
+        took=None
+        for j in range(len(parts),i+1,-1):
+            c=', '.join(parts[i:j])
+            if NK(c) in KNOWN: took=j; break
+        if took is None:
+            j=i+1
+            while j<len(parts) and ', '.join(parts[i:j]).count('(')>', '.join(parts[i:j]).count(')'): j+=1
+            took=j
+        R.append(', '.join(parts[i:took])); i=took
+    return R
 syn=[]
 for o in [x for x in out if x['source']=='Tile' and x['note'].startswith('w/ ')]:
-    for pn in o['note'][3:].split(', '):
-        kp=NK(pn)
+    for pn in SPLITP(o['note'][3:]):
+        kp=NK(_AL.get(pn,pn))
         if not kp or any(x['start']<=o['end'] and o['start']<=x['end'] for x in tl.get(kp,[])): continue
-        n=dict(title=pn,note='w/ '+o['title'],start=o['start'],end=o['end'],days=o.get('days'),tickets=None,source='Tile',url=o['url'],via=1,badge='')
+        n=dict(title=_AL.get(pn,pn),note='w/ '+o['title'],start=o['start'],end=o['end'],days=o.get('days'),tickets=None,source='Tile',url=o['url'],via=1,badge='')
         tl.setdefault(kp,[]).append(n); syn.append(n)
 out+=syn
 # one chronological sequence per film; overlapping/adjacent dated entries = one run
