@@ -1,0 +1,5671 @@
+[
+{
+"key": "its wonderful life",
+"title": "It's a Wonderful Life",
+"year": 1946,
+"first": "1947-04-27",
+"runs": 41,
+"tickets": 43715,
+"top": true,
+"recent": true,
+"yrs": {
+"1946": 16
+}
+},
+{
+"key": "casablanca",
+"title": "Casablanca",
+"year": 1942,
+"first": "1943-02-24",
+"runs": 35,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 29
+}
+},
+{
+"key": "roman holiday",
+"title": "Roman Holiday",
+"year": 1953,
+"first": "1953-09-20",
+"runs": 34,
+"tickets": 84765,
+"top": true,
+"recent": true,
+"yrs": {
+"1953": 20
+}
+},
+{
+"key": "philadelphia story",
+"title": "The Philadelphia Story",
+"year": 1940,
+"first": "1941-02-09",
+"runs": 34,
+"tickets": 53192,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 20
+}
+},
+{
+"key": "sabrina",
+"title": "Sabrina",
+"year": 1954,
+"first": "1954-10-13",
+"runs": 31,
+"tickets": 76938,
+"top": true,
+"recent": true,
+"yrs": {
+"1954": 17
+}
+},
+{
+"key": "wizard of oz",
+"title": "The Wizard of Oz",
+"year": 1939,
+"first": "1939-09-03",
+"runs": 31,
+"tickets": 54310,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 13
+}
+},
+{
+"key": "shop around corner",
+"title": "The Shop Around the Corner",
+"year": 1940,
+"first": "1940-02-04",
+"runs": 31,
+"tickets": 47142,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 22
+}
+},
+{
+"key": "top hat",
+"title": "Top Hat",
+"year": 1935,
+"first": "1935-10-02",
+"runs": 31,
+"tickets": 40233,
+"top": true,
+"recent": true,
+"yrs": {
+"1935": 17
+}
+},
+{
+"key": "gay divorcee",
+"title": "The Gay Divorcee",
+"year": 1934,
+"first": "1934-11-11",
+"runs": 31,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1934": 14
+}
+},
+{
+"key": "notorious",
+"title": "Notorious",
+"year": 1946,
+"first": "1947-01-05",
+"runs": 30,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1946": 26
+}
+},
+{
+"key": "vertigo",
+"title": "Vertigo",
+"year": 1958,
+"first": "1958-06-15",
+"runs": 28,
+"tickets": 66725,
+"top": true,
+"recent": true,
+"yrs": {
+"1958": 17
+}
+},
+{
+"key": "my fair lady",
+"title": "My Fair Lady",
+"year": 1964,
+"first": "1990-09-08",
+"runs": 27,
+"tickets": 52650,
+"top": true,
+"recent": true,
+"yrs": {
+"1964": 27
+}
+},
+{
+"key": "singin in rain",
+"title": "Singin' in the Rain",
+"year": 1952,
+"first": "1991-07-27",
+"runs": 26,
+"tickets": 55107,
+"top": true,
+"recent": true,
+"yrs": {
+"1952": 12
+}
+},
+{
+"key": "north by northwest",
+"title": "North by Northwest",
+"year": 1959,
+"first": "1990-01-24",
+"runs": 25,
+"tickets": 62462,
+"top": true,
+"recent": true,
+"yrs": {
+"1959": 14
+}
+},
+{
+"key": "meet me in st louis",
+"title": "Meet Me in St. Louis",
+"year": 1944,
+"first": "1945-03-11",
+"runs": 25,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1944": 18
+}
+},
+{
+"key": "to catch thief",
+"title": "To Catch a Thief",
+"year": 1955,
+"first": "1955-09-14",
+"runs": 24,
+"tickets": 63752,
+"top": true,
+"recent": true,
+"yrs": {
+"1955": 15
+}
+},
+{
+"key": "laura",
+"title": "Laura",
+"year": 1944,
+"first": "1944-11-30",
+"runs": 24,
+"tickets": 41126,
+"top": true,
+"recent": true,
+"yrs": {
+"1944": 11
+}
+},
+{
+"key": "mr smith goes to washington",
+"title": "Mr. Smith Goes to Washington",
+"year": 1939,
+"first": "1939-12-13",
+"runs": 24,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 11
+}
+},
+{
+"key": "rear window",
+"title": "Rear Window",
+"year": 1954,
+"first": "1954-09-19",
+"runs": 23,
+"tickets": 60583,
+"top": true,
+"recent": true,
+"yrs": {
+"1954": 15
+}
+},
+{
+"key": "rebecca",
+"title": "Rebecca",
+"year": 1940,
+"first": "1940-05-26",
+"runs": 23,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 12
+}
+},
+{
+"key": "swing time",
+"title": "Swing Time",
+"year": null,
+"first": "1936-10-18",
+"runs": 22,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "band wagon",
+"title": "The Band Wagon",
+"year": 1953,
+"first": "1987-07-11",
+"runs": 22,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1953": 12
+}
+},
+{
+"key": "gone with wind",
+"title": "Gone With the Wind",
+"year": 1939,
+"first": "1940-05-03",
+"runs": 21,
+"tickets": 59133,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 12,
+"1946": 1
+}
+},
+{
+"key": "big sleep",
+"title": "The Big Sleep",
+"year": 1946,
+"first": "1946-10-27",
+"runs": 21,
+"tickets": 36734,
+"top": true,
+"recent": true,
+"yrs": {
+"1946": 15
+}
+},
+{
+"key": "bringing up baby",
+"title": "Bringing Up Baby",
+"year": null,
+"first": "1938-03-10",
+"runs": 21,
+"tickets": 33753,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "gigi",
+"title": "Gigi",
+"year": 1958,
+"first": "1990-07-20",
+"runs": 20,
+"tickets": 36248,
+"top": true,
+"recent": true,
+"yrs": {
+"1958": 10
+}
+},
+{
+"key": "suspicion",
+"title": "Suspicion",
+"year": 1941,
+"first": "1942-03-08",
+"runs": 20,
+"tickets": 33495,
+"top": true,
+"recent": true,
+"yrs": {
+"1941": 12
+}
+},
+{
+"key": "shadow of doubt",
+"title": "Shadow of a Doubt",
+"year": 1943,
+"first": "1935-05-05",
+"runs": 20,
+"tickets": 31289,
+"top": true,
+"recent": true,
+"yrs": {
+"1943": 16
+}
+},
+{
+"key": "strangers on train",
+"title": "Strangers on a Train",
+"year": 1951,
+"first": "1951-07-08",
+"runs": 19,
+"tickets": 34118,
+"top": true,
+"recent": true,
+"yrs": {
+"1951": 13
+}
+},
+{
+"key": "american in paris",
+"title": "An American in Paris",
+"year": 1951,
+"first": "1990-06-22",
+"runs": 18,
+"tickets": 32419,
+"top": true,
+"recent": true,
+"yrs": {
+"1951": 6
+}
+},
+{
+"key": "it happened one night",
+"title": "It Happened One Night",
+"year": 1934,
+"first": "1990-02-23",
+"runs": 18,
+"tickets": 25866,
+"top": true,
+"recent": true,
+"yrs": {
+"1934": 7
+}
+},
+{
+"key": "all about eve",
+"title": "All About Eve",
+"year": 1950,
+"first": "1950-11-12",
+"runs": 18,
+"tickets": 21442,
+"top": true,
+"recent": true,
+"yrs": {
+"1950": 11
+}
+},
+{
+"key": "only angels have wings",
+"title": "Only Angels Have Wings",
+"year": 1939,
+"first": "1939-06-22",
+"runs": 18,
+"tickets": 19932,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 13
+}
+},
+{
+"key": "reluctant debutante",
+"title": "The Reluctant Debutante",
+"year": 1958,
+"first": "1990-07-20",
+"runs": 18,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1958": 9
+}
+},
+{
+"key": "adventures of robin hood",
+"title": "The Adventures of Robin Hood",
+"year": 1938,
+"first": "1938-05-22",
+"runs": 17,
+"tickets": 32532,
+"top": true,
+"recent": true,
+"yrs": {
+"1938": 7
+}
+},
+{
+"key": "39 steps",
+"title": "The 39 Steps",
+"year": 1935,
+"first": "1935-09-04",
+"runs": 17,
+"tickets": 28752,
+"top": true,
+"recent": true,
+"yrs": {
+"1935": 11
+}
+},
+{
+"key": "beat devil",
+"title": "Beat the Devil",
+"year": 1953,
+"first": "1997-01-31",
+"runs": 17,
+"tickets": 23270,
+"top": true,
+"recent": true,
+"yrs": {
+"1953": 11,
+"1954": 3
+}
+},
+{
+"key": "ninotchka",
+"title": "Ninotchka",
+"year": 1939,
+"first": "1939-12-17",
+"runs": 17,
+"tickets": 17524,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 9
+}
+},
+{
+"key": "shall we dance",
+"title": "Shall We Dance",
+"year": 1937,
+"first": "1937-06-01",
+"runs": 17,
+"tickets": 14102,
+"top": true,
+"recent": true,
+"yrs": {
+"1937": 9
+}
+},
+{
+"key": "flying down to rio",
+"title": "Flying Down to Rio",
+"year": null,
+"first": "1934-01-21",
+"runs": 17,
+"tickets": 10040,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "holiday",
+"title": "Holiday",
+"year": 1938,
+"first": "1930-10-11",
+"runs": 17,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1938": 10
+}
+},
+{
+"key": "maltese falcon",
+"title": "The Maltese Falcon",
+"year": 1941,
+"first": "1931-06-21",
+"runs": 17,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1941": 12
+}
+},
+{
+"key": "prisoner of zenda",
+"title": "The Prisoner of Zenda",
+"year": 1937,
+"first": "1937-12-26",
+"runs": 17,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1937": 11
+}
+},
+{
+"key": "psycho",
+"title": "Psycho",
+"year": 1960,
+"first": "1960-08-21",
+"runs": 16,
+"tickets": 33335,
+"top": true,
+"recent": true,
+"yrs": {
+"1960": 12
+}
+},
+{
+"key": "funny face",
+"title": "Funny Face",
+"year": 1957,
+"first": "1987-07-19",
+"runs": 16,
+"tickets": 29902,
+"top": true,
+"recent": true,
+"yrs": {
+"1957": 8
+}
+},
+{
+"key": "african queen",
+"title": "The African Queen",
+"year": 1951,
+"first": "1991-06-22",
+"runs": 16,
+"tickets": 26737,
+"top": true,
+"recent": true,
+"yrs": {
+"1951": 11
+}
+},
+{
+"key": "sunset boulevard",
+"title": "Sunset Boulevard",
+"year": 1950,
+"first": "1951-03-29",
+"runs": 16,
+"tickets": 24978,
+"top": true,
+"recent": true,
+"yrs": {
+"1950": 4
+}
+},
+{
+"key": "his girl friday",
+"title": "His Girl Friday",
+"year": 1940,
+"first": "1940-02-28",
+"runs": 16,
+"tickets": 21773,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 9
+}
+},
+{
+"key": "arsenic and old lace",
+"title": "Arsenic and Old Lace",
+"year": null,
+"first": "1944-11-05",
+"runs": 16,
+"tickets": 21360,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "to be or not to be",
+"title": "To Be or Not to Be",
+"year": 1942,
+"first": "1942-05-07",
+"runs": 16,
+"tickets": 21026,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 6
+}
+},
+{
+"key": "palm beach story",
+"title": "The Palm Beach Story",
+"year": 1942,
+"first": "1943-02-01",
+"runs": 16,
+"tickets": 17175,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 8
+}
+},
+{
+"key": "roberta",
+"title": "Roberta",
+"year": 1935,
+"first": "1935-03-24",
+"runs": 16,
+"tickets": 15723,
+"top": true,
+"recent": true,
+"yrs": {
+"1935": 9
+}
+},
+{
+"key": "morocco",
+"title": "Morocco",
+"year": 1930,
+"first": "1931-02-18",
+"runs": 16,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1930": 8
+}
+},
+{
+"key": "breakfast at tiffanys",
+"title": "Breakfast at Tiffany's",
+"year": 1961,
+"first": "1961-10-31",
+"runs": 15,
+"tickets": 44101,
+"top": true,
+"recent": true,
+"yrs": {
+"1951": 1,
+"1961": 6
+}
+},
+{
+"key": "lady vanishes",
+"title": "The Lady Vanishes",
+"year": 1938,
+"first": "1990-01-22",
+"runs": 15,
+"tickets": 23820,
+"top": true,
+"recent": true,
+"yrs": {
+"1938": 11
+}
+},
+{
+"key": "miracle on 34th street",
+"title": "Miracle on 34th Street",
+"year": 1947,
+"first": "1947-07-13",
+"runs": 15,
+"tickets": 23613,
+"top": true,
+"recent": true,
+"yrs": {
+"1947": 12
+}
+},
+{
+"key": "ghost and mrs muir",
+"title": "The Ghost and Mrs. Muir",
+"year": null,
+"first": "1990-09-19",
+"runs": 15,
+"tickets": 21031,
+"top": true,
+"recent": false,
+"yrs": {}
+},
+{
+"key": "double indemnity",
+"title": "Double Indemnity",
+"year": 1944,
+"first": "1944-10-25",
+"runs": 15,
+"tickets": 18436,
+"top": true,
+"recent": true,
+"yrs": {
+"1944": 9
+}
+},
+{
+"key": "talk of town",
+"title": "The Talk of the Town",
+"year": 1942,
+"first": "1942-10-11",
+"runs": 15,
+"tickets": 16756,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 11
+}
+},
+{
+"key": "queen christina",
+"title": "Queen Christina",
+"year": 1933,
+"first": "1934-03-11",
+"runs": 15,
+"tickets": 15079,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 7
+}
+},
+{
+"key": "safety last",
+"title": "Safety Last",
+"year": 1923,
+"first": "1990-01-17",
+"runs": 15,
+"tickets": 12573,
+"top": true,
+"recent": true,
+"yrs": {
+"1923": 4
+}
+},
+{
+"key": "one hour with you",
+"title": "One Hour With You",
+"year": 1932,
+"first": "1932-04-20",
+"runs": 15,
+"tickets": 8768,
+"top": true,
+"recent": true,
+"yrs": {
+"1932": 9
+}
+},
+{
+"key": "midnight",
+"title": "Midnight",
+"year": 1939,
+"first": "1939-04-09",
+"runs": 15,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 8
+}
+},
+{
+"key": "to have and have not",
+"title": "To Have and Have Not",
+"year": null,
+"first": "1945-02-11",
+"runs": 15,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "rope",
+"title": "Rope",
+"year": 1948,
+"first": "1948-11-01",
+"runs": 15,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1948": 11
+}
+},
+{
+"key": "dial m for murder",
+"title": "Dial M for Murder",
+"year": 1954,
+"first": "1992-03-14",
+"runs": 15,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1954": 13
+}
+},
+{
+"key": "bad and beautiful",
+"title": "The Bad and the Beautiful",
+"year": null,
+"first": "1994-08-04",
+"runs": 15,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "apartment",
+"title": "The Apartment",
+"year": 1960,
+"first": "1960-06-29",
+"runs": 14,
+"tickets": 28785,
+"top": true,
+"recent": true,
+"yrs": {
+"1960": 6
+}
+},
+{
+"key": "affair to remember",
+"title": "An Affair to Remember",
+"year": 1957,
+"first": "1957-08-02",
+"runs": 14,
+"tickets": 28079,
+"top": true,
+"recent": true,
+"yrs": {
+"1957": 4
+}
+},
+{
+"key": "foreign correspondent",
+"title": "Foreign Correspondent",
+"year": 1940,
+"first": "1940-10-27",
+"runs": 14,
+"tickets": 23742,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 6
+}
+},
+{
+"key": "love in afternoon",
+"title": "Love in the Afternoon",
+"year": 1957,
+"first": "1957-07-21",
+"runs": 14,
+"tickets": 18538,
+"top": true,
+"recent": false,
+"yrs": {
+"1957": 5
+}
+},
+{
+"key": "my man godfrey",
+"title": "My Man Godfrey",
+"year": 1936,
+"first": "1936-10-11",
+"runs": 14,
+"tickets": 15694,
+"top": true,
+"recent": true,
+"yrs": {
+"1936": 6
+}
+},
+{
+"key": "dinner at eight",
+"title": "Dinner at Eight",
+"year": 1933,
+"first": "1934-02-18",
+"runs": 14,
+"tickets": 12629,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 11
+}
+},
+{
+"key": "you were never lovelier",
+"title": "You Were Never Lovelier",
+"year": 1942,
+"first": "1942-12-17",
+"runs": 14,
+"tickets": 11033,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 6
+}
+},
+{
+"key": "footlight parade",
+"title": "Footlight Parade",
+"year": 1933,
+"first": "1933-11-18",
+"runs": 14,
+"tickets": 10095,
+"top": true,
+"recent": true,
+"yrs": {
+"1943": 1,
+"1933": 5
+}
+},
+{
+"key": "royal wedding",
+"title": "Royal Wedding",
+"year": null,
+"first": "1987-07-19",
+"runs": 14,
+"tickets": 9685,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "charade",
+"title": "Charade",
+"year": 1963,
+"first": "1992-10-03",
+"runs": 13,
+"tickets": 32679,
+"top": true,
+"recent": true,
+"yrs": {
+"1963": 5
+}
+},
+{
+"key": "birds",
+"title": "The Birds",
+"year": 1963,
+"first": "1992-03-30",
+"runs": 13,
+"tickets": 30526,
+"top": true,
+"recent": true,
+"yrs": {
+"1963": 10
+}
+},
+{
+"key": "young and innocent",
+"title": "Young and Innocent",
+"year": null,
+"first": "1990-04-30",
+"runs": 13,
+"tickets": 18281,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "it should happen to you",
+"title": "It Should Happen to You",
+"year": 1954,
+"first": "1991-08-21",
+"runs": 13,
+"tickets": 17342,
+"top": true,
+"recent": true,
+"yrs": {
+"1954": 11
+}
+},
+{
+"key": "yankee doodle dandy",
+"title": "Yankee Doodle Dandy",
+"year": 1942,
+"first": "1943-03-01",
+"runs": 13,
+"tickets": 14317,
+"top": true,
+"recent": false,
+"yrs": {
+"1942": 5
+}
+},
+{
+"key": "miracle of morgans creek",
+"title": "Miracle of Morgan's Creek",
+"year": 1944,
+"first": "1944-05-17",
+"runs": 13,
+"tickets": 10686,
+"top": true,
+"recent": true,
+"yrs": {
+"1944": 3,
+"1943": 1
+}
+},
+{
+"key": "silk stockings",
+"title": "Silk Stockings",
+"year": 1957,
+"first": "1987-07-22",
+"runs": 13,
+"tickets": 10480,
+"top": true,
+"recent": false,
+"yrs": {
+"1957": 6
+}
+},
+{
+"key": "horse feathers",
+"title": "Horse Feathers",
+"year": 1932,
+"first": "1932-09-04",
+"runs": 13,
+"tickets": 9965,
+"top": true,
+"recent": true,
+"yrs": {
+"1932": 5
+}
+},
+{
+"key": "trouble in paradise",
+"title": "Trouble in Paradise",
+"year": 1932,
+"first": "1932-12-03",
+"runs": 13,
+"tickets": 9904,
+"top": true,
+"recent": true,
+"yrs": {
+"1932": 7
+}
+},
+{
+"key": "follow fleet",
+"title": "Follow the Fleet",
+"year": 1936,
+"first": "1936-03-11",
+"runs": 13,
+"tickets": 9698,
+"top": true,
+"recent": true,
+"yrs": {
+"1936": 7
+}
+},
+{
+"key": "three little words",
+"title": "Three Little Words",
+"year": 1950,
+"first": "1987-07-17",
+"runs": 13,
+"tickets": 9094,
+"top": true,
+"recent": true,
+"yrs": {
+"1950": 5
+}
+},
+{
+"key": "christmas in july",
+"title": "Christmas in July",
+"year": 1940,
+"first": "1941-01-16",
+"runs": 13,
+"tickets": 7011,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 6
+}
+},
+{
+"key": "random harvest",
+"title": "Random Harvest",
+"year": 1942,
+"first": "1943-03-14",
+"runs": 13,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 10
+}
+},
+{
+"key": "lost horizon",
+"title": "Lost Horizon",
+"year": 1937,
+"first": "1990-02-16",
+"runs": 13,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1937": 9
+}
+},
+{
+"key": "citizen kane",
+"title": "Citizen Kane",
+"year": 1941,
+"first": "1991-05-01",
+"runs": 12,
+"tickets": 37202,
+"top": true,
+"recent": true,
+"yrs": {
+"1941": 7
+}
+},
+{
+"key": "some like it hot",
+"title": "Some Like It Hot",
+"year": 1959,
+"first": "1939-06-08",
+"runs": 12,
+"tickets": 29708,
+"top": true,
+"recent": true,
+"yrs": {
+"1959": 4
+}
+},
+{
+"key": "in lonely place",
+"title": "In a Lonely Place",
+"year": 1950,
+"first": "1995-02-25",
+"runs": 12,
+"tickets": 17552,
+"top": true,
+"recent": true,
+"yrs": {
+"1950": 10
+}
+},
+{
+"key": "spellbound",
+"title": "Spellbound",
+"year": 1945,
+"first": "1946-02-03",
+"runs": 12,
+"tickets": 17522,
+"top": true,
+"recent": true,
+"yrs": {
+"1945": 4
+}
+},
+{
+"key": "topper",
+"title": "Topper",
+"year": 1937,
+"first": "1937-09-09",
+"runs": 12,
+"tickets": 15731,
+"top": true,
+"recent": true,
+"yrs": {
+"1937": 6
+}
+},
+{
+"key": "you cant take it with you",
+"title": "You Can't Take It With You",
+"year": 1938,
+"first": "1938-12-23",
+"runs": 12,
+"tickets": 13496,
+"top": true,
+"recent": true,
+"yrs": {
+"1938": 5
+}
+},
+{
+"key": "lady for day",
+"title": "Lady for a Day",
+"year": 1933,
+"first": "1990-03-02",
+"runs": 12,
+"tickets": 12913,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 7
+}
+},
+{
+"key": "night at opera",
+"title": "A Night at the Opera",
+"year": 1935,
+"first": "1935-12-15",
+"runs": 12,
+"tickets": 11390,
+"top": true,
+"recent": false,
+"yrs": {
+"1935": 4
+}
+},
+{
+"key": "love me tonight",
+"title": "Love Me Tonight",
+"year": 1932,
+"first": "1932-09-18",
+"runs": 12,
+"tickets": 10580,
+"top": true,
+"recent": true,
+"yrs": {
+"1932": 5
+}
+},
+{
+"key": "skys limit",
+"title": "The Sky's the Limit",
+"year": 1943,
+"first": "1943-12-28",
+"runs": 12,
+"tickets": 10424,
+"top": true,
+"recent": true,
+"yrs": {
+"1943": 7
+}
+},
+{
+"key": "animal crackers",
+"title": "Animal Crackers",
+"year": 1930,
+"first": "1930-09-24",
+"runs": 12,
+"tickets": 9240,
+"top": true,
+"recent": true,
+"yrs": {
+"1930": 5
+}
+},
+{
+"key": "around world in 80 days",
+"title": "Around the World in 80 Days",
+"year": 1956,
+"first": "1958-11-20",
+"runs": 11,
+"tickets": 16497,
+"top": true,
+"recent": false,
+"yrs": {
+"1956": 3
+}
+},
+{
+"key": "duck soup",
+"title": "Duck Soup",
+"year": 1933,
+"first": "1933-12-10",
+"runs": 11,
+"tickets": 11337,
+"top": true,
+"recent": false,
+"yrs": {
+"1933": 3,
+"1935": 1
+}
+},
+{
+"key": "unfaithfully yours",
+"title": "Unfaithfully Yours",
+"year": 1948,
+"first": "1988-03-08",
+"runs": 11,
+"tickets": 10272,
+"top": true,
+"recent": false,
+"yrs": {
+"1948": 3
+}
+},
+{
+"key": "she done him wrong",
+"title": "She Done Him Wrong",
+"year": 1933,
+"first": "1933-02-05",
+"runs": 11,
+"tickets": 9733,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 6
+}
+},
+{
+"key": "scarlet empress",
+"title": "The Scarlet Empress",
+"year": 1934,
+"first": "1934-09-12",
+"runs": 11,
+"tickets": 9179,
+"top": true,
+"recent": true,
+"yrs": {
+"1934": 5
+}
+},
+{
+"key": "gold diggers of 1933",
+"title": "Gold Diggers of 1933",
+"year": 1933,
+"first": "1933-09-17",
+"runs": 11,
+"tickets": 7920,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 4
+}
+},
+{
+"key": "shanghai express",
+"title": "Shanghai Express",
+"year": 1932,
+"first": "1932-03-27",
+"runs": 11,
+"tickets": 7670,
+"top": true,
+"recent": true,
+"yrs": {
+"1932": 8
+}
+},
+{
+"key": "bachelor mother",
+"title": "Bachelor Mother",
+"year": 1939,
+"first": "1939-08-16",
+"runs": 11,
+"tickets": 7388,
+"top": true,
+"recent": false,
+"yrs": {
+"1939": 7
+}
+},
+{
+"key": "easter parade",
+"title": "Easter Parade",
+"year": 1948,
+"first": "1948-08-01",
+"runs": 11,
+"tickets": 6421,
+"top": true,
+"recent": true,
+"yrs": {
+"1948": 5
+}
+},
+{
+"key": "love parade",
+"title": "The Love Parade",
+"year": 1929,
+"first": "1988-02-05",
+"runs": 11,
+"tickets": 5072,
+"top": true,
+"recent": true,
+"yrs": {
+"1929": 5
+}
+},
+{
+"key": "freshman",
+"title": "The Freshman",
+"year": 1925,
+"first": "1925-11-02",
+"runs": 11,
+"tickets": 4954,
+"top": true,
+"recent": true,
+"yrs": {
+"1925": 1
+}
+},
+{
+"key": "monte carlo",
+"title": "Monte Carlo",
+"year": 1930,
+"first": "1926-05-21",
+"runs": 11,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1930": 6
+}
+},
+{
+"key": "thin man",
+"title": "The Thin Man",
+"year": 1934,
+"first": "1934-06-22",
+"runs": 11,
+"tickets": 0,
+"top": true,
+"recent": false,
+"yrs": {
+"1934": 5
+}
+},
+{
+"key": "mark of zorro#1940",
+"title": "The Mark of Zorro",
+"year": null,
+"first": "1940-11-27",
+"runs": 11,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "father of bride",
+"title": "Father of the Bride",
+"year": 1950,
+"first": "1950-07-13",
+"runs": 11,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1950": 8
+}
+},
+{
+"key": "three coins in fountain",
+"title": "Three Coins in the Fountain",
+"year": 1954,
+"first": "1954-06-26",
+"runs": 10,
+"tickets": 14493,
+"top": true,
+"recent": false,
+"yrs": {
+"1954": 5
+}
+},
+{
+"key": "picnic",
+"title": "Picnic",
+"year": 1955,
+"first": "1930-12-21",
+"runs": 10,
+"tickets": 13953,
+"top": true,
+"recent": true,
+"yrs": {
+"1955": 6,
+"1956": 1
+}
+},
+{
+"key": "adams rib",
+"title": "Adam's Rib",
+"year": 1949,
+"first": "1990-08-25",
+"runs": 10,
+"tickets": 13639,
+"top": true,
+"recent": true,
+"yrs": {
+"1949": 8
+}
+},
+{
+"key": "sabotage",
+"title": "Sabotage",
+"year": 1936,
+"first": "1990-04-23",
+"runs": 10,
+"tickets": 13165,
+"top": true,
+"recent": true,
+"yrs": {
+"1936": 6
+}
+},
+{
+"key": "lady eve",
+"title": "The Lady Eve",
+"year": 1941,
+"first": "1941-04-12",
+"runs": 10,
+"tickets": 12300,
+"top": true,
+"recent": false,
+"yrs": {
+"1941": 3
+}
+},
+{
+"key": "quiet man",
+"title": "The Quiet Man",
+"year": 1952,
+"first": "1990-10-27",
+"runs": 10,
+"tickets": 11929,
+"top": true,
+"recent": true,
+"yrs": {
+"1952": 7
+}
+},
+{
+"key": "mr deeds goes to town",
+"title": "Mr. Deeds Goes to Town",
+"year": 1936,
+"first": "1990-03-02",
+"runs": 10,
+"tickets": 11340,
+"top": true,
+"recent": true,
+"yrs": {
+"1936": 4
+}
+},
+{
+"key": "cover girl",
+"title": "Cover Girl",
+"year": 1944,
+"first": "1944-04-30",
+"runs": 10,
+"tickets": 10641,
+"top": true,
+"recent": true,
+"yrs": {
+"1944": 4
+}
+},
+{
+"key": "bishops wife",
+"title": "The Bishop's Wife",
+"year": 1947,
+"first": "1948-04-08",
+"runs": 10,
+"tickets": 10363,
+"top": true,
+"recent": true,
+"yrs": {
+"1947": 4
+}
+},
+{
+"key": "gunga din",
+"title": "Gunga Din",
+"year": 1939,
+"first": "1939-02-26",
+"runs": 10,
+"tickets": 10343,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 4
+}
+},
+{
+"key": "key largo",
+"title": "Key Largo",
+"year": 1948,
+"first": "1948-08-29",
+"runs": 10,
+"tickets": 10046,
+"top": true,
+"recent": true,
+"yrs": {
+"1948": 8
+}
+},
+{
+"key": "tale of two cities",
+"title": "A Tale of Two Cities",
+"year": 1935,
+"first": "1936-02-13",
+"runs": 10,
+"tickets": 9346,
+"top": true,
+"recent": true,
+"yrs": {
+"1935": 6
+}
+},
+{
+"key": "42nd street",
+"title": "42nd Street",
+"year": 1933,
+"first": "1990-01-26",
+"runs": 10,
+"tickets": 9232,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 4
+}
+},
+{
+"key": "tree grows in brooklyn",
+"title": "A Tree Grows in Brooklyn",
+"year": 1945,
+"first": "1945-04-08",
+"runs": 10,
+"tickets": 9226,
+"top": true,
+"recent": true,
+"yrs": {
+"1945": 5
+}
+},
+{
+"key": "show boat",
+"title": "Show Boat",
+"year": 1936,
+"first": "1936-06-11",
+"runs": 10,
+"tickets": 9090,
+"top": true,
+"recent": true,
+"yrs": {
+"1936": 6
+}
+},
+{
+"key": "heaven can wait",
+"title": "Heaven Can Wait",
+"year": 1943,
+"first": "1943-09-05",
+"runs": 10,
+"tickets": 8179,
+"top": true,
+"recent": true,
+"yrs": {
+"1943": 7
+}
+},
+{
+"key": "carefree",
+"title": "Carefree",
+"year": 1938,
+"first": "1938-09-25",
+"runs": 10,
+"tickets": 8034,
+"top": true,
+"recent": false,
+"yrs": {
+"1938": 2
+}
+},
+{
+"key": "daddy long legs",
+"title": "Daddy Long Legs",
+"year": 1955,
+"first": "1931-06-24",
+"runs": 10,
+"tickets": 7117,
+"top": true,
+"recent": true,
+"yrs": {
+"1955": 4
+}
+},
+{
+"key": "broadway melody of 1940",
+"title": "Broadway Melody of 1940",
+"year": 1940,
+"first": "1940-02-24",
+"runs": 10,
+"tickets": 6645,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 5
+}
+},
+{
+"key": "curse of cat people",
+"title": "Curse of the Cat People",
+"year": 1944,
+"first": "1991-03-06",
+"runs": 10,
+"tickets": 4610,
+"top": true,
+"recent": true,
+"yrs": {
+"1944": 7
+}
+},
+{
+"key": "devil is woman",
+"title": "The Devil is a Woman",
+"year": 1935,
+"first": "1935-06-04",
+"runs": 10,
+"tickets": 4491,
+"top": true,
+"recent": true,
+"yrs": {
+"1935": 4
+}
+},
+{
+"key": "smiling lieutenant",
+"title": "The Smiling Lieutenant",
+"year": null,
+"first": "1931-08-24",
+"runs": 10,
+"tickets": 4473,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "three smart girls",
+"title": "Three Smart Girls",
+"year": 1936,
+"first": "1937-03-12",
+"runs": 10,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1936": 8
+}
+},
+{
+"key": "stage door",
+"title": "Stage Door",
+"year": 1937,
+"first": "1937-10-31",
+"runs": 10,
+"tickets": 0,
+"top": true,
+"recent": false,
+"yrs": {
+"1937": 5
+}
+},
+{
+"key": "cabin in sky",
+"title": "Cabin in the Sky",
+"year": 1943,
+"first": "1943-06-17",
+"runs": 10,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1943": 6
+}
+},
+{
+"key": "treasure of sierra madre",
+"title": "The Treasure of the Sierra Madre",
+"year": 1948,
+"first": "1948-03-01",
+"runs": 10,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1948": 8
+}
+},
+{
+"key": "mark of zorro",
+"title": "The Mark of Zorro",
+"year": 1940,
+"first": "1988-02-26",
+"runs": 10,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 9,
+"1920": 2
+}
+},
+{
+"key": "trouble with harry",
+"title": "The Trouble with Harry",
+"year": 1955,
+"first": "1992-03-19",
+"runs": 9,
+"tickets": 14577,
+"top": true,
+"recent": true,
+"yrs": {
+"1955": 7
+}
+},
+{
+"key": "gilda",
+"title": "Gilda",
+"year": 1946,
+"first": "1946-06-16",
+"runs": 9,
+"tickets": 13032,
+"top": true,
+"recent": true,
+"yrs": {
+"1946": 3
+}
+},
+{
+"key": "awful truth",
+"title": "The Awful Truth",
+"year": 1937,
+"first": "1930-10-25",
+"runs": 9,
+"tickets": 13024,
+"top": true,
+"recent": true,
+"yrs": {
+"1937": 4
+}
+},
+{
+"key": "third man",
+"title": "The Third Man",
+"year": 1949,
+"first": "1950-04-23",
+"runs": 9,
+"tickets": 12744,
+"top": true,
+"recent": true,
+"yrs": {
+"1949": 5
+}
+},
+{
+"key": "saboteur",
+"title": "Saboteur",
+"year": 1942,
+"first": "1992-03-05",
+"runs": 9,
+"tickets": 11460,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 6
+}
+},
+{
+"key": "high noon",
+"title": "High Noon",
+"year": 1952,
+"first": "1953-04-02",
+"runs": 9,
+"tickets": 11021,
+"top": true,
+"recent": true,
+"yrs": {
+"1952": 6
+}
+},
+{
+"key": "destry rides again",
+"title": "Destry Rides Again",
+"year": 1939,
+"first": "1940-02-11",
+"runs": 9,
+"tickets": 10397,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 7
+}
+},
+{
+"key": "bride of frankenstein",
+"title": "Bride of Frankenstein",
+"year": 1935,
+"first": "1935-05-11",
+"runs": 9,
+"tickets": 9863,
+"top": true,
+"recent": true,
+"yrs": {
+"1935": 5
+}
+},
+{
+"key": "im no angel",
+"title": "I'm No Angel",
+"year": 1933,
+"first": "1933-11-25",
+"runs": 9,
+"tickets": 8888,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 6
+}
+},
+{
+"key": "bachelor and bobby soxer",
+"title": "The Bachelor and the Bobby-Soxer",
+"year": null,
+"first": "1947-10-16",
+"runs": 9,
+"tickets": 8881,
+"top": true,
+"recent": false,
+"yrs": {}
+},
+{
+"key": "wrong man",
+"title": "The Wrong Man",
+"year": 1956,
+"first": "1957-02-06",
+"runs": 9,
+"tickets": 8119,
+"top": true,
+"recent": true,
+"yrs": {
+"1956": 6
+}
+},
+{
+"key": "green for danger",
+"title": "Green for Danger",
+"year": 1946,
+"first": "1948-01-15",
+"runs": 9,
+"tickets": 7393,
+"top": true,
+"recent": true,
+"yrs": {
+"1946": 5
+}
+},
+{
+"key": "general",
+"title": "The General",
+"year": 1926,
+"first": "1990-01-18",
+"runs": 9,
+"tickets": 7094,
+"top": true,
+"recent": true,
+"yrs": {
+"1926": 2,
+"1927": 1
+}
+},
+{
+"key": "holiday inn",
+"title": "Holiday Inn",
+"year": 1942,
+"first": "1942-09-13",
+"runs": 9,
+"tickets": 6718,
+"top": true,
+"recent": false,
+"yrs": {
+"1942": 3
+}
+},
+{
+"key": "of human bondage",
+"title": "Of Human Bondage",
+"year": 1934,
+"first": "1934-07-28",
+"runs": 9,
+"tickets": 6693,
+"top": true,
+"recent": false,
+"yrs": {
+"1934": 5
+}
+},
+{
+"key": "curly top",
+"title": "Curly Top",
+"year": 1935,
+"first": "1935-09-01",
+"runs": 9,
+"tickets": 5957,
+"top": true,
+"recent": false,
+"yrs": {
+"1935": 4
+}
+},
+{
+"key": "cocoanuts",
+"title": "The Cocoanuts",
+"year": 1929,
+"first": "1929-10-20",
+"runs": 9,
+"tickets": 5927,
+"top": true,
+"recent": false,
+"yrs": {
+"1929": 3
+}
+},
+{
+"key": "letter",
+"title": "The Letter",
+"year": 1940,
+"first": "1929-05-08",
+"runs": 9,
+"tickets": 5773,
+"top": true,
+"recent": false,
+"yrs": {
+"1940": 5
+}
+},
+{
+"key": "cluny brown",
+"title": "Cluny Brown",
+"year": 1946,
+"first": "1946-07-27",
+"runs": 9,
+"tickets": 5715,
+"top": true,
+"recent": true,
+"yrs": {
+"1946": 4
+}
+},
+{
+"key": "one hundred men and girl",
+"title": "One Hundred Men and a Girl",
+"year": null,
+"first": "1937-10-17",
+"runs": 9,
+"tickets": 4115,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "story of vernon and irene castle",
+"title": "The Story of Vernon and Irene Castle",
+"year": null,
+"first": "1939-04-30",
+"runs": 9,
+"tickets": 3439,
+"top": true,
+"recent": false,
+"yrs": {}
+},
+{
+"key": "cat people",
+"title": "Cat People",
+"year": 1942,
+"first": "1943-02-20",
+"runs": 9,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 5
+}
+},
+{
+"key": "harvey",
+"title": "Harvey",
+"year": 1950,
+"first": "1951-02-04",
+"runs": 9,
+"tickets": 0,
+"top": true,
+"recent": false,
+"yrs": {
+"1950": 6
+}
+},
+{
+"key": "witness for prosecution",
+"title": "Witness for the Prosecution",
+"year": 1957,
+"first": "1958-03-05",
+"runs": 8,
+"tickets": 12869,
+"top": true,
+"recent": true,
+"yrs": {
+"1957": 4
+}
+},
+{
+"key": "secret agent",
+"title": "Secret Agent",
+"year": 1936,
+"first": "1936-09-02",
+"runs": 8,
+"tickets": 10870,
+"top": true,
+"recent": false,
+"yrs": {
+"1936": 4
+}
+},
+{
+"key": "bitter tea of general yen",
+"title": "The Bitter Tea of General Yen",
+"year": 1933,
+"first": "1990-02-16",
+"runs": 8,
+"tickets": 10213,
+"top": true,
+"recent": true,
+"yrs": {
+"1933": 4,
+"1932": 1
+}
+},
+{
+"key": "gentlemen prefer blondes",
+"title": "Gentlemen Prefer Blondes",
+"year": 1953,
+"first": "1928-03-21",
+"runs": 8,
+"tickets": 10066,
+"top": true,
+"recent": true,
+"yrs": {
+"1953": 4
+}
+},
+{
+"key": "sitting pretty",
+"title": "Sitting Pretty",
+"year": null,
+"first": "1948-04-18",
+"runs": 8,
+"tickets": 9650,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "desk set",
+"title": "Desk Set",
+"year": 1957,
+"first": "1957-05-26",
+"runs": 8,
+"tickets": 9572,
+"top": true,
+"recent": false,
+"yrs": {
+"1957": 5
+}
+},
+{
+"key": "anastasia",
+"title": "Anastasia",
+"year": 1956,
+"first": "1957-01-18",
+"runs": 8,
+"tickets": 9193,
+"top": true,
+"recent": false,
+"yrs": {
+"1956": 5
+}
+},
+{
+"key": "state of union",
+"title": "State of the Union",
+"year": 1948,
+"first": "1948-05-16",
+"runs": 8,
+"tickets": 8819,
+"top": true,
+"recent": true,
+"yrs": {
+"1948": 4
+}
+},
+{
+"key": "on waterfront",
+"title": "On the Waterfront",
+"year": 1954,
+"first": "1993-05-13",
+"runs": 8,
+"tickets": 8756,
+"top": true,
+"recent": true,
+"yrs": {
+"1954": 2
+}
+},
+{
+"key": "bells are ringing",
+"title": "Bells Are Ringing",
+"year": null,
+"first": "1990-07-27",
+"runs": 8,
+"tickets": 8438,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "sylvia scarlett",
+"title": "Sylvia Scarlett",
+"year": 1935,
+"first": "1936-01-08",
+"runs": 8,
+"tickets": 7366,
+"top": true,
+"recent": true,
+"yrs": {
+"1935": 2
+}
+},
+{
+"key": "she wore yellow ribbon",
+"title": "She Wore a Yellow Ribbon",
+"year": 1949,
+"first": "1949-12-18",
+"runs": 8,
+"tickets": 7357,
+"top": true,
+"recent": true,
+"yrs": {
+"1949": 3
+}
+},
+{
+"key": "king and i",
+"title": "The King and I",
+"year": null,
+"first": "1956-07-25",
+"runs": 8,
+"tickets": 7266,
+"top": true,
+"recent": false,
+"yrs": {}
+},
+{
+"key": "stagecoach",
+"title": "Stagecoach",
+"year": 1939,
+"first": "1939-06-08",
+"runs": 8,
+"tickets": 6500,
+"top": true,
+"recent": true,
+"yrs": {
+"1939": 6
+}
+},
+{
+"key": "road to morocco",
+"title": "Road to Morocco",
+"year": 1942,
+"first": "1942-12-31",
+"runs": 8,
+"tickets": 5823,
+"top": true,
+"recent": true,
+"yrs": {
+"1942": 4
+}
+},
+{
+"key": "woman in window",
+"title": "The Woman in the Window",
+"year": 1944,
+"first": "1945-02-25",
+"runs": 8,
+"tickets": 5782,
+"top": true,
+"recent": true,
+"yrs": {
+"1944": 4
+}
+},
+{
+"key": "tin pan alley",
+"title": "Tin Pan Alley",
+"year": 1940,
+"first": "1940-12-15",
+"runs": 8,
+"tickets": 5759,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 3
+}
+},
+{
+"key": "winchester 73",
+"title": "Winchester '73",
+"year": 1950,
+"first": "1950-07-23",
+"runs": 8,
+"tickets": 5534,
+"top": true,
+"recent": true,
+"yrs": {
+"1950": 5
+}
+},
+{
+"key": "employees entrance",
+"title": "Employees' Entrance",
+"year": 1933,
+"first": "1994-09-03",
+"runs": 8,
+"tickets": 5514,
+"top": true,
+"recent": false,
+"yrs": {
+"1933": 3
+}
+},
+{
+"key": "great mcginty",
+"title": "The Great McGinty",
+"year": 1940,
+"first": "1940-08-23",
+"runs": 8,
+"tickets": 5151,
+"top": true,
+"recent": false,
+"yrs": {
+"1940": 3
+}
+},
+{
+"key": "road to utopia",
+"title": "Road to Utopia",
+"year": 1945,
+"first": "1946-05-01",
+"runs": 8,
+"tickets": 4913,
+"top": true,
+"recent": true,
+"yrs": {
+"1945": 2,
+"1946": 1
+}
+},
+{
+"key": "since you went away",
+"title": "Since You Went Away",
+"year": 1944,
+"first": "1944-12-14",
+"runs": 8,
+"tickets": 4117,
+"top": true,
+"recent": false,
+"yrs": {
+"1944": 3
+}
+},
+{
+"key": "andy hardy meets debutante",
+"title": "Andy Hardy Meets Debutante",
+"year": 1940,
+"first": "1940-07-21",
+"runs": 8,
+"tickets": 2792,
+"top": true,
+"recent": true,
+"yrs": {
+"1940": 4
+}
+},
+{
+"key": "taxi",
+"title": "Taxi!",
+"year": 1932,
+"first": "1932-02-15",
+"runs": 8,
+"tickets": 2545,
+"top": true,
+"recent": false,
+"yrs": {
+"1932": 2
+}
+},
+{
+"key": "anna karenina",
+"title": "Anna Karenina",
+"year": 1935,
+"first": "1935-09-15",
+"runs": 8,
+"tickets": 0,
+"top": true,
+"recent": false,
+"yrs": {
+"1935": 1
+}
+},
+{
+"key": "star is born",
+"title": "A Star is Born",
+"year": 1954,
+"first": "1937-06-20",
+"runs": 8,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {
+"1954": 3
+}
+},
+{
+"key": "if i were king",
+"title": "If I Were King",
+"year": null,
+"first": "1938-11-10",
+"runs": 8,
+"tickets": 0,
+"top": true,
+"recent": false,
+"yrs": {}
+},
+{
+"key": "western feature",
+"title": "Western feature",
+"year": null,
+"first": "1950-07-29",
+"runs": 8,
+"tickets": 0,
+"top": true,
+"recent": false,
+"yrs": {}
+},
+{
+"key": "man who knew too much#1956",
+"title": "The Man Who Knew Too Much",
+"year": null,
+"first": "1956-06-14",
+"runs": 8,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "yolanda and thief",
+"title": "Yolanda and the Thief",
+"year": null,
+"first": "1987-07-20",
+"runs": 8,
+"tickets": 0,
+"top": true,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "monkey business",
+"title": "Monkey Business",
+"year": 1952,
+"first": "1988-02-11",
+"runs": 8,
+"tickets": 0,
+"top": true,
+"recent": false,
+"yrs": {
+"1931": 2,
+"1952": 4
+}
+},
+{
+"key": "marnie",
+"title": "Marnie",
+"year": 1964,
+"first": "2000-04-20",
+"runs": 7,
+"tickets": 9723,
+"top": true,
+"recent": true,
+"yrs": {
+"1964": 6
+}
+},
+{
+"key": "secret garden",
+"title": "The Secret Garden",
+"year": 1949,
+"first": "1949-11-27",
+"runs": 7,
+"tickets": 9701,
+"top": true,
+"recent": false,
+"yrs": {
+"1949": 3
+}
+},
+{
+"key": "seven year itch",
+"title": "The Seven Year Itch",
+"year": 1955,
+"first": "1955-07-01",
+"runs": 7,
+"tickets": 9427,
+"top": true,
+"recent": true,
+"yrs": {
+"1955": 2
+}
+},
+{
+"key": "ill show you town",
+"title": "I'll Show You the Town",
+"year": 1925,
+"first": "1925-06-09",
+"runs": 4,
+"tickets": 719,
+"top": false,
+"recent": true,
+"yrs": {
+"1925": 2
+}
+},
+{
+"key": "riders of purple sage",
+"title": "Riders of the Purple Sage",
+"year": 1925,
+"first": "1925-11-01",
+"runs": 2,
+"tickets": 307,
+"top": false,
+"recent": true,
+"yrs": {
+"1925": 1
+}
+},
+{
+"key": "stage struck",
+"title": "Stage Struck",
+"year": 1925,
+"first": "1925-12-01",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1925": 1
+}
+},
+{
+"key": "tumbleweeds",
+"title": "Tumbleweeds",
+"year": 1925,
+"first": "1926-04-04",
+"runs": 2,
+"tickets": 307,
+"top": false,
+"recent": true,
+"yrs": {
+"1925": 1
+}
+},
+{
+"key": "lady windermeres fan",
+"title": "Lady Windermere's Fan",
+"year": 1925,
+"first": "1926-04-05",
+"runs": 5,
+"tickets": 1469,
+"top": false,
+"recent": true,
+"yrs": {
+"1925": 2
+}
+},
+{
+"key": "skinners dress suit",
+"title": "Skinner's Dress Suit",
+"year": 1926,
+"first": "1926-04-26",
+"runs": 4,
+"tickets": 695,
+"top": false,
+"recent": true,
+"yrs": {
+"1926": 2
+}
+},
+{
+"key": "rolling home",
+"title": "Rolling Home",
+"year": null,
+"first": "1926-06-29",
+"runs": 2,
+"tickets": 200,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "thats my daddy",
+"title": "That's My Daddy",
+"year": 1928,
+"first": "1928-03-25",
+"runs": 5,
+"tickets": 959,
+"top": false,
+"recent": true,
+"yrs": {
+"1927": 1,
+"1928": 2
+}
+},
+{
+"key": "patsy",
+"title": "The Patsy",
+"year": 1928,
+"first": "1928-04-11",
+"runs": 3,
+"tickets": 1017,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 1
+}
+},
+{
+"key": "speedy",
+"title": "Speedy",
+"year": 1928,
+"first": "1928-04-22",
+"runs": 6,
+"tickets": 2843,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 2
+}
+},
+{
+"key": "docks of new york",
+"title": "The Docks of New York",
+"year": 1928,
+"first": "1928-09-30",
+"runs": 2,
+"tickets": 396,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 1
+}
+},
+{
+"key": "steamboat bill jr",
+"title": "Steamboat Bill, Jr.",
+"year": 1928,
+"first": "1928-12-12",
+"runs": 7,
+"tickets": 3479,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 3
+}
+},
+{
+"key": "big business",
+"title": "Big Business",
+"year": 1929,
+"first": "1929-04-21",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1929": 1
+}
+},
+{
+"key": "two tars",
+"title": "Two Tars",
+"year": 1928,
+"first": "1929-05-05",
+"runs": 2,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 1
+}
+},
+{
+"key": "younger generation",
+"title": "The Younger Generation",
+"year": 1929,
+"first": "1929-06-01",
+"runs": 6,
+"tickets": 2230,
+"top": false,
+"recent": true,
+"yrs": {
+"1929": 3
+}
+},
+{
+"key": "words and music",
+"title": "Words and Music",
+"year": null,
+"first": "1929-09-22",
+"runs": 5,
+"tickets": 1147,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "flight",
+"title": "Flight",
+"year": 1929,
+"first": "1930-01-29",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1929": 1
+}
+},
+{
+"key": "ladies of leisure",
+"title": "Ladies of Leisure",
+"year": 1930,
+"first": "1930-04-20",
+"runs": 6,
+"tickets": 3369,
+"top": false,
+"recent": true,
+"yrs": {
+"1930": 3
+}
+},
+{
+"key": "big trail",
+"title": "The Big Trail",
+"year": 1930,
+"first": "1930-11-16",
+"runs": 3,
+"tickets": 818,
+"top": false,
+"recent": true,
+"yrs": {
+"1930": 1
+}
+},
+{
+"key": "blue angel",
+"title": "The Blue Angel",
+"year": 1930,
+"first": "1931-01-18",
+"runs": 4,
+"tickets": 652,
+"top": false,
+"recent": true,
+"yrs": {
+"1930": 2
+}
+},
+{
+"key": "dishonored",
+"title": "Dishonored",
+"year": 1931,
+"first": "1931-04-22",
+"runs": 7,
+"tickets": 2456,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 1
+}
+},
+{
+"key": "its wise child",
+"title": "It's a Wise Child",
+"year": 1931,
+"first": "1931-04-26",
+"runs": 2,
+"tickets": 497,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 1
+}
+},
+{
+"key": "city streets",
+"title": "City Streets",
+"year": 1931,
+"first": "1931-05-03",
+"runs": 6,
+"tickets": 1305,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 3
+}
+},
+{
+"key": "dracula",
+"title": "Dracula",
+"year": 1931,
+"first": "1931-07-11",
+"runs": 7,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 5
+}
+},
+{
+"key": "american tragedy",
+"title": "An American Tragedy",
+"year": 1931,
+"first": "1931-09-13",
+"runs": 3,
+"tickets": 506,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 2
+}
+},
+{
+"key": "as young as you feel",
+"title": "As Young As You Feel",
+"year": 1951,
+"first": "1931-09-15",
+"runs": 3,
+"tickets": 364,
+"top": false,
+"recent": true,
+"yrs": {
+"1951": 1
+}
+},
+{
+"key": "waterloo bridge#1931",
+"title": "Waterloo Bridge",
+"year": null,
+"first": "1931-10-03",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "road to singapore",
+"title": "Road to Singapore",
+"year": 1940,
+"first": "1931-11-08",
+"runs": 4,
+"tickets": 792,
+"top": false,
+"recent": true,
+"yrs": {
+"1940": 1
+}
+},
+{
+"key": "frankenstein",
+"title": "Frankenstein",
+"year": 1931,
+"first": "1931-12-27",
+"runs": 6,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 4
+}
+},
+{
+"key": "broken lullaby",
+"title": "Broken Lullaby",
+"year": 1932,
+"first": "1932-03-21",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1932": 2
+}
+},
+{
+"key": "letty lynton",
+"title": "Letty Lynton",
+"year": 1932,
+"first": "1932-05-23",
+"runs": 2,
+"tickets": 567,
+"top": false,
+"recent": true,
+"yrs": {
+"1932": 1
+}
+},
+{
+"key": "back street",
+"title": "Back Street",
+"year": 1941,
+"first": "1932-10-04",
+"runs": 4,
+"tickets": 991,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 2
+}
+},
+{
+"key": "american madness",
+"title": "American Madness",
+"year": 1932,
+"first": "1932-10-26",
+"runs": 6,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1932": 4,
+"1942": 1
+}
+},
+{
+"key": "working man",
+"title": "The Working Man",
+"year": null,
+"first": "1933-06-28",
+"runs": 7,
+"tickets": 3305,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "song of songs",
+"title": "The Song of Songs",
+"year": 1933,
+"first": "1933-10-05",
+"runs": 5,
+"tickets": 853,
+"top": false,
+"recent": true,
+"yrs": {
+"1933": 2
+}
+},
+{
+"key": "out of past",
+"title": "Out of the Past",
+"year": 1947,
+"first": "1933-10-08",
+"runs": 6,
+"tickets": 6008,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 2
+}
+},
+{
+"key": "design for living",
+"title": "Design for Living",
+"year": null,
+"first": "1934-01-07",
+"runs": 7,
+"tickets": 3061,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "thirty day princess",
+"title": "Thirty Day Princess",
+"year": 1934,
+"first": "1934-06-06",
+"runs": 4,
+"tickets": 2520,
+"top": false,
+"recent": true,
+"yrs": {
+"1934": 2
+}
+},
+{
+"key": "merry widow#1934",
+"title": "The Merry Widow",
+"year": null,
+"first": "1934-11-25",
+"runs": 6,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "people will talk",
+"title": "People Will Talk",
+"year": 1951,
+"first": "1935-05-29",
+"runs": 7,
+"tickets": 4232,
+"top": false,
+"recent": true,
+"yrs": {
+"1951": 3
+}
+},
+{
+"key": "glass key",
+"title": "The Glass Key",
+"year": 1942,
+"first": "1935-07-11",
+"runs": 5,
+"tickets": 1611,
+"top": false,
+"recent": true,
+"yrs": {
+"1942": 2
+}
+},
+{
+"key": "becky sharp",
+"title": "Becky Sharp",
+"year": 1935,
+"first": "1935-07-21",
+"runs": 4,
+"tickets": 513,
+"top": false,
+"recent": true,
+"yrs": {
+"1935": 2
+}
+},
+{
+"key": "san francisco",
+"title": "San Francisco",
+"year": 1936,
+"first": "1936-07-12",
+"runs": 6,
+"tickets": 4707,
+"top": false,
+"recent": true,
+"yrs": {
+"1936": 2
+}
+},
+{
+"key": "big broadcast of 1938",
+"title": "The Big Broadcast of 1938",
+"year": 1938,
+"first": "1938-03-03",
+"runs": 4,
+"tickets": 1663,
+"top": false,
+"recent": true,
+"yrs": {
+"1938": 2
+}
+},
+{
+"key": "bluebeards eighth wife",
+"title": "Bluebeard's Eighth Wife",
+"year": 1938,
+"first": "1938-04-07",
+"runs": 7,
+"tickets": 1846,
+"top": false,
+"recent": true,
+"yrs": {
+"1938": 3
+}
+},
+{
+"key": "mad about music",
+"title": "Mad About Music",
+"year": 1938,
+"first": "1938-04-10",
+"runs": 3,
+"tickets": 869,
+"top": false,
+"recent": true,
+"yrs": {
+"1938": 3
+}
+},
+{
+"key": "alexanders ragtime band",
+"title": "Alexander's Ragtime Band",
+"year": 1938,
+"first": "1938-09-03",
+"runs": 7,
+"tickets": 5812,
+"top": false,
+"recent": true,
+"yrs": {
+"1938": 3
+}
+},
+{
+"key": "three smart girls grow up",
+"title": "Three Smart Girls Grow Up",
+"year": 1939,
+"first": "1939-05-07",
+"runs": 5,
+"tickets": 1527,
+"top": false,
+"recent": true,
+"yrs": {
+"1939": 4
+}
+},
+{
+"key": "never say die",
+"title": "Never Say Die",
+"year": 1939,
+"first": "1939-07-02",
+"runs": 5,
+"tickets": 1836,
+"top": false,
+"recent": true,
+"yrs": {
+"1939": 3
+}
+},
+{
+"key": "cat and canary#1939",
+"title": "The Cat and the Canary",
+"year": null,
+"first": "1939-12-06",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "tower of london",
+"title": "Tower of London",
+"year": 1939,
+"first": "1940-02-07",
+"runs": 3,
+"tickets": 756,
+"top": false,
+"recent": true,
+"yrs": {
+"1939": 2
+}
+},
+{
+"key": "remember night",
+"title": "Remember the Night",
+"year": 1939,
+"first": "1940-02-09",
+"runs": 7,
+"tickets": 3712,
+"top": false,
+"recent": true,
+"yrs": {
+"1939": 1,
+"1940": 1
+}
+},
+{
+"key": "ghost breakers",
+"title": "The Ghost Breakers",
+"year": 1940,
+"first": "1940-07-07",
+"runs": 6,
+"tickets": 3799,
+"top": false,
+"recent": true,
+"yrs": {
+"1940": 3
+}
+},
+{
+"key": "down argentine way",
+"title": "Down Argentine Way",
+"year": 1940,
+"first": "1940-11-06",
+"runs": 5,
+"tickets": 2448,
+"top": false,
+"recent": true,
+"yrs": {
+"1940": 1
+}
+},
+{
+"key": "westerner",
+"title": "The Westerner",
+"year": 1944,
+"first": "1940-11-17",
+"runs": 2,
+"tickets": 431,
+"top": false,
+"recent": true,
+"yrs": {
+"1944": 1
+}
+},
+{
+"key": "high sierra",
+"title": "High Sierra",
+"year": 1941,
+"first": "1941-02-27",
+"runs": 6,
+"tickets": 7121,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 2,
+"1940": 1
+}
+},
+{
+"key": "road to zanzibar",
+"title": "Road to Zanzibar",
+"year": 1941,
+"first": "1941-05-11",
+"runs": 4,
+"tickets": 1084,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 1
+}
+},
+{
+"key": "meet john doe",
+"title": "Meet John Doe",
+"year": 1941,
+"first": "1941-05-25",
+"runs": 7,
+"tickets": 5456,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 2
+}
+},
+{
+"key": "penny serenade",
+"title": "Penny Serenade",
+"year": 1941,
+"first": "1941-06-04",
+"runs": 5,
+"tickets": 4512,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 2
+}
+},
+{
+"key": "blood and sand",
+"title": "Blood and Sand",
+"year": null,
+"first": "1941-06-17",
+"runs": 6,
+"tickets": 2204,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "moon over miami",
+"title": "Moon Over Miami",
+"year": 1941,
+"first": "1941-07-24",
+"runs": 7,
+"tickets": 4260,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 1
+}
+},
+{
+"key": "sun valley serenade",
+"title": "Sun Valley Serenade",
+"year": 1941,
+"first": "1941-09-14",
+"runs": 6,
+"tickets": 4118,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 3
+}
+},
+{
+"key": "dr jekyll and mr hyde",
+"title": "Dr. Jekyll and Mr. Hyde",
+"year": null,
+"first": "1941-09-21",
+"runs": 4,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "man who came to dinner",
+"title": "The Man Who Came to Dinner",
+"year": 1942,
+"first": "1942-04-12",
+"runs": 6,
+"tickets": 4088,
+"top": false,
+"recent": true,
+"yrs": {
+"1942": 2,
+"1941": 1
+}
+},
+{
+"key": "my favorite blonde",
+"title": "My Favorite Blonde",
+"year": 1942,
+"first": "1942-05-17",
+"runs": 4,
+"tickets": 2979,
+"top": false,
+"recent": true,
+"yrs": {
+"1942": 1
+}
+},
+{
+"key": "this gun for hire",
+"title": "This Gun for Hire",
+"year": 1942,
+"first": "1942-07-19",
+"runs": 7,
+"tickets": 6223,
+"top": false,
+"recent": true,
+"yrs": {
+"1942": 3
+}
+},
+{
+"key": "orchestra wives",
+"title": "Orchestra Wives",
+"year": 1942,
+"first": "1942-10-08",
+"runs": 6,
+"tickets": 4128,
+"top": false,
+"recent": true,
+"yrs": {
+"1942": 5
+}
+},
+{
+"key": "major and minor",
+"title": "The Major and the Minor",
+"year": null,
+"first": "1942-12-22",
+"runs": 7,
+"tickets": 7013,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "i married witch",
+"title": "I Married a Witch",
+"year": 1942,
+"first": "1943-02-11",
+"runs": 2,
+"tickets": 1336,
+"top": false,
+"recent": true,
+"yrs": {
+"1942": 1
+}
+},
+{
+"key": "ox bow incident",
+"title": "The Ox-Bow Incident",
+"year": null,
+"first": "1943-07-08",
+"runs": 2,
+"tickets": 865,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "power of press",
+"title": "The Power of the Press",
+"year": 1928,
+"first": "1943-09-30",
+"runs": 7,
+"tickets": 2738,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 3
+}
+},
+{
+"key": "destination tokyo",
+"title": "Destination Tokyo",
+"year": 1943,
+"first": "1944-01-30",
+"runs": 4,
+"tickets": 2407,
+"top": false,
+"recent": true,
+"yrs": {
+"1943": 1
+}
+},
+{
+"key": "lifeboat",
+"title": "Lifeboat",
+"year": 1944,
+"first": "1944-03-09",
+"runs": 6,
+"tickets": 5314,
+"top": false,
+"recent": true,
+"yrs": {
+"1944": 3
+}
+},
+{
+"key": "none but lonely heart",
+"title": "None But the Lonely Heart",
+"year": 1944,
+"first": "1944-11-26",
+"runs": 4,
+"tickets": 1746,
+"top": false,
+"recent": true,
+"yrs": {
+"1944": 1
+}
+},
+{
+"key": "princess and pirate",
+"title": "The Princess and the Pirate",
+"year": null,
+"first": "1944-12-31",
+"runs": 3,
+"tickets": 1803,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "ministry of fear",
+"title": "Ministry of Fear",
+"year": 1944,
+"first": "1945-05-02",
+"runs": 4,
+"tickets": 1522,
+"top": false,
+"recent": true,
+"yrs": {
+"1944": 3
+}
+},
+{
+"key": "clock",
+"title": "The Clock",
+"year": 1945,
+"first": "1945-07-19",
+"runs": 6,
+"tickets": 3109,
+"top": false,
+"recent": true,
+"yrs": {
+"1945": 4
+}
+},
+{
+"key": "christmas in connecticut",
+"title": "Christmas in Connecticut",
+"year": 1945,
+"first": "1945-08-26",
+"runs": 3,
+"tickets": 2996,
+"top": false,
+"recent": true,
+"yrs": {
+"1945": 1,
+"1941": 1
+}
+},
+{
+"key": "mildred pierce",
+"title": "Mildred Pierce",
+"year": 1945,
+"first": "1945-11-04",
+"runs": 6,
+"tickets": 4332,
+"top": false,
+"recent": true,
+"yrs": {
+"1945": 3
+}
+},
+{
+"key": "leave her to heaven",
+"title": "Leave Her to Heaven",
+"year": 1945,
+"first": "1946-01-13",
+"runs": 5,
+"tickets": 3973,
+"top": false,
+"recent": true,
+"yrs": {
+"1945": 2
+}
+},
+{
+"key": "spiral staircase",
+"title": "The Spiral Staircase",
+"year": 1946,
+"first": "1946-03-20",
+"runs": 5,
+"tickets": 2471,
+"top": false,
+"recent": true,
+"yrs": {
+"1946": 3,
+"1945": 1
+}
+},
+{
+"key": "blue dahlia",
+"title": "The Blue Dahlia",
+"year": 1946,
+"first": "1946-05-29",
+"runs": 7,
+"tickets": 9187,
+"top": false,
+"recent": true,
+"yrs": {
+"1946": 4
+}
+},
+{
+"key": "postman always rings twice",
+"title": "The Postman Always Rings Twice",
+"year": 1946,
+"first": "1946-08-18",
+"runs": 6,
+"tickets": 7009,
+"top": false,
+"recent": true,
+"yrs": {
+"1946": 1
+}
+},
+{
+"key": "bedlam",
+"title": "Bedlam",
+"year": 1946,
+"first": "1946-10-31",
+"runs": 6,
+"tickets": 2444,
+"top": false,
+"recent": true,
+"yrs": {
+"1946": 4
+}
+},
+{
+"key": "my darling clementine",
+"title": "My Darling Clementine",
+"year": null,
+"first": "1946-11-03",
+"runs": 3,
+"tickets": 1463,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "undercurrent",
+"title": "Undercurrent",
+"year": 1946,
+"first": "1946-12-31",
+"runs": 3,
+"tickets": 815,
+"top": false,
+"recent": true,
+"yrs": {
+"1946": 1
+}
+},
+{
+"key": "red house",
+"title": "The Red House",
+"year": 1947,
+"first": "1947-05-04",
+"runs": 2,
+"tickets": 413,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 1
+}
+},
+{
+"key": "pursued",
+"title": "Pursued",
+"year": 1947,
+"first": "1947-05-15",
+"runs": 3,
+"tickets": 961,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 2
+}
+},
+{
+"key": "my favorite brunette",
+"title": "My Favorite Brunette",
+"year": 1947,
+"first": "1947-05-25",
+"runs": 4,
+"tickets": 2086,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 1
+}
+},
+{
+"key": "dark passage",
+"title": "Dark Passage",
+"year": 1947,
+"first": "1947-10-12",
+"runs": 7,
+"tickets": 5499,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 5
+}
+},
+{
+"key": "road to rio",
+"title": "Road to Rio",
+"year": 1947,
+"first": "1948-01-25",
+"runs": 7,
+"tickets": 3714,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 2
+}
+},
+{
+"key": "nightmare alley",
+"title": "Nightmare Alley",
+"year": 1947,
+"first": "1948-02-05",
+"runs": 3,
+"tickets": 1779,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 1
+}
+},
+{
+"key": "secret beyond door",
+"title": "Secret Beyond the Door",
+"year": 1947,
+"first": "1948-02-22",
+"runs": 3,
+"tickets": 940,
+"top": false,
+"recent": true,
+"yrs": {
+"1947": 2
+}
+},
+{
+"key": "fort apache",
+"title": "Fort Apache",
+"year": 1948,
+"first": "1948-06-27",
+"runs": 3,
+"tickets": 1405,
+"top": false,
+"recent": true,
+"yrs": {
+"1948": 2
+}
+},
+{
+"key": "pirate",
+"title": "The Pirate",
+"year": 1948,
+"first": "1948-08-12",
+"runs": 6,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1948": 5
+}
+},
+{
+"key": "paleface",
+"title": "The Paleface",
+"year": 1948,
+"first": "1949-01-20",
+"runs": 3,
+"tickets": 2370,
+"top": false,
+"recent": true,
+"yrs": {
+"1948": 1
+}
+},
+{
+"key": "every girl should be married",
+"title": "Every Girl Should Be Married",
+"year": 1948,
+"first": "1949-02-11",
+"runs": 5,
+"tickets": 3863,
+"top": false,
+"recent": true,
+"yrs": {
+"1948": 2
+}
+},
+{
+"key": "colorado territory",
+"title": "Colorado Territory",
+"year": 1949,
+"first": "1949-08-04",
+"runs": 2,
+"tickets": 287,
+"top": false,
+"recent": true,
+"yrs": {
+"1949": 1
+}
+},
+{
+"key": "madame bovary",
+"title": "Madame Bovary",
+"year": 1949,
+"first": "1949-11-03",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1949": 4
+}
+},
+{
+"key": "stage fright",
+"title": "Stage Fright",
+"year": 1950,
+"first": "1950-05-11",
+"runs": 6,
+"tickets": 6852,
+"top": false,
+"recent": true,
+"yrs": {
+"1950": 2
+}
+},
+{
+"key": "gunfighter",
+"title": "The Gunfighter",
+"year": 1950,
+"first": "1950-06-16",
+"runs": 2,
+"tickets": 621,
+"top": false,
+"recent": true,
+"yrs": {
+"1950": 1
+}
+},
+{
+"key": "abbott and costello meet frankenstein",
+"title": "Abbott and Costello Meet Frankenstein",
+"year": null,
+"first": "1950-06-24",
+"runs": 4,
+"tickets": 3179,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "broken arrow",
+"title": "Broken Arrow",
+"year": 1950,
+"first": "1950-08-27",
+"runs": 5,
+"tickets": 3073,
+"top": false,
+"recent": true,
+"yrs": {
+"1950": 2
+}
+},
+{
+"key": "love nest",
+"title": "Love Nest",
+"year": 1951,
+"first": "1951-11-21",
+"runs": 2,
+"tickets": 519,
+"top": false,
+"recent": true,
+"yrs": {
+"1951": 1
+}
+},
+{
+"key": "lets make it legal",
+"title": "Let's Make It Legal",
+"year": 1951,
+"first": "1951-12-18",
+"runs": 2,
+"tickets": 379,
+"top": false,
+"recent": true,
+"yrs": {
+"1951": 1
+}
+},
+{
+"key": "draculas daughter",
+"title": "Dracula's Daughter",
+"year": 1936,
+"first": "1952-02-21",
+"runs": 2,
+"tickets": 906,
+"top": false,
+"recent": true,
+"yrs": {
+"1936": 1
+}
+},
+{
+"key": "clash by night",
+"title": "Clash by Night",
+"year": 1952,
+"first": "1952-06-08",
+"runs": 5,
+"tickets": 2264,
+"top": false,
+"recent": true,
+"yrs": {
+"1952": 4
+}
+},
+{
+"key": "leopard man",
+"title": "The Leopard Man",
+"year": 1943,
+"first": "1952-07-16",
+"runs": 6,
+"tickets": 2403,
+"top": false,
+"recent": true,
+"yrs": {
+"1943": 4
+}
+},
+{
+"key": "sudden fear",
+"title": "Sudden Fear",
+"year": 1952,
+"first": "1952-10-19",
+"runs": 4,
+"tickets": 1907,
+"top": false,
+"recent": true,
+"yrs": {
+"1952": 3
+}
+},
+{
+"key": "monkey business#1952",
+"title": "Monkey Business",
+"year": null,
+"first": "1952-10-26",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "niagara",
+"title": "Niagara",
+"year": 1953,
+"first": "1953-02-19",
+"runs": 6,
+"tickets": 4151,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 5
+}
+},
+{
+"key": "shane",
+"title": "Shane",
+"year": 1953,
+"first": "1953-07-29",
+"runs": 3,
+"tickets": 621,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 1
+}
+},
+{
+"key": "how to marry millionaire",
+"title": "How to Marry a Millionaire",
+"year": 1953,
+"first": "1954-01-13",
+"runs": 6,
+"tickets": 7880,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 4
+}
+},
+{
+"key": "river of no return",
+"title": "River of No Return",
+"year": 1954,
+"first": "1954-06-11",
+"runs": 2,
+"tickets": 440,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 1
+}
+},
+{
+"key": "johnny guitar",
+"title": "Johnny Guitar",
+"year": 1954,
+"first": "1954-06-18",
+"runs": 2,
+"tickets": 431,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 1
+}
+},
+{
+"key": "duel in sun",
+"title": "Duel in the Sun",
+"year": 1946,
+"first": "1954-09-15",
+"runs": 5,
+"tickets": 3037,
+"top": false,
+"recent": true,
+"yrs": {
+"1946": 3
+}
+},
+{
+"key": "white christmas",
+"title": "White Christmas",
+"year": 1954,
+"first": "1954-11-17",
+"runs": 4,
+"tickets": 3104,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 2
+}
+},
+{
+"key": "theres no business like show business",
+"title": "There's No Business Like Show Business",
+"year": 1954,
+"first": "1955-01-09",
+"runs": 3,
+"tickets": 1297,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 2
+}
+},
+{
+"key": "young at heart",
+"title": "Young at Heart",
+"year": 1954,
+"first": "1955-01-21",
+"runs": 4,
+"tickets": 2364,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 4
+}
+},
+{
+"key": "searchers",
+"title": "The Searchers",
+"year": 1956,
+"first": "1956-06-06",
+"runs": 5,
+"tickets": 3925,
+"top": false,
+"recent": true,
+"yrs": {
+"1956": 3
+}
+},
+{
+"key": "bus stop",
+"title": "Bus Stop",
+"year": 1956,
+"first": "1956-09-12",
+"runs": 4,
+"tickets": 3319,
+"top": false,
+"recent": true,
+"yrs": {
+"1956": 2
+}
+},
+{
+"key": "run of arrow",
+"title": "Run of the Arrow",
+"year": 1957,
+"first": "1957-09-29",
+"runs": 2,
+"tickets": 287,
+"top": false,
+"recent": true,
+"yrs": {
+"1957": 1
+}
+},
+{
+"key": "touch of evil",
+"title": "Touch of Evil",
+"year": 1958,
+"first": "1958-05-21",
+"runs": 3,
+"tickets": 2578,
+"top": false,
+"recent": true,
+"yrs": {
+"1958": 2
+}
+},
+{
+"key": "bravados",
+"title": "The Bravados",
+"year": 1958,
+"first": "1958-07-18",
+"runs": 2,
+"tickets": 450,
+"top": false,
+"recent": true,
+"yrs": {
+"1958": 1
+}
+},
+{
+"key": "indiscreet",
+"title": "Indiscreet",
+"year": 1958,
+"first": "1958-08-13",
+"runs": 5,
+"tickets": 7483,
+"top": false,
+"recent": true,
+"yrs": {
+"1958": 2
+}
+},
+{
+"key": "rio bravo",
+"title": "Rio Bravo",
+"year": 1959,
+"first": "1959-03-20",
+"runs": 4,
+"tickets": 3003,
+"top": false,
+"recent": true,
+"yrs": {
+"1959": 3
+}
+},
+{
+"key": "mummy",
+"title": "The Mummy",
+"year": 1932,
+"first": "1959-09-09",
+"runs": 7,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1932": 5
+}
+},
+{
+"key": "nuns story",
+"title": "The Nun's Story",
+"year": 1959,
+"first": "1960-04-05",
+"runs": 6,
+"tickets": 9146,
+"top": false,
+"recent": true,
+"yrs": {
+"1959": 3
+}
+},
+{
+"key": "unforgiven",
+"title": "The Unforgiven",
+"year": 1960,
+"first": "1960-04-15",
+"runs": 3,
+"tickets": 6978,
+"top": false,
+"recent": true,
+"yrs": {
+"1960": 1
+}
+},
+{
+"key": "lets make love",
+"title": "Let's Make Love",
+"year": 1960,
+"first": "1960-09-16",
+"runs": 3,
+"tickets": 1349,
+"top": false,
+"recent": true,
+"yrs": {
+"1960": 4
+}
+},
+{
+"key": "one eyed jacks",
+"title": "One-Eyed Jacks",
+"year": null,
+"first": "1961-06-14",
+"runs": 3,
+"tickets": 1773,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "applause",
+"title": "Applause",
+"year": 1929,
+"first": "1988-02-08",
+"runs": 5,
+"tickets": 1235,
+"top": false,
+"recent": true,
+"yrs": {
+"1929": 3
+}
+},
+{
+"key": "blonde venus",
+"title": "Blonde Venus",
+"year": 1932,
+"first": "1988-02-14",
+"runs": 7,
+"tickets": 3522,
+"top": false,
+"recent": true,
+"yrs": {
+"1932": 3
+}
+},
+{
+"key": "gay desperado",
+"title": "The Gay Desperado",
+"year": 1936,
+"first": "1988-02-22",
+"runs": 3,
+"tickets": 505,
+"top": false,
+"recent": true,
+"yrs": {
+"1936": 2
+}
+},
+{
+"key": "miracle woman",
+"title": "The Miracle Woman",
+"year": 1931,
+"first": "1990-02-19",
+"runs": 5,
+"tickets": 3038,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 4
+}
+},
+{
+"key": "that certain thing",
+"title": "That Certain Thing",
+"year": null,
+"first": "1990-02-22",
+"runs": 5,
+"tickets": 4161,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "platinum blonde",
+"title": "Platinum Blonde",
+"year": 1931,
+"first": "1990-02-23",
+"runs": 6,
+"tickets": 7868,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 3
+}
+},
+{
+"key": "dirigible",
+"title": "Dirigible",
+"year": 1931,
+"first": "1990-03-07",
+"runs": 6,
+"tickets": 3212,
+"top": false,
+"recent": true,
+"yrs": {
+"1931": 3
+}
+},
+{
+"key": "long long trailer",
+"title": "The Long Long Trailer",
+"year": 1954,
+"first": "1990-07-09",
+"runs": 4,
+"tickets": 3109,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 3,
+"1953": 1
+}
+},
+{
+"key": "fathers little dividend",
+"title": "Father's Little Dividend",
+"year": 1951,
+"first": "1990-07-09",
+"runs": 5,
+"tickets": 4109,
+"top": false,
+"recent": true,
+"yrs": {
+"1951": 2
+}
+},
+{
+"key": "tea and sympathy",
+"title": "Tea and Sympathy",
+"year": null,
+"first": "1990-07-13",
+"runs": 3,
+"tickets": 3441,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "lust for life",
+"title": "Lust for Life",
+"year": 1956,
+"first": "1990-07-13",
+"runs": 6,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1956": 4
+}
+},
+{
+"key": "brigadoon",
+"title": "Brigadoon",
+"year": 1954,
+"first": "1990-07-27",
+"runs": 7,
+"tickets": 8956,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 6
+}
+},
+{
+"key": "this is night",
+"title": "This Is the Night",
+"year": 1932,
+"first": "1990-11-05",
+"runs": 5,
+"tickets": 3395,
+"top": false,
+"recent": true,
+"yrs": {
+"1932": 2
+}
+},
+{
+"key": "bank dick",
+"title": "The Bank Dick",
+"year": 1940,
+"first": "1990-11-25",
+"runs": 3,
+"tickets": 1960,
+"top": false,
+"recent": true,
+"yrs": {
+"1940": 2
+}
+},
+{
+"key": "winning of barbara worth",
+"title": "The Winning of Barbara Worth",
+"year": null,
+"first": "1991-02-06",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "100 men and girl",
+"title": "100 Men and a Girl",
+"year": null,
+"first": "1991-03-19",
+"runs": 7,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "giant",
+"title": "Giant",
+"year": 1956,
+"first": "1991-08-31",
+"runs": 4,
+"tickets": 4455,
+"top": false,
+"recent": true,
+"yrs": {
+"1956": 2
+}
+},
+{
+"key": "student prince in old heidelberg",
+"title": "The Student Prince in Old Heidelberg",
+"year": 1927,
+"first": "1992-01-19",
+"runs": 4,
+"tickets": 1285,
+"top": false,
+"recent": true,
+"yrs": {
+"1927": 2
+}
+},
+{
+"key": "man i killed broken lullaby",
+"title": "The Man I Killed (Broken Lullaby)",
+"year": null,
+"first": "1992-02-15",
+"runs": 4,
+"tickets": 2424,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "i confess",
+"title": "I Confess",
+"year": 1953,
+"first": "1992-03-17",
+"runs": 6,
+"tickets": 3393,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 4
+}
+},
+{
+"key": "how to steal million",
+"title": "How to Steal a Million",
+"year": 1966,
+"first": "1993-03-10",
+"runs": 5,
+"tickets": 9342,
+"top": false,
+"recent": true,
+"yrs": {
+"1966": 3
+}
+},
+{
+"key": "naked spur",
+"title": "The Naked Spur",
+"year": 1953,
+"first": "1994-01-15",
+"runs": 5,
+"tickets": 4236,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 3
+}
+},
+{
+"key": "bell book and candle",
+"title": "Bell, Book and Candle",
+"year": null,
+"first": "1994-01-19",
+"runs": 5,
+"tickets": 6445,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "bell",
+"title": "Bell",
+"year": null,
+"first": "1994-01-19",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "book and candle",
+"title": "Book and Candle",
+"year": null,
+"first": "1994-01-19",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "far country",
+"title": "The Far Country",
+"year": 1954,
+"first": "1994-01-22",
+"runs": 6,
+"tickets": 4538,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 4
+}
+},
+{
+"key": "man who shot liberty valance",
+"title": "The Man Who Shot Liberty Valance",
+"year": 1962,
+"first": "1994-01-26",
+"runs": 4,
+"tickets": 3666,
+"top": false,
+"recent": true,
+"yrs": {
+"1962": 2
+}
+},
+{
+"key": "our dancing daughters",
+"title": "Our Dancing Daughters",
+"year": null,
+"first": "1994-07-13",
+"runs": 2,
+"tickets": 776,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "asphalt jungle",
+"title": "The Asphalt Jungle",
+"year": 1950,
+"first": "1994-07-21",
+"runs": 3,
+"tickets": 1672,
+"top": false,
+"recent": true,
+"yrs": {
+"1950": 1
+}
+},
+{
+"key": "love me or leave me",
+"title": "Love Me or Leave Me",
+"year": 1955,
+"first": "1994-07-23",
+"runs": 3,
+"tickets": 3642,
+"top": false,
+"recent": true,
+"yrs": {
+"1955": 2
+}
+},
+{
+"key": "deep in my heart",
+"title": "Deep in My Heart",
+"year": 1954,
+"first": "1994-08-05",
+"runs": 2,
+"tickets": 929,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 1
+}
+},
+{
+"key": "greed",
+"title": "Greed",
+"year": 1924,
+"first": "1994-08-17",
+"runs": 2,
+"tickets": 890,
+"top": false,
+"recent": true,
+"yrs": {
+"1924": 1
+}
+},
+{
+"key": "red river",
+"title": "Red River",
+"year": 1948,
+"first": "1995-06-24",
+"runs": 4,
+"tickets": 3739,
+"top": false,
+"recent": true,
+"yrs": {
+"1948": 3
+}
+},
+{
+"key": "father goose",
+"title": "Father Goose",
+"year": 1964,
+"first": "1996-01-27",
+"runs": 3,
+"tickets": 5530,
+"top": false,
+"recent": true,
+"yrs": {
+"1964": 1
+}
+},
+{
+"key": "story of three loves",
+"title": "The Story of Three Loves",
+"year": 1953,
+"first": "1996-01-31",
+"runs": 2,
+"tickets": 959,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 1
+}
+},
+{
+"key": "my best girl",
+"title": "My Best Girl",
+"year": 1927,
+"first": "1996-09-04",
+"runs": 2,
+"tickets": 744,
+"top": false,
+"recent": true,
+"yrs": {
+"1927": 1
+}
+},
+{
+"key": "scarlet street",
+"title": "Scarlet Street",
+"year": 1945,
+"first": "1997-01-09",
+"runs": 7,
+"tickets": 5694,
+"top": false,
+"recent": true,
+"yrs": {
+"1945": 4
+}
+},
+{
+"key": "gun crazy",
+"title": "Gun Crazy",
+"year": 1950,
+"first": "1997-01-30",
+"runs": 6,
+"tickets": 5309,
+"top": false,
+"recent": true,
+"yrs": {
+"1950": 4
+}
+},
+{
+"key": "phantom lady",
+"title": "Phantom Lady",
+"year": 1944,
+"first": "1997-02-13",
+"runs": 5,
+"tickets": 4736,
+"top": false,
+"recent": true,
+"yrs": {
+"1944": 3
+}
+},
+{
+"key": "killers",
+"title": "The Killers",
+"year": 1946,
+"first": "1997-03-13",
+"runs": 2,
+"tickets": 2334,
+"top": false,
+"recent": true,
+"yrs": {
+"1946": 1
+}
+},
+{
+"key": "forbidden",
+"title": "Forbidden",
+"year": 1932,
+"first": "1997-05-23",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1932": 2
+}
+},
+{
+"key": "bread love and dreams pane amore e fantasia",
+"title": "Bread, Love and Dreams (Pane, Amore e Fantasia)",
+"year": null,
+"first": "1998-05-08",
+"runs": 4,
+"tickets": 6328,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "bread",
+"title": "Bread",
+"year": null,
+"first": "1998-05-08",
+"runs": 4,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "love and dreams pane",
+"title": "Love and Dreams (Pane",
+"year": null,
+"first": "1998-05-08",
+"runs": 4,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "amore e fantasia",
+"title": "Amore e Fantasia)",
+"year": null,
+"first": "1998-05-08",
+"runs": 4,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "night of hunter",
+"title": "Night of the Hunter",
+"year": 1955,
+"first": "1998-06-19",
+"runs": 3,
+"tickets": 3224,
+"top": false,
+"recent": true,
+"yrs": {
+"1955": 4
+}
+},
+{
+"key": "to kill mockingbird",
+"title": "To Kill a Mockingbird",
+"year": 1962,
+"first": "1998-06-19",
+"runs": 6,
+"tickets": 14646,
+"top": false,
+"recent": true,
+"yrs": {
+"1962": 3
+}
+},
+{
+"key": "yojimbo",
+"title": "Yojimbo",
+"year": 1961,
+"first": "1998-09-12",
+"runs": 5,
+"tickets": 3742,
+"top": false,
+"recent": true,
+"yrs": {
+"1961": 5
+}
+},
+{
+"key": "seven samurai",
+"title": "The Seven Samurai",
+"year": 1954,
+"first": "1998-09-18",
+"runs": 5,
+"tickets": 4936,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 6
+}
+},
+{
+"key": "hidden fortress",
+"title": "The Hidden Fortress",
+"year": 1958,
+"first": "1998-10-09",
+"runs": 5,
+"tickets": 4162,
+"top": false,
+"recent": true,
+"yrs": {
+"1958": 4
+}
+},
+{
+"key": "torn curtain",
+"title": "Torn Curtain",
+"year": 1966,
+"first": "2000-04-10",
+"runs": 2,
+"tickets": 1144,
+"top": false,
+"recent": true,
+"yrs": {
+"1966": 1
+}
+},
+{
+"key": "topaz",
+"title": "Topaz",
+"year": 1969,
+"first": "2000-04-10",
+"runs": 2,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1969": 1
+}
+},
+{
+"key": "frenzy",
+"title": "Frenzy",
+"year": 1972,
+"first": "2000-04-17",
+"runs": 2,
+"tickets": 2300,
+"top": false,
+"recent": true,
+"yrs": {
+"1972": 1
+}
+},
+{
+"key": "seventh victim",
+"title": "The Seventh Victim",
+"year": 1943,
+"first": "2000-11-01",
+"runs": 5,
+"tickets": 2348,
+"top": false,
+"recent": true,
+"yrs": {
+"1943": 4
+}
+},
+{
+"key": "body snatcher",
+"title": "The Body Snatcher",
+"year": 1945,
+"first": "2000-11-08",
+"runs": 5,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1945": 4
+}
+},
+{
+"key": "black cat",
+"title": "The Black Cat",
+"year": 1934,
+"first": "2000-11-11",
+"runs": 7,
+"tickets": 4898,
+"top": false,
+"recent": true,
+"yrs": {
+"1934": 6
+}
+},
+{
+"key": "i walked with zombie",
+"title": "I Walked With a Zombie",
+"year": 1943,
+"first": "2000-11-15",
+"runs": 7,
+"tickets": 3967,
+"top": false,
+"recent": true,
+"yrs": {
+"1943": 5,
+"1942": 1
+}
+},
+{
+"key": "ghost ship",
+"title": "The Ghost Ship",
+"year": 1943,
+"first": "2000-11-22",
+"runs": 5,
+"tickets": 2393,
+"top": false,
+"recent": true,
+"yrs": {
+"1943": 4
+}
+},
+{
+"key": "isle of dead",
+"title": "Isle of the Dead",
+"year": 1945,
+"first": "2000-11-22",
+"runs": 6,
+"tickets": 3327,
+"top": false,
+"recent": true,
+"yrs": {
+"1945": 5
+}
+},
+{
+"key": "wolf man",
+"title": "The Wolf Man",
+"year": 1941,
+"first": "2000-11-25",
+"runs": 3,
+"tickets": 1813,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 2
+}
+},
+{
+"key": "calamity jane",
+"title": "Calamity Jane",
+"year": 1953,
+"first": "2001-08-02",
+"runs": 7,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 4
+}
+},
+{
+"key": "jr",
+"title": "Jr.",
+"year": null,
+"first": "2001-08-15",
+"runs": 4,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "scarlet claw",
+"title": "The Scarlet Claw",
+"year": 1944,
+"first": "2001-11-23",
+"runs": 4,
+"tickets": 3601,
+"top": false,
+"recent": true,
+"yrs": {
+"1944": 3
+}
+},
+{
+"key": "designing woman",
+"title": "Designing Woman",
+"year": null,
+"first": "2003-06-20",
+"runs": 6,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "crowd",
+"title": "The Crowd",
+"year": 1928,
+"first": "2004-09-01",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 1
+}
+},
+{
+"key": "counsellor at law",
+"title": "Counsellor at Law",
+"year": 1933,
+"first": "2005-11-17",
+"runs": 5,
+"tickets": 3393,
+"top": false,
+"recent": true,
+"yrs": {
+"1933": 3
+}
+},
+{
+"key": "cobweb",
+"title": "The Cobweb",
+"year": 1955,
+"first": "2006-05-14",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1955": 4
+}
+},
+{
+"key": "some came running",
+"title": "Some Came Running",
+"year": null,
+"first": "2006-05-27",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "two weeks in another town",
+"title": "Two Weeks in Another Town",
+"year": 1962,
+"first": "2006-06-04",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1962": 4
+}
+},
+{
+"key": "sandpiper",
+"title": "The Sandpiper",
+"year": 1965,
+"first": "2006-06-10",
+"runs": 2,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1965": 3
+}
+},
+{
+"key": "kismet#1955",
+"title": "Kismet",
+"year": null,
+"first": "2006-06-17",
+"runs": 2,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "bad day at black rock",
+"title": "Bad Day at Black Rock",
+"year": 1955,
+"first": "2007-04-18",
+"runs": 2,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1955": 2
+}
+},
+{
+"key": "steamboat bill",
+"title": "Steamboat Bill",
+"year": null,
+"first": "2007-09-12",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "man of west",
+"title": "Man of the West",
+"year": 1958,
+"first": "2007-09-19",
+"runs": 2,
+"tickets": 1515,
+"top": false,
+"recent": true,
+"yrs": {
+"1958": 2
+}
+},
+{
+"key": "little kidnappers kidnappers",
+"title": "The Little Kidnappers (The Kidnappers)",
+"year": null,
+"first": "2008-10-09",
+"runs": 3,
+"tickets": 2479,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "kidnappers",
+"title": "The Kidnappers",
+"year": 1953,
+"first": "2008-10-09",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1953": 3
+}
+},
+{
+"key": "wind",
+"title": "The Wind",
+"year": 1928,
+"first": "2009-04-17",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1928": 2
+}
+},
+{
+"key": "sunset blvd",
+"title": "Sunset Blvd",
+"year": 1950,
+"first": "2009-11-03",
+"runs": 4,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1950": 4
+}
+},
+{
+"key": "ran",
+"title": "Ran",
+"year": 1985,
+"first": "2010-03-27",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1985": 3
+}
+},
+{
+"key": "angel face",
+"title": "Angel Face",
+"year": 1952,
+"first": "2010-11-18",
+"runs": 3,
+"tickets": 1350,
+"top": false,
+"recent": true,
+"yrs": {
+"1952": 2,
+"1953": 1
+}
+},
+{
+"key": "marriage circle",
+"title": "The Marriage Circle",
+"year": 1924,
+"first": "2012-03-02",
+"runs": 3,
+"tickets": 811,
+"top": false,
+"recent": true,
+"yrs": {
+"1924": 3
+}
+},
+{
+"key": "prince and showgirl",
+"title": "The Prince and the Showgirl",
+"year": null,
+"first": "2012-07-18",
+"runs": 2,
+"tickets": 707,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "only yesterday",
+"title": "Only Yesterday",
+"year": 1933,
+"first": "2012-09-12",
+"runs": 4,
+"tickets": 2130,
+"top": false,
+"recent": true,
+"yrs": {
+"1933": 4
+}
+},
+{
+"key": "one more river",
+"title": "One More River",
+"year": 1934,
+"first": "2012-09-28",
+"runs": 4,
+"tickets": 2153,
+"top": false,
+"recent": true,
+"yrs": {
+"1934": 5
+}
+},
+{
+"key": "imitation of life#1934",
+"title": "Imitation of Life",
+"year": null,
+"first": "2012-10-13",
+"runs": 3,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "werewolf of london",
+"title": "Werewolf of London",
+"year": 1935,
+"first": "2012-10-31",
+"runs": 3,
+"tickets": 1384,
+"top": false,
+"recent": true,
+"yrs": {
+"1935": 3
+}
+},
+{
+"key": "mummys hand",
+"title": "The Mummy's Hand",
+"year": 1941,
+"first": "2012-11-14",
+"runs": 2,
+"tickets": 1000,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 1,
+"1940": 1
+}
+},
+{
+"key": "suspect",
+"title": "The Suspect",
+"year": 1944,
+"first": "2012-11-24",
+"runs": 2,
+"tickets": 1142,
+"top": false,
+"recent": true,
+"yrs": {
+"1944": 2
+}
+},
+{
+"key": "it started with eve",
+"title": "It Started with Eve",
+"year": 1941,
+"first": "2012-12-15",
+"runs": 6,
+"tickets": 3515,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 7
+}
+},
+{
+"key": "hers to hold",
+"title": "Hers to Hold",
+"year": 1943,
+"first": "2012-12-18",
+"runs": 2,
+"tickets": 745,
+"top": false,
+"recent": true,
+"yrs": {
+"1943": 2
+}
+},
+{
+"key": "his butlers sister",
+"title": "His Butler's Sister",
+"year": 1943,
+"first": "2012-12-21",
+"runs": 3,
+"tickets": 1576,
+"top": false,
+"recent": true,
+"yrs": {
+"1943": 3
+}
+},
+{
+"key": "iron horse",
+"title": "The Iron Horse",
+"year": 1924,
+"first": "2015-11-22",
+"runs": 2,
+"tickets": 514,
+"top": false,
+"recent": true,
+"yrs": {
+"1924": 2
+}
+},
+{
+"key": "in heat of night",
+"title": "In the Heat of the Night",
+"year": 1967,
+"first": "2022-07-23",
+"runs": 1,
+"tickets": 924,
+"top": false,
+"recent": true,
+"yrs": {
+"1967": 1
+}
+},
+{
+"key": "to sir with love",
+"title": "To Sir, With Love",
+"year": 1967,
+"first": "2022-07-23",
+"runs": 1,
+"tickets": 924,
+"top": false,
+"recent": true,
+"yrs": {
+"1967": 1
+}
+},
+{
+"key": "to sir",
+"title": "To Sir",
+"year": null,
+"first": "2022-07-23",
+"runs": 1,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "with love",
+"title": "With Love",
+"year": null,
+"first": "2022-07-23",
+"runs": 1,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "mark of zorro 1940",
+"title": "The Mark of Zorro (1940",
+"year": null,
+"first": "2022-09-08",
+"runs": 1,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "criss cross",
+"title": "Criss Cross",
+"year": 1949,
+"first": "2024-11-09",
+"runs": 1,
+"tickets": 1127,
+"top": false,
+"recent": true,
+"yrs": {
+"1949": 1
+}
+},
+{
+"key": "mary poppins",
+"title": "Mary Poppins",
+"year": 1964,
+"first": "2024-12-06",
+"runs": 2,
+"tickets": 4071,
+"top": false,
+"recent": true,
+"yrs": {
+"1964": 2
+}
+},
+{
+"key": "why we fight 1942 44",
+"title": "Why We Fight (1942-44)",
+"year": null,
+"first": "2025-01-19",
+"runs": 1,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "shanghai gesture",
+"title": "The Shanghai Gesture",
+"year": 1941,
+"first": "2025-03-08",
+"runs": 1,
+"tickets": 733,
+"top": false,
+"recent": true,
+"yrs": {
+"1941": 1
+}
+},
+{
+"key": "covered wagon",
+"title": "The Covered Wagon",
+"year": 1923,
+"first": "2025-10-04",
+"runs": 1,
+"tickets": 317,
+"top": false,
+"recent": true,
+"yrs": {
+"1923": 1
+}
+},
+{
+"key": "devils doorway",
+"title": "Devil's Doorway",
+"year": 1950,
+"first": "2025-10-30",
+"runs": 1,
+"tickets": 277,
+"top": false,
+"recent": true,
+"yrs": {
+"1950": 1
+}
+},
+{
+"key": "apache",
+"title": "Apache",
+"year": 1954,
+"first": "2025-10-30",
+"runs": 1,
+"tickets": 0,
+"top": false,
+"recent": true,
+"yrs": {
+"1954": 1
+}
+},
+{
+"key": "day of outlaw",
+"title": "Day of the Outlaw",
+"year": 1959,
+"first": "2025-12-04",
+"runs": 1,
+"tickets": 261,
+"top": false,
+"recent": true,
+"yrs": {
+"1959": 1
+}
+},
+{
+"key": "last hunt",
+"title": "The Last Hunt",
+"year": 1956,
+"first": "2025-12-04",
+"runs": 1,
+"tickets": 261,
+"top": false,
+"recent": true,
+"yrs": {
+"1956": 1
+}
+},
+{
+"key": "3 10 to yuma",
+"title": "3:10 to Yuma",
+"year": null,
+"first": "2025-12-06",
+"runs": 1,
+"tickets": 1639,
+"top": false,
+"recent": true,
+"yrs": {}
+},
+{
+"key": "ride high country",
+"title": "Ride the High Country",
+"year": 1962,
+"first": "2025-12-11",
+"runs": 1,
+"tickets": 450,
+"top": false,
+"recent": true,
+"yrs": {
+"1962": 1
+}
+},
+{
+"key": "tall t",
+"title": "The Tall T",
+"year": 1957,
+"first": "2025-12-18",
+"runs": 1,
+"tickets": 587,
+"top": false,
+"recent": true,
+"yrs": {
+"1957": 1
+}
+},
+{
+"key": "ride lonesome",
+"title": "Ride Lonesome",
+"year": 1958,
+"first": "2025-12-18",
+"runs": 1,
+"tickets": 587,
+"top": false,
+"recent": true,
+"yrs": {
+"1958": 1
+}
+},
+{
+"key": "secrets",
+"title": "Secrets",
+"year": 1933,
+"first": "2026-07-12",
+"runs": 1,
+"tickets": 390,
+"top": false,
+"recent": true,
+"yrs": {
+"1933": 1
+}
+},
+{
+"key": "dont bother to knock",
+"title": "Don't Bother to Knock",
+"year": 1952,
+"first": "2026-07-29",
+"runs": 1,
+"tickets": 461,
+"top": false,
+"recent": true,
+"yrs": {
+"1952": 1
+}
+},
+{
+"key": "misfits",
+"title": "The Misfits",
+"year": 1961,
+"first": "2026-08-26",
+"runs": 1,
+"tickets": 265,
+"top": false,
+"recent": true,
+"yrs": {
+"1961": 1
+}
+}
+]

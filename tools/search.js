@@ -27,8 +27,8 @@ var nq=N(v),qa=TK(nq),qt=qa.filter(function(x){return x.length>=4});if(!qt.lengt
 if(/^[\d\s\/\-]+$/.test(v)){var m=D.filter(function(o){return (o.start+' '+(o.date_text||'')).indexOf(v)>=0});C.textContent=m.length.toLocaleString()+' matches'+(m.length>300?' (showing first 300)':'');
 R.innerHTML=m.slice(0,300).map(function(o){return '<li class="sl">'+badge(o)+' <a href="'+esc(o.url)+'">'+esc(o.title)+'</a> <span class="rd2">'+esc(dd(o))+'</span></li>'}).join('');return}
 var G={};D.forEach(function(o){if(!o._t)o._t=N(o.title);var s=score(o._t,nq,qt),key,name,pw='';
-if(s>=0){key=o._t;name=o.title}
-if(key==null)return;var g=G[key]||(G[key]={name:name,s:s,items:[],yr:null});if(s<g.s)g.s=s;if(s<3)g.name=o.title;if(o.fyear&&!g.yr)g.yr=o.fyear;g.items.push({o:o,pw:pw})});
+if(s>=0){key=o.run?o.run.replace(/\|\d+$/,''):o._t;name=o.title}
+if(key==null)return;var g=G[key]||(G[key]={name:name,s:s,items:[],yr:null});if(s<g.s)g.s=s;if(s<3)g.name=o.title;if(o.year)g.yr=o.year;else if(o.fyear&&!g.yr)g.yr=o.fyear;g.items.push({o:o,pw:pw})});
 var gs=Object.keys(G).map(function(k){var g=G[k];g.k=k;return g}).sort(function(a,b){return a.s-b.s||b.items.length-a.items.length});
 var tot=gs.reduce(function(a,g){return a+g.items.length},0);C.textContent=gs.length+' film'+(gs.length==1?'':'s')+' · '+tot.toLocaleString()+' showings'+(gs.length>40?' (first 40 films)':'');
 R.innerHTML=gs.slice(0,40).map(function(g){var t=esc(g.name)+(g.yr?' ('+g.yr+')':''),fp=FP[g.k];

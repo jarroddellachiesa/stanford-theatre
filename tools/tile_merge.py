@@ -40,6 +40,10 @@ for title,runs in T.items():
     q=urllib.parse.quote_plus(title)
     for r in sorted(runs,key=lambda r:min(r['dates'])):
         tile.append(dict(title=title,note=('w/ '+', '.join(r['pair'])) if r['pair'] else '',start=min(r['dates']).isoformat(),end=max(r['dates']).isoformat(),days=len(r['dates']),tickets=r['tickets'],source='Tile',url=f'https://tile.stanfordtheatre.org/tile?q={q}'))
+TA=json.load(open('stanford-site/data/title_aliases.json')); _AL=TA['aliases']; _RM={k:v for k,v in TA['remakes'].items() if len(v)>1}
+for o in d+tile:
+    c=_AL.get(o['title'])
+    if c: o.setdefault('orig_title',o['title']); o['title']=c
 seen=set();out=[]
 for o in sorted(d+tile,key=lambda o:(o['start'],o['source']!='Tile')):
     k=(o['title'].lower(),o['start'],o['source'])
@@ -76,8 +80,23 @@ for o in [x for x in out if x['source']=='Tile' and x['note'].startswith('w/ ')]
 out+=syn
 # one chronological sequence per film; overlapping/adjacent dated entries = one run
 G={}
+import bisect
+_CAL={}
 for o in out:
-    if OKD(o['start']): G.setdefault(NK(o['title']),[]).append(o)
+    k0=NK(o['title'])
+    if k0 in _RM and o['source']=='Stanford Theatre calendars' and o.get('fyear') in _RM[k0]: _CAL.setdefault(k0,[]).append(o)
+for o in out:
+    if not OKD(o['start']): continue
+    k=NK(o['title'])
+    if k in _RM:
+        ys=_RM[k]; y=o.get('fyear') if o.get('fyear') in ys else None
+        if y is None:
+            ov=[c for c in _CAL.get(k,[]) if c['start']<=(o.get('end') or o['start']) and o['start']<=(c.get('end') or c['start'])]
+            if ov: y=ov[0]['fyear']
+            elif o['source']=='Stanford Theatre history page':
+                c=[x for x in ys if x<=int(o['start'][:4])]; y=c[-1] if c else None
+        if y: o['year']=y; k=k+'#'+str(y)
+    G.setdefault(k,[]).append(o)
 for k,L in G.items():
     L.sort(key=lambda o:(o['start'],o.get('end') or o['start']))
     n=0;ce=None

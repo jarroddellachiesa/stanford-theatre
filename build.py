@@ -10,6 +10,8 @@ FEST=[("Remembering Eva Marie Saint","Oct 16–25, 2026",EMS,[("October 23–25"
 ("Mary Poppins / The Wizard of Oz","Oct 29–Nov 8, 2026",PW,[("October 29–November 1",[("mary-poppins","7:30 (plus 3:05 Sat/Sun)"),("the-wizard-of-oz","5:35, 10:00")]),("November 5–8",[("mary-poppins","7:30 (plus 3:05 Sat/Sun)"),("the-wizard-of-oz","5:35, 10:00")])],["mary-poppins","the-wizard-of-oz"])]
 MAP="https://www.google.com/maps/search/?api=1&query=Stanford+Theatre%2C+221+University+Ave%2C+Palo+Alto%2C+CA+94301"
 e=html.escape
+ALI0=lambda t:_TA0.get(t,t)
+_TA0=json.load(open('data/title_aliases.json'))['aliases']
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
 def page(title,body,root="",act=""):
     A=lambda k:' class="on" aria-current="page"' if k==act else ""
@@ -106,6 +108,11 @@ for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
     P.append(x)
 FJ=json.load(open('data/festivals.json'))
+_FIXN={'kurasawa':'Kurosawa','ray':'Satyajit Ray','fox':'20th Century-Fox','april':'April','horror':'Horror','holiday':'Holiday','summer':'Summer','winter':'Winter','cukor':'George Cukor','hitchcock':'Hitchcock'}
+def FN(n):
+    m=_re0.fullmatch(r'([a-z]+)(\d{4})',n or '')
+    return (_FIXN.get(m.group(1),m.group(1).title())+' '+m.group(2)) if m else n
+for _fe in FJ['festivals']: _fe['name']=FN(_fe['name'])
 def PSLUG(fe): return _re0.sub(r'[^a-z0-9]+','-',urllib.parse.unquote(fe['file']).rsplit('.',1)[0].lower()).strip('-')
 def hr(a,b):
     A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%B')+' '+str(d.day)
@@ -128,7 +135,7 @@ for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-
     en=fe['end'] or ''
     if en and en>=TODAY: continue
     dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
-    bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+''.join('<span class="bf2">'+e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
+    bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+''.join('<span class="bf2">'+e(_TA0.get(f['title'],f['title']))+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
     P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an"><a class="pfl" href="festivals/past/{PSLUG(fe)}.html">{e(fe["name"][:110])}</a></span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
@@ -142,6 +149,23 @@ TICKET=OR
 import unicodedata as _ud
 RT=tk("@N@","#e8564f","#8e1a16","grt")
 SH=json.load(open('data/showings.json'))
+_PFM={'festivals/archive/cal/'+_fe['file']:_fe for _fe in FJ['festivals']}
+_PFM.update({'festivals/archive/cal/'+urllib.parse.quote(_fe['file']):_fe for _fe in FJ['festivals']})
+NMATCH=[0,0]
+for o in SH:
+    if o['source']!='Stanford Theatre calendars': continue
+    fe=_PFM.get(o['url'])
+    if not fe or not fe['blocks']: NMATCH[1]+=1; continue
+    NMATCH[0]+=1
+    o['url']='festivals/past/'+PSLUG(fe)+'.html'
+    pw=[]
+    for b in fe['blocks']:
+        if b.get('start')==o['start'] or (b['start'] and b['start']<=o['start']<=(b.get('end') or b['start'])):
+            ts=[ALI0(f['title']) for f in b['films']]
+            if ALI0(o['title']) in ts: pw=[t for t in ts if t!=ALI0(o['title'])]; break
+    o['note']=fe['name'][:80]+(' · w/ '+', '.join(pw) if pw else '')
+print('RUNLINKS ours',NMATCH[0],'fallback',NMATCH[1])
+open('data/showings.js','w').write('window.SHOWINGS='+json.dumps(SH,ensure_ascii=False)+';')
 def NJ(t):
     t=_ud.normalize('NFD',str(t)); t=''.join(c for c in t if not _ud.combining(c)).lower().replace('&',' and ')
     t=_re0.sub(r"['’`]",'',t); w=[x for x in _re0.sub(r'[^a-z0-9]+',' ',t).split() if x and x not in('the','a','an')]
@@ -167,8 +191,8 @@ def BADGE(o):
     if n==1 and not o.get('badge'): h+=f'<span class="badge s1" title="First showing at the Stanford Theatre on record">{S1}</span>'
     elif n and n>1: h+=f'<span class="badge rt" title="{ORD(n)} run at the Stanford Theatre on record">'+RT.replace('@N@',str(n))+'</span>'
     return h
-def FILMRUNS(title):
-    k=NJ(title); its=sorted([o for o in SH if NJ(o['title'])==k],key=lambda o:o['start']); R=[];M={}
+def FILMRUNS(title,key=None):
+    k=NJ(title); its=sorted([o for o in SH if (o.get('run','').rsplit('|',1)[0]==key if key else NJ(o['title'])==k)],key=lambda o:o['start']); R=[];M={}
     for o in its:
         if not o.get('run'): R.append(dict(o,srcs={o['source']:1})); continue
         m=M.get(o['run'])
@@ -245,8 +269,61 @@ for name,dr,url,groups,films in FEST:
 <p class="orig"><a href="{url}">Original Stanford Theatre page</a> · <a href="archive/{ARCH[url]}">archived HTML</a></p>'''
     open(f'festivals/{SLUG[url]}.html','w').write(page(f"{name} — Stanford Theatre",b,"../"))
 
+# ---- covered films (last 5 years + top 200) ----
+import unicodedata as _ud2
+def NKT(t):
+    t=_ud2.normalize('NFD',t); t=''.join(c for c in t if not _ud2.combining(c)).lower()
+    t=_re0.sub(r'\s*\((?:19|20)\d\d\)\s*$','',t).replace('&',' and ')
+    t=_re0.sub(r"['’`]",'',t); return ' '.join(x for x in _re0.sub(r'[^a-z0-9]+',' ',t).split() if x not in('the','a','an'))
+TA=json.load(open('data/title_aliases.json')); ALI=lambda t:TA['aliases'].get(t,t); RMK={k:v for k,v in TA['remakes'].items() if len(v)>1}
+def FKEY(t,y=None):
+    k=NKT(ALI(t))
+    if k in RMK and y in RMK[k]: k+='#'+str(y)
+    return k
+CV=json.load(open('data/cover.json')); CM=json.load(open('data/cover_meta.json'))
+FEATK={'north by northwest':'north-by-northwest','on waterfront':'on-the-waterfront','mary poppins':'mary-poppins','wizard of oz':'the-wizard-of-oz'}
+COV={}  # key -> dict(slug,title,year,rt,poster)
+def _syn(x):
+    x=_re0.sub(r'\s+',' ',x or '').strip(); ss=_re0.split(r'(?<=[.!?])\s+',x); o=''
+    for t_ in ss:
+        if len(o)+len(t_)>420 and o: break
+        o+=(' ' if o else '')+t_
+    return o
+_used=set(FEATK.values())
+for c in CV:
+    k=c['key']; m=CM.get(k)
+    if k in FEATK or not m: continue
+    tt=ALI(c['title']); tt=_re0.sub(r'\s*\((?:19|20)\d\d\)$','',tt)
+    yr=int(k.split('#')[1]) if '#' in k else (c['year'] or (int(m['pd']) if m.get('pd') else m.get('wy')))
+    sl=_re0.sub(r'[^a-z0-9]+','-',tt.lower()).strip('-')
+    if sl in _used or '#' in k: sl+=f'-{yr}'
+    _used.add(sl)
+    COV[k]=dict(slug=sl,title=tt,year=yr,rt=m.get('rt'),poster=m.get('poster'),syn=_syn(m.get('ext')),desc=m.get('desc') or '',imdb=m.get('imdb'),wt=m['wt'])
+NFP=0
+import os as _o2
+if _o2.environ.get('NOCOVER'): COV={}
+for k,v in COV.items():
+    FR_=FILMRUNS(v['title'],key=k)
+    if not FR_: continue
+    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
+    OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]; ORR=[o for o in FR_ if o.get('badge')]; OGS=''
+    if OGR:
+        rng=FRp(OGR[0]['start'],max((o.get('end') or o['start']) for o in OGR)) if len(OGR)>1 else FRp(OGR[0]['start'],OGR[0].get('end'))
+        OGS+=f'<p class="big ogsum"><span class="badge og" title="{TOG}">{OG}</span> Original Billings: {len(OGR)} run{"s" if len(OGR)!=1 else ""} ({rng})</p>'
+        if ORR: OGS+=f'<p class="big ogsum"><span class="badge or" title="{TOR}">{OR}</span> Original Run: {e(DD(ORR[0]))}</p>'
+    tks=sum(o['tickets'] for o in FR_ if o.get('tickets')); fcs=len({o['url'] for o in SH if o.get('run','').rsplit('|',1)[0]==k and o['source']=='Stanford Theatre calendars'})
+    meta=' ★ '.join(x for x in [str(v['year']) if v['year'] else '',f"{v['rt']} min" if v['rt'] else ''] if x)
+    img=f'<img class="poster" src="../{v["poster"]}" alt="{e(v["title"])} poster">' if v['poster'] else ''
+    more=f'<li><a href="https://tile.stanfordtheatre.org/tile?q={urllib.parse.quote_plus(v["title"])}">Tile: {e(v["title"])}</a></li>'+(f'<li><a href="https://www.imdb.com/title/{v["imdb"]}/">IMDb: {e(v["title"])}</a></li>' if v['imdb'] else '')+f'<li><a href="https://en.wikipedia.org/wiki/{urllib.parse.quote(v["wt"].replace(" ","_"))}">Wikipedia: {e(v["wt"])}</a></li>'
+    b=f'''<article class="film"><div class="top">{img}
+<div><h1>{e(v['title'])}</h1><div class="meta">{meta}</div>{f'<p class="cr">{e(v["desc"][:1].upper()+v["desc"][1:])}</p>' if v['desc'] else ''}<p class="plot">{e(v['syn'])}</p></div></div>
+<section><h2>Previous Showings</h2><p class="big">{len(FR_)} Run{"s" if len(FR_)!=1 else ""} • {fcs} Festival{"s" if fcs!=1 else ""}</p>{f'<p class="big">{tks:,} tickets sold</p>' if tks else ''}{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
+<section><h2>More</h2><ul>{more}</ul></section></article>'''
+    open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../")); NFP+=1
+print('COVERPAGES',NFP)
+FPM=dict({k:'films/'+s_+'.html' for k,s_ in FEATK.items()},**{k:'films/'+v['slug']+'.html' for k,v in COV.items()})
 # ---- search page ----
-SJS=open('tools/search.js').read()
+SJS=open('tools/search.js').read(); SJS=_re0.sub(r'^var FP=\{.*?\};','var FP='+json.dumps(FPM)+';',SJS,count=1,flags=_re0.M)
 sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and Tile box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
 <div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run at the theatre</span></div>
@@ -263,6 +340,11 @@ for s_ in F: _PF[(NJ(F[s_]['t']),F[s_]['y'])]=s_
 NPAST=0
 def _pcard(fm):
     sl_=_PF.get((NJ(fm['title']),fm.get('year')))
+    cv=COV.get(FKEY(fm['title'],fm.get('year')))
+    if not sl_ and cv:
+        im=f'<img src="../../{cv["poster"]}" alt="{e(cv["title"])} poster">' if cv['poster'] else ''
+        return f'<div class="col"><a class="card{"" if im else " noimg"}" href="../../films/{cv["slug"]}.html">{im}<span>{e(cv["title"])}'+(f' ({cv["year"]})' if cv['year'] else '')+'</span>'+(f'<small>{cv["rt"]} min</small>' if cv['rt'] else '')+'</a></div>'
+    fm=dict(fm,title=ALI(fm['title']))
     yr=f" ({fm['year']})" if fm.get('year') else ''
     tm=''
     if sl_:
