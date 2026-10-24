@@ -42,7 +42,7 @@ FN={x[2]:(x[0],x[1]) for x in FEST}
 NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
 def blk(b):
     url,lab,st,en,items=b; nm,dr=FN[url]; sl=SLUG[url]
-    head=f'<div class="bf"><h2><a href="festivals/{sl}.html">{e(nm)}</a></h2><div class="dr">{dr}</div></div>'
+    head=f'<div class="bf"><div class="dr dtop">{dr}</div><h2><a href="festivals/{sl}.html">{e(nm)}</a></h2></div>'
     if items:
         body='<div class="cols">'+"".join(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a><div class="tm">{t}</div></div>' for s,t in items)+'</div>'
     else: body='<p class="tba">To Be Announced</p>'
@@ -60,7 +60,7 @@ open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h),
 u=['<section id="upcoming"><h1>Upcoming</h1>']
 for name,dr,url,groups,films in FEST:
     bs=[b for b in live if b[0]==url]
-    if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2><div class="dr">{dr}</div>'+"".join(blk(b) for b in bs)+'</div>')
+    if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><div class="dr dtop">{dr}</div><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2>'+"".join(blk(b) for b in bs)+'</div>')
 u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further programs announced yet.</p></section>',JSF]
 open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up").replace('<body>','<body data-mode="up">',1))
 P=['<section id="past"><h1>Past</h1><p class="sm" style="text-align:center">Finished programs, newest first.</p>']
@@ -90,7 +90,7 @@ for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-
     if en and en>=TODAY: continue
     dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
     bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+''.join('<span class="bf2">'+e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
-    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="an">{e(fe["name"][:110])}</span> <span class="dr">{dr}</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
+    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an">{e(fe["name"][:110])}</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
 document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
@@ -129,7 +129,7 @@ def cols(groups,films,root):
 for name,dr,url,groups,films in FEST:
     p=PRES[url]
     bl="".join(f'<h3>{_sp(d)}</h3><ul class="sched">'+"".join(f'<li>'+(f'<a href="https://www.imdb.com/title/{i}">{e(t)}</a>' if i else e(t))+(f': <b>{tm}</b>' if tm else '')+'</li>' for t,i,tm in it)+'</ul>' for d,it in p['blocks'])
-    b=f'''<section class="fest"><h1>{e(name)}</h1><div class="dr" style="text-align:center">{dr}</div>{cols(groups,films,"../")}</section>
+    b=f'''<section class="fest"><div class="dr dtop" style="text-align:center">{dr}</div><h1>{e(name)}</h1>{cols(groups,films,"../")}</section>
 <section class="fest pres"><h2>From the Stanford Theatre program page</h2><div class="sm">Preserved copy of the original page (text and images), saved Oct 23, 2026.</div>
 <img class="logo" src="img/stanford_theatre.gif" alt="Stanford Theatre logo"><div class="ptitle">Stanford Theatre Movie Guide</div>
 {f'<h3 class="pt">{p["title"]}</h3>' if p['title'] else ''}{f'<div class="dr">{p["sub"]}</div>' if p['sub'] else ''}<div class="days">{p['days']}</div>{bl}
