@@ -98,3 +98,4 @@ main>section:first-child{margin-top:18px}
 .gcal{color:#d4af37;opacity:.8;margin-left:3px;vertical-align:-1px;text-decoration:none}.gcal:hover{opacity:1}.calic{display:inline-block}
 .days{margin-top:10px;text-align:left}details.day{border-top:1px solid #d4af3744;padding:6px 2px}details.day summary{cursor:pointer;color:#e8c872;font-weight:700}
 .gct{color:inherit;text-decoration:underline dotted rgba(212,175,55,.7);text-underline-offset:3px}.gct:hover,.gct:focus-visible{color:#ffe08a;text-decoration:underline solid #d4af37}
+.bill+.bill{margin-top:18px;padding-top:6px;border-top:1px solid #d4af3733}

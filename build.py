@@ -192,7 +192,7 @@ def FESTLINK(o):
 for s,k in K.items():
     f=F[s];t=T[k]
     fest=[x for x in FEST if s in x[4]][0]
-    sl_=SLUG[fest[2]]; sched="".join(f'<div class="bill" data-end="{en}"><h3>{lab}</h3>'+DAYS(st,en,items,sl_,only=s)+'</div>' for u,lab,st,en,items in NB if items and any(a==s for a,_ in items))
+    sl_=SLUG[fest[2]]; sched="".join(f'<div class="bill" data-end="{en}">'+DAYS(st,en,items,sl_,only=s)+'</div>' for u,lab,st,en,items in NB if items and any(a==s for a,_ in items))
     FR_=FILMRUNS(f['t'])
     runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]
