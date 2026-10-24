@@ -239,7 +239,7 @@ for s,k in K.items():
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
 <section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p>{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
-<section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li><li><a href="../infographics/{s}.png" download>Download infographic (PNG)</a></li></ul><a href="../infographics/{s}.png"><img class="ig" src="../infographics/{s}.png" alt="{e(f['t'])} infographic"></a></section></article>'''
+<section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li></ul></section></article>'''
     open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../"))
 
 # ---- festival pages ----
