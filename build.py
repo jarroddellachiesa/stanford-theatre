@@ -126,8 +126,7 @@ def FRp(a,b):
 def ORD(n): return str(n)+({1:'st',2:'nd',3:'rd'}.get(n%10 if n%100 not in(11,12,13) else 0,'th'))
 def BADGE(o):
     h=''
-    if o['source']=='Stanford Theatre calendars': h+='<span class="src">Calendar</span> '
-    elif o['source']!='Tile': h+=f'<span class="badge og" title="{TOG}">{OG}</span> '
+    if o['source'] not in ('Tile','Stanford Theatre calendars'): h+=f'<span class="badge og" title="{TOG}">{OG}</span> '
     if o.get('badge'): h+=f'<span class="badge or" title="{TOR}">{OR}</span> '
     n=o.get('n')
     if n==1 and not o.get('badge'): h+=f'<span class="badge s1" title="First showing at the Stanford Theatre on record">{S1}</span>'
@@ -208,7 +207,7 @@ for name,dr,url,groups,films in FEST:
 SJS=open('tools/search.js').read()
 sb=f'''<section class="fest"><h1 class="mqh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and Tile box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
-<div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="src">Calendar</span> theatre calendars (1997–)</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run (history, calendars &amp; Tile combined)</span></div>
+<div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run at the theatre</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js"></script><script>var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};'''+SJS+'''</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb,"","search"))

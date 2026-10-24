@@ -5,7 +5,7 @@ function N(s){s=String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowe
 function TK(s){return s?s.split(' '):[]}
 function ED(a,b,k){if(Math.abs(a.length-b.length)>k)return false;var p=[],i,j;for(j=0;j<=b.length;j++)p[j]=j;for(i=1;i<=a.length;i++){var c=[i],mn=i;for(j=1;j<=b.length;j++){c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]==b[j-1]?0:1));if(c[j]<mn)mn=c[j]}if(mn>k)return false;p=c}return p[b.length]<=k}
 function ord(n){var s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])}
-function badge(o){var h='';if(o.source=='Stanford Theatre calendars')h+='<span class="src">Calendar</span> ';else if(o.source!='Tile')h+='<span class="badge og" title="'+TOG+'">'+OG+'</span> ';
+function badge(o){var h='';if(o.source!='Tile'&&o.source!='Stanford Theatre calendars')h+='<span class="badge og" title="'+TOG+'">'+OG+'</span> ';
 if(o.badge)h+='<span class="badge or" title="'+TOR+'">'+OR+'</span> ';
 if(o.n==1&&!o.badge)h+='<span class="badge s1" title="First showing at the Stanford Theatre on record">'+S1+'</span>';else if(o.n>1)h+='<span class="badge rt" title="'+ord(o.n)+' run at the Stanford Theatre on record">'+RT.replace('@N@',o.n)+'</span>';return h}
 function MR(its){var R=[],M={};its.forEach(function(x){var o=x.o;if(!o.run){R.push(o);return}var m=M[o.run];
