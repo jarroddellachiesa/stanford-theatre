@@ -62,3 +62,8 @@ details.arch summary .dr{display:block;text-align:center;margin-top:4px;font-siz
 
 .abl{list-style:none;padding-left:0}.abl li{margin:0 0 14px}.abl .bd{display:block}.abl .bf2{display:block;padding-left:12px}.abl .tm2{opacity:.8;font-size:.9em}
 .m1{white-space:nowrap;font-size:clamp(14px,6.4vw,52px);letter-spacing:clamp(1px,.4vw,4px)}
+
+.nav{flex-wrap:nowrap;gap:0;font-weight:400;font-size:clamp(10px,2.8vw,15px);letter-spacing:clamp(2px,.6vw,8px);text-transform:uppercase;white-space:nowrap;margin-top:14px}
+.nav a{color:#e8c872;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.nav a+a::before{content:"·";display:inline-block;margin:0 clamp(4px,1.2vw,14px);color:#e8c872;border:0}
+.nav a:hover,.nav a:focus-visible{color:#fff1cc;border-bottom-color:#d4af37aa}
