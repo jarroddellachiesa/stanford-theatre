@@ -11,9 +11,10 @@ FEST=[("Remembering Eva Marie Saint","Oct 16–25, 2026",EMS,[("October 23–25"
 MAP="https://www.google.com/maps/search/?api=1&query=Stanford+Theatre%2C+221+University+Ave%2C+Palo+Alto%2C+CA+94301"
 e=html.escape
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
-def page(title,body,root=""):
+def page(title,body,root="",act=""):
+    A=lambda k:' class="on" aria-current="page"' if k==act else ""
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><link rel="stylesheet" href="{root}style.css"></head><body>
-<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div></a><nav class="nav"><a href="{root}index.html#now">Now Showing</a><a href="{root}index.html#upcoming">Upcoming</a><a href="{root}past.html">Past</a><a href="{root}search.html">Search</a></nav></header><main>{body}</main>
+<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div></a><nav class="nav"><a href="{root}index.html"{A("now")}>Now Showing</a><a href="{root}upcoming.html"{A("up")}>Upcoming</a><a href="{root}past.html"{A("past")}>Past</a><a href="{root}search.html"{A("search")}>Search</a></nav></header><main>{body}</main>
 <footer><a href="{MAP}">Stanford Theatre, 221 University Ave, Palo Alto, CA 94301</a><div class="sm">Schedules subject to change — check <a href="https://www.stanfordtheatre.org/calendar.html">stanfordtheatre.org</a>.</div></footer></body></html>'''
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
 
@@ -34,19 +35,21 @@ def blk(b):
     else: body='<p class="tba">To Be Announced</p>'
     return f'<section class="fest blk" data-start="{st}" data-end="{en}" data-fest="{sl}">{head}<h3 class="bl">{lab}</h3>{body}<a class="btn" href="festivals/{sl}.html">Festival page →</a></section>'
 live=sorted([b for b in NB if b[3]>=TODAY],key=lambda b:b[2])
-h=['<section id="now"><h1>Now Showing</h1>']
-if live: h.append(blk(live[0]))
-h.append('</section><section id="upcoming"><h1>Upcoming</h1>')
-for name,dr,url,groups,films in FEST:
-    bs=[b for b in live[1:] if b[0]==url]
-    if bs: h.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2><div class="dr">{dr}</div>'+"".join(blk(b) for b in bs)+'</div>')
-h.append('</section>')
-h.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
+JSF="""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
 var all=[].slice.call(document.querySelectorAll('.blk'));all.forEach(function(b){if(b.dataset.end<t)b.remove();});
-var now=document.getElementById('now');if(!now.querySelector('.blk')){var r=[].slice.call(document.querySelectorAll('#upcoming .blk')).sort(function(a,b){return a.dataset.start<b.dataset.start?-1:1;});if(r[0])now.appendChild(r[0]);}
+var r=[].slice.call(document.querySelectorAll('.blk')).sort(function(a,b){return a.dataset.start<b.dataset.start?-1:1;});
+var M=document.body.dataset.mode;
+if(M==='now'){r.slice(1).forEach(function(b){b.remove();});}else if(r[0])r[0].remove();
 document.querySelectorAll('.fgrp').forEach(function(g){if(!g.querySelector('.blk'))g.remove();});
-if(!document.querySelector('#upcoming .blk'))document.getElementById('upcoming').style.display='none';})();</script>""")
-open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h)))
+var em=document.getElementById('empty');if(em&&!document.querySelector('.blk'))em.style.display='block';})();</script>"""
+h=['<section id="now"><h1>Now Showing</h1>']+[blk(b) for b in live]+['<p id="empty" class="sm" style="display:none;text-align:center">Nothing scheduled right now — see <a href="past.html">Past</a>.</p></section>',JSF]
+open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h),"","now").replace('<body>','<body data-mode="now">',1))
+u=['<section id="upcoming"><h1>Upcoming</h1>']
+for name,dr,url,groups,films in FEST:
+    bs=[b for b in live if b[0]==url]
+    if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2><div class="dr">{dr}</div>'+"".join(blk(b) for b in bs)+'</div>')
+u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further programs announced yet.</p></section>',JSF]
+open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up").replace('<body>','<body data-mode="up">',1))
 P=['<section id="past"><h1>Past</h1><p class="sm" style="text-align:center">Finished programs, newest first.</p>']
 for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
@@ -78,7 +81,7 @@ for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
 document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
-open('past.html','w').write(page("Past — Stanford Theatre","".join(P)))
+open('past.html','w').write(page("Past — Stanford Theatre","".join(P),"","past"))
 for s,k in K.items():
     f=F[s];t=T[k]
     fest=[x for x in FEST if s in x[4]][0]
@@ -132,4 +135,4 @@ sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Billings from
 <div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> original billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run (first release)</span><span class="li"><span class="src">Calendar</span> theatre calendars (1997–)</span><span class="li"><span class="badge s1">{S1}</span> first Tile run</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth Tile run</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js"></script><script>var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};'''+SJS+'''</script>'''
-open('search.html','w').write(page("Search — Stanford Theatre",sb))
+open('search.html','w').write(page("Search — Stanford Theatre",sb,"","search"))

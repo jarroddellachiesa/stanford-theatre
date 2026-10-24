@@ -67,3 +67,4 @@ details.arch summary .dr{display:block;text-align:center;margin-top:4px;font-siz
 .nav a{color:#e8c872;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
 .nav a+a::before{content:"·";display:inline-block;margin:0 clamp(4px,1.2vw,14px);color:#e8c872;border:0}
 .nav a:hover,.nav a:focus-visible{color:#fff1cc;border-bottom-color:#d4af37aa}
+.nav a.on{color:#fff1cc;border-bottom-color:#d4af37}
