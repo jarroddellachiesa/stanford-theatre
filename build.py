@@ -63,7 +63,7 @@ for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-
     en=fe['end'] or ''
     if en and en>=TODAY: continue
     dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
-    bl=''.join('<li><b>'+e(b['dates'])+'</b>: '+' / '.join(e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' '+e(f['times']) if f['times'] else '') for f in b['films'])+'</li>' for b in fe['blocks'])
+    bl=''.join('<li><b class="bd">'+e(b['dates'])+':</b>'+''.join('<span class="bf2">'+e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
     P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="an">{e(fe["name"][:110])}</span> <span class="dr">{dr} · {len(fe["blocks"])} bills</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
