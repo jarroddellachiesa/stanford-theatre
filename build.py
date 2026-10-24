@@ -69,7 +69,7 @@ def GCAL(slug,d,x,partner,sl):
 def DAYS(st,en,items,sl,only=None,compact=False):
     A=_dt.date.fromisoformat(st);B=_dt.date.fromisoformat(en);o=''
     while A<=B:
-        wd=A.weekday(); lab=A.strftime('%A, %B ')+str(A.day); rows=''
+        wd=A.weekday(); lab=A.strftime('%A, %B ')+str(A.day)+(' <span class="an100" title="The Stanford Theatre opened June 9, 1925">100th Anniversary</span>' if A.isoformat()=='2025-06-09' else ''); rows=''
         for s_,t_ in items:
             if only and s_!=only: continue
             ts=_times(t_,wd); partner=", ".join(F[x]['t'] for x,_ in items if x!=s_)
@@ -113,6 +113,8 @@ def FN(n):
     m=_re0.fullmatch(r'([a-z]+)(\d{4})',n or '')
     return (_FIXN.get(m.group(1),m.group(1).title())+' '+m.group(2)) if m else n
 for _fe in FJ['festivals']: _fe['name']=FN(_fe['name'])
+AN100='<span class="an100" title="The Stanford Theatre opened June 9, 1925">100th Anniversary</span>'
+def ANB(b): return (' '+AN100) if b.get('start')=='2025-06-09' else ''
 def PSLUG(fe): return _re0.sub(r'[^a-z0-9]+','-',urllib.parse.unquote(fe['file']).rsplit('.',1)[0].lower()).strip('-')
 def hr(a,b):
     A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%B')+' '+str(d.day)
@@ -135,7 +137,7 @@ for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-
     en=fe['end'] or ''
     if en and en>=TODAY: continue
     dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
-    bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+''.join('<span class="bf2">'+e(_TA0.get(f['title'],f['title']))+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
+    bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+ANB(b)+''.join('<span class="bf2">'+e(_TA0.get(f['title'],f['title']))+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
     P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an"><a class="pfl" href="festivals/past/{PSLUG(fe)}.html">{e(fe["name"][:110])}</a></span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
@@ -149,6 +151,12 @@ TICKET=OR
 import unicodedata as _ud
 RT=tk("@N@","#e8564f","#8e1a16","grt")
 SH=json.load(open('data/showings.json'))
+ETY=json.load(open('data/entry_types.json')) if __import__('os').path.exists('data/entry_types.json') else {}
+for o in SH:
+    if o.get('badge')=='Original Run': o['type']=ETY.get(o['title']+'|'+o['start'],'unknown')
+TYL={'short':'Short','newsreel':'Newsreel','vaudeville/stage act':'Stage act','special event':'Special event','unknown':'Unverified'}
+def TYB(o):
+    t=o.get('type'); return f'<span class="ety ety-{t.split("/")[0].replace(" ","-")}" title="Entry type: {t}">{TYL[t]}</span> ' if t in TYL else ''
 _PFM={'festivals/archive/cal/'+_fe['file']:_fe for _fe in FJ['festivals']}
 _PFM.update({'festivals/archive/cal/'+urllib.parse.quote(_fe['file']):_fe for _fe in FJ['festivals']})
 NMATCH=[0,0]
@@ -184,7 +192,7 @@ def FRp(a,b):
     return f
 def ORD(n): return str(n)+({1:'st',2:'nd',3:'rd'}.get(n%10 if n%100 not in(11,12,13) else 0,'th'))
 def BADGE(o):
-    h=''
+    h=TYB(o)
     if o['source'] not in ('Tile','Stanford Theatre calendars'): h+=f'<span class="badge og" title="{TOG}">{OG}</span> '
     if o.get('badge'): h+=f'<span class="badge or" title="{TOR}">{OR}</span> '
     n=o.get('n')
@@ -200,6 +208,7 @@ def FILMRUNS(title,key=None):
             m=M[o['run']]=dict(title=o['title'],source=o['source'],start=o['start'],end=o.get('end'),date_text=o.get('date_text'),url=o['url'],note=o.get('note') or '',n=o['n'],badge=o.get('badge') or '',tickets=None,srcs={},nn=0); R.append(m)
         m['srcs'][o['source']]=1
         if o.get('badge'): m['badge']=o['badge']
+        if o.get('type') and m.get('type')!='feature': m['type']=o['type']
         if o['start']<m['start']: m['start']=o['start']
         if (o.get('end') or o['start'])>(m['end'] or m['start']): m['end']=o.get('end')
         if o['source']!='Tile' and m['source']=='Tile': m['source']=o['source']; m['url']=o['url']; m['date_text']=o.get('date_text')
@@ -308,6 +317,7 @@ if _o2.environ.get('NOCOVER'): COV={}
 for k,v in COV.items():
     FR_=FILMRUNS(v['title'],key=k)
     if not FR_: continue
+    if all(o.get('type') not in (None,'feature') for o in FR_) and not _o2.path.exists(f'films/{v["slug"]}.html'): continue  # non-feature entries never get new film pages
     runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]; ORR=[o for o in FR_ if o.get('badge')]; OGS=''
     if OGR:
@@ -360,8 +370,24 @@ def _pcard(fm):
 for fe in FJ['festivals']:
     if not fe['blocks']: continue
     dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'Year not given')
-    bills=''.join(f'<section class="fest blk"><h3 class="bl">{e(fullmo(b["dates"]))}</h3><div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
+    bills=''.join(f'<section class="fest blk"><h3 class="bl">{e(fullmo(b["dates"]))}{ANB(b)}</h3><div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
     q=urllib.parse.quote(fe['file'])
     body=f'<section class="fest"><div class="dr dtop" style="text-align:center">{e(dr)}</div><h1>{e(fe["name"])}</h1><p class="sm" style="text-align:center">{len(fe["blocks"])} bill{"s" if len(fe["blocks"])!=1 else ""}</p></section>'+bills+f'<p class="sm" style="text-align:center"><a href="../archive/cal/{q}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{q}">Original</a> · <a href="../../past.html">All past festivals</a></p>'
     open(f'festivals/past/{PSLUG(fe)}.html','w').write(page(f"{fe['name']} — Stanford Theatre",body,"../../","past")); NPAST+=1
 print('PASTPAGES',NPAST)
+# --- Original runs by year on past.html (pre-festival era) ---
+_OR=sorted([o for o in SH if o.get('badge')=='Original Run'],key=lambda o:(o['start'],o.get('n',0)))
+_YRS={}
+for o in _OR: _YRS.setdefault(o['start'][:4],[]).append(o)
+Y=['<section class="fest oryrs" id="original-runs"><h2 style="text-align:center;margin-top:30px">Original Runs by Year</h2><p class="sm" style="text-align:center">The theatre&#39;s first-run billings, '+min(_YRS)+'–'+max(_YRS)+', from its history pages. Labels mark shorts, newsreels, stage acts, special events, and entries not yet verified as films.</p><nav class="yrnav">'+''.join(f'<a href="#y{y}">{y}</a>' for y in sorted(_YRS))+'</nav>']
+for y in sorted(_YRS):
+    li=''
+    for o in _YRS[y]:
+        fp=FPM.get(FKEY(o['title'],int(o['start'][:4]))) if o.get('type')=='feature' else None
+        tt=f'<a href="{e(fp)}">{e(o["title"])}</a>' if fp else e(o['title'])
+        if o['start']=='1925-06-09' and '<p class="opd"' not in li: li+='<p class="opd"><span class="an100">Opening Day</span> June 9, 1925 — the Stanford Theatre opens</p>'
+        li+=f'<li><span class="yd">{e(FRp(o["start"],o.get("end")) or o["start"])}</span> {TYB(o)}<b>{tt}</b>'+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>'
+    Y.append(f'<details class="fest arch yr" id="y{y}"><summary><span class="an yh">{y}</span> <span class="dr">{len(_YRS[y])} showing{"s" if len(_YRS[y])!=1 else ""}</span></summary><ul class="yl">{li}</ul><p class="sm"><a href="history/years/{y}.htm">Archived history page</a></p></details>')
+Y.append('</section><script>(function(){function o(){var h=location.hash;if(/^#y\\d{4}$/.test(h)){var d=document.querySelector(h);if(d)d.open=true;}}addEventListener("hashchange",o);o();})();</script>')
+open('past.html','w').write(page("Past — Stanford Theatre","".join(P)+"".join(Y),"","past"))
+print('ORYEARS',len(_YRS),len(_OR))
