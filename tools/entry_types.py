@@ -20,6 +20,7 @@ RS=[('special event',r'pictures? of|game pictures|football|fight pictures|fight 
 # manual review overrides (title -> type)
 OVR={**{t:'short' for t in ["First to Fight","Football for the Fan","Developing a Football Team","How to Play Football","How to See a Football Game","Rockne's Football","Football 40 Years Ago","Buffalo Bill's Fight","Norman Sper's \"Football This Week\"","Cockeyed News","Live News","The News Hound","Mickey's Band Concert","Mickey's Revue","Marionettes—A Sound Cartoon","6 band shorts","Alum & Eve","The Baby Follies","Selection of short subjects (Educational studios);","Svensen's Wild Party","Whoopee Party","Necking Party","The Pajama Party","Strife of the Party","His Birthday Party","Betty Boop's May Party","The Kiddies' Revue","Vitaphone short: Artie Shaw and his Orchestra"]},
      **{t:'feature' for t in ["Ziegfeld Follies of 1945","Fox Follies of 1929","Follies Bergere"]},
+     'Walt Disney\'s Academy Award Revue (Academy Award winning':'short',
      'Century Fox Studio (not a newsreel)."':'special event'}
 WS=json.load(open('tools/wd_search.json')) if os.path.exists('tools/wd_search.json') else {}
 SH=json.load(open('data/showings.json')); OUT={}; how=collections.Counter()
