@@ -8522,23 +8522,27 @@
 ]
 },
 "kismet#1955": {
-"qid": "Q249124",
+"qid": "Q3070718",
 "star": [
-"Ashok Kumar",
-"Haroon",
-"Mubarak"
+"Howard Keel",
+"Ann Blyth",
+"Dolores Gray"
 ],
 "star_ordered": false,
 "director": [
-"Gyan Mukherjee"
+"Vincente Minnelli",
+"Stanley Donen"
 ],
 "writer": [
-"Gyan Mukherjee"
+"Charles Lederer",
+"Luther Davis"
 ],
 "producer": [
-"Bombay Talkies"
+"Arthur Freed"
 ],
-"studio": []
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
 },
 "bad day at black rock": {
 "qid": "Q963045",
@@ -8774,23 +8778,23 @@
 ]
 },
 "imitation of life#1934": {
-"qid": "Q373774",
+"qid": "Q391541",
 "star": [
-"Lana Turner",
-"Juanita Moore",
-"John Gavin"
+"Claudette Colbert",
+"Warren William",
+"Rochelle Hudson"
 ],
 "star_ordered": false,
 "director": [
-"Douglas Sirk"
+"John M. Stahl"
 ],
 "writer": [
-"Allan Scott",
-"Eleanore Griffin",
-"Fannie Hurst"
+"Victor Heerman",
+"Finley Peter Dunne",
+"William Hurlbut"
 ],
 "producer": [
-"Ross Hunter"
+"Carl Laemmle Jr."
 ],
 "studio": [
 "Universal Pictures"

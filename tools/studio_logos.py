@@ -11,7 +11,8 @@ T=[ # studio (canonical era name), wikidata names, from, to, commons file
  ('RKO Radio Pictures',['RKO Pictures'],1937,1957,'RKO Radio Pictures 1937.png'),
  ('Warner Bros. Pictures',['Warner Bros. Entertainment'],1929,1936,'Warner Bros. Pictures Inc. 1929.jpg'),
  ('Warner Bros. Pictures',['Warner Bros. Entertainment'],1937,1967,'Warner Bros old logo.svg'),
- ('Columbia Pictures',['Columbia Pictures'],1928,1931,'Columbia Pictures logo 1928.jpg'),
+# white-mark conversion too noisy (photo); text fallback
+ #('Columbia Pictures',['Columbia Pictures'],1928,1931,'Columbia Pictures logo 1928.jpg'),
  ('Columbia Pictures',['Columbia Pictures'],1932,1932,'Columbia Pictures 1932-1933.png'),
  ('Columbia Pictures',['Columbia Pictures'],1933,1937,'Columbia Pictures 1933.png'),
  ('Columbia Pictures',['Columbia Pictures'],1938,1944,'Columbia Pictures 1938.png'),
