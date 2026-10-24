@@ -81,6 +81,7 @@ def DAYS(st,en,items,sl,only=None,compact=False):
             o+=(f'<details class="day" data-day="{A.isoformat()}"><summary>{lab}</summary><ul class="dsch">{rows}</ul></details>' if compact else f'<div class="day" data-day="{A.isoformat()}"><h4>{lab}</h4><ul class="dsch">{rows}</ul></div>')
         A+=_dt.timedelta(days=1)
     return o
+SPLITCARD=True
 def blk(b):
     url,lab,st,en,items=b; nm,dr=FN[url]; sl=SLUG[url]
     head=f'<div class="bf"><div class="dr dtop">{dr}</div><h2><a href="festivals/{sl}.html">{e(nm)}</a></h2></div>'
@@ -88,6 +89,9 @@ def blk(b):
         body='<div class="cols">'+"".join(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a></div>' for s,t in items)+'</div>'
         body+='<div class="days">'+DAYS(st,en,items,sl,compact=True)+'</div>'
     else: body='<p class="tba">To Be Announced</p>'
+    if SPLITCARD and items:  # experiment: closed screenshot card, showtimes below it (set SPLITCARD=False to revert)
+        i=body.index('<div class="days">')
+        return f'<section class="fest blk split" data-start="{st}" data-end="{en}" data-fest="{sl}"><div class="cardbox">{head}<h3 class="bl">{lab}</h3>{body[:i]}</div>{body[i:]}</section>'
     return f'<section class="fest blk" data-start="{st}" data-end="{en}" data-fest="{sl}">{head}<h3 class="bl">{lab}</h3>{body}</section>'
 live=sorted([b for b in NB if b[3]>=TODAY],key=lambda b:b[2])
 JSF="""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
