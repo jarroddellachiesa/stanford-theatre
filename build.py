@@ -57,7 +57,11 @@ def _dt24(d,x):
     return _dt.datetime(d.year,d.month,d.day,h,mm)
 def GCAL(slug,d,x,partner,sl):
     f=F[slug]; a=_dt24(d,x); b=a+_dt.timedelta(minutes=int(f.get('rt') or 120))
-    det=f"{f['t']} ({f['y']})"+(f" on a double bill with {partner}" if partner else '')+f". Festival page: {SITE}festivals/{sl}.html"
+    pl=(f.get('plot') or '').strip()
+    if len(pl)>500:
+        cut=pl[:500]; k=max(cut.rfind('. '),cut.rfind('! '),cut.rfind('? '))
+        pl=cut[:k+1] if k>200 else cut.rsplit(' ',1)[0]+'…'
+    det=(pl+'\n\n' if pl else '')+f"{f['t']} ({f['y']})"+(f" on a double bill with {partner}" if partner else '')+f". Festival page: {SITE}festivals/{sl}.html"
     q=urllib.parse.urlencode(dict(action='TEMPLATE',text=f['t'],dates=a.strftime('%Y%m%dT%H%M00')+'/'+b.strftime('%Y%m%dT%H%M00'),ctz='America/Los_Angeles',location='Stanford Theatre, 221 University Avenue, Palo Alto, CA 94301',details=det))
     return 'https://calendar.google.com/calendar/render?'+q
 def DAYS(st,en,items,sl,only=None,compact=False):
