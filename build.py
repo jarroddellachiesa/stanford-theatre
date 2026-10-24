@@ -61,7 +61,7 @@ def GCAL(slug,d,x,partner,sl):
     if len(pl)>500:
         cut=pl[:500]; k=max(cut.rfind('. '),cut.rfind('! '),cut.rfind('? '))
         pl=cut[:k+1] if k>200 else cut.rsplit(' ',1)[0]+'…'
-    det=(pl+'\n\n' if pl else '')+f"{f['t']} ({f['y']})"+(f" on a double bill with {partner}" if partner else '')+f". Festival page: {SITE}festivals/{sl}.html"
+    det=(pl+'\n\n' if pl else '')+f"{f['t']} ({f['y']})"+(f" on a double bill with {partner}" if partner else '')+"."+"\n\n"+f'<a href="{SITE}festivals/{sl}.html">{html.escape({SLUG[u_]:n_ for n_,_,u_,_,_ in FEST}.get(sl,"Festival page"))}</a>'+"\n"+f'<a href="{SITE}films/{slug}.html">{html.escape(f["t"])} on our site</a>'
     q=urllib.parse.urlencode(dict(action='TEMPLATE',text=f['t'],dates=a.strftime('%Y%m%dT%H%M00')+'/'+b.strftime('%Y%m%dT%H%M00'),ctz='America/Los_Angeles',location='Stanford Theatre, 221 University Avenue, Palo Alto, CA 94301',details=det))
     return 'https://calendar.google.com/calendar/render?'+q
 def DAYS(st,en,items,sl,only=None,compact=False):
