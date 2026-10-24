@@ -59,15 +59,15 @@ var M=document.body.dataset.mode;
 if(M==='now'){r.slice(1).forEach(function(b){b.remove();});}else if(r[0])r[0].remove();
 document.querySelectorAll('.fgrp').forEach(function(g){if(!g.querySelector('.blk'))g.remove();});
 var em=document.getElementById('empty');if(em&&!document.querySelector('.blk'))em.style.display='block';})();</script>"""
-h=['<section id="now"><h1 class="mqh">Now Showing</h1>']+[blk(b) for b in live]+['<p id="empty" class="sm" style="display:none;text-align:center">Nothing scheduled right now — see <a href="past.html">Past</a>.</p></section>',JSF]
+h=['<section id="now"><h1 class="vh">Now Showing</h1>']+[blk(b) for b in live]+['<p id="empty" class="sm" style="display:none;text-align:center">Nothing scheduled right now — see <a href="past.html">Past</a>.</p></section>',JSF]
 open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h),"","now").replace('<body>','<body data-mode="now">',1))
-u=['<section id="upcoming"><h1 class="mqh">Upcoming</h1>']
+u=['<section id="upcoming"><h1 class="vh">Upcoming</h1>']
 for name,dr,url,groups,films in FEST:
     bs=[b for b in live if b[0]==url]
     if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><div class="dr dtop">{dr}</div><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2>'+"".join(blk(b) for b in bs)+'</div>')
 u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further programs announced yet.</p></section>',JSF]
 open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up").replace('<body>','<body data-mode="up">',1))
-P=['<section id="past"><h1 class="mqh">Past</h1><p class="sm" style="text-align:center">Finished programs, newest first.</p>']
+P=['<section id="past"><h1 class="vh">Past</h1><p class="sm" style="text-align:center">Finished programs, newest first.</p>']
 for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
     P.append(x)
@@ -212,7 +212,7 @@ for name,dr,url,groups,films in FEST:
 
 # ---- search page ----
 SJS=open('tools/search.js').read()
-sb=f'''<section class="fest"><h1 class="mqh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and Tile box-office records. </p>
+sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and Tile box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
 <div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run at the theatre</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
