@@ -38,6 +38,10 @@ def _dr(t,a,b):
 _rng={u:(min(b[2] for b in NB if b[0]==u),max(b[3] for b in NB if b[0]==u)) for u in {b[0] for b in NB}}
 FEST=[(n,_dr(d,*_rng[u]),u,[(_sp(g),it) for g,it in gs],fl) for n,d,u,gs,fl in FEST]
 NB=[(u,_sp(l),a,b,it) for u,l,a,b,it in NB]
+_MN='January|February|March|April|May|June|July|August|September|October|November|December'
+def DT(t):
+    t=_re0.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b\.?(?=\s*\d)',lambda m:_MF0.get(m.group(1),m.group(1)),t)
+    return _re0.sub(r'\b(('+_MN+r') \d{1,2})\s*[–—-]\s*(?=\d|(?:'+_MN+r') )',r'\1 - ',t)
 FN={x[2]:(x[0],x[1]) for x in FEST}
 NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
 def blk(b):
@@ -108,7 +112,7 @@ for s,k in K.items():
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
 <section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p><h3>Past runs (since '03):</h3><ul class="runs">{runs}</ul></section>
 <section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li><li><a href="../infographics/{s}.png" download>Download infographic (PNG)</a></li></ul><a href="../infographics/{s}.png"><img class="ig" src="../infographics/{s}.png" alt="{e(f['t'])} infographic"></a></section></article>'''
-    open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",b,"../"))
+    open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../"))
 
 # ---- festival pages ----
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
@@ -143,7 +147,7 @@ OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor"); S1
 TOG="From the Stanford Theatre&#39;s original billings"; TOR="Original Run — shown during the film&#39;s first release"
 TICKET=OR
 SJS=open('tools/search.js').read()
-sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925–1961), its archived calendars (1997–present) and Tile box-office records. </p>
+sb=f'''<section class="fest"><h1>Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and Tile box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
 <div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> original billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run (first release)</span><span class="li"><span class="src">Calendar</span> theatre calendars (1997–)</span><span class="li"><span class="badge s1">{S1}</span> first Tile run</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth Tile run</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>

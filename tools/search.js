@@ -8,7 +8,13 @@ function ord(n){var s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]
 function badge(o){if(o.source=='Stanford Theatre calendars')return '<span class="src">Calendar</span>'+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'</span>':'');
 if(o.source=='Tile')return o.n==1?'<span class="badge s1" title="First showing in Tile records">'+S1+'</span>':'<span class="badge rt" title="'+ord(o.n)+' time shown (Tile records)">'+RT.replace('@N@',o.n)+'</span>';
 return '<span class="badge og" title="'+TOG+'">'+OG+'</span>'+(o.badge?' <span class="badge or" title="'+TOR+'">'+OR+'</span>':'')}
-function dd(o){return o.source=='Tile'?(o.start+(o.end!=o.start?' – '+o.end:'')):o.date_text}
+var MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function MX(t){var ab={Jan:0,Feb:1,Mar:2,Apr:3,Jun:5,Jul:6,Aug:7,Sep:8,Sept:8,Oct:9,Nov:10,Dec:11};t=String(t).replace(/\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)\b\.?(?=\s*\d)/g,function(m,a){return MN[ab[a]]});
+return t.replace(new RegExp('\\b(('+MN.join('|')+') \\d{1,2})\\s*[–—-]\\s*(?=\\d|(?:'+MN.join('|')+') )','g'),'$1 - ').replace(/(day)\s*[–—]\s*(?=[A-Z])/g,'$1 - ')}
+function FR(a,b){var A=a.split('-').map(Number),B=(b||a).split('-').map(Number);if(!A[1]||!A[2])return null;var m=function(x){return MN[x[1]-1]+' '+x[2]},f;
+if(!B[1]||!B[2]||a==b||!b)f=m(A)+', '+A[0];else if(A[0]!=B[0])f=m(A)+', '+A[0]+' - '+m(B)+', '+B[0];else if(A[1]==B[1])f=m(A)+' - '+B[2]+', '+A[0];else f=m(A)+' - '+m(B)+', '+A[0];
+if(f.length>38){var g=function(x){return x[1]+'/'+String(x[0]%100).padStart(2,'0')};f=g(A)==g(B)?g(A):g(A)+' - '+g(B)}return f}
+function dd(o){if(o.source=='Tile')return FR(o.start,o.end)||o.start;var x=(o.date_text||'').match(/\(([^)]*day[^)]*)\)/),r=FR(o.start,o.end);return r?r+(x?' ('+MX(x[1])+')':''):MX(o.date_text||o.start)}
 function score(nt,nq,qt){if(!nq)return -1;if(nt==nq)return 0;if(nt.indexOf(nq)>=0)return 1;var t=TK(nt);if(qt.length&&qt.every(function(x){return t.some(function(w){return w.indexOf(x)==0||(x.length>=4&&ED(x,w,x.length>=7?2:1))})}))return 2;return -1}
 function go(){var v=q.value.trim();if(v.length<2){R.innerHTML='';C.textContent=D.length.toLocaleString()+' showings indexed. Type at least 2 characters.';return}
 var nq=N(v),qa=TK(nq),qt=qa.filter(function(x){return x.length>=4});if(!qt.length)qt=qa;
