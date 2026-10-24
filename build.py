@@ -14,7 +14,7 @@ SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
 def page(title,body,root="",act=""):
     A=lambda k:' class="on" aria-current="page"' if k==act else ""
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><link rel="stylesheet" href="{root}style.css"><link rel="icon" href="{root}favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="{root}icons/favicon-32.png"><link rel="apple-touch-icon" href="{root}icons/apple-touch-icon.png?v=4"><link rel="manifest" href="{root}manifest.webmanifest"><meta name="theme-color" content="#5a0e18"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Stanford"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if("serviceWorker" in navigator)addEventListener("load",function(){{navigator.serviceWorker.register("{root}sw.js")}})</script></head><body>
-<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div></a><nav class="nav"><a href="{root}index.html"{A("now")}>Now Showing</a><span class="sep" aria-hidden="true">·</span><a href="{root}upcoming.html"{A("up")}>Upcoming</a><span class="sep" aria-hidden="true">·</span><a href="{root}past.html"{A("past")}>Past</a><span class="sep" aria-hidden="true">·</span><a href="{root}search.html"{A("search")}>Search</a></nav></header><main>{body}</main>
+<header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div></a><nav class="nav"><a href="{root}index.html"{A("now")}>Now Showing</a><span class="sep" aria-hidden="true">·</span><a href="{root}upcoming.html"{A("up")}>Upcoming</a><span class="sep" aria-hidden="true">·</span><a href="{root}past.html"{A("past")}>Past</a><span class="sep" aria-hidden="true">·</span><a href="{root}search.html"{A("search")}>Search</a></nav></header><main>{body}</main><script>(function(){{var t=new Intl.DateTimeFormat('en-CA',{{timeZone:'America/Los_Angeles'}}).format(new Date());document.querySelectorAll('[data-day]').forEach(function(d){{if(d.dataset.day<t)d.remove()}});document.querySelectorAll('.bill').forEach(function(b){{if(!b.querySelector('[data-day]'))b.remove()}});}})();</script>
 <footer><address class="addr"><a href="{MAP}"><span class="an1">Stanford Theatre</span><br>221 University Avenue<br>Palo Alto, CA 94301</a></address></footer></body></html>'''
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
 
@@ -44,11 +44,42 @@ def DT(t):
     return _re0.sub(r'\b(('+_MN+r') \d{1,2})\s*[–—-]\s*(?=\d|(?:'+_MN+r') )',r'\1 - ',t)
 FN={x[2]:(x[0],x[1]) for x in FEST}
 NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
+
+SITE="https://jarroddellachiesa.github.io/stanford-theatre/"
+CALSVG='<svg class="calic" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="1.5" y="3" width="13" height="11.5" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.5 6.5h13M5 1.5v3M11 1.5v3" stroke="currentColor" stroke-width="1.4"/></svg>'
+def _times(t,wd):
+    base=_re0.sub(r'\(.*?\)','',t); out=[x for x in _re0.findall(r'\d{1,2}:\d\d',base)]
+    for m in _re0.finditer(r'\(plus ([^)]*?)\s*Sat/Sun\)',t):
+        if wd>=5: out+=_re0.findall(r'\d{1,2}:\d\d',m.group(1))
+    def k(x): h,mm=map(int,x.split(':')); return (h%12+12 if h<12 else h)*60+mm
+    return sorted(set(out),key=k)
+def _dt24(d,x):
+    h,mm=map(int,x.split(':')); h=h%12+12 if h<12 else h
+    return _dt.datetime(d.year,d.month,d.day,h,mm)
+def GCAL(slug,d,x,partner,sl):
+    f=F[slug]; a=_dt24(d,x); b=a+_dt.timedelta(minutes=int(f.get('rt') or 120))
+    det=f"{f['t']} ({f['y']})"+(f" on a double bill with {partner}" if partner else '')+f". Festival page: {SITE}festivals/{sl}.html"
+    q=urllib.parse.urlencode(dict(action='TEMPLATE',text=f"{f['t']} at the Stanford Theatre",dates=a.strftime('%Y%m%dT%H%M00')+'/'+b.strftime('%Y%m%dT%H%M00'),ctz='America/Los_Angeles',location='221 University Avenue, Palo Alto, CA 94301',details=det))
+    return 'https://calendar.google.com/calendar/render?'+q
+def DAYS(st,en,items,sl,only=None,compact=False):
+    A=_dt.date.fromisoformat(st);B=_dt.date.fromisoformat(en);o=''
+    while A<=B:
+        wd=A.weekday(); lab=A.strftime('%A, %B ')+str(A.day); rows=''
+        for s_,t_ in items:
+            if only and s_!=only: continue
+            ts=_times(t_,wd); partner=", ".join(F[x]['t'] for x,_ in items if x!=s_)
+            if not ts: continue
+            rows+=f'<li>'+('' if only else f'<span class="df">{ft(s_)}</span> ')+' '.join(f'<span class="st">{x}<a class="gcal" href="{e(GCAL(s_,A,x,partner,sl))}" target="_blank" rel="noopener" title="Add {x} {e(F[s_]["t"])} to Google Calendar" aria-label="Add {x} showing to Google Calendar">{CALSVG}</a></span>' for x in ts)+'</li>'
+        if rows:
+            o+=(f'<details class="day" data-day="{A.isoformat()}"><summary>{lab}</summary><ul class="dsch">{rows}</ul></details>' if compact else f'<div class="day" data-day="{A.isoformat()}"><h4>{lab}</h4><ul class="dsch">{rows}</ul></div>')
+        A+=_dt.timedelta(days=1)
+    return o
 def blk(b):
     url,lab,st,en,items=b; nm,dr=FN[url]; sl=SLUG[url]
     head=f'<div class="bf"><div class="dr dtop">{dr}</div><h2><a href="festivals/{sl}.html">{e(nm)}</a></h2></div>'
     if items:
         body='<div class="cols">'+"".join(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a><div class="tm">{t}</div></div>' for s,t in items)+'</div>'
+        body+='<div class="days">'+DAYS(st,en,items,sl,compact=True)+'</div>'
     else: body='<p class="tba">To Be Announced</p>'
     return f'<section class="fest blk" data-start="{st}" data-end="{en}" data-fest="{sl}">{head}<h3 class="bl">{lab}</h3>{body}</section>'
 live=sorted([b for b in NB if b[3]>=TODAY],key=lambda b:b[2])
@@ -162,7 +193,7 @@ def FESTLINK(o):
 for s,k in K.items():
     f=F[s];t=T[k]
     fest=[x for x in FEST if s in x[4]][0]
-    sched="".join(f'<h3>{d}</h3><ul class="sched">'+"".join(f'<li>{"<b>" if a==s else ""}{ft(a)}: {tt}{"</b>" if a==s else ""}</li>' for a,tt in items)+'</ul>' for d,items in fest[3])
+    sl_=SLUG[fest[2]]; sched="".join(f'<div class="bill" data-end="{en}"><h3>{lab}</h3>'+DAYS(st,en,items,sl_,only=s)+'</div>' for u,lab,st,en,items in NB if items and any(a==s for a,_ in items))
     FR_=FILMRUNS(f['t'])
     runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]
