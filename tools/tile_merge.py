@@ -1,5 +1,5 @@
 import re,html,json,glob,datetime as dt,urllib.parse
-p='stanford-site/data/showings.json'
+p=P0='stanford-site/data/showings.json'
 d=[o for o in json.load(open(p)) if o['source'] not in ('Tile','Stanford Theatre calendars')]
 FJ=json.load(open('stanford-site/data/festivals.json'))
 for fe in FJ['festivals']:
@@ -45,19 +45,51 @@ for o in sorted(d+tile,key=lambda o:(o['start'],o['source']!='Tile')):
     k=(o['title'].lower(),o['start'],o['source'])
     if k in seen: continue
     seen.add(k); out.append(o)
-first=set();cnt={}
+import unicodedata
+def NK(t):
+    t=unicodedata.normalize('NFD',t); t=''.join(c for c in t if not unicodedata.combining(c)).lower()
+    t=re.sub(r'\s*\((?:19|20)\d\d\)\s*$','',t).replace('&',' and ')
+    t=re.sub(r"['’`]",'',t); w=[x for x in re.sub(r'[^a-z0-9]+',' ',t).split() if x not in('the','a','an')]
+    return ' '.join(w)
+def OKD(x): return bool(re.fullmatch(r'\d{4}-\d\d-\d\d',x or '')) and x[5:7]!='00' and x[:4]!='0000'
+first=set()
 for o in out:
-    k=o['title'].strip().lower(); o['badge']=''; o.pop('label',None)
-    if o['source']=='Tile':
-        cnt[k]=cnt.get(k,0)+1; o['n']=cnt[k]
-    elif o['source']=='Stanford Theatre calendars':
+    k=o['title'].strip().lower(); o['badge']=''; o.pop('label',None); o.pop('n',None); o.pop('run',None)
+    if o['source']=='Stanford Theatre calendars':
         y=o.get('fyear') or YR.get(k)
         if y and o['start'][:4].isdigit() and int(o['start'][:4])>1000 and 0<=int(o['start'][:4])-y<=2: o['badge']='Original Run'
-    else:
+    elif o['source']!='Tile':
         if k not in first:
             first.add(k); y=YR.get(k)
             if y is None or int(o['start'][:4])-y<=2: o['badge']='Original Run'
-json.dump(out,open(p,'w'),ensure_ascii=False); open('stanford-site/data/showings.js','w').write('window.SHOWINGS='+json.dumps(out,ensure_ascii=False)+';')
+# partner appearances -> runs for the partner film
+tl={}
+for o in out:
+    if o['source']=='Tile': tl.setdefault(NK(o['title']),[]).append(o)
+syn=[]
+for o in [x for x in out if x['source']=='Tile' and x['note'].startswith('w/ ')]:
+    for pn in o['note'][3:].split(', '):
+        kp=NK(pn)
+        if not kp or any(x['start']<=o['end'] and o['start']<=x['end'] for x in tl.get(kp,[])): continue
+        n=dict(title=pn,note='w/ '+o['title'],start=o['start'],end=o['end'],days=o.get('days'),tickets=None,source='Tile',url=o['url'],via=1,badge='')
+        tl.setdefault(kp,[]).append(n); syn.append(n)
+out+=syn
+# one chronological sequence per film; overlapping/adjacent dated entries = one run
+G={}
+for o in out:
+    if OKD(o['start']): G.setdefault(NK(o['title']),[]).append(o)
+for k,L in G.items():
+    L.sort(key=lambda o:(o['start'],o.get('end') or o['start']))
+    n=0;ce=None
+    for o in L:
+        e_=o.get('end') if OKD(o.get('end')) else o['start']
+        if ce is None or dt.date.fromisoformat(o['start'])>dt.date.fromisoformat(ce)+dt.timedelta(days=1):
+            n+=1; ce=e_
+        elif e_>ce: ce=e_
+        o['n']=n; o['run']=k+'|'+str(n)
+out.sort(key=lambda o:(o['start'],o['source']!='Tile'))
+with open(P0,'w') as fh: json.dump(out,fh,ensure_ascii=False)
+open('stanford-site/data/showings.js','w').write('window.SHOWINGS='+json.dumps(out,ensure_ascii=False)+';')
 for s in ['Tile','Stanford Theatre history page','Stanford Theatre calendars']:
     x=[o for o in out if o['source']==s]; print(s,'runs',len(x),'films',len(set(o['title'].lower() for o in x)),x[0]['start'],x[-1]['start'])
 print('OR',sum(1 for o in out if o['badge']))

@@ -76,3 +76,8 @@ details.arch summary .dtop{letter-spacing:0;font-size:14px}
 
 .addr{font-style:normal;line-height:1.5;font-size:17px;letter-spacing:0;text-transform:none;margin-bottom:10px}.addr a{text-decoration:none;color:#f3e3b5}.addr a:hover{text-decoration:underline}.addr .an1{font-weight:700}
 .addr{font-size:14px;margin-bottom:0}
+
+@font-face{font-family:Yellowtail;src:url(fonts/Yellowtail-Regular.ttf);font-display:swap}
+h1.mqh{font-family:Yellowtail,cursive;font-weight:400;white-space:nowrap;font-size:clamp(40px,12vw,72px);line-height:1.1;letter-spacing:0;color:#fffaf0;text-align:center;
+text-shadow:0 0 2px #fff,0 0 6px #ffd9d9,0 0 12px #ff3b3b,0 0 22px #e0102a,0 0 36px #b0001c}
+.bf h2 a,.bf h2 a:hover,.bf h2 a:focus,.bf h2 a:visited,.gh a,.gh a:hover,.gh a:focus,.gh a:visited,.fest .dr a,.fest .dr a:hover{text-decoration:none!important}
