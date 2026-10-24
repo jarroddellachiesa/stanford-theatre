@@ -46,7 +46,6 @@ FN={x[2]:(x[0],x[1]) for x in FEST}
 NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
 
 SITE="https://jarroddellachiesa.github.io/stanford-theatre/"
-CALSVG='<svg class="calic" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><rect x="1.5" y="3" width="13" height="11.5" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.5 6.5h13M5 1.5v3M11 1.5v3" stroke="currentColor" stroke-width="1.4"/></svg>'
 def _times(t,wd):
     base=_re0.sub(r'\(.*?\)','',t); out=[x for x in _re0.findall(r'\d{1,2}:\d\d',base)]
     for m in _re0.finditer(r'\(plus ([^)]*?)\s*Sat/Sun\)',t):
@@ -69,7 +68,7 @@ def DAYS(st,en,items,sl,only=None,compact=False):
             if only and s_!=only: continue
             ts=_times(t_,wd); partner=", ".join(F[x]['t'] for x,_ in items if x!=s_)
             if not ts: continue
-            rows+=f'<li>'+('' if only else f'<span class="df">{ft(s_)}</span> ')+' '.join(f'<span class="st">{x}<a class="gcal" href="{e(GCAL(s_,A,x,partner,sl))}" target="_blank" rel="noopener" title="Add {x} {e(F[s_]["t"])} to Google Calendar" aria-label="Add {x} showing to Google Calendar">{CALSVG}</a></span>' for x in ts)+'</li>'
+            rows+=f'<li>'+('' if only else f'<span class="df">{ft(s_)}</span> ')+' '.join(f'<a class="st gct" href="{e(GCAL(s_,A,x,partner,sl))}" target="_blank" rel="noopener" title="Add {x} {e(F[s_]["t"])} to Google Calendar" aria-label="Add {x} {e(F[s_]["t"])} to Google Calendar">{x}</a>' for x in ts)+'</li>'
         if rows:
             o+=(f'<details class="day" data-day="{A.isoformat()}"><summary>{lab}</summary><ul class="dsch">{rows}</ul></details>' if compact else f'<div class="day" data-day="{A.isoformat()}"><h4>{lab}</h4><ul class="dsch">{rows}</ul></div>')
         A+=_dt.timedelta(days=1)
