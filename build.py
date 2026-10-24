@@ -302,6 +302,7 @@ for c in CV:
     _used.add(sl)
     COV[k]=dict(slug=sl,title=tt,year=yr,rt=m.get('rt'),poster=(lambda f_:f_ if _o0.path.exists(f_) else None)('posters/c/'+_re0.sub(r'[^a-z0-9]+','-',k.replace('#','-')).strip('-')+'.jpg'),syn=_syn(m.get('ext')),desc=m.get('desc') or '',imdb=m.get('imdb'),wt=m['wt'])
 NFP=0
+CFX=json.load(open('data/cover_facts.json')) if _o0.path.exists('data/cover_facts.json') else {}
 import os as _o2
 if _o2.environ.get('NOCOVER'): COV={}
 for k,v in COV.items():
@@ -319,6 +320,7 @@ for k,v in COV.items():
     more=f'<li><a href="https://tile.stanfordtheatre.org/tile?q={urllib.parse.quote_plus(v["title"])}">Tile: {e(v["title"])}</a></li>'+(f'<li><a href="https://www.imdb.com/title/{v["imdb"]}/">IMDb: {e(v["title"])}</a></li>' if v['imdb'] else '')+f'<li><a href="https://en.wikipedia.org/wiki/{urllib.parse.quote(v["wt"].replace(" ","_"))}">Wikipedia: {e(v["wt"])}</a></li>'
     b=f'''<article class="film"><div class="top">{img}
 <div><h1>{e(v['title'])}</h1><div class="meta">{meta}</div>{f'<p class="cr">{e(v["desc"][:1].upper()+v["desc"][1:])}</p>' if v['desc'] else ''}<p class="plot">{e(v['syn'])}</p></div></div>
+{(lambda fx:(f'<section><h2>Trivia</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['trivia'])+'</ul></section>' if fx.get('trivia') else '')+(f'<section><h2>Filming Locations</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['loc'])+'</ul></section>' if fx.get('loc') else ''))(CFX.get(k,{}))}
 <section><h2>Previous Showings</h2><p class="big">{len(FR_)} Run{"s" if len(FR_)!=1 else ""} • {fcs} Festival{"s" if fcs!=1 else ""}</p>{f'<p class="big">{tks:,} tickets sold</p>' if tks else ''}{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul>{more}</ul></section></article>'''
     open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../")); NFP+=1
