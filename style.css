@@ -88,3 +88,11 @@ h1.mqh::before{top:-17px}h1.mqh::after{bottom:-17px}
 h1.mqh{margin:26px auto 28px;font-size:clamp(24px,7.8vw,44px)}
 
 .ogsum{display:block;font-size:.8em}.ogsum .badge{vertical-align:middle;margin-right:6px}
+
+.nav a+a::before{content:none!important}
+.nav{--ls:clamp(2px,.6vw,8px);align-items:baseline}
+.nav .sep{color:#e8c872;margin:0 clamp(6px,1.6vw,14px) 0 calc(clamp(6px,1.6vw,14px) - var(--ls))}
+.nav a{border-bottom:0!important;padding-bottom:3px;background:linear-gradient(#d4af37,#d4af37) left bottom/0 1px no-repeat;transition:background-size .2s,color .2s}
+.nav a.on{background-size:calc(100% - var(--ls)) 1px;color:#fff1cc}
+.nav a:hover,.nav a:focus-visible{background-size:calc(100% - var(--ls)) 1px}
+.nav .sep{letter-spacing:0}
