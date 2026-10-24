@@ -50,7 +50,7 @@ def blk(b):
     if items:
         body='<div class="cols">'+"".join(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a><div class="tm">{t}</div></div>' for s,t in items)+'</div>'
     else: body='<p class="tba">To Be Announced</p>'
-    return f'<section class="fest blk" data-start="{st}" data-end="{en}" data-fest="{sl}">{head}<h3 class="bl">{lab}</h3>{body}<a class="btn" href="festivals/{sl}.html">Festival page →</a></section>'
+    return f'<section class="fest blk" data-start="{st}" data-end="{en}" data-fest="{sl}">{head}<h3 class="bl">{lab}</h3>{body}</section>'
 live=sorted([b for b in NB if b[3]>=TODAY],key=lambda b:b[2])
 JSF="""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());
 var all=[].slice.call(document.querySelectorAll('.blk'));all.forEach(function(b){if(b.dataset.end<t)b.remove();});
@@ -107,7 +107,7 @@ for s,k in K.items():
     li=lambda L:"".join(f'<li>{x}</li>' for x in L)
     b=f'''<article class="film"><div class="top"><img class="poster" src="../posters/{s}.jpg" alt="{e(f['t'])} poster">
 <div><h1>{e(f['t'])}</h1><div class="meta">{f['y']} ★ {f['rt']} min</div><p class="cr">{e(f['credit'])}</p><p class="plot">{e(f['plot'])}</p></div></div>
-<section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])}</a> · {fest[1]}</div>{sched}<a class="btn" href="../festivals/{SLUG[fest[2]]}.html">Festival page →</a></section>
+<section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])}</a> · {fest[1]}</div>{sched}</section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
 <section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p><h3>Past runs (since '03):</h3><ul class="runs">{runs}</ul></section>
