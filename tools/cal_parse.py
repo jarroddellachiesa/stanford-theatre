@@ -102,6 +102,11 @@ for f in sorted(glob.glob('cache/cal/*')):
                 if any((a+dt.timedelta(k)).weekday() in (3,4) for k in range((e-a).days+1)): o['short']='Thursday & Friday 7:30 show starts with an episode of the 1948 serial Superman'
             elif any(f['title'].startswith('*') or f['title'].endswith('*') or '*' in f['times'] for f in o['films']): o['short']='Preceded by the 1948 serial Superman'
     gaps[:]=[g for g in gaps if g[0]!=fn or any(b['dates']==g[1] and not b['start'] for b in blocks) or g[1]=='no bills parsed']
+    MO=r'(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?'
+    D=MO+r'\s*\d{1,2}(?!\d)(?:\s*(?:[-–—]|through|to)\s*(?:'+MO+r'\s*)?\d{1,2}(?!\d))?(?:,?\s*(?:19|20)\d\d)?'
+    name=re.sub(r'(?:(?:Starting|Beginning)\s+(?:\w+day\s+)?)?\b'+D+r'(?:\s+through\b)?',' ',name)
+    for _ in range(2): name=re.sub(r'\s+(?:through|Starting(?:\s+\w+day)?|Beginning|Every \w+day(?: through \w+day)?(?: in)?|,)\s*$','',name)
+    name=re.sub(r'\s+,',',',re.sub(r'\s+',' ',name)).strip(' ,:;-–—~')
     if ov.get('name'): name=ov['name']
     if blocks: F.append(dict(name=name or fn.rsplit('.',1)[0],file=fn,year=y,blocks=blocks,start=min((b['start'] for b in blocks if b['start']),default=None),end=max((b['end'] for b in blocks if b['end']),default=None)))
     else: gaps.append((fn,'no bills parsed'))

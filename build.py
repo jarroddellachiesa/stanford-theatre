@@ -52,11 +52,17 @@ for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
     P.append(x)
 FJ=json.load(open('data/festivals.json'))
+def hr(a,b):
+    A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%b')+' '+str(d.day)
+    if A==B: return f"{m(A)}, {A.year}"
+    if A.year!=B.year: return f"{m(A)}, {A.year} – {m(B)}, {B.year}"
+    if A.month==B.month: return f"{m(A)}–{B.day}, {A.year}"
+    return f"{m(A)} – {m(B)}, {A.year}"
 P.append('<h2 style="text-align:center;margin-top:30px">Festival archive</h2><p class="sm" style="text-align:center">From the Stanford Theatre&#39;s past calendars, newest first. Tap a festival for its bills.</p>')
 for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-31' if x['year'] else '0000')),reverse=True):
     en=fe['end'] or ''
     if en and en>=TODAY: continue
-    dr=(fe['start']+' – '+fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
+    dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
     bl=''.join('<li><b>'+e(b['dates'])+'</b>: '+' / '.join(e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' '+e(f['times']) if f['times'] else '') for f in b['films'])+'</li>' for b in fe['blocks'])
     P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="an">{e(fe["name"][:110])}</span> <span class="dr">{dr} · {len(fe["blocks"])} bills</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
