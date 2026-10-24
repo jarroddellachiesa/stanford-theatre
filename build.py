@@ -66,7 +66,8 @@ def hr2(a,b,n):
     return (f(A) if f(A)==f(B) else f(A)+' – '+f(B))+tail
 import re as _re
 _MF={k:v for v in "January February March April May June July August September October November December".split() for k in (v[:3],v[:4])}
-def fullmo(t): return _re.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b\.?(?=\s*\d)',lambda m:_MF.get(m.group(1),m.group(1))+' ',t).replace('  ',' ')
+def fullmo(t): return _re.sub(r'\s*[-–—]\s*',' - ',_fm(t))
+def _fm(t): return _re.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b\.?(?=\s*\d)',lambda m:_MF.get(m.group(1),m.group(1))+' ',t).replace('  ',' ')
 P.append('<h2 style="text-align:center;margin-top:30px">Festival archive</h2><p class="sm" style="text-align:center">From the Stanford Theatre&#39;s past calendars, newest first. Tap a festival for its bills.</p>')
 for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-31' if x['year'] else '0000')),reverse=True):
     en=fe['end'] or ''
@@ -106,12 +107,12 @@ NOTE='Additional movie information links provided courtesy of the <a href="https
 def cols(groups,films,root):
     o='<div class="cols">'
     for s in films:
-        st="".join(f'<div class="dg">{d}</div><div class="tm">{t}</div>' for d,items in groups for a2,t in items if a2==s)
+        st="".join(f'<div class="dg">{fullmo(d)}</div><div class="tm">{t}</div>' for d,items in groups for a2,t in items if a2==s)
         o+=f'<div class="col"><a class="card" href="{root}films/{s}.html"><img src="{root}posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a>{st}</div>'
     return o+'</div>'
 for name,dr,url,groups,films in FEST:
     p=PRES[url]
-    bl="".join(f'<h3>{d}</h3><ul class="sched">'+"".join(f'<li>'+(f'<a href="https://www.imdb.com/title/{i}">{e(t)}</a>' if i else e(t))+(f': <b>{tm}</b>' if tm else '')+'</li>' for t,i,tm in it)+'</ul>' for d,it in p['blocks'])
+    bl="".join(f'<h3>{fullmo(d)}</h3><ul class="sched">'+"".join(f'<li>'+(f'<a href="https://www.imdb.com/title/{i}">{e(t)}</a>' if i else e(t))+(f': <b>{tm}</b>' if tm else '')+'</li>' for t,i,tm in it)+'</ul>' for d,it in p['blocks'])
     b=f'''<section class="fest"><h1>{e(name)}</h1><div class="dr" style="text-align:center">{dr}</div>{cols(groups,films,"../")}</section>
 <section class="fest pres"><h2>From the Stanford Theatre program page</h2><div class="sm">Preserved copy of the original page (text and images), saved Oct 23, 2026.</div>
 <img class="logo" src="img/stanford_theatre.gif" alt="Stanford Theatre logo"><div class="ptitle">Stanford Theatre Movie Guide</div>
