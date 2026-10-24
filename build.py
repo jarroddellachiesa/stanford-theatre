@@ -58,7 +58,7 @@ def _dt24(d,x):
 def GCAL(slug,d,x,partner,sl):
     f=F[slug]; a=_dt24(d,x); b=a+_dt.timedelta(minutes=int(f.get('rt') or 120))
     det=f"{f['t']} ({f['y']})"+(f" on a double bill with {partner}" if partner else '')+f". Festival page: {SITE}festivals/{sl}.html"
-    q=urllib.parse.urlencode(dict(action='TEMPLATE',text=f"{f['t']} at the Stanford Theatre",dates=a.strftime('%Y%m%dT%H%M00')+'/'+b.strftime('%Y%m%dT%H%M00'),ctz='America/Los_Angeles',location='221 University Avenue, Palo Alto, CA 94301',details=det))
+    q=urllib.parse.urlencode(dict(action='TEMPLATE',text=f"{f['t']} at the Stanford Theatre",dates=a.strftime('%Y%m%dT%H%M00')+'/'+b.strftime('%Y%m%dT%H%M00'),ctz='America/Los_Angeles',location='Stanford Theatre, 221 University Avenue, Palo Alto, CA 94301',details=det))
     return 'https://calendar.google.com/calendar/render?'+q
 def DAYS(st,en,items,sl,only=None,compact=False):
     A=_dt.date.fromisoformat(st);B=_dt.date.fromisoformat(en);o=''
