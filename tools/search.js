@@ -35,5 +35,5 @@ var tot=gs.reduce(function(a,g){return a+g.items.length},0);C.textContent=gs.len
 R.innerHTML=gs.slice(0,40).map(function(g){var t=esc(g.name)+(g.yr?' ('+g.yr+')':''),fp=FP[g.k];
 var its=MR(g.items.sort(function(a,b){return a.o.start<b.o.start?-1:a.o.start>b.o.start?1:0})).map(function(o){return {o:o,pw:''}});
 return '<li class="fg"><div class="fh">'+(fp?'<a href="'+fp+'">'+t+'</a>':t)+' <span class="fc">'+its.length+' run'+(its.length==1?'':'s')+'</span></div><ul class="fl">'+its.map(function(x){var o=x.o,n=x.pw?'w/ '+x.pw:(o.note||'');
-return '<li>'+badge(o)+' <a class="sd" href="'+esc(o.url)+'">'+esc(dd(o))+'</a>'+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+(n?' <span class="rn">· '+esc(n)+'</span>':'')+'</li>'}).join('')+'</ul></li>'}).join('')}
+return '<li>'+badge(o)+' <a class="sd" href="'+esc(o.url)+'">'+esc(dd(o))+'</a>'+(o.tickets!=null?' · '+o.tickets.toLocaleString()+' tickets':'')+(n?n.split(' · ').filter(function(x){return x.trim()}).map(function(x){return '<span class="rl">'+esc(x)+'</span>'}).join(''):'')+'</li>'}).join('')+'</ul></li>'}).join('')}
 q.addEventListener('input',go);var u=new URLSearchParams(location.search).get('q');if(u)q.value=u;go();

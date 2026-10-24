@@ -27,11 +27,12 @@ for q,c in CL.items():
     L=lambda P:[LB.get(x,(None,))[0] for x in ids(c,P) if LB.get(x,(None,))[0]]
     loc=list(dict.fromkeys(L('P915')))
     tr=[]
-    aw=L('P166'); nm=L('P1411')
+    aw=list(dict.fromkeys(L('P166'))); nm=L('P1411')
     for a in aw:
         if any(w in a for w in ('Registry','Top Ten','Top 10','list')): tr.append(f'Selected for the {a}.')
         else: tr.append(f'Won the {a}.' if not a.lower().startswith('the ') else f'Won {a}.')
-    if nm: tr.append('Nominated for: '+'; '.join(nm[:8])+('; and more' if len(nm)>8 else '')+'.')
+    nm=[x for x in dict.fromkeys(nm) if x not in aw]
+    if nm: tr.append(('Also nominated for: ' if aw else 'Nominated for: ')+'; '.join(nm[:4])+(f'; and {len(nm)-4} more' if len(nm)>4 else '')+'.')
     for x in ids(c,'P144'):
         lb=LB.get(x)
         if lb and lb[0]: tr.append(f'Based on {lb[0]}'+(f' ({lb[1]})' if lb[1] else '')+'.')

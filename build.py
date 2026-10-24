@@ -232,7 +232,7 @@ for s,k in K.items():
     fest=[x for x in FEST if s in x[4]][0]
     sl_=SLUG[fest[2]]; sched="".join(f'<div class="bill" data-end="{en}">'+DAYS(st,en,items,sl_,only=s)+'</div>' for u,lab,st,en,items in NB if items and any(a==s for a,_ in items))
     FR_=FILMRUNS(f['t'])
-    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
+    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]
     ORR=[o for o in FR_ if o.get('badge')]
     OGS=''
@@ -294,7 +294,7 @@ CV=json.load(open('data/cover.json')); CM=json.load(open('data/cover_meta.json')
 FEATK={'north by northwest':'north-by-northwest','on waterfront':'on-the-waterfront','mary poppins':'mary-poppins','wizard of oz':'the-wizard-of-oz'}
 COV={}  # key -> dict(slug,title,year,rt,poster)
 def _syn(x):
-    x=_re0.sub(r'\s+',' ',x or '').strip(); ss=_re0.split(r'(?<=[.!?])\s+',x); o=''
+    x=_re0.sub(r'\s+',' ',x or '').strip(); ss=_re0.split(r'(?<=[a-z0-9)]{2}[.!?])\s+(?=[A-Z"])',x); o=''
     for t_ in ss:
         if len(o)+len(t_)>420 and o: break
         o+=(' ' if o else '')+t_
@@ -312,13 +312,15 @@ for c in CV:
     COV[k]=dict(slug=sl,title=tt,year=yr,rt=m.get('rt'),poster=(lambda f_:f_ if _o0.path.exists(f_) else None)('posters/c/'+_re0.sub(r'[^a-z0-9]+','-',k.replace('#','-')).strip('-')+'.jpg'),syn=_syn(m.get('ext')),desc=m.get('desc') or '',imdb=m.get('imdb'),wt=m['wt'])
 NFP=0
 CFX=json.load(open('data/cover_facts.json')) if _o0.path.exists('data/cover_facts.json') else {}
+for _k,_w in (json.load(open('data/cover_wpfacts.json')) if _o0.path.exists('data/cover_wpfacts.json') else {}).items():
+    _c=CFX.setdefault(_k,dict(loc=[],trivia=[])); _c['trivia']=_c.get('trivia',[])+_w['trivia']; _c['loc']=_c.get('loc',[])+_w['loc']
 import os as _o2
 if _o2.environ.get('NOCOVER'): COV={}
 for k,v in COV.items():
     FR_=FILMRUNS(v['title'],key=k)
     if not FR_: continue
     if all(o.get('type') not in (None,'feature') for o in FR_) and not _o2.path.exists(f'films/{v["slug"]}.html'): continue  # non-feature entries never get new film pages
-    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
+    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]; ORR=[o for o in FR_ if o.get('badge')]; OGS=''
     if OGR:
         rng=FRp(OGR[0]['start'],max((o.get('end') or o['start']) for o in OGR)) if len(OGR)>1 else FRp(OGR[0]['start'],OGR[0].get('end'))
