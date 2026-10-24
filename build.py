@@ -99,18 +99,81 @@ P.append('<p id="nopast" class="sm" style="text-align:center">No finished progra
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
 document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
 open('past.html','w').write(page("Past — Stanford Theatre","".join(P),"","past"))
+def tk(txt,c1,c2,gid): return f'<svg class="tk" viewBox="0 0 40 24" width="42" height="25" aria-hidden="true"><defs><linearGradient id="{gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient></defs><path d="M2 2h36v6a4 4 0 0 0 0 8v6H2v-6a4 4 0 0 0 0-8z" fill="url(#{gid})" stroke="#4a3a0a" stroke-width="1"/><path d="M10 4v16" stroke="#4a3a0a" stroke-width=".8" stroke-dasharray="1.6 1.6"/><text x="24" y="16" font-size="11" font-family="Georgia,serif" font-weight="700" fill="#3a0608" text-anchor="middle">{txt}</text></svg>'
+OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor"); S1=tk("1st","#f4f6f8","#9aa3ab","gs1")
+TOG="From the Stanford Theatre&#39;s original billings"; TOR="Original Run — shown during the film&#39;s first release"
+TICKET=OR
+
+import unicodedata as _ud
+RT=tk("@N@","#e8564f","#8e1a16","grt")
+SH=json.load(open('data/showings.json'))
+def NJ(t):
+    t=_ud.normalize('NFD',str(t)); t=''.join(c for c in t if not _ud.combining(c)).lower().replace('&',' and ')
+    t=_re0.sub(r"['’`]",'',t); w=[x for x in _re0.sub(r'[^a-z0-9]+',' ',t).split() if x and x not in('the','a','an')]
+    return ' '.join(x[:-1] if len(x)>4 and x.endswith('ing') else x for x in w)
+_MNL="January February March April May June July August September October November December".split()
+def FRp(a,b):
+    A=[int(x) for x in a.split('-')]; B=[int(x) for x in (b or a).split('-')] if (b or a).count('-')==2 else A
+    if not A[1] or not A[2]: return None
+    m=lambda x:f"{_MNL[x[1]-1]} {x[2]}"
+    if not B[1] or not B[2] or a==b or not b: f=f"{m(A)}, {A[0]}"
+    elif A[0]!=B[0]: f=f"{m(A)}, {A[0]} - {m(B)}, {B[0]}"
+    elif A[1]==B[1]: f=f"{m(A)} - {B[2]}, {A[0]}"
+    else: f=f"{m(A)} - {m(B)}, {A[0]}"
+    if len(f)>38:
+        g=lambda x:f"{x[1]}/{x[0]%100:02d}"; f=g(A) if g(A)==g(B) else g(A)+' - '+g(B)
+    return f
+def ORD(n): return str(n)+({1:'st',2:'nd',3:'rd'}.get(n%10 if n%100 not in(11,12,13) else 0,'th'))
+def BADGE(o):
+    h=''
+    if o['source']=='Stanford Theatre calendars': h+='<span class="src">Calendar</span> '
+    elif o['source']!='Tile': h+=f'<span class="badge og" title="{TOG}">{OG}</span> '
+    if o.get('badge'): h+=f'<span class="badge or" title="{TOR}">{OR}</span> '
+    n=o.get('n')
+    if n==1 and not o.get('badge'): h+=f'<span class="badge s1" title="First showing at the Stanford Theatre on record">{S1}</span>'
+    elif n and n>1: h+=f'<span class="badge rt" title="{ORD(n)} run at the Stanford Theatre on record">'+RT.replace('@N@',str(n))+'</span>'
+    return h
+def FILMRUNS(title):
+    k=NJ(title); its=sorted([o for o in SH if NJ(o['title'])==k],key=lambda o:o['start']); R=[];M={}
+    for o in its:
+        if not o.get('run'): R.append(dict(o,srcs={o['source']:1})); continue
+        m=M.get(o['run'])
+        if not m:
+            m=M[o['run']]=dict(title=o['title'],source=o['source'],start=o['start'],end=o.get('end'),date_text=o.get('date_text'),url=o['url'],note=o.get('note') or '',n=o['n'],badge=o.get('badge') or '',tickets=None,srcs={},nn=0); R.append(m)
+        m['srcs'][o['source']]=1
+        if o.get('badge'): m['badge']=o['badge']
+        if o['start']<m['start']: m['start']=o['start']
+        if (o.get('end') or o['start'])>(m['end'] or m['start']): m['end']=o.get('end')
+        if o['source']!='Tile' and m['source']=='Tile': m['source']=o['source']; m['url']=o['url']; m['date_text']=o.get('date_text')
+        if o['source']!='Tile' and o.get('note') and not m['nn']: m['note']=o['note']; m['nn']=1
+        elif not m['note'] and o.get('note'): m['note']=o['note']
+        if o.get('tickets') is not None: m['tickets']=(m['tickets'] or 0)+o['tickets']
+    for m in R:
+        if 'Tile' in m['srcs'] and m['source']!='Tile': m['date_text']=None
+    return R
+def DD(o):
+    if o['source']=='Tile' or not o.get('date_text'): return FRp(o['start'],o.get('end')) or o['start']
+    x=_re0.search(r'\(([^)]*day[^)]*)\)',o['date_text']); r=FRp(o['start'],o.get('end'))
+    return (r+(' ('+DT(x.group(1)).replace('–',' - ')+')' if x else '')) if r else DT(o['date_text'])
+def FESTLINK(o):
+    for n_,d_,u_,g_,fl_ in FEST:
+        a_,b_=_rng[u_]
+        if o['start']<=b_ and (o.get('end') or o['start'])>=a_: return '../festivals/'+SLUG[u_]+'.html'
+    u=o['url']; return u if u.startswith('http') else '../'+u
 for s,k in K.items():
     f=F[s];t=T[k]
     fest=[x for x in FEST if s in x[4]][0]
     sched="".join(f'<h3>{d}</h3><ul class="sched">'+"".join(f'<li>{"<b>" if a==s else ""}{ft(a)}: {tt}{"</b>" if a==s else ""}</li>' for a,tt in items)+'</ul>' for d,items in fest[3])
-    runs="".join(f'<li><span class="rd">{int(r["start"][5:7])}/{r["start"][:4]}</span> {r["tickets"]:,} tickets'+(f'<br><span class="pair">w/ {e(r["pair"])}</span>' if r["pair"]!="alone" else '')+'</li>' for r in t['runs'])
+    FR_=FILMRUNS(f['t'])
+    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>' for o in FR_)
+    print('FILMRUNS',f['t'],len(FR_),'old',len(t['runs']))
     li=lambda L:"".join(f'<li>{x}</li>' for x in L)
     b=f'''<article class="film"><div class="top"><img class="poster" src="../posters/{s}.jpg" alt="{e(f['t'])} poster">
 <div><h1>{e(f['t'])}</h1><div class="meta">{f['y']} ★ {f['rt']} min</div><p class="cr">{e(f['credit'])}</p><p class="plot">{e(f['plot'])}</p></div></div>
 <section><h2>Schedule</h2><div class="dr"><a href="../festivals/{SLUG[fest[2]]}.html">{e(fest[0])}</a> · {fest[1]}</div>{sched}</section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
-<section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p><h3>Past runs (since '03):</h3><ul class="runs">{runs}</ul></section>
+<section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p><h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li><li><a href="../infographics/{s}.png" download>Download infographic (PNG)</a></li></ul><a href="../infographics/{s}.png"><img class="ig" src="../infographics/{s}.png" alt="{e(f['t'])} infographic"></a></section></article>'''
     open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../"))
 
@@ -142,10 +205,6 @@ for name,dr,url,groups,films in FEST:
     open(f'festivals/{SLUG[url]}.html','w').write(page(f"{name} — Stanford Theatre",b,"../"))
 
 # ---- search page ----
-def tk(txt,c1,c2,gid): return f'<svg class="tk" viewBox="0 0 40 24" width="42" height="25" aria-hidden="true"><defs><linearGradient id="{gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient></defs><path d="M2 2h36v6a4 4 0 0 0 0 8v6H2v-6a4 4 0 0 0 0-8z" fill="url(#{gid})" stroke="#4a3a0a" stroke-width="1"/><path d="M10 4v16" stroke="#4a3a0a" stroke-width=".8" stroke-dasharray="1.6 1.6"/><text x="24" y="16" font-size="11" font-family="Georgia,serif" font-weight="700" fill="#3a0608" text-anchor="middle">{txt}</text></svg>'
-OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor"); S1=tk("1st","#f4f6f8","#9aa3ab","gs1")
-TOG="From the Stanford Theatre&#39;s original billings"; TOR="Original Run — shown during the film&#39;s first release"
-TICKET=OR
 SJS=open('tools/search.js').read()
 sb=f'''<section class="fest"><h1 class="mqh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and Tile box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
