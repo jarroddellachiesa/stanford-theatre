@@ -77,7 +77,13 @@ details.arch summary .dtop{letter-spacing:0;font-size:14px}
 .addr{font-style:normal;line-height:1.5;font-size:17px;letter-spacing:0;text-transform:none;margin-bottom:10px}.addr a{text-decoration:none;color:#f3e3b5}.addr a:hover{text-decoration:underline}.addr .an1{font-weight:700}
 .addr{font-size:14px;margin-bottom:0}
 
-@font-face{font-family:Yellowtail;src:url(fonts/Yellowtail-Regular.ttf);font-display:swap}
-h1.mqh{font-family:Yellowtail,cursive;font-weight:400;white-space:nowrap;font-size:clamp(40px,12vw,72px);line-height:1.1;letter-spacing:0;color:#fffaf0;text-align:center;
 text-shadow:0 0 2px #fff,0 0 6px #ffd9d9,0 0 12px #ff3b3b,0 0 22px #e0102a,0 0 36px #b0001c}
 .bf h2 a,.bf h2 a:hover,.bf h2 a:focus,.bf h2 a:visited,.gh a,.gh a:hover,.gh a:focus,.gh a:visited,.fest .dr a,.fest .dr a:hover{text-decoration:none!important}
+@font-face{font-family:Oswald;src:url(fonts/Oswald.ttf);font-weight:200 700;font-display:swap}
+h1.mqh{font-family:Oswald,'Arial Narrow',sans-serif;font-weight:700;text-transform:uppercase;white-space:nowrap;color:#b3121c;text-shadow:none;
+font-size:clamp(26px,8.2vw,44px);line-height:1;letter-spacing:.06em;display:table;margin:22px auto 18px;padding:12px 18px 10px;position:relative;
+background:repeating-linear-gradient(180deg,transparent 0 calc(.5em - 1px),rgba(120,90,40,.28) calc(.5em - 1px) .5em),repeating-linear-gradient(90deg,rgba(120,90,40,.10) 0 1px,transparent 1px 7px),radial-gradient(ellipse at center,#fff9e3 0%,#f6e7bf 60%,#e9d39c 100%);
+border:5px solid #c8102e;border-radius:3px;box-shadow:0 0 0 2px #5a0610,0 0 0 6px #e8c872,0 0 0 8px #5a0610,0 0 18px 4px rgba(255,220,150,.35),inset 0 0 14px rgba(255,255,240,.9)}
+h1.mqh::before,h1.mqh::after{content:"";position:absolute;left:4px;right:4px;height:4px;background:radial-gradient(circle,#fff6c8 0 1.6px,#ffcf5a 1.7px 2px,transparent 2.1px) 0 0/10px 4px repeat-x;filter:drop-shadow(0 0 2px #ffd36b)}
+h1.mqh::before{top:-17px}h1.mqh::after{bottom:-17px}
+h1.mqh{margin:26px auto 28px;font-size:clamp(24px,7.8vw,44px)}
