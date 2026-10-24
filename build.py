@@ -280,6 +280,7 @@ def FKEY(t,y=None):
     k=NKT(ALI(t))
     if k in RMK and y in RMK[k]: k+='#'+str(y)
     return k
+import os as _o0
 CV=json.load(open('data/cover.json')); CM=json.load(open('data/cover_meta.json'))
 FEATK={'north by northwest':'north-by-northwest','on waterfront':'on-the-waterfront','mary poppins':'mary-poppins','wizard of oz':'the-wizard-of-oz'}
 COV={}  # key -> dict(slug,title,year,rt,poster)
@@ -293,12 +294,13 @@ _used=set(FEATK.values())
 for c in CV:
     k=c['key']; m=CM.get(k)
     if k in FEATK or not m: continue
+    if _o0.environ.get('PHASE')=='1' and not c['recent']: continue
     tt=ALI(c['title']); tt=_re0.sub(r'\s*\((?:19|20)\d\d\)$','',tt)
     yr=int(k.split('#')[1]) if '#' in k else (c['year'] or (int(m['pd']) if m.get('pd') else m.get('wy')))
     sl=_re0.sub(r'[^a-z0-9]+','-',tt.lower()).strip('-')
     if sl in _used or '#' in k: sl+=f'-{yr}'
     _used.add(sl)
-    COV[k]=dict(slug=sl,title=tt,year=yr,rt=m.get('rt'),poster=m.get('poster'),syn=_syn(m.get('ext')),desc=m.get('desc') or '',imdb=m.get('imdb'),wt=m['wt'])
+    COV[k]=dict(slug=sl,title=tt,year=yr,rt=m.get('rt'),poster=(lambda f_:f_ if _o0.path.exists(f_) else None)('posters/c/'+_re0.sub(r'[^a-z0-9]+','-',k.replace('#','-')).strip('-')+'.jpg'),syn=_syn(m.get('ext')),desc=m.get('desc') or '',imdb=m.get('imdb'),wt=m['wt'])
 NFP=0
 import os as _o2
 if _o2.environ.get('NOCOVER'): COV={}

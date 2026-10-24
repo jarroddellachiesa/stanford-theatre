@@ -8,7 +8,9 @@ for k,v in M.items():
     if os.path.exists(fn): ok+=1; continue
     for i in range(3):
         try:
-            b=urllib.request.urlopen(urllib.request.Request(v['img'],headers=UA),timeout=40).read()
+            u=v['img']; m=re.match(r'(https://upload.wikimedia.org/wikipedia/\w+/)(\w/\w\w/)([^/]+)$',u)
+            if False: u=m.group(1)+'thumb/'+m.group(2)+m.group(3)+'/500px-'+m.group(3)
+            b=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=40).read()
             im=Image.open(io.BytesIO(b)).convert('RGB'); im.thumbnail((400,600)); im.save(fn,quality=82); ok+=1; break
         except Exception as ex: time.sleep(3+5*i)
     else: bad.append(k); v.pop('poster')

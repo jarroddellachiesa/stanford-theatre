@@ -15,8 +15,8 @@ for fe in FJ:
   for b in fe['blocks']:
     for fm in b['films']:
       if fm.get('year'): Y[NK(fm['title'])][fm['year']]+=1; TT.setdefault(NK(fm['title']),fm['title'])
-keys=[k for k in G if not BAD.search(k) and not BAD.search(G[k][0]['title'])]
-nr=lambda k:len({x['run'] for x in G[k]}); tk=lambda k:sum(x.get('tickets') or 0 for x in G[k])
+keys=[k for k in G if not BAD.search(k) and not BAD.search(G[k][0]['title']) and any(x['source']!='Stanford Theatre history page' for x in G[k])]
+nr=lambda k:len({x['run'] for x in G[k] if x['source']!='Stanford Theatre history page'}); tk=lambda k:sum(x.get('tickets') or 0 for x in G[k])
 rank=sorted(keys,key=lambda k:(-nr(k),-tk(k)))
 top=rank[:200]; recent=[k for k in keys if any(x['start']>='2021-10-01' for x in G[k])]
 out=[]

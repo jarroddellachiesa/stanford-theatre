@@ -10,7 +10,8 @@
 "rt": 125,
 "imdb": "tt0038650",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/its-wonderful-life.jpg"
 },
 "casablanca": {
 "wt": "Casablanca (film)",
@@ -23,7 +24,8 @@
 "rt": 102,
 "imdb": "tt0034583",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/casablanca.jpg"
 },
 "roman holiday": {
 "wt": "Roman Holiday",
@@ -36,7 +38,8 @@
 "rt": 118,
 "imdb": "tt0046250",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/roman-holiday.jpg"
 },
 "philadelphia story": {
 "wt": "The Philadelphia Story (film)",
@@ -49,7 +52,8 @@
 "rt": 108,
 "imdb": "tt0032904",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/philadelphia-story.jpg"
 },
 "sabrina": {
 "wt": "Sabrina (1954 film)",
@@ -62,7 +66,8 @@
 "rt": 113,
 "imdb": "tt0047437",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/sabrina.jpg"
 },
 "wizard of oz": {
 "wt": "The Wizard of Oz",
@@ -75,7 +80,8 @@
 "rt": 98,
 "imdb": "tt0032138",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/wizard-of-oz.jpg"
 },
 "shop around corner": {
 "wt": "The Shop Around the Corner",
@@ -88,7 +94,8 @@
 "rt": 99,
 "imdb": "tt0033045",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/shop-around-corner.jpg"
 },
 "top hat": {
 "wt": "Top Hat",
@@ -101,7 +108,8 @@
 "rt": 101,
 "imdb": "tt0027125",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/top-hat.jpg"
 },
 "gay divorcee": {
 "wt": "The Gay Divorcee",
@@ -114,7 +122,8 @@
 "rt": 107,
 "imdb": "tt0025164",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/gay-divorcee.jpg"
 },
 "notorious": {
 "wt": "Notorious (1946 film)",
@@ -127,7 +136,8 @@
 "rt": 102,
 "imdb": "tt0038787",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/notorious.jpg"
 },
 "vertigo": {
 "wt": "Vertigo (film)",
@@ -140,7 +150,8 @@
 "rt": 128,
 "imdb": "tt0052357",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/vertigo.jpg"
 },
 "my fair lady": {
 "wt": "My Fair Lady (film)",
@@ -153,7 +164,8 @@
 "rt": 171,
 "imdb": "tt0058385",
 "pd": "1964",
-"film": true
+"film": true,
+"poster": "posters/c/my-fair-lady.jpg"
 },
 "singin in rain": {
 "wt": "Singin' in the Rain",
@@ -166,7 +178,8 @@
 "rt": 103,
 "imdb": "tt0045152",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/singin-in-rain.jpg"
 },
 "north by northwest": {
 "wt": "North by Northwest",
@@ -179,7 +192,8 @@
 "rt": 136,
 "imdb": "tt0053125",
 "pd": "1959",
-"film": true
+"film": true,
+"poster": "posters/c/north-by-northwest.jpg"
 },
 "meet me in st louis": {
 "wt": "Meet Me in St. Louis",
@@ -192,7 +206,8 @@
 "rt": 113,
 "imdb": "tt0037059",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/meet-me-in-st-louis.jpg"
 },
 "to catch thief": {
 "wt": "To Catch a Thief",
@@ -205,7 +220,8 @@
 "rt": 106,
 "imdb": "tt0048728",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/to-catch-thief.jpg"
 },
 "laura": {
 "wt": "Laura (1944 film)",
@@ -218,7 +234,8 @@
 "rt": 88,
 "imdb": "tt0037008",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/laura.jpg"
 },
 "mr smith goes to washington": {
 "wt": "Mr. Smith Goes to Washington",
@@ -231,7 +248,8 @@
 "rt": 129,
 "imdb": "tt0031679",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/mr-smith-goes-to-washington.jpg"
 },
 "rear window": {
 "wt": "Rear Window",
@@ -244,7 +262,8 @@
 "rt": 112,
 "imdb": "tt0047396",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/rear-window.jpg"
 },
 "rebecca": {
 "wt": "Rebecca (1940 film)",
@@ -257,7 +276,8 @@
 "rt": 126,
 "imdb": "tt0032976",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/rebecca.jpg"
 },
 "swing time": {
 "wt": "Swing Time (film)",
@@ -270,7 +290,8 @@
 "rt": 103,
 "imdb": "tt0028333",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/swing-time.jpg"
 },
 "band wagon": {
 "wt": "The Band Wagon",
@@ -283,7 +304,8 @@
 "rt": 113,
 "imdb": "tt0045537",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/band-wagon.jpg"
 },
 "gone with wind": {
 "wt": "Gone with the Wind (film)",
@@ -296,7 +318,8 @@
 "rt": 238,
 "imdb": "tt0031381",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/gone-with-wind.jpg"
 },
 "big sleep": {
 "wt": "The Big Sleep (1946 film)",
@@ -309,7 +332,8 @@
 "rt": 114,
 "imdb": "tt0038355",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/big-sleep.jpg"
 },
 "bringing up baby": {
 "wt": "Bringing Up Baby",
@@ -322,7 +346,8 @@
 "rt": 102,
 "imdb": "tt0029947",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/bringing-up-baby.jpg"
 },
 "gigi": {
 "wt": "Gigi (1958 film)",
@@ -335,7 +360,8 @@
 "rt": 119,
 "imdb": "tt0051658",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/gigi.jpg"
 },
 "suspicion": {
 "wt": "Suspicion (1941 film)",
@@ -348,7 +374,8 @@
 "rt": 99,
 "imdb": "tt0034248",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/suspicion.jpg"
 },
 "shadow of doubt": {
 "wt": "Shadow of a Doubt",
@@ -361,7 +388,8 @@
 "rt": 108,
 "imdb": "tt0036342",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/shadow-of-doubt.jpg"
 },
 "strangers on train": {
 "wt": "Strangers on a Train (film)",
@@ -374,7 +402,8 @@
 "rt": 93,
 "imdb": "tt0044079",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/strangers-on-train.jpg"
 },
 "american in paris": {
 "wt": "An American in Paris (film)",
@@ -387,7 +416,8 @@
 "rt": 108,
 "imdb": "tt0043278",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/american-in-paris.jpg"
 },
 "it happened one night": {
 "wt": "It Happened One Night",
@@ -400,7 +430,8 @@
 "rt": 105,
 "imdb": "tt0025316",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/it-happened-one-night.jpg"
 },
 "all about eve": {
 "wt": "All About Eve",
@@ -413,7 +444,8 @@
 "rt": 138,
 "imdb": "tt0042192",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/all-about-eve.jpg"
 },
 "only angels have wings": {
 "wt": "Only Angels Have Wings",
@@ -426,7 +458,8 @@
 "rt": 121,
 "imdb": "tt0031762",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/only-angels-have-wings.jpg"
 },
 "reluctant debutante": {
 "wt": "The Reluctant Debutante (film)",
@@ -439,7 +472,8 @@
 "rt": 94,
 "imdb": "tt0052126",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/reluctant-debutante.jpg"
 },
 "adventures of robin hood": {
 "wt": "The Adventures of Robin Hood",
@@ -452,7 +486,8 @@
 "rt": 102,
 "imdb": "tt0029843",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/adventures-of-robin-hood.jpg"
 },
 "39 steps": {
 "wt": "The 39 Steps (1935 film)",
@@ -465,7 +500,8 @@
 "rt": 86,
 "imdb": "tt0026029",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/39-steps.jpg"
 },
 "beat devil": {
 "wt": "Beat the Devil (film)",
@@ -478,7 +514,8 @@
 "rt": 89,
 "imdb": "tt0046414",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/beat-devil.jpg"
 },
 "ninotchka": {
 "wt": "Ninotchka",
@@ -491,7 +528,8 @@
 "rt": 110,
 "imdb": "tt0031725",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/ninotchka.jpg"
 },
 "shall we dance": {
 "wt": "Shall We Dance (1937 film)",
@@ -504,7 +542,8 @@
 "rt": 109,
 "imdb": "tt0029546",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/shall-we-dance.jpg"
 },
 "flying down to rio": {
 "wt": "Flying Down to Rio",
@@ -517,7 +556,8 @@
 "rt": 89,
 "imdb": "tt0024025",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/flying-down-to-rio.jpg"
 },
 "holiday": {
 "wt": "Holiday (1938 film)",
@@ -530,7 +570,8 @@
 "rt": 92,
 "imdb": "tt0030241",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/holiday.jpg"
 },
 "maltese falcon": {
 "wt": "The Maltese Falcon (1941 film)",
@@ -543,7 +584,8 @@
 "rt": 101,
 "imdb": "tt0033870",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/maltese-falcon.jpg"
 },
 "prisoner of zenda": {
 "wt": "The Prisoner of Zenda (1937 film)",
@@ -556,7 +598,8 @@
 "rt": 101,
 "imdb": "tt0029442",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/prisoner-of-zenda.jpg"
 },
 "psycho": {
 "wt": "Psycho (1960 film)",
@@ -569,7 +612,8 @@
 "rt": 109,
 "imdb": "tt0054215",
 "pd": "1960",
-"film": true
+"film": true,
+"poster": "posters/c/psycho.jpg"
 },
 "funny face": {
 "wt": "Funny Face",
@@ -582,7 +626,8 @@
 "rt": 103,
 "imdb": "tt0050419",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/funny-face.jpg"
 },
 "african queen": {
 "wt": "The African Queen",
@@ -595,7 +640,8 @@
 "rt": 105,
 "imdb": "tt0043265",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/african-queen.jpg"
 },
 "sunset boulevard": {
 "wt": "Sunset Boulevard (film)",
@@ -608,7 +654,8 @@
 "rt": 110,
 "imdb": "tt0043014",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/sunset-boulevard.jpg"
 },
 "his girl friday": {
 "wt": "His Girl Friday",
@@ -621,7 +668,8 @@
 "rt": 90,
 "imdb": "tt0032599",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/his-girl-friday.jpg"
 },
 "arsenic and old lace": {
 "wt": "Arsenic and Old Lace (film)",
@@ -634,7 +682,8 @@
 "rt": 118,
 "imdb": "tt0036613",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/arsenic-and-old-lace.jpg"
 },
 "to be or not to be": {
 "wt": "To Be or Not to Be (1942 film)",
@@ -647,7 +696,8 @@
 "rt": 93,
 "imdb": "tt0035446",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/to-be-or-not-to-be.jpg"
 },
 "palm beach story": {
 "wt": "The Palm Beach Story",
@@ -660,7 +710,8 @@
 "rt": 88,
 "imdb": "tt0035169",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/palm-beach-story.jpg"
 },
 "roberta": {
 "wt": "Roberta (1935 film)",
@@ -673,7 +724,8 @@
 "rt": 106,
 "imdb": "tt0026942",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/roberta.jpg"
 },
 "morocco": {
 "wt": "Morocco (film)",
@@ -686,7 +738,8 @@
 "rt": 88,
 "imdb": "tt0021156",
 "pd": "1930",
-"film": true
+"film": true,
+"poster": "posters/c/morocco.jpg"
 },
 "breakfast at tiffanys": {
 "wt": "Breakfast at Tiffany's (film)",
@@ -699,7 +752,8 @@
 "rt": 110,
 "imdb": "tt0054698",
 "pd": "1961",
-"film": true
+"film": true,
+"poster": "posters/c/breakfast-at-tiffanys.jpg"
 },
 "lady vanishes": {
 "wt": "The Lady Vanishes",
@@ -712,7 +766,8 @@
 "rt": 96,
 "imdb": "tt0030341",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/lady-vanishes.jpg"
 },
 "miracle on 34th street": {
 "wt": "Miracle on 34th Street",
@@ -725,7 +780,8 @@
 "rt": 96,
 "imdb": "tt0039628",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/miracle-on-34th-street.jpg"
 },
 "ghost and mrs muir": {
 "wt": "The Ghost and Mrs. Muir",
@@ -738,7 +794,8 @@
 "rt": 104,
 "imdb": "tt0039420",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/ghost-and-mrs-muir.jpg"
 },
 "double indemnity": {
 "wt": "Double Indemnity",
@@ -751,7 +808,8 @@
 "rt": 107,
 "imdb": "tt0036775",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/double-indemnity.jpg"
 },
 "talk of town": {
 "wt": "The Talk of the Town (1942 film)",
@@ -764,7 +822,8 @@
 "rt": 119,
 "imdb": "tt0035417",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/talk-of-town.jpg"
 },
 "queen christina": {
 "wt": "Queen Christina (film)",
@@ -777,7 +836,8 @@
 "rt": 97,
 "imdb": "tt0024481",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/queen-christina.jpg"
 },
 "safety last": {
 "wt": "Safety Last!",
@@ -790,7 +850,8 @@
 "rt": 73,
 "imdb": "tt0014429",
 "pd": "1923",
-"film": true
+"film": true,
+"poster": "posters/c/safety-last.jpg"
 },
 "one hour with you": {
 "wt": "One Hour with You",
@@ -803,7 +864,8 @@
 "rt": 82,
 "imdb": "tt0023303",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/one-hour-with-you.jpg"
 },
 "midnight": {
 "wt": "Midnight (1939 film)",
@@ -816,7 +878,8 @@
 "rt": 92,
 "imdb": "tt0031647",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/midnight.jpg"
 },
 "to have and have not": {
 "wt": "To Have and Have Not (film)",
@@ -855,7 +918,8 @@
 "rt": 101,
 "imdb": "tt0046912",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/dial-m-for-murder.jpg"
 },
 "bad and beautiful": {
 "wt": "The Bad and the Beautiful",
@@ -868,7 +932,8 @@
 "rt": 116,
 "imdb": "tt0044391",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/bad-and-beautiful.jpg"
 },
 "apartment": {
 "wt": "The Apartment",
@@ -881,7 +946,8 @@
 "rt": 125,
 "imdb": "tt0053604",
 "pd": "1960",
-"film": true
+"film": true,
+"poster": "posters/c/apartment.jpg"
 },
 "affair to remember": {
 "wt": "An Affair to Remember",
@@ -894,7 +960,8 @@
 "rt": 119,
 "imdb": "tt0050105",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/affair-to-remember.jpg"
 },
 "foreign correspondent": {
 "wt": "Foreign Correspondent (film)",
@@ -907,7 +974,8 @@
 "rt": 115,
 "imdb": "tt0032484",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/foreign-correspondent.jpg"
 },
 "love in afternoon": {
 "wt": "Love in the Afternoon (1957 film)",
@@ -920,7 +988,8 @@
 "rt": 130,
 "imdb": "tt0050658",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/love-in-afternoon.jpg"
 },
 "my man godfrey": {
 "wt": "My Man Godfrey",
@@ -933,7 +1002,8 @@
 "rt": 94,
 "imdb": "tt0028010",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/my-man-godfrey.jpg"
 },
 "dinner at eight": {
 "wt": "Dinner at Eight (1933 film)",
@@ -946,7 +1016,8 @@
 "rt": 111,
 "imdb": "tt0023948",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/dinner-at-eight.jpg"
 },
 "you were never lovelier": {
 "wt": "You Were Never Lovelier",
@@ -959,7 +1030,8 @@
 "rt": 97,
 "imdb": "tt0035583",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/you-were-never-lovelier.jpg"
 },
 "footlight parade": {
 "wt": "Footlight Parade",
@@ -972,7 +1044,8 @@
 "rt": 104,
 "imdb": "tt0024028",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/footlight-parade.jpg"
 },
 "royal wedding": {
 "wt": "Royal Wedding",
@@ -985,7 +1058,8 @@
 "rt": 93,
 "imdb": "tt0043983",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/royal-wedding.jpg"
 },
 "charade": {
 "wt": "Charade (1963 film)",
@@ -998,7 +1072,8 @@
 "rt": 113,
 "imdb": "tt0056923",
 "pd": "1963",
-"film": true
+"film": true,
+"poster": "posters/c/charade.jpg"
 },
 "birds": {
 "wt": "The Birds (film)",
@@ -1011,7 +1086,8 @@
 "rt": 119,
 "imdb": "tt0056869",
 "pd": "1963",
-"film": true
+"film": true,
+"poster": "posters/c/birds.jpg"
 },
 "young and innocent": {
 "wt": "Young and Innocent",
@@ -1024,7 +1100,8 @@
 "rt": 80,
 "imdb": "tt0029811",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/young-and-innocent.jpg"
 },
 "it should happen to you": {
 "wt": "It Should Happen to You",
@@ -1037,7 +1114,8 @@
 "rt": 86,
 "imdb": "tt0047123",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/it-should-happen-to-you.jpg"
 },
 "yankee doodle dandy": {
 "wt": "Yankee Doodle Dandy",
@@ -1050,7 +1128,8 @@
 "rt": 126,
 "imdb": "tt0035575",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/yankee-doodle-dandy.jpg"
 },
 "miracle of morgans creek": {
 "wt": "The Miracle of Morgan's Creek",
@@ -1063,7 +1142,8 @@
 "rt": 99,
 "imdb": "tt0037077",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/miracle-of-morgans-creek.jpg"
 },
 "silk stockings": {
 "wt": "Silk Stockings (1957 film)",
@@ -1076,7 +1156,8 @@
 "rt": 117,
 "imdb": "tt0050972",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/silk-stockings.jpg"
 },
 "horse feathers": {
 "wt": "Horse Feathers",
@@ -1089,7 +1170,8 @@
 "rt": 64,
 "imdb": "tt0023027",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/horse-feathers.jpg"
 },
 "trouble in paradise": {
 "wt": "Trouble in Paradise (1932 film)",
@@ -1102,7 +1184,8 @@
 "rt": 83,
 "imdb": "tt0023622",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/trouble-in-paradise.jpg"
 },
 "follow fleet": {
 "wt": "Follow the Fleet",
@@ -1115,7 +1198,8 @@
 "rt": 110,
 "imdb": "tt0027630",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/follow-fleet.jpg"
 },
 "three little words": {
 "wt": "Three Little Words (film)",
@@ -1128,7 +1212,8 @@
 "rt": 102,
 "imdb": "tt0043044",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/three-little-words.jpg"
 },
 "christmas in july": {
 "wt": "Christmas in July (film)",
@@ -1141,7 +1226,8 @@
 "rt": 67,
 "imdb": "tt0032338",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/christmas-in-july.jpg"
 },
 "random harvest": {
 "wt": "Random Harvest (film)",
@@ -1154,7 +1240,8 @@
 "rt": 125,
 "imdb": "tt0035238",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/random-harvest.jpg"
 },
 "lost horizon": {
 "wt": "Lost Horizon (1937 film)",
@@ -1167,7 +1254,8 @@
 "rt": 97,
 "imdb": "tt0029162",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/lost-horizon.jpg"
 },
 "citizen kane": {
 "wt": "Citizen Kane",
@@ -1180,7 +1268,8 @@
 "rt": 119,
 "imdb": "tt0033467",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/citizen-kane.jpg"
 },
 "some like it hot": {
 "wt": "Some Like It Hot",
@@ -1193,7 +1282,8 @@
 "rt": 120,
 "imdb": "tt0053291",
 "pd": "1959",
-"film": true
+"film": true,
+"poster": "posters/c/some-like-it-hot.jpg"
 },
 "in lonely place": {
 "wt": "In a Lonely Place",
@@ -1206,7 +1296,8 @@
 "rt": 94,
 "imdb": "tt0042593",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/in-lonely-place.jpg"
 },
 "spellbound": {
 "wt": "Spellbound (1945 film)",
@@ -1219,7 +1310,8 @@
 "rt": 111,
 "imdb": "tt0038109",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/spellbound.jpg"
 },
 "topper": {
 "wt": "Topper (film)",
@@ -1232,7 +1324,8 @@
 "rt": 95,
 "imdb": "tt0029682",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/topper.jpg"
 },
 "you cant take it with you": {
 "wt": "You Can't Take It with You (film)",
@@ -1245,7 +1338,8 @@
 "rt": 126,
 "imdb": "tt0030993",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/you-cant-take-it-with-you.jpg"
 },
 "lady for day": {
 "wt": "Lady for a Day",
@@ -1258,7 +1352,8 @@
 "rt": 92,
 "imdb": "tt0024240",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/lady-for-day.jpg"
 },
 "night at opera": {
 "wt": "A Night at the Opera (film)",
@@ -1271,7 +1366,8 @@
 "rt": 87,
 "imdb": "tt0026778",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/night-at-opera.jpg"
 },
 "love me tonight": {
 "wt": "Love Me Tonight",
@@ -1284,7 +1380,8 @@
 "rt": 96,
 "imdb": "tt0023158",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/love-me-tonight.jpg"
 },
 "skys limit": {
 "wt": "The Sky's the Limit (1943 film)",
@@ -1297,7 +1394,8 @@
 "rt": 89,
 "imdb": "tt0036363",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/skys-limit.jpg"
 },
 "animal crackers": {
 "wt": "Animal Crackers (1930 film)",
@@ -1310,7 +1408,8 @@
 "rt": 93,
 "imdb": "tt0020640",
 "pd": "1930",
-"film": true
+"film": true,
+"poster": "posters/c/animal-crackers.jpg"
 },
 "around world in 80 days": {
 "wt": "Around the World in 80 Days (1956 film)",
@@ -1323,7 +1422,8 @@
 "rt": 184,
 "imdb": "tt0048960",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/around-world-in-80-days.jpg"
 },
 "duck soup": {
 "wt": "Duck Soup",
@@ -1336,7 +1436,8 @@
 "rt": 68,
 "imdb": "tt0023969",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/duck-soup.jpg"
 },
 "unfaithfully yours": {
 "wt": "Unfaithfully Yours (1948 film)",
@@ -1349,7 +1450,8 @@
 "rt": 128,
 "imdb": "tt0040919",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/unfaithfully-yours.jpg"
 },
 "she done him wrong": {
 "wt": "She Done Him Wrong",
@@ -1362,7 +1464,8 @@
 "rt": 68,
 "imdb": "tt0024548",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/she-done-him-wrong.jpg"
 },
 "scarlet empress": {
 "wt": "The Scarlet Empress",
@@ -1375,7 +1478,8 @@
 "rt": 104,
 "imdb": "tt0025746",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/scarlet-empress.jpg"
 },
 "gold diggers of 1933": {
 "wt": "Gold Diggers of 1933",
@@ -1388,7 +1492,8 @@
 "rt": 96,
 "imdb": "tt0024069",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/gold-diggers-of-1933.jpg"
 },
 "shanghai express": {
 "wt": "Shanghai Express (film)",
@@ -1401,7 +1506,8 @@
 "rt": 80,
 "imdb": "tt0023458",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/shanghai-express.jpg"
 },
 "bachelor mother": {
 "wt": "Bachelor Mother",
@@ -1414,7 +1520,8 @@
 "rt": 83,
 "imdb": "tt0031067",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/bachelor-mother.jpg"
 },
 "easter parade": {
 "wt": "Easter Parade (film)",
@@ -1427,7 +1534,8 @@
 "rt": 107,
 "imdb": "tt0040308",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/easter-parade.jpg"
 },
 "love parade": {
 "wt": "The Love Parade",
@@ -1440,7 +1548,8 @@
 "rt": 110,
 "imdb": "tt0020112",
 "pd": "1929",
-"film": true
+"film": true,
+"poster": "posters/c/love-parade.jpg"
 },
 "freshman": {
 "wt": "The Freshman (1925 film)",
@@ -1453,7 +1562,8 @@
 "rt": 76,
 "imdb": "tt0015841",
 "pd": "1925",
-"film": true
+"film": true,
+"poster": "posters/c/freshman.jpg"
 },
 "monte carlo": {
 "wt": "Monte Carlo (1930 film)",
@@ -1466,7 +1576,8 @@
 "rt": 94,
 "imdb": "tt0021153",
 "pd": "1930",
-"film": true
+"film": true,
+"poster": "posters/c/monte-carlo.jpg"
 },
 "thin man": {
 "wt": "The Thin Man (film)",
@@ -1479,7 +1590,8 @@
 "rt": 91,
 "imdb": "tt0025878",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/thin-man.jpg"
 },
 "mark of zorro#1940": {
 "wt": "The Mark of Zorro (1940 film)",
@@ -1492,7 +1604,8 @@
 "rt": 94,
 "imdb": "tt0032762",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/mark-of-zorro-1940.jpg"
 },
 "father of bride": {
 "wt": "Father of the Bride (1950 film)",
@@ -1505,7 +1618,8 @@
 "rt": 92,
 "imdb": "tt0042451",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/father-of-bride.jpg"
 },
 "three coins in fountain": {
 "wt": "Three Coins in the Fountain (film)",
@@ -1518,7 +1632,8 @@
 "rt": 102,
 "imdb": "tt0047580",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/three-coins-in-fountain.jpg"
 },
 "picnic": {
 "wt": "Picnic (1955 film)",
@@ -1531,7 +1646,8 @@
 "rt": 115,
 "imdb": "tt0048491",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/picnic.jpg"
 },
 "adams rib": {
 "wt": "Adam's Rib",
@@ -1544,7 +1660,8 @@
 "rt": 98,
 "imdb": "tt0041090",
 "pd": "1949",
-"film": true
+"film": true,
+"poster": "posters/c/adams-rib.jpg"
 },
 "sabotage": {
 "wt": "Sabotage (1936 film)",
@@ -1557,7 +1674,8 @@
 "rt": 74,
 "imdb": "tt0028212",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/sabotage.jpg"
 },
 "lady eve": {
 "wt": "The Lady Eve",
@@ -1570,7 +1688,8 @@
 "rt": 97,
 "imdb": "tt0033804",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/lady-eve.jpg"
 },
 "quiet man": {
 "wt": "The Quiet Man",
@@ -1583,7 +1702,8 @@
 "rt": 129,
 "imdb": "tt0045061",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/quiet-man.jpg"
 },
 "mr deeds goes to town": {
 "wt": "Mr. Deeds Goes to Town",
@@ -1596,7 +1716,8 @@
 "rt": 115,
 "imdb": "tt0027996",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/mr-deeds-goes-to-town.jpg"
 },
 "cover girl": {
 "wt": "Cover Girl (film)",
@@ -1609,7 +1730,8 @@
 "rt": 107,
 "imdb": "tt0036723",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/cover-girl.jpg"
 },
 "bishops wife": {
 "wt": "The Bishop's Wife",
@@ -1622,7 +1744,8 @@
 "rt": 109,
 "imdb": "tt0039190",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/bishops-wife.jpg"
 },
 "gunga din": {
 "wt": "Gunga Din (film)",
@@ -1635,7 +1758,8 @@
 "rt": 108,
 "imdb": "tt0031398",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/gunga-din.jpg"
 },
 "key largo": {
 "wt": "Key Largo (film)",
@@ -1648,7 +1772,8 @@
 "rt": 100,
 "imdb": "tt0040506",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/key-largo.jpg"
 },
 "tale of two cities": {
 "wt": "A Tale of Two Cities (1935 film)",
@@ -1661,7 +1786,8 @@
 "rt": 120,
 "imdb": "tt0027075",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/tale-of-two-cities.jpg"
 },
 "42nd street": {
 "wt": "42nd Street (film)",
@@ -1674,7 +1800,8 @@
 "rt": 89,
 "imdb": "tt0024034",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/42nd-street.jpg"
 },
 "tree grows in brooklyn": {
 "wt": "A Tree Grows in Brooklyn (1945 film)",
@@ -1687,7 +1814,8 @@
 "rt": 128,
 "imdb": "tt0038190",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/tree-grows-in-brooklyn.jpg"
 },
 "show boat": {
 "wt": "Show Boat (1936 film)",
@@ -1713,7 +1841,8 @@
 "rt": 108,
 "imdb": "tt0035979",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/heaven-can-wait.jpg"
 },
 "carefree": {
 "wt": "Carefree (film)",
@@ -1726,7 +1855,8 @@
 "rt": 83,
 "imdb": "tt0029971",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/carefree.jpg"
 },
 "daddy long legs": {
 "wt": "Daddy Long Legs (1955 film)",
@@ -1739,7 +1869,8 @@
 "rt": 124,
 "imdb": "tt0047969",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/daddy-long-legs.jpg"
 },
 "broadway melody of 1940": {
 "wt": "Broadway Melody of 1940",
@@ -1752,7 +1883,8 @@
 "rt": 102,
 "imdb": "tt0032284",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/broadway-melody-of-1940.jpg"
 },
 "curse of cat people": {
 "wt": "The Curse of the Cat People",
@@ -1765,7 +1897,8 @@
 "rt": 70,
 "imdb": "tt0036733",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/curse-of-cat-people.jpg"
 },
 "devil is woman": {
 "wt": "The Devil Is a Woman (1935 film)",
@@ -1778,7 +1911,8 @@
 "rt": 75,
 "imdb": "tt0026276",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/devil-is-woman.jpg"
 },
 "smiling lieutenant": {
 "wt": "The Smiling Lieutenant",
@@ -1791,7 +1925,8 @@
 "rt": 92,
 "imdb": "tt0022074",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/smiling-lieutenant.jpg"
 },
 "three smart girls": {
 "wt": "Three Smart Girls",
@@ -1804,7 +1939,8 @@
 "rt": 84,
 "imdb": "tt0028373",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/three-smart-girls.jpg"
 },
 "stage door": {
 "wt": "Stage Door",
@@ -1817,7 +1953,8 @@
 "rt": 92,
 "imdb": "tt0029604",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/stage-door.jpg"
 },
 "cabin in sky": {
 "wt": "Cabin in the Sky (film)",
@@ -1830,7 +1967,8 @@
 "rt": 98,
 "imdb": "tt0035703",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/cabin-in-sky.jpg"
 },
 "treasure of sierra madre": {
 "wt": "The Treasure of the Sierra Madre (film)",
@@ -1843,7 +1981,8 @@
 "rt": 126,
 "imdb": "tt0040897",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/treasure-of-sierra-madre.jpg"
 },
 "mark of zorro": {
 "wt": "The Mark of Zorro (1940 film)",
@@ -1856,7 +1995,8 @@
 "rt": 94,
 "imdb": "tt0032762",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/mark-of-zorro.jpg"
 },
 "trouble with harry": {
 "wt": "The Trouble with Harry",
@@ -1869,7 +2009,8 @@
 "rt": 99,
 "imdb": "tt0048750",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/trouble-with-harry.jpg"
 },
 "gilda": {
 "wt": "Gilda (film)",
@@ -1882,7 +2023,8 @@
 "rt": 110,
 "imdb": "tt0038559",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/gilda.jpg"
 },
 "awful truth": {
 "wt": "The Awful Truth",
@@ -1895,7 +2037,8 @@
 "rt": 87,
 "imdb": "tt0028597",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/awful-truth.jpg"
 },
 "third man": {
 "wt": "The Third Man",
@@ -1908,7 +2051,8 @@
 "rt": 93,
 "imdb": "tt0041959",
 "pd": "1949",
-"film": true
+"film": true,
+"poster": "posters/c/third-man.jpg"
 },
 "saboteur": {
 "wt": "Saboteur (film)",
@@ -1921,7 +2065,8 @@
 "rt": 108,
 "imdb": "tt0035279",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/saboteur.jpg"
 },
 "high noon": {
 "wt": "High Noon",
@@ -1934,7 +2079,8 @@
 "rt": 85,
 "imdb": "tt0044706",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/high-noon.jpg"
 },
 "destry rides again": {
 "wt": "Destry Rides Again",
@@ -1947,7 +2093,8 @@
 "rt": 94,
 "imdb": "tt0031225",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/destry-rides-again.jpg"
 },
 "bride of frankenstein": {
 "wt": "Bride of Frankenstein",
@@ -1960,7 +2107,8 @@
 "rt": 78,
 "imdb": "tt0026138",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/bride-of-frankenstein.jpg"
 },
 "im no angel": {
 "wt": "I'm No Angel",
@@ -1973,7 +2121,8 @@
 "rt": 87,
 "imdb": "tt0024166",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/im-no-angel.jpg"
 },
 "bachelor and bobby soxer": {
 "wt": "The Bachelor and the Bobby-Soxer",
@@ -1986,7 +2135,8 @@
 "rt": 97,
 "imdb": "tt0039169",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/bachelor-and-bobby-soxer.jpg"
 },
 "wrong man": {
 "wt": "The Wrong Man",
@@ -1999,7 +2149,8 @@
 "rt": 101,
 "imdb": "tt0051207",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/wrong-man.jpg"
 },
 "green for danger": {
 "wt": "Green for Danger (film)",
@@ -2012,7 +2163,8 @@
 "rt": 91,
 "imdb": "tt0038577",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/green-for-danger.jpg"
 },
 "general": {
 "wt": "The General (1926 film)",
@@ -2025,7 +2177,8 @@
 "rt": 75,
 "imdb": "tt0017925",
 "pd": "1926",
-"film": true
+"film": true,
+"poster": "posters/c/general.jpg"
 },
 "holiday inn": {
 "wt": "Holiday Inn (film)",
@@ -2038,7 +2191,8 @@
 "rt": 100,
 "imdb": "tt0034862",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/holiday-inn.jpg"
 },
 "of human bondage": {
 "wt": "Of Human Bondage (1934 film)",
@@ -2051,7 +2205,8 @@
 "rt": 83,
 "imdb": "tt0025586",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/of-human-bondage.jpg"
 },
 "curly top": {
 "wt": "Curly Top",
@@ -2064,7 +2219,8 @@
 "rt": 74,
 "imdb": "tt0026252",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/curly-top.jpg"
 },
 "cocoanuts": {
 "wt": "The Cocoanuts",
@@ -2077,7 +2233,8 @@
 "rt": 93,
 "imdb": "tt0019777",
 "pd": "1929",
-"film": true
+"film": true,
+"poster": "posters/c/cocoanuts.jpg"
 },
 "letter": {
 "wt": "The Letter (1940 film)",
@@ -2090,7 +2247,8 @@
 "rt": 95,
 "imdb": "tt0032701",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/letter.jpg"
 },
 "cluny brown": {
 "wt": "Cluny Brown",
@@ -2103,7 +2261,8 @@
 "rt": 108,
 "imdb": "tt0038419",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/cluny-brown.jpg"
 },
 "one hundred men and girl": {
 "wt": "One Hundred Men and a Girl",
@@ -2116,7 +2275,8 @@
 "rt": 84,
 "imdb": "tt0029347",
 "pd": "1937",
-"film": true
+"film": true,
+"poster": "posters/c/one-hundred-men-and-girl.jpg"
 },
 "story of vernon and irene castle": {
 "wt": "The Story of Vernon and Irene Castle",
@@ -2129,7 +2289,8 @@
 "rt": 93,
 "imdb": "tt0031983",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/story-of-vernon-and-irene-castle.jpg"
 },
 "cat people": {
 "wt": "Cat People (1942 film)",
@@ -2142,7 +2303,8 @@
 "rt": 73,
 "imdb": "tt0034587",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/cat-people.jpg"
 },
 "harvey": {
 "wt": "Harvey (1950 film)",
@@ -2155,7 +2317,8 @@
 "rt": 104,
 "imdb": "tt0042546",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/harvey.jpg"
 },
 "witness for prosecution": {
 "wt": "Witness for the Prosecution (1957 film)",
@@ -2168,7 +2331,8 @@
 "rt": 116,
 "imdb": "tt0051201",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/witness-for-prosecution.jpg"
 },
 "secret agent": {
 "wt": "Secret Agent (1936 film)",
@@ -2181,7 +2345,8 @@
 "rt": 86,
 "imdb": "tt0028231",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/secret-agent.jpg"
 },
 "bitter tea of general yen": {
 "wt": "The Bitter Tea of General Yen",
@@ -2194,7 +2359,8 @@
 "rt": 87,
 "imdb": "tt0023814",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/bitter-tea-of-general-yen.jpg"
 },
 "gentlemen prefer blondes": {
 "wt": "Gentlemen Prefer Blondes (1953 film)",
@@ -2207,7 +2373,8 @@
 "rt": 88,
 "imdb": "tt0045810",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/gentlemen-prefer-blondes.jpg"
 },
 "sitting pretty": {
 "wt": "Sitting Pretty (1948 film)",
@@ -2220,7 +2387,8 @@
 "rt": 83,
 "imdb": "tt0040795",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/sitting-pretty.jpg"
 },
 "desk set": {
 "wt": "Desk Set",
@@ -2233,7 +2401,8 @@
 "rt": 103,
 "imdb": "tt0050307",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/desk-set.jpg"
 },
 "anastasia": {
 "wt": "Anastasia (1956 film)",
@@ -2246,7 +2415,8 @@
 "rt": 105,
 "imdb": "tt0048947",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/anastasia.jpg"
 },
 "state of union": {
 "wt": "State of the Union (film)",
@@ -2259,7 +2429,8 @@
 "rt": 124,
 "imdb": "tt0040834",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/state-of-union.jpg"
 },
 "on waterfront": {
 "wt": "On the Waterfront",
@@ -2272,7 +2443,8 @@
 "rt": 108,
 "imdb": "tt0047296",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/on-waterfront.jpg"
 },
 "bells are ringing": {
 "wt": "Bells Are Ringing (film)",
@@ -2285,7 +2457,8 @@
 "rt": 127,
 "imdb": "tt0053645",
 "pd": "1960",
-"film": true
+"film": true,
+"poster": "posters/c/bells-are-ringing.jpg"
 },
 "sylvia scarlett": {
 "wt": "Sylvia Scarlett",
@@ -2298,7 +2471,8 @@
 "rt": 95,
 "imdb": "tt0027067",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/sylvia-scarlett.jpg"
 },
 "she wore yellow ribbon": {
 "wt": "She Wore a Yellow Ribbon",
@@ -2311,7 +2485,8 @@
 "rt": 103,
 "imdb": "tt0041866",
 "pd": "1949",
-"film": true
+"film": true,
+"poster": "posters/c/she-wore-yellow-ribbon.jpg"
 },
 "king and i": {
 "wt": "The King and I (1956 film)",
@@ -2324,7 +2499,8 @@
 "rt": 133,
 "imdb": "tt0049408",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/king-and-i.jpg"
 },
 "stagecoach": {
 "wt": "Stagecoach (1939 film)",
@@ -2337,7 +2513,8 @@
 "rt": 97,
 "imdb": "tt0031971",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/stagecoach.jpg"
 },
 "road to morocco": {
 "wt": "Road to Morocco",
@@ -2350,7 +2527,8 @@
 "rt": 83,
 "imdb": "tt0035262",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/road-to-morocco.jpg"
 },
 "woman in window": {
 "wt": "The Woman in the Window (1944 film)",
@@ -2363,7 +2541,8 @@
 "rt": 99,
 "imdb": "tt0037469",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/woman-in-window.jpg"
 },
 "tin pan alley": {
 "wt": "Tin Pan Alley (film)",
@@ -2376,7 +2555,8 @@
 "rt": 94,
 "imdb": "tt0033167",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/tin-pan-alley.jpg"
 },
 "winchester 73": {
 "wt": "Winchester '73",
@@ -2389,7 +2569,8 @@
 "rt": 92,
 "imdb": "tt0043137",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/winchester-73.jpg"
 },
 "employees entrance": {
 "wt": "Employees' Entrance",
@@ -2402,7 +2583,8 @@
 "rt": 75,
 "imdb": "tt0023986",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/employees-entrance.jpg"
 },
 "great mcginty": {
 "wt": "The Great McGinty",
@@ -2415,7 +2597,8 @@
 "rt": 80,
 "imdb": "tt0032554",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/great-mcginty.jpg"
 },
 "road to utopia": {
 "wt": "Road to Utopia",
@@ -2428,7 +2611,8 @@
 "rt": 86,
 "imdb": "tt0038032",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/road-to-utopia.jpg"
 },
 "since you went away": {
 "wt": "Since You Went Away",
@@ -2441,7 +2625,8 @@
 "rt": 120,
 "imdb": "tt0037280",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/since-you-went-away.jpg"
 },
 "andy hardy meets debutante": {
 "wt": "Andy Hardy Meets Debutante",
@@ -2454,7 +2639,8 @@
 "rt": 88,
 "imdb": "tt0032206",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/andy-hardy-meets-debutante.jpg"
 },
 "taxi": {
 "wt": "Taxi!",
@@ -2467,7 +2653,8 @@
 "rt": 69,
 "imdb": "tt0023556",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/taxi.jpg"
 },
 "anna karenina": {
 "wt": "Anna Karenina (1935 film)",
@@ -2480,7 +2667,8 @@
 "rt": 95,
 "imdb": "tt0026071",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/anna-karenina.jpg"
 },
 "star is born": {
 "wt": "A Star Is Born (1954 film)",
@@ -2493,7 +2681,8 @@
 "rt": 181,
 "imdb": "tt0047522",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/star-is-born.jpg"
 },
 "if i were king": {
 "wt": "If I Were King",
@@ -2506,7 +2695,8 @@
 "rt": 101,
 "imdb": "tt0030265",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/if-i-were-king.jpg"
 },
 "man who knew too much#1956": {
 "wt": "The Man Who Knew Too Much (1956 film)",
@@ -2519,7 +2709,8 @@
 "rt": 120,
 "imdb": "tt0049470",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/man-who-knew-too-much-1956.jpg"
 },
 "yolanda and thief": {
 "wt": "Yolanda and the Thief",
@@ -2532,7 +2723,8 @@
 "rt": 108,
 "imdb": "tt0038262",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/yolanda-and-thief.jpg"
 },
 "monkey business": {
 "wt": "Monkey Business (1952 film)",
@@ -2545,7 +2737,8 @@
 "rt": 97,
 "imdb": "tt0044916",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/monkey-business.jpg"
 },
 "marnie": {
 "wt": "Marnie (film)",
@@ -2558,7 +2751,8 @@
 "rt": 124,
 "imdb": "tt0058329",
 "pd": "1964",
-"film": true
+"film": true,
+"poster": "posters/c/marnie.jpg"
 },
 "secret garden": {
 "wt": "The Secret Garden (1949 film)",
@@ -2571,7 +2765,8 @@
 "rt": 92,
 "imdb": "tt0041855",
 "pd": "1949",
-"film": true
+"film": true,
+"poster": "posters/c/secret-garden.jpg"
 },
 "seven year itch": {
 "wt": "The Seven Year Itch",
@@ -2584,7 +2779,8 @@
 "rt": 101,
 "imdb": "tt0048605",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/seven-year-itch.jpg"
 },
 "ill show you town": {
 "wt": "I'll Show You the Town",
@@ -2597,7 +2793,8 @@
 "rt": 80,
 "imdb": "tt0015937",
 "pd": "1925",
-"film": true
+"film": true,
+"poster": "posters/c/ill-show-you-town.jpg"
 },
 "riders of purple sage": {
 "wt": "Riders of the Purple Sage (1925 film)",
@@ -2610,7 +2807,8 @@
 "rt": 56,
 "imdb": "tt0016288",
 "pd": "1925",
-"film": true
+"film": true,
+"poster": "posters/c/riders-of-purple-sage.jpg"
 },
 "stage struck": {
 "wt": "Stage Struck (1925 film)",
@@ -2623,7 +2821,8 @@
 "rt": 70,
 "imdb": "tt0016394",
 "pd": "1925",
-"film": true
+"film": true,
+"poster": "posters/c/stage-struck.jpg"
 },
 "tumbleweeds": {
 "wt": "Tumbleweeds (1925 film)",
@@ -2636,7 +2835,8 @@
 "rt": 78,
 "imdb": "tt0016461",
 "pd": "1925",
-"film": true
+"film": true,
+"poster": "posters/c/tumbleweeds.jpg"
 },
 "lady windermeres fan": {
 "wt": "Lady Windermere's Fan (1925 film)",
@@ -2649,7 +2849,8 @@
 "rt": 89,
 "imdb": "tt0016004",
 "pd": "1925",
-"film": true
+"film": true,
+"poster": "posters/c/lady-windermeres-fan.jpg"
 },
 "skinners dress suit": {
 "wt": "Skinner's Dress Suit (1926 film)",
@@ -2662,7 +2863,8 @@
 "rt": null,
 "imdb": "tt0017401",
 "pd": "1926",
-"film": true
+"film": true,
+"poster": "posters/c/skinners-dress-suit.jpg"
 },
 "rolling home": {
 "wt": "Rolling Home (1926 film)",
@@ -2673,7 +2875,8 @@
 "rt": 70,
 "imdb": "tt0017334",
 "pd": "1926",
-"film": true
+"film": true,
+"poster": "posters/c/rolling-home.jpg"
 },
 "thats my daddy": {
 "wt": "That's My Daddy",
@@ -2686,7 +2889,8 @@
 "rt": 60,
 "imdb": "tt0019463",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/thats-my-daddy.jpg"
 },
 "patsy": {
 "wt": "The Patsy (1928 film)",
@@ -2699,7 +2903,8 @@
 "rt": 78,
 "imdb": "tt0019258",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/patsy.jpg"
 },
 "speedy": {
 "wt": "Speedy (film)",
@@ -2712,7 +2917,8 @@
 "rt": 85,
 "imdb": "tt0019412",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/speedy.jpg"
 },
 "docks of new york": {
 "wt": "The Docks of New York",
@@ -2725,7 +2931,8 @@
 "rt": 76,
 "imdb": "tt0018839",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/docks-of-new-york.jpg"
 },
 "steamboat bill jr": {
 "wt": "Steamboat Bill, Jr.",
@@ -2738,7 +2945,8 @@
 "rt": 71,
 "imdb": "tt0019421",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/steamboat-bill-jr.jpg"
 },
 "big business": {
 "wt": "Big Business (1929 film)",
@@ -2751,7 +2959,8 @@
 "rt": 19,
 "imdb": "tt0019688",
 "pd": "1929",
-"film": true
+"film": true,
+"poster": "posters/c/big-business.jpg"
 },
 "two tars": {
 "wt": "Two Tars",
@@ -2764,7 +2973,8 @@
 "rt": 21,
 "imdb": "tt0019504",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/two-tars.jpg"
 },
 "younger generation": {
 "wt": "The Younger Generation",
@@ -2777,7 +2987,8 @@
 "rt": 75,
 "imdb": "tt0020613",
 "pd": "1929",
-"film": true
+"film": true,
+"poster": "posters/c/younger-generation.jpg"
 },
 "words and music": {
 "wt": "Words and Music (1929 film)",
@@ -2790,7 +3001,8 @@
 "rt": 81,
 "imdb": "tt0020604",
 "pd": "1929",
-"film": true
+"film": true,
+"poster": "posters/c/words-and-music.jpg"
 },
 "flight": {
 "wt": "Flight (1929 film)",
@@ -2803,7 +3015,8 @@
 "rt": 110,
 "imdb": "tt0019884",
 "pd": "1929",
-"film": true
+"film": true,
+"poster": "posters/c/flight.jpg"
 },
 "ladies of leisure": {
 "wt": "Ladies of Leisure",
@@ -2816,7 +3029,8 @@
 "rt": 102,
 "imdb": "tt0021040",
 "pd": "1930",
-"film": true
+"film": true,
+"poster": "posters/c/ladies-of-leisure.jpg"
 },
 "big trail": {
 "wt": "The Big Trail",
@@ -2829,7 +3043,8 @@
 "rt": 125,
 "imdb": "tt0020691",
 "pd": "1930",
-"film": true
+"film": true,
+"poster": "posters/c/big-trail.jpg"
 },
 "blue angel": {
 "wt": "The Blue Angel",
@@ -2842,7 +3057,8 @@
 "rt": 108,
 "imdb": "tt0020697",
 "pd": "1930",
-"film": true
+"film": true,
+"poster": "posters/c/blue-angel.jpg"
 },
 "dishonored": {
 "wt": "Dishonored (film)",
@@ -2855,7 +3071,8 @@
 "rt": 85,
 "imdb": "tt0021800",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/dishonored.jpg"
 },
 "its wise child": {
 "wt": "It's a Wise Child (film)",
@@ -2881,7 +3098,8 @@
 "rt": 82,
 "imdb": "tt0021750",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/city-streets.jpg"
 },
 "dracula": {
 "wt": "Dracula (1931 English-language film)",
@@ -2894,7 +3112,8 @@
 "rt": 75,
 "imdb": "tt0021814",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/dracula.jpg"
 },
 "american tragedy": {
 "wt": "An American Tragedy (film)",
@@ -2907,7 +3126,8 @@
 "rt": 96,
 "imdb": "tt0021607",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/american-tragedy.jpg"
 },
 "as young as you feel": {
 "wt": "As Young as You Feel",
@@ -2920,7 +3140,8 @@
 "rt": 76,
 "imdb": "tt0043299",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/as-young-as-you-feel.jpg"
 },
 "waterloo bridge#1931": {
 "wt": "Waterloo Bridge (1931 film)",
@@ -2933,7 +3154,8 @@
 "rt": 81,
 "imdb": "tt0022550",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/waterloo-bridge-1931.jpg"
 },
 "road to singapore": {
 "wt": "Road to Singapore",
@@ -2946,7 +3168,8 @@
 "rt": 85,
 "imdb": "tt0032993",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/road-to-singapore.jpg"
 },
 "frankenstein": {
 "wt": "Frankenstein (1931 film)",
@@ -2959,7 +3182,8 @@
 "rt": 71,
 "imdb": "tt0021884",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/frankenstein.jpg"
 },
 "broken lullaby": {
 "wt": "Broken Lullaby",
@@ -2972,7 +3196,8 @@
 "rt": 76,
 "imdb": "tt0022725",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/broken-lullaby.jpg"
 },
 "letty lynton": {
 "wt": "Letty Lynton",
@@ -2985,7 +3210,8 @@
 "rt": 84,
 "imdb": "tt0023132",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/letty-lynton.jpg"
 },
 "back street": {
 "wt": "Back Street (1941 film)",
@@ -2998,7 +3224,8 @@
 "rt": 89,
 "imdb": "tt0033365",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/back-street.jpg"
 },
 "american madness": {
 "wt": "American Madness",
@@ -3011,7 +3238,8 @@
 "rt": 75,
 "imdb": "tt0022626",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/american-madness.jpg"
 },
 "working man": {
 "wt": "The Working Man",
@@ -3024,7 +3252,8 @@
 "rt": 78,
 "imdb": "tt0024785",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/working-man.jpg"
 },
 "song of songs": {
 "wt": "The Song of Songs (1933 film)",
@@ -3037,7 +3266,8 @@
 "rt": 90,
 "imdb": "tt0024598",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/song-of-songs.jpg"
 },
 "out of past": {
 "wt": "Out of the Past",
@@ -3050,7 +3280,8 @@
 "rt": 97,
 "imdb": "tt0039689",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/out-of-past.jpg"
 },
 "design for living": {
 "wt": "Design for Living (film)",
@@ -3063,7 +3294,8 @@
 "rt": 88,
 "imdb": "tt0023940",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/design-for-living.jpg"
 },
 "thirty day princess": {
 "wt": "Thirty-Day Princess",
@@ -3076,7 +3308,8 @@
 "rt": 74,
 "imdb": "tt0025880",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/thirty-day-princess.jpg"
 },
 "merry widow#1934": {
 "wt": "The Merry Widow (1934 film)",
@@ -3089,7 +3322,8 @@
 "rt": 99,
 "imdb": "tt0025493",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/merry-widow-1934.jpg"
 },
 "people will talk": {
 "wt": "People Will Talk",
@@ -3102,7 +3336,8 @@
 "rt": 110,
 "imdb": "tt0043915",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/people-will-talk.jpg"
 },
 "glass key": {
 "wt": "The Glass Key (1942 film)",
@@ -3115,7 +3350,8 @@
 "rt": 85,
 "imdb": "tt0034798",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/glass-key.jpg"
 },
 "becky sharp": {
 "wt": "Becky Sharp (film)",
@@ -3141,7 +3377,8 @@
 "rt": 115,
 "imdb": "tt0028216",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/san-francisco.jpg"
 },
 "big broadcast of 1938": {
 "wt": "The Big Broadcast of 1938",
@@ -3154,7 +3391,8 @@
 "rt": 91,
 "imdb": "tt0029912",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/big-broadcast-of-1938.jpg"
 },
 "bluebeards eighth wife": {
 "wt": "Bluebeard's Eighth Wife",
@@ -3167,7 +3405,8 @@
 "rt": 85,
 "imdb": "tt0029929",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/bluebeards-eighth-wife.jpg"
 },
 "mad about music": {
 "wt": "Mad About Music",
@@ -3180,7 +3419,8 @@
 "rt": 98,
 "imdb": "tt0030395",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/mad-about-music.jpg"
 },
 "alexanders ragtime band": {
 "wt": "Alexander's Ragtime Band (film)",
@@ -3193,7 +3433,8 @@
 "rt": 108,
 "imdb": "tt0029852",
 "pd": "1938",
-"film": true
+"film": true,
+"poster": "posters/c/alexanders-ragtime-band.jpg"
 },
 "three smart girls grow up": {
 "wt": "Three Smart Girls Grow Up",
@@ -3206,7 +3447,8 @@
 "rt": 90,
 "imdb": "tt0032030",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/three-smart-girls-grow-up.jpg"
 },
 "never say die": {
 "wt": "Never Say Die (1939 film)",
@@ -3219,7 +3461,8 @@
 "rt": 82,
 "imdb": "tt0031716",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/never-say-die.jpg"
 },
 "cat and canary#1939": {
 "wt": "The Cat and the Canary (1939 film)",
@@ -3232,7 +3475,8 @@
 "rt": 72,
 "imdb": "tt0031143",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/cat-and-canary-1939.jpg"
 },
 "tower of london": {
 "wt": "Tower of London (1939 film)",
@@ -3245,7 +3489,8 @@
 "rt": 92,
 "imdb": "tt0032049",
 "pd": "1939",
-"film": true
+"film": true,
+"poster": "posters/c/tower-of-london.jpg"
 },
 "remember night": {
 "wt": "Remember the Night",
@@ -3258,7 +3503,8 @@
 "rt": 94,
 "imdb": "tt0032981",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/remember-night.jpg"
 },
 "ghost breakers": {
 "wt": "The Ghost Breakers",
@@ -3271,7 +3517,8 @@
 "rt": 85,
 "imdb": "tt0032520",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/ghost-breakers.jpg"
 },
 "down argentine way": {
 "wt": "Down Argentine Way",
@@ -3284,7 +3531,8 @@
 "rt": 97,
 "imdb": "tt0032410",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/down-argentine-way.jpg"
 },
 "high sierra": {
 "wt": "High Sierra (film)",
@@ -3297,7 +3545,8 @@
 "rt": 100,
 "imdb": "tt0033717",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/high-sierra.jpg"
 },
 "road to zanzibar": {
 "wt": "Road to Zanzibar",
@@ -3310,7 +3559,8 @@
 "rt": 91,
 "imdb": "tt0034116",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/road-to-zanzibar.jpg"
 },
 "meet john doe": {
 "wt": "Meet John Doe",
@@ -3323,7 +3573,8 @@
 "rt": 122,
 "imdb": "tt0033891",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/meet-john-doe.jpg"
 },
 "penny serenade": {
 "wt": "Penny Serenade",
@@ -3336,7 +3587,8 @@
 "rt": 119,
 "imdb": "tt0034012",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/penny-serenade.jpg"
 },
 "blood and sand": {
 "wt": "Blood and Sand (1941 film)",
@@ -3349,7 +3601,8 @@
 "rt": 124,
 "imdb": "tt0033405",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/blood-and-sand.jpg"
 },
 "moon over miami": {
 "wt": "Moon over Miami (film)",
@@ -3362,7 +3615,8 @@
 "rt": 91,
 "imdb": "tt0033918",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/moon-over-miami.jpg"
 },
 "sun valley serenade": {
 "wt": "Sun Valley Serenade",
@@ -3375,7 +3629,8 @@
 "rt": 86,
 "imdb": "tt0034241",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/sun-valley-serenade.jpg"
 },
 "dr jekyll and mr hyde": {
 "wt": "Dr. Jekyll and Mr. Hyde (1941 film)",
@@ -3388,7 +3643,8 @@
 "rt": 113,
 "imdb": "tt0033553",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/dr-jekyll-and-mr-hyde.jpg"
 },
 "man who came to dinner": {
 "wt": "The Man Who Came to Dinner (1942 film)",
@@ -3399,7 +3655,8 @@
 "rt": null,
 "imdb": null,
 "pd": null,
-"film": true
+"film": true,
+"poster": "posters/c/man-who-came-to-dinner.jpg"
 },
 "my favorite blonde": {
 "wt": "My Favorite Blonde",
@@ -3412,7 +3669,8 @@
 "rt": 78,
 "imdb": "tt0035100",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/my-favorite-blonde.jpg"
 },
 "this gun for hire": {
 "wt": "This Gun for Hire",
@@ -3425,7 +3683,8 @@
 "rt": 80,
 "imdb": "tt0035432",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/this-gun-for-hire.jpg"
 },
 "orchestra wives": {
 "wt": "Orchestra Wives",
@@ -3438,7 +3697,8 @@
 "rt": 98,
 "imdb": "tt0035157",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/orchestra-wives.jpg"
 },
 "major and minor": {
 "wt": "The Major and the Minor",
@@ -3451,7 +3711,8 @@
 "rt": 100,
 "imdb": "tt0035019",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/major-and-minor.jpg"
 },
 "i married witch": {
 "wt": "I Married a Witch",
@@ -3464,7 +3725,8 @@
 "rt": 77,
 "imdb": "tt0034881",
 "pd": "1942",
-"film": true
+"film": true,
+"poster": "posters/c/i-married-witch.jpg"
 },
 "ox bow incident": {
 "wt": "The Ox-Bow Incident",
@@ -3477,7 +3739,8 @@
 "rt": 77,
 "imdb": "tt0036244",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/ox-bow-incident.jpg"
 },
 "power of press": {
 "wt": "The Power of the Press",
@@ -3490,7 +3753,8 @@
 "rt": 62,
 "imdb": "tt0019290",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/power-of-press.jpg"
 },
 "destination tokyo": {
 "wt": "Destination Tokyo",
@@ -3503,7 +3767,8 @@
 "rt": 135,
 "imdb": "tt0035799",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/destination-tokyo.jpg"
 },
 "lifeboat": {
 "wt": "Lifeboat (1944 film)",
@@ -3516,7 +3781,8 @@
 "rt": 96,
 "imdb": "tt0037017",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/lifeboat.jpg"
 },
 "none but lonely heart": {
 "wt": "None but the Lonely Heart (film)",
@@ -3529,7 +3795,8 @@
 "rt": 113,
 "imdb": "tt0037135",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/none-but-lonely-heart.jpg"
 },
 "princess and pirate": {
 "wt": "The Princess and the Pirate",
@@ -3542,7 +3809,8 @@
 "rt": 94,
 "imdb": "tt0037193",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/princess-and-pirate.jpg"
 },
 "ministry of fear": {
 "wt": "Ministry of Fear",
@@ -3555,7 +3823,8 @@
 "rt": 83,
 "imdb": "tt0037075",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/ministry-of-fear.jpg"
 },
 "clock": {
 "wt": "The Clock (1945 film)",
@@ -3568,7 +3837,8 @@
 "rt": 90,
 "imdb": "tt0037604",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/clock.jpg"
 },
 "christmas in connecticut": {
 "wt": "Christmas in Connecticut",
@@ -3579,7 +3849,8 @@
 "rt": 102,
 "imdb": "tt0037595",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/christmas-in-connecticut.jpg"
 },
 "mildred pierce": {
 "wt": "Mildred Pierce (film)",
@@ -3592,7 +3863,8 @@
 "rt": 111,
 "imdb": "tt0037913",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/mildred-pierce.jpg"
 },
 "leave her to heaven": {
 "wt": "Leave Her to Heaven",
@@ -3605,7 +3877,8 @@
 "rt": 110,
 "imdb": "tt0037865",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/leave-her-to-heaven.jpg"
 },
 "spiral staircase": {
 "wt": "The Spiral Staircase (1946 film)",
@@ -3618,7 +3891,8 @@
 "rt": 83,
 "imdb": "tt0038975",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/spiral-staircase.jpg"
 },
 "blue dahlia": {
 "wt": "The Blue Dahlia",
@@ -3631,7 +3905,8 @@
 "rt": 96,
 "imdb": "tt0038369",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/blue-dahlia.jpg"
 },
 "postman always rings twice": {
 "wt": "The Postman Always Rings Twice (1946 film)",
@@ -3644,7 +3919,8 @@
 "rt": 103,
 "imdb": "tt0038854",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/postman-always-rings-twice.jpg"
 },
 "bedlam": {
 "wt": "Bedlam (1946 film)",
@@ -3657,7 +3933,8 @@
 "rt": 79,
 "imdb": "tt0038343",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/bedlam.jpg"
 },
 "my darling clementine": {
 "wt": "My Darling Clementine",
@@ -3670,7 +3947,8 @@
 "rt": 92,
 "imdb": "tt0038762",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/my-darling-clementine.jpg"
 },
 "undercurrent": {
 "wt": "Undercurrent (1946 film)",
@@ -3683,7 +3961,8 @@
 "rt": 116,
 "imdb": "tt0039066",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/undercurrent.jpg"
 },
 "red house": {
 "wt": "The Red House (film)",
@@ -3696,7 +3975,8 @@
 "rt": 100,
 "imdb": "tt0039757",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/red-house.jpg"
 },
 "pursued": {
 "wt": "Pursued",
@@ -3709,7 +3989,8 @@
 "rt": 96,
 "imdb": "tt0039737",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/pursued.jpg"
 },
 "my favorite brunette": {
 "wt": "My Favorite Brunette",
@@ -3735,7 +4016,8 @@
 "rt": 106,
 "imdb": "tt0039302",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/dark-passage.jpg"
 },
 "road to rio": {
 "wt": "Road to Rio",
@@ -3748,7 +4030,8 @@
 "rt": 100,
 "imdb": "tt0039776",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/road-to-rio.jpg"
 },
 "nightmare alley": {
 "wt": "Nightmare Alley (1947 film)",
@@ -3761,7 +4044,8 @@
 "rt": 110,
 "imdb": "tt0039661",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/nightmare-alley.jpg"
 },
 "secret beyond door": {
 "wt": "Secret Beyond the Door",
@@ -3774,7 +4058,8 @@
 "rt": 99,
 "imdb": "tt0040766",
 "pd": "1947",
-"film": true
+"film": true,
+"poster": "posters/c/secret-beyond-door.jpg"
 },
 "fort apache": {
 "wt": "Fort Apache (film)",
@@ -3787,7 +4072,8 @@
 "rt": 125,
 "imdb": "tt0040369",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/fort-apache.jpg"
 },
 "pirate": {
 "wt": "The Pirate (1948 film)",
@@ -3800,7 +4086,8 @@
 "rt": 102,
 "imdb": "tt0040694",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/pirate.jpg"
 },
 "paleface": {
 "wt": "The Paleface (1948 film)",
@@ -3813,7 +4100,8 @@
 "rt": 91,
 "imdb": "tt0040679",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/paleface.jpg"
 },
 "every girl should be married": {
 "wt": "Every Girl Should Be Married",
@@ -3826,7 +4114,8 @@
 "rt": 85,
 "imdb": "tt0040331",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/every-girl-should-be-married.jpg"
 },
 "colorado territory": {
 "wt": "Colorado Territory (film)",
@@ -3839,7 +4128,8 @@
 "rt": 94,
 "imdb": "tt0041253",
 "pd": "1949",
-"film": true
+"film": true,
+"poster": "posters/c/colorado-territory.jpg"
 },
 "madame bovary": {
 "wt": "Madame Bovary (1949 film)",
@@ -3852,7 +4142,8 @@
 "rt": 106,
 "imdb": "tt0041615",
 "pd": "1949",
-"film": true
+"film": true,
+"poster": "posters/c/madame-bovary.jpg"
 },
 "stage fright": {
 "wt": "Stage Fright (1950 film)",
@@ -3865,7 +4156,8 @@
 "rt": 105,
 "imdb": "tt0042994",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/stage-fright.jpg"
 },
 "gunfighter": {
 "wt": "The Gunfighter",
@@ -3878,7 +4170,8 @@
 "rt": 85,
 "imdb": "tt0042531",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/gunfighter.jpg"
 },
 "abbott and costello meet frankenstein": {
 "wt": "Abbott and Costello Meet Frankenstein",
@@ -3891,7 +4184,8 @@
 "rt": 83,
 "imdb": "tt0040068",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/abbott-and-costello-meet-frankenstein.jpg"
 },
 "broken arrow": {
 "wt": "Broken Arrow (1950 film)",
@@ -3904,7 +4198,8 @@
 "rt": 89,
 "imdb": "tt0042286",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/broken-arrow.jpg"
 },
 "love nest": {
 "wt": "Love Nest",
@@ -3917,7 +4212,8 @@
 "rt": 84,
 "imdb": "tt0043759",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/love-nest.jpg"
 },
 "lets make it legal": {
 "wt": "Let's Make It Legal",
@@ -3930,7 +4226,8 @@
 "rt": 77,
 "imdb": "tt0043736",
 "pd": "1951",
-"film": true
+"film": true,
+"poster": "posters/c/lets-make-it-legal.jpg"
 },
 "draculas daughter": {
 "wt": "Dracula's Daughter",
@@ -3943,7 +4240,8 @@
 "rt": 71,
 "imdb": "tt0027545",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/draculas-daughter.jpg"
 },
 "clash by night": {
 "wt": "Clash by Night",
@@ -3956,7 +4254,8 @@
 "rt": 105,
 "imdb": "tt0044502",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/clash-by-night.jpg"
 },
 "leopard man": {
 "wt": "The Leopard Man",
@@ -3969,7 +4268,8 @@
 "rt": 66,
 "imdb": "tt0036104",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/leopard-man.jpg"
 },
 "sudden fear": {
 "wt": "Sudden Fear",
@@ -3982,7 +4282,8 @@
 "rt": 100,
 "imdb": "tt0045205",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/sudden-fear.jpg"
 },
 "monkey business#1952": {
 "wt": "Monkey Business (1952 film)",
@@ -3995,7 +4296,8 @@
 "rt": 97,
 "imdb": "tt0044916",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/monkey-business-1952.jpg"
 },
 "niagara": {
 "wt": "Niagara (1953 film)",
@@ -4008,7 +4310,8 @@
 "rt": 92,
 "imdb": "tt0046126",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/niagara.jpg"
 },
 "shane": {
 "wt": "Shane (film)",
@@ -4021,7 +4324,8 @@
 "rt": 118,
 "imdb": "tt0046303",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/shane.jpg"
 },
 "how to marry millionaire": {
 "wt": "How to Marry a Millionaire",
@@ -4034,7 +4338,8 @@
 "rt": 95,
 "imdb": "tt0045891",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/how-to-marry-millionaire.jpg"
 },
 "river of no return": {
 "wt": "River of No Return",
@@ -4047,7 +4352,8 @@
 "rt": 91,
 "imdb": "tt0047422",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/river-of-no-return.jpg"
 },
 "johnny guitar": {
 "wt": "Johnny Guitar",
@@ -4060,7 +4366,8 @@
 "rt": 110,
 "imdb": "tt0047136",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/johnny-guitar.jpg"
 },
 "duel in sun": {
 "wt": "Duel in the Sun (film)",
@@ -4073,7 +4380,8 @@
 "rt": 129,
 "imdb": "tt0038499",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/duel-in-sun.jpg"
 },
 "white christmas": {
 "wt": "White Christmas (film)",
@@ -4086,7 +4394,8 @@
 "rt": 115,
 "imdb": "tt0047673",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/white-christmas.jpg"
 },
 "theres no business like show business": {
 "wt": "There's No Business Like Show Business (film)",
@@ -4099,7 +4408,8 @@
 "rt": 117,
 "imdb": "tt0047574",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/theres-no-business-like-show-business.jpg"
 },
 "young at heart": {
 "wt": "Young at Heart (1954 film)",
@@ -4112,7 +4422,8 @@
 "rt": 117,
 "imdb": "tt0047688",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/young-at-heart.jpg"
 },
 "searchers": {
 "wt": "The Searchers",
@@ -4125,7 +4436,8 @@
 "rt": 119,
 "imdb": "tt0049730",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/searchers.jpg"
 },
 "bus stop": {
 "wt": "Bus Stop (1956 film)",
@@ -4136,7 +4448,8 @@
 "rt": 91,
 "imdb": "tt0049038",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/bus-stop.jpg"
 },
 "run of arrow": {
 "wt": "Run of the Arrow",
@@ -4149,7 +4462,8 @@
 "rt": 85,
 "imdb": "tt0050915",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/run-of-arrow.jpg"
 },
 "touch of evil": {
 "wt": "Touch of Evil",
@@ -4162,7 +4476,8 @@
 "rt": 93,
 "imdb": "tt0052311",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/touch-of-evil.jpg"
 },
 "bravados": {
 "wt": "The Bravados",
@@ -4175,7 +4490,8 @@
 "rt": 97,
 "imdb": "tt0051433",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/bravados.jpg"
 },
 "indiscreet": {
 "wt": "Indiscreet (1958 film)",
@@ -4188,7 +4504,8 @@
 "rt": 100,
 "imdb": "tt0051773",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/indiscreet.jpg"
 },
 "rio bravo": {
 "wt": "Rio Bravo (film)",
@@ -4201,7 +4518,8 @@
 "rt": 136,
 "imdb": "tt0053221",
 "pd": "1959",
-"film": true
+"film": true,
+"poster": "posters/c/rio-bravo.jpg"
 },
 "mummy": {
 "wt": "The Mummy (1932 film)",
@@ -4214,7 +4532,8 @@
 "rt": 73,
 "imdb": "tt0023245",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/mummy.jpg"
 },
 "nuns story": {
 "wt": "The Nun's Story (film)",
@@ -4227,7 +4546,8 @@
 "rt": 149,
 "imdb": "tt0053131",
 "pd": "1959",
-"film": true
+"film": true,
+"poster": "posters/c/nuns-story.jpg"
 },
 "unforgiven": {
 "wt": "The Unforgiven (1960 film)",
@@ -4240,7 +4560,8 @@
 "rt": 125,
 "imdb": "tt0054428",
 "pd": "1960",
-"film": true
+"film": true,
+"poster": "posters/c/unforgiven.jpg"
 },
 "lets make love": {
 "wt": "Let's Make Love",
@@ -4253,7 +4574,8 @@
 "rt": 109,
 "imdb": "tt0054022",
 "pd": "1960",
-"film": true
+"film": true,
+"poster": "posters/c/lets-make-love.jpg"
 },
 "one eyed jacks": {
 "wt": "One-Eyed Jacks",
@@ -4266,7 +4588,8 @@
 "rt": 141,
 "imdb": "tt0055257",
 "pd": "1961",
-"film": true
+"film": true,
+"poster": "posters/c/one-eyed-jacks.jpg"
 },
 "applause": {
 "wt": "Applause (1929 film)",
@@ -4279,7 +4602,8 @@
 "rt": 82,
 "imdb": "tt0019644",
 "pd": "1929",
-"film": true
+"film": true,
+"poster": "posters/c/applause.jpg"
 },
 "blonde venus": {
 "wt": "Blonde Venus",
@@ -4292,7 +4616,8 @@
 "rt": 93,
 "imdb": "tt0022698",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/blonde-venus.jpg"
 },
 "gay desperado": {
 "wt": "The Gay Desperado",
@@ -4305,7 +4630,8 @@
 "rt": 86,
 "imdb": "tt0027660",
 "pd": "1936",
-"film": true
+"film": true,
+"poster": "posters/c/gay-desperado.jpg"
 },
 "miracle woman": {
 "wt": "The Miracle Woman",
@@ -4318,7 +4644,8 @@
 "rt": 91,
 "imdb": "tt0022153",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/miracle-woman.jpg"
 },
 "that certain thing": {
 "wt": "That Certain Thing (film)",
@@ -4331,7 +4658,8 @@
 "rt": 69,
 "imdb": "tt0019462",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/that-certain-thing.jpg"
 },
 "platinum blonde": {
 "wt": "Platinum Blonde (film)",
@@ -4344,7 +4672,8 @@
 "rt": 89,
 "imdb": "tt0022268",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/platinum-blonde.jpg"
 },
 "dirigible": {
 "wt": "Dirigible (film)",
@@ -4357,7 +4686,8 @@
 "rt": 102,
 "imdb": "tt0021799",
 "pd": "1931",
-"film": true
+"film": true,
+"poster": "posters/c/dirigible.jpg"
 },
 "long long trailer": {
 "wt": "The Long, Long Trailer",
@@ -4370,7 +4700,8 @@
 "rt": 103,
 "imdb": "tt0047191",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/long-long-trailer.jpg"
 },
 "fathers little dividend": {
 "wt": "Father's Little Dividend",
@@ -4396,7 +4727,8 @@
 "rt": 122,
 "imdb": "tt0049829",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/tea-and-sympathy.jpg"
 },
 "lust for life": {
 "wt": "Lust for Life (1956 film)",
@@ -4409,7 +4741,8 @@
 "rt": 122,
 "imdb": "tt0049456",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/lust-for-life.jpg"
 },
 "brigadoon": {
 "wt": "Brigadoon (1954 film)",
@@ -4422,7 +4755,8 @@
 "rt": 108,
 "imdb": "tt0046807",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/brigadoon.jpg"
 },
 "this is night": {
 "wt": "This Is the Night (1932 film)",
@@ -4435,7 +4769,8 @@
 "rt": 80,
 "imdb": "tt0023584",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/this-is-night.jpg"
 },
 "bank dick": {
 "wt": "The Bank Dick",
@@ -4448,7 +4783,8 @@
 "rt": 72,
 "imdb": "tt0032234",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/bank-dick.jpg"
 },
 "winning of barbara worth": {
 "wt": "The Winning of Barbara Worth",
@@ -4461,7 +4797,8 @@
 "rt": 89,
 "imdb": "tt0017567",
 "pd": "1926",
-"film": true
+"film": true,
+"poster": "posters/c/winning-of-barbara-worth.jpg"
 },
 "giant": {
 "wt": "Giant (1956 film)",
@@ -4474,7 +4811,8 @@
 "rt": 196,
 "imdb": "tt0049261",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/giant.jpg"
 },
 "student prince in old heidelberg": {
 "wt": "The Student Prince in Old Heidelberg",
@@ -4487,7 +4825,8 @@
 "rt": 105,
 "imdb": "tt0018451",
 "pd": "1927",
-"film": true
+"film": true,
+"poster": "posters/c/student-prince-in-old-heidelberg.jpg"
 },
 "i confess": {
 "wt": "I Confess (film)",
@@ -4500,7 +4839,8 @@
 "rt": 91,
 "imdb": "tt0045897",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/i-confess.jpg"
 },
 "how to steal million": {
 "wt": "How to Steal a Million",
@@ -4513,7 +4853,8 @@
 "rt": 123,
 "imdb": "tt0060522",
 "pd": "1966",
-"film": true
+"film": true,
+"poster": "posters/c/how-to-steal-million.jpg"
 },
 "naked spur": {
 "wt": "The Naked Spur",
@@ -4526,7 +4867,8 @@
 "rt": 91,
 "imdb": "tt0044953",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/naked-spur.jpg"
 },
 "bell book and candle": {
 "wt": "Bell, Book and Candle",
@@ -4539,7 +4881,8 @@
 "rt": 106,
 "imdb": "tt0051406",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/bell-book-and-candle.jpg"
 },
 "far country": {
 "wt": "The Far Country (film)",
@@ -4552,7 +4895,8 @@
 "rt": 97,
 "imdb": "tt0048055",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/far-country.jpg"
 },
 "man who shot liberty valance": {
 "wt": "The Man Who Shot Liberty Valance",
@@ -4565,7 +4909,8 @@
 "rt": 123,
 "imdb": "tt0056217",
 "pd": "1962",
-"film": true
+"film": true,
+"poster": "posters/c/man-who-shot-liberty-valance.jpg"
 },
 "our dancing daughters": {
 "wt": "Our Dancing Daughters",
@@ -4578,7 +4923,8 @@
 "rt": 84,
 "imdb": "tt0019237",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/our-dancing-daughters.jpg"
 },
 "asphalt jungle": {
 "wt": "The Asphalt Jungle",
@@ -4591,7 +4937,8 @@
 "rt": 112,
 "imdb": "tt0042208",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/asphalt-jungle.jpg"
 },
 "love me or leave me": {
 "wt": "Love Me or Leave Me (film)",
@@ -4604,7 +4951,8 @@
 "rt": 122,
 "imdb": "tt0048317",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/love-me-or-leave-me.jpg"
 },
 "deep in my heart": {
 "wt": "Deep in My Heart (1954 film)",
@@ -4617,7 +4965,8 @@
 "rt": 132,
 "imdb": "tt0046896",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/deep-in-my-heart.jpg"
 },
 "greed": {
 "wt": "Greed (1924 film)",
@@ -4630,7 +4979,8 @@
 "rt": 140,
 "imdb": "tt0015881",
 "pd": "1924",
-"film": true
+"film": true,
+"poster": "posters/c/greed.jpg"
 },
 "red river": {
 "wt": "Red River (1948 film)",
@@ -4643,7 +4993,8 @@
 "rt": 133,
 "imdb": "tt0040724",
 "pd": "1948",
-"film": true
+"film": true,
+"poster": "posters/c/red-river.jpg"
 },
 "father goose": {
 "wt": "Father Goose (film)",
@@ -4656,7 +5007,8 @@
 "rt": 114,
 "imdb": "tt0058092",
 "pd": "1964",
-"film": true
+"film": true,
+"poster": "posters/c/father-goose.jpg"
 },
 "story of three loves": {
 "wt": "The Story of Three Loves",
@@ -4669,7 +5021,8 @@
 "rt": 122,
 "imdb": "tt0046374",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/story-of-three-loves.jpg"
 },
 "my best girl": {
 "wt": "My Best Girl",
@@ -4682,7 +5035,8 @@
 "rt": 80,
 "imdb": "tt0018183",
 "pd": "1927",
-"film": true
+"film": true,
+"poster": "posters/c/my-best-girl.jpg"
 },
 "scarlet street": {
 "wt": "Scarlet Street",
@@ -4695,7 +5049,8 @@
 "rt": 103,
 "imdb": "tt0038057",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/scarlet-street.jpg"
 },
 "gun crazy": {
 "wt": "Gun Crazy",
@@ -4708,7 +5063,8 @@
 "rt": 87,
 "imdb": "tt0042530",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/gun-crazy.jpg"
 },
 "phantom lady": {
 "wt": "Phantom Lady (film)",
@@ -4721,7 +5077,8 @@
 "rt": 87,
 "imdb": "tt0036260",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/phantom-lady.jpg"
 },
 "killers": {
 "wt": "The Killers (1946 film)",
@@ -4734,7 +5091,8 @@
 "rt": 103,
 "imdb": "tt0038669",
 "pd": "1946",
-"film": true
+"film": true,
+"poster": "posters/c/killers.jpg"
 },
 "forbidden": {
 "wt": "Forbidden (1932 film)",
@@ -4747,7 +5105,8 @@
 "rt": 83,
 "imdb": "tt0022905",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/forbidden.jpg"
 },
 "bread love and dreams pane amore e fantasia": {
 "wt": "Bread, Love and Dreams",
@@ -4760,20 +5119,8 @@
 "rt": 93,
 "imdb": "tt0046159",
 "pd": "1953",
-"film": true
-},
-"bread": {
-"wt": "Bread (1971 film)",
-"qid": "Q118903270",
-"img": "https://upload.wikimedia.org/wikipedia/en/5/5b/Bread_film_poster_%281971%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
-"desc": "1971 British film by Stanley Long",
-"ext": "Bread is a 1971 British film directed by Stanley Long, written by Long and Suzanne Mercer. The British Film Institute (BFI) called it \"an unusual mixture of pop festival documentary and saucy teen comedy.\"",
-"wy": 1971,
-"score": 3,
-"rt": null,
-"imdb": null,
-"pd": null,
-"film": true
+"film": true,
+"poster": "posters/c/bread-love-and-dreams-pane-amore-e-fantasia.jpg"
 },
 "night of hunter": {
 "wt": "The Night of the Hunter",
@@ -4786,7 +5133,8 @@
 "rt": 89,
 "imdb": "tt0048424",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/night-of-hunter.jpg"
 },
 "to kill mockingbird": {
 "wt": "To Kill a Mockingbird (film)",
@@ -4799,7 +5147,8 @@
 "rt": 129,
 "imdb": "tt0056592",
 "pd": "1962",
-"film": true
+"film": true,
+"poster": "posters/c/to-kill-mockingbird.jpg"
 },
 "yojimbo": {
 "wt": "Yojimbo",
@@ -4812,7 +5161,8 @@
 "rt": 110,
 "imdb": "tt0055630",
 "pd": "1961",
-"film": true
+"film": true,
+"poster": "posters/c/yojimbo.jpg"
 },
 "hidden fortress": {
 "wt": "The Hidden Fortress",
@@ -4825,7 +5175,8 @@
 "rt": 139,
 "imdb": "tt0051808",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/hidden-fortress.jpg"
 },
 "torn curtain": {
 "wt": "Torn Curtain",
@@ -4838,7 +5189,8 @@
 "rt": 122,
 "imdb": "tt0061107",
 "pd": "1966",
-"film": true
+"film": true,
+"poster": "posters/c/torn-curtain.jpg"
 },
 "topaz": {
 "wt": "Topaz (1969 film)",
@@ -4864,7 +5216,8 @@
 "rt": 116,
 "imdb": "tt0068611",
 "pd": "1972",
-"film": true
+"film": true,
+"poster": "posters/c/frenzy.jpg"
 },
 "seventh victim": {
 "wt": "The Seventh Victim",
@@ -4877,7 +5230,8 @@
 "rt": 71,
 "imdb": "tt0036341",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/seventh-victim.jpg"
 },
 "body snatcher": {
 "wt": "The Body Snatcher (1945 film)",
@@ -4890,7 +5244,8 @@
 "rt": 77,
 "imdb": "tt0037549",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/body-snatcher.jpg"
 },
 "black cat": {
 "wt": "The Black Cat (1934 film)",
@@ -4903,7 +5258,8 @@
 "rt": 65,
 "imdb": "tt0024894",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/black-cat.jpg"
 },
 "i walked with zombie": {
 "wt": "I Walked with a Zombie",
@@ -4916,7 +5272,8 @@
 "rt": 68,
 "imdb": "tt0036027",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/i-walked-with-zombie.jpg"
 },
 "ghost ship": {
 "wt": "The Ghost Ship",
@@ -4929,7 +5286,8 @@
 "rt": 69,
 "imdb": "tt0035937",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/ghost-ship.jpg"
 },
 "isle of dead": {
 "wt": "Isle of the Dead (film)",
@@ -4942,7 +5300,8 @@
 "rt": 71,
 "imdb": "tt0037820",
 "pd": "1945",
-"film": true
+"film": true,
+"poster": "posters/c/isle-of-dead.jpg"
 },
 "wolf man": {
 "wt": "The Wolf Man (1941 film)",
@@ -4955,7 +5314,8 @@
 "rt": 70,
 "imdb": "tt0034398",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/wolf-man.jpg"
 },
 "calamity jane": {
 "wt": "Calamity Jane (1953 film)",
@@ -4968,7 +5328,8 @@
 "rt": 97,
 "imdb": "tt0045591",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/calamity-jane.jpg"
 },
 "scarlet claw": {
 "wt": "The Scarlet Claw",
@@ -4981,7 +5342,8 @@
 "rt": 74,
 "imdb": "tt0037248",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/scarlet-claw.jpg"
 },
 "designing woman": {
 "wt": "Designing Woman",
@@ -4994,7 +5356,8 @@
 "rt": 118,
 "imdb": "tt0050306",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/designing-woman.jpg"
 },
 "crowd": {
 "wt": "The Crowd (1928 film)",
@@ -5007,7 +5370,8 @@
 "rt": 104,
 "imdb": "tt0018806",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/crowd.jpg"
 },
 "counsellor at law": {
 "wt": "Counsellor at Law",
@@ -5020,7 +5384,8 @@
 "rt": 82,
 "imdb": "tt0023911",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/counsellor-at-law.jpg"
 },
 "cobweb": {
 "wt": "The Cobweb (1955 film)",
@@ -5033,7 +5398,8 @@
 "rt": 124,
 "imdb": "tt0047944",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/cobweb.jpg"
 },
 "some came running": {
 "wt": "Some Came Running (film)",
@@ -5046,7 +5412,8 @@
 "rt": 137,
 "imdb": "tt0052218",
 "pd": "1958",
-"film": true
+"film": true,
+"poster": "posters/c/some-came-running.jpg"
 },
 "two weeks in another town": {
 "wt": "Two Weeks in Another Town",
@@ -5059,7 +5426,8 @@
 "rt": 107,
 "imdb": "tt0056625",
 "pd": "1962",
-"film": true
+"film": true,
+"poster": "posters/c/two-weeks-in-another-town.jpg"
 },
 "sandpiper": {
 "wt": "The Sandpiper",
@@ -5072,7 +5440,8 @@
 "rt": 110,
 "imdb": "tt0059674",
 "pd": "1965",
-"film": true
+"film": true,
+"poster": "posters/c/sandpiper.jpg"
 },
 "kismet#1955": {
 "wt": "Kismet (1943 film)",
@@ -5098,7 +5467,8 @@
 "rt": 81,
 "imdb": "tt0047849",
 "pd": "1955",
-"film": true
+"film": true,
+"poster": "posters/c/bad-day-at-black-rock.jpg"
 },
 "steamboat bill": {
 "wt": "Steamboat Bill, Jr.",
@@ -5111,7 +5481,8 @@
 "rt": 71,
 "imdb": "tt0019421",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/steamboat-bill.jpg"
 },
 "man of west": {
 "wt": "Man of the West",
@@ -5124,20 +5495,8 @@
 "rt": 100,
 "imdb": "tt0051899",
 "pd": "1958",
-"film": true
-},
-"little kidnappers kidnappers": {
-"wt": "The Little Kidnappers (1990 film)",
-"qid": "Q4277675",
-"img": null,
-"desc": "1990 Canadian TV series or program",
-"ext": "The Little Kidnappers is a 1990 Canadian drama television film made by Testar Productions, Margellos-Resnick and Jones 21st Century for the Canadian Broadcasting Corporation and the Disney Channel. It tells the story of orphans Harry and Davy MacKenzie (Leo Wheatley and Charles Miller), who are sent to live with their stern grandfather, James MacKenzie (Charlton Heston).\nBased on the short story \"Scotch Settlement\" by Neil Paterson (previously filmed in 1953), set in Nova Scotia in 1903, the film was shot in several locations throughout Nova Scotia with dockside scenes being filmed aboard the CSS Acadia at the Maritime Museum of the Atlantic in Halifax.\n\n",
-"wy": 1990,
-"score": 3,
-"rt": 100,
-"imdb": "tt0100033",
-"pd": "1990",
-"film": true
+"film": true,
+"poster": "posters/c/man-of-west.jpg"
 },
 "kidnappers": {
 "wt": "The Kidnappers",
@@ -5150,7 +5509,8 @@
 "rt": 93,
 "imdb": "tt0046006",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/kidnappers.jpg"
 },
 "wind": {
 "wt": "The Wind (1928 film)",
@@ -5163,7 +5523,8 @@
 "rt": 95,
 "imdb": "tt0019585",
 "pd": "1928",
-"film": true
+"film": true,
+"poster": "posters/c/wind.jpg"
 },
 "ran": {
 "wt": "Ran (film)",
@@ -5176,7 +5537,8 @@
 "rt": 157,
 "imdb": "tt0089881",
 "pd": "1985",
-"film": true
+"film": true,
+"poster": "posters/c/ran.jpg"
 },
 "angel face": {
 "wt": "Angel Face (1953 film)",
@@ -5189,7 +5551,8 @@
 "rt": 91,
 "imdb": "tt0044357",
 "pd": "1953",
-"film": true
+"film": true,
+"poster": "posters/c/angel-face.jpg"
 },
 "marriage circle": {
 "wt": "The Marriage Circle",
@@ -5202,7 +5565,8 @@
 "rt": 92,
 "imdb": "tt0015119",
 "pd": "1924",
-"film": true
+"film": true,
+"poster": "posters/c/marriage-circle.jpg"
 },
 "prince and showgirl": {
 "wt": "The Prince and the Showgirl",
@@ -5215,7 +5579,8 @@
 "rt": 115,
 "imdb": "tt0050861",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/prince-and-showgirl.jpg"
 },
 "only yesterday": {
 "wt": "Only Yesterday (1933 film)",
@@ -5228,7 +5593,8 @@
 "rt": 105,
 "imdb": "tt0024418",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/only-yesterday.jpg"
 },
 "one more river": {
 "wt": "One More River",
@@ -5241,7 +5607,8 @@
 "rt": 88,
 "imdb": "tt0025600",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/one-more-river.jpg"
 },
 "imitation of life#1934": {
 "wt": "Imitation of Life (1959 film)",
@@ -5254,7 +5621,8 @@
 "rt": 124,
 "imdb": "tt0052918",
 "pd": "1959",
-"film": true
+"film": true,
+"poster": "posters/c/imitation-of-life-1934.jpg"
 },
 "werewolf of london": {
 "wt": "Werewolf of London",
@@ -5267,7 +5635,8 @@
 "rt": 75,
 "imdb": "tt0027194",
 "pd": "1935",
-"film": true
+"film": true,
+"poster": "posters/c/werewolf-of-london.jpg"
 },
 "suspect": {
 "wt": "The Suspect (1944 film)",
@@ -5280,7 +5649,8 @@
 "rt": 85,
 "imdb": "tt0037330",
 "pd": "1944",
-"film": true
+"film": true,
+"poster": "posters/c/suspect.jpg"
 },
 "it started with eve": {
 "wt": "It Started with Eve",
@@ -5293,7 +5663,8 @@
 "rt": 90,
 "imdb": "tt0033766",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/it-started-with-eve.jpg"
 },
 "hers to hold": {
 "wt": "Hers to Hold",
@@ -5306,7 +5677,8 @@
 "rt": 90,
 "imdb": "tt0035993",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/hers-to-hold.jpg"
 },
 "his butlers sister": {
 "wt": "His Butler's Sister",
@@ -5319,7 +5691,8 @@
 "rt": 94,
 "imdb": "tt0036001",
 "pd": "1943",
-"film": true
+"film": true,
+"poster": "posters/c/his-butlers-sister.jpg"
 },
 "iron horse": {
 "wt": "The Iron Horse (film)",
@@ -5332,7 +5705,8 @@
 "rt": 133,
 "imdb": "tt0015016",
 "pd": "1924",
-"film": true
+"film": true,
+"poster": "posters/c/iron-horse.jpg"
 },
 "in heat of night": {
 "wt": "In the Heat of the Night (film)",
@@ -5345,7 +5719,8 @@
 "rt": 109,
 "imdb": "tt0061811",
 "pd": "1967",
-"film": true
+"film": true,
+"poster": "posters/c/in-heat-of-night.jpg"
 },
 "to sir with love": {
 "wt": "To Sir, with Love",
@@ -5358,7 +5733,8 @@
 "rt": 106,
 "imdb": "tt0062376",
 "pd": "1967",
-"film": true
+"film": true,
+"poster": "posters/c/to-sir-with-love.jpg"
 },
 "criss cross": {
 "wt": "Criss Cross (film)",
@@ -5371,7 +5747,8 @@
 "rt": 88,
 "imdb": "tt0041268",
 "pd": "1949",
-"film": true
+"film": true,
+"poster": "posters/c/criss-cross.jpg"
 },
 "mary poppins": {
 "wt": "Mary Poppins (film)",
@@ -5384,7 +5761,8 @@
 "rt": 140,
 "imdb": "tt0058331",
 "pd": "1964",
-"film": true
+"film": true,
+"poster": "posters/c/mary-poppins.jpg"
 },
 "why we fight 1942 44": {
 "wt": "Why We Fight",
@@ -5395,7 +5773,8 @@
 "rt": null,
 "imdb": null,
 "pd": null,
-"film": true
+"film": true,
+"poster": "posters/c/why-we-fight-1942-44.jpg"
 },
 "shanghai gesture": {
 "wt": "The Shanghai Gesture",
@@ -5408,7 +5787,8 @@
 "rt": 95,
 "imdb": "tt0034175",
 "pd": "1941",
-"film": true
+"film": true,
+"poster": "posters/c/shanghai-gesture.jpg"
 },
 "covered wagon": {
 "wt": "The Covered Wagon",
@@ -5421,7 +5801,8 @@
 "rt": 97,
 "imdb": "tt0013951",
 "pd": "1923",
-"film": true
+"film": true,
+"poster": "posters/c/covered-wagon.jpg"
 },
 "devils doorway": {
 "wt": "Devil's Doorway",
@@ -5434,7 +5815,8 @@
 "rt": 84,
 "imdb": "tt0042395",
 "pd": "1950",
-"film": true
+"film": true,
+"poster": "posters/c/devils-doorway.jpg"
 },
 "apache": {
 "wt": "Apache (film)",
@@ -5447,7 +5829,8 @@
 "rt": 91,
 "imdb": "tt0046719",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/apache.jpg"
 },
 "day of outlaw": {
 "wt": "Day of the Outlaw",
@@ -5460,7 +5843,8 @@
 "rt": 92,
 "imdb": "tt0052724",
 "pd": "1959",
-"film": true
+"film": true,
+"poster": "posters/c/day-of-outlaw.jpg"
 },
 "last hunt": {
 "wt": "The Last Hunt",
@@ -5473,7 +5857,8 @@
 "rt": 99,
 "imdb": "tt0049432",
 "pd": "1956",
-"film": true
+"film": true,
+"poster": "posters/c/last-hunt.jpg"
 },
 "3 10 to yuma": {
 "wt": "3:10 to Yuma (1957 film)",
@@ -5484,7 +5869,8 @@
 "rt": 92,
 "imdb": "tt0050086",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/3-10-to-yuma.jpg"
 },
 "ride high country": {
 "wt": "Ride the High Country",
@@ -5497,7 +5883,8 @@
 "rt": 94,
 "imdb": "tt0056412",
 "pd": "1962",
-"film": true
+"film": true,
+"poster": "posters/c/ride-high-country.jpg"
 },
 "tall t": {
 "wt": "The Tall T",
@@ -5510,7 +5897,8 @@
 "rt": 78,
 "imdb": "tt0051047",
 "pd": "1957",
-"film": true
+"film": true,
+"poster": "posters/c/tall-t.jpg"
 },
 "ride lonesome": {
 "wt": "Ride Lonesome (film)",
@@ -5523,7 +5911,8 @@
 "rt": 73,
 "imdb": "tt0053220",
 "pd": "1959",
-"film": true
+"film": true,
+"poster": "posters/c/ride-lonesome.jpg"
 },
 "secrets": {
 "wt": "Secrets (1933 film)",
@@ -5536,7 +5925,8 @@
 "rt": 90,
 "imdb": "tt0024539",
 "pd": "1933",
-"film": true
+"film": true,
+"poster": "posters/c/secrets.jpg"
 },
 "dont bother to knock": {
 "wt": "Don't Bother to Knock",
@@ -5549,7 +5939,8 @@
 "rt": 77,
 "imdb": "tt0044557",
 "pd": "1952",
-"film": true
+"film": true,
+"poster": "posters/c/dont-bother-to-knock.jpg"
 },
 "misfits": {
 "wt": "The Misfits (1961 film)",
@@ -5562,6 +5953,46 @@
 "rt": 125,
 "imdb": "tt0055184",
 "pd": "1961",
+"film": true,
+"poster": "posters/c/misfits.jpg"
+},
+"mahanagar": {
+"wt": "Mahanagar",
+"qid": "Q177438",
+"img": "https://upload.wikimedia.org/wikipedia/en/1/18/Mahanagar2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+"desc": "1963 Indian film",
+"ext": "Mahanagar (Bengali: \u09ae\u09b9\u09be\u09a8\u0997\u09b0, lit.\u2009'The Big City') is a 1963 Indian Bengali-language drama film written and directed by Satyajit Ray. Starring Madhabi Mukherjee in the leading role and based on the short story Abataranika by Narendranath Mitra, it tells the story of a housewife who disconcerts her traditionalist family by getting the job of a saleswoman. The film marked the first screen appearance of Jaya Bhaduri, one of Hindi cinema's leading actresses.\nShot in the first half of 1963 in Calcutta, Mahanagar was the first film directed by Ray set entirely in his native Calcutta, reflecting contemporary realities of the urban middle-class, where women going to work is no longer merely driven by ideas of emancipation, but has become an economic reality. The film examines the effects of the confident working woman on patriarchial attitudes and social dynamics. According to veteran film critic Philip French, the film stands alongside The Apu Trilogy as some of Ray's greatest work.",
+"wy": 1963,
+"score": 6,
+"rt": 128,
+"imdb": "tt0057277",
+"pd": "1963",
+"film": true
+},
+"girl shy": {
+"wt": "Girl Shy",
+"qid": "Q4000773",
+"img": "https://upload.wikimedia.org/wikipedia/commons/2/25/Advertisement_for_Girl_Shy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+"desc": "1924 American film",
+"ext": "Girl Shy is a 1924 romantic comedy silent film starring Harold Lloyd and Jobyna Ralston.  The movie was written by Sam Taylor, Tim Whelan and Ted Wilde and was directed by Fred C. Newmeyer and Taylor. In 2020, the film entered the public domain.",
+"wy": 1924,
+"score": 6,
+"rt": 87,
+"imdb": "tt0014945",
+"pd": "1924",
+"film": true
+},
+"merry widow": {
+"wt": "The Merry Widow (1934 film)",
+"qid": "Q1219026",
+"img": "https://upload.wikimedia.org/wikipedia/commons/8/88/The_Merry_Widow_%281934%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+"desc": "1934 film by Ernst Lubitsch",
+"ext": "The Merry Widow is a 1934 film adaptation of the 1905 operetta of the same name by Franz Leh\u00e1r. The film was directed and produced by Ernst Lubitsch and stars Maurice Chevalier and Jeanette MacDonald. A French-language version was produced at the same time and released in France the same year as La veuve joyeuse. Lorenz Hart and Gus Kahn wrote new English lyrics for some of Lehar's songs under the musical direction of Herbert Stothart.",
+"wy": 1934,
+"score": 6,
+"rt": 99,
+"imdb": "tt0025493",
+"pd": "1934",
 "film": true
 }
 }
