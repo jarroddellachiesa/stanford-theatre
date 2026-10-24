@@ -53,18 +53,27 @@ for b in sorted(NB,key=lambda b:b[3],reverse=True):
     P.append(x)
 FJ=json.load(open('data/festivals.json'))
 def hr(a,b):
-    A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%b')+' '+str(d.day)
+    A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%B')+' '+str(d.day)
     if A==B: return f"{m(A)}, {A.year}"
     if A.year!=B.year: return f"{m(A)}, {A.year} – {m(B)}, {B.year}"
     if A.month==B.month: return f"{m(A)}–{B.day}, {A.year}"
     return f"{m(A)} – {m(B)}, {A.year}"
+DRMAX=38
+def hr2(a,b,n):
+    tail=f" · {n} bill"+("" if n==1 else "s"); full=hr(a,b)+tail
+    if len(full)<=DRMAX: return full
+    A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); f=lambda d:f"{d.month}/{d.year%100:02d}"
+    return (f(A) if f(A)==f(B) else f(A)+' – '+f(B))+tail
+import re as _re
+_MF={k:v for v in "January February March April May June July August September October November December".split() for k in (v[:3],v[:4])}
+def fullmo(t): return _re.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b\.?(?=\s*\d)',lambda m:_MF.get(m.group(1),m.group(1))+' ',t).replace('  ',' ')
 P.append('<h2 style="text-align:center;margin-top:30px">Festival archive</h2><p class="sm" style="text-align:center">From the Stanford Theatre&#39;s past calendars, newest first. Tap a festival for its bills.</p>')
 for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-31' if x['year'] else '0000')),reverse=True):
     en=fe['end'] or ''
     if en and en>=TODAY: continue
-    dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
-    bl=''.join('<li><b class="bd">'+e(b['dates'])+':</b>'+''.join('<span class="bf2">'+e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
-    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="an">{e(fe["name"][:110])}</span> <span class="dr">{dr} · {len(fe["blocks"])} bills</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
+    dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
+    bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+''.join('<span class="bf2">'+e(f['title'])+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
+    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="an">{e(fe["name"][:110])}</span> <span class="dr">{dr}</span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
 document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
