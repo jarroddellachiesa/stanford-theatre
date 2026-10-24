@@ -1,0 +1,230 @@
+{
+ "logos": [
+  {
+   "studio": "Metro-Goldwyn-Mayer",
+   "wikidata_names": [
+    "Metro-Goldwyn-Mayer"
+   ],
+   "from_year": 1924,
+   "to_year": 1964,
+   "file": "assets/studios/metro-goldwyn-mayer-1924-1964.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Metro-Goldwyn-Mayer_1924-1964.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Paramount Pictures",
+   "wikidata_names": [
+    "Paramount Pictures"
+   ],
+   "from_year": 1929,
+   "to_year": 1936,
+   "file": "assets/studios/paramount-pictures-1929-1936.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Paramount_Pictures_(1929-1936).jpg",
+   "license": "Public domain"
+  },
+  {
+   "studio": "20th Century-Fox",
+   "wikidata_names": [
+    "20th Century Studios"
+   ],
+   "from_year": 1935,
+   "to_year": 1984,
+   "file": "assets/studios/20th-century-fox-logo.png",
+   "source": "https://commons.wikimedia.org/wiki/File:20th_Century_Fox_logo.svg",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Radio Pictures",
+   "wikidata_names": [
+    "RKO Pictures"
+   ],
+   "from_year": 1929,
+   "to_year": 1932,
+   "file": "assets/studios/radio-pictures-1929.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Radio_Pictures_1929.jpg",
+   "license": "Public domain"
+  },
+  {
+   "studio": "RKO Radio Pictures",
+   "wikidata_names": [
+    "RKO Pictures"
+   ],
+   "from_year": 1933,
+   "to_year": 1935,
+   "file": "assets/studios/rko-radio-pictures-1933.png",
+   "source": "https://commons.wikimedia.org/wiki/File:RKO_Radio_Pictures_1933.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "RKO Radio Pictures",
+   "wikidata_names": [
+    "RKO Pictures"
+   ],
+   "from_year": 1936,
+   "to_year": 1936,
+   "file": "assets/studios/rko-radio-pictures-1936.png",
+   "source": "https://commons.wikimedia.org/wiki/File:RKO_Radio_Pictures_1936.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "RKO Radio Pictures",
+   "wikidata_names": [
+    "RKO Pictures"
+   ],
+   "from_year": 1937,
+   "to_year": 1957,
+   "file": "assets/studios/rko-radio-pictures-1937.png",
+   "source": "https://commons.wikimedia.org/wiki/File:RKO_Radio_Pictures_1937.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Warner Bros. Pictures",
+   "wikidata_names": [
+    "Warner Bros. Entertainment"
+   ],
+   "from_year": 1929,
+   "to_year": 1936,
+   "file": "assets/studios/warner-bros-pictures-inc-1929.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Warner_Bros._Pictures_Inc._1929.jpg",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Warner Bros. Pictures",
+   "wikidata_names": [
+    "Warner Bros. Entertainment"
+   ],
+   "from_year": 1937,
+   "to_year": 1967,
+   "file": "assets/studios/warner-bros-old-logo.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Warner_Bros_old_logo.svg",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Columbia Pictures",
+   "wikidata_names": [
+    "Columbia Pictures"
+   ],
+   "from_year": 1928,
+   "to_year": 1931,
+   "file": "assets/studios/columbia-pictures-logo-1928.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Columbia_Pictures_logo_1928.jpg",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Columbia Pictures",
+   "wikidata_names": [
+    "Columbia Pictures"
+   ],
+   "from_year": 1932,
+   "to_year": 1932,
+   "file": "assets/studios/columbia-pictures-1932-1933.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Columbia_Pictures_1932-1933.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Columbia Pictures",
+   "wikidata_names": [
+    "Columbia Pictures"
+   ],
+   "from_year": 1933,
+   "to_year": 1937,
+   "file": "assets/studios/columbia-pictures-1933.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Columbia_Pictures_1933.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Columbia Pictures",
+   "wikidata_names": [
+    "Columbia Pictures"
+   ],
+   "from_year": 1938,
+   "to_year": 1944,
+   "file": "assets/studios/columbia-pictures-1938.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Columbia_Pictures_1938.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Columbia Pictures",
+   "wikidata_names": [
+    "Columbia Pictures"
+   ],
+   "from_year": 1945,
+   "to_year": 1975,
+   "file": "assets/studios/columbia-pictures-1945.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Columbia_Pictures_1945.jpg",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Universal Pictures",
+   "wikidata_names": [
+    "Universal Pictures"
+   ],
+   "from_year": 1936,
+   "to_year": 1945,
+   "file": "assets/studios/universal-pictures-1936.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Universal_Pictures_1936.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Universal Pictures",
+   "wikidata_names": [
+    "Universal Pictures"
+   ],
+   "from_year": 1963,
+   "to_year": 1990,
+   "file": "assets/studios/universal-pictures-1963.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Universal_Pictures_1963.png",
+   "license": "Public domain"
+  },
+  {
+   "studio": "Toho",
+   "wikidata_names": [
+    "Toho"
+   ],
+   "from_year": 1932,
+   "to_year": 2000,
+   "file": "assets/studios/toho-logo.png",
+   "source": "https://commons.wikimedia.org/wiki/File:Toho_logo.svg",
+   "license": "Public domain"
+  }
+ ],
+ "renames": [
+  {
+   "wikidata": "Walt Disney Pictures",
+   "to_year": 1985,
+   "name": "Walt Disney Productions"
+  },
+  {
+   "wikidata": "20th Century Studios",
+   "to_year": 1934,
+   "name": "Fox Film Corporation"
+  },
+  {
+   "wikidata": "20th Century Studios",
+   "from_year": 1935,
+   "to_year": 1984,
+   "name": "20th Century-Fox"
+  },
+  {
+   "wikidata": "Warner Bros. Entertainment",
+   "name": "Warner Bros. Pictures"
+  },
+  {
+   "wikidata": "RKO Pictures",
+   "to_year": 1932,
+   "name": "Radio Pictures"
+  },
+  {
+   "wikidata": "RKO Pictures",
+   "from_year": 1933,
+   "to_year": 1959,
+   "name": "RKO Radio Pictures"
+  },
+  {
+   "wikidata": "Universal Pictures",
+   "from_year": 1946,
+   "to_year": 1963,
+   "name": "Universal-International"
+  }
+ ]
+}

@@ -116,3 +116,5 @@ a.pfl,a.pfl:hover,a.pfl:visited{color:inherit;text-decoration:none}a.pfl:hover{c
 .film .top .meta{text-align:center}.crd{text-align:center;margin:.5em 0 1em;line-height:1.45}.crl{font-size:1.02em}.crk{color:#d4af37;font-weight:700}
 
 .film .top h1,.film .top .meta,.film .top .crd{text-align:center!important}.film .top .meta{display:block;width:100%;box-sizing:border-box;padding-left:3px;align-self:stretch}.film .top>div{flex:1 1 auto;min-width:0}
+
+.slogo{text-align:center;margin:.2em 0 1em}.slogo img{height:56px;width:auto;max-width:80%;object-fit:contain;background:#f6ecd4;padding:6px 12px;border-radius:6px;box-shadow:0 0 0 1px #d4af37}

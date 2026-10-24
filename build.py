@@ -202,8 +202,29 @@ def BADGE(o):
     elif n and n>1: h+=f'<span class="badge rt" title="{ORD(n)} run at the Stanford Theatre on record">'+RT.replace('@N@',str(n))+'</span>'
     return h
 CRD=json.load(open('data/credits.json')) if __import__('os').path.exists('data/credits.json') else {}
-def CRED(k):
-    c=CRD.get(k) or {}
+SLG=json.load(open('data/studio_logos.json')) if __import__('os').path.exists('data/studio_logos.json') else {'logos':[],'renames':[]}
+def _yr(y):
+    try: return int(y)
+    except Exception: return None
+def SNAME(n,y):
+    for r in SLG['renames']:
+        if r['wikidata']==n and (y is None or (r.get('from_year',0)<=y<=r.get('to_year',9999))): return r['name']
+    return n
+def SLOGO(k,y):
+    y=_yr(y)
+    if y is None: return None
+    for n in (CRD.get(k) or {}).get('studio') or []:
+        for L_ in SLG['logos']:
+            if n in L_['wikidata_names'] and L_['from_year']<=y<=L_['to_year']: return L_
+    return None
+def LOGOH(k,y):
+    L_=SLOGO(k,y)
+    if not L_: return ''
+    return f'<div class="slogo"><img src="../{L_["file"]}" alt="{e(L_["studio"])} logo" title="{e(L_["studio"])}" loading="lazy" decoding="async"></div>'
+_FK={'north-by-northwest':'north by northwest','on-the-waterfront':'on waterfront','mary-poppins':'mary poppins','the-wizard-of-oz':'wizard of oz'}
+def CRED(k,y=None):
+    c=dict(CRD.get(k) or {}); yy=_yr(y)
+    c['studio']=[] if SLOGO(k,y) else list(dict.fromkeys(SNAME(n,yy) for n in (c.get('studio') or [])))
     L=[(n,c.get(f)) for n,f in (('Starring','star'),('Director','director'),('Writer','writer'),('Producer','producer'),('Studio','studio'))]
     h=''.join(f'<div class="crl"><span class="crk">{n}:</span> {e(", ".join(v))}</div>' for n,v in L if v)
     return f'<div class="crd">{h}</div>' if h else ''
@@ -251,7 +272,7 @@ for s,k in K.items():
     print('FILMRUNS',f['t'],len(FR_),'old',len(t['runs']))
     li=lambda L:"".join(f'<li>{x}</li>' for x in L)
     b=f'''<article class="film"><div class="top"><img class="poster" src="../posters/{s}.jpg" alt="{e(f['t'])} poster">
-<div><h1>{e(f['t'])}</h1><div class="meta">{' ★ '.join(x for x in [str(f.get('y') or ''),f"{f['rt']} min" if f.get('rt') else ''] if x)}</div>{CRED({'north-by-northwest':'north by northwest','on-the-waterfront':'on waterfront','mary-poppins':'mary poppins','the-wizard-of-oz':'wizard of oz'}[s]) or f'<p class="cr">{e(f["credit"])}</p>'}<p class="plot">{e(f['plot'])}</p></div></div>
+<div><h1>{e(f['t'])}</h1><div class="meta">{' ★ '.join(x for x in [str(f.get('y') or ''),f"{f['rt']} min" if f.get('rt') else ''] if x)}</div>{CRED(_FK[s],f.get('y')) or f'<p class="cr">{e(f["credit"])}</p>'}{LOGOH(_FK[s],f.get('y'))}<p class="plot">{e(f['plot'])}</p></div></div>
 <section class="ups"><h2>Upcoming Showings</h2>{sched}</section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
@@ -339,7 +360,7 @@ for k,v in COV.items():
     img=f'<img class="poster" src="../{v["poster"]}" alt="{e(v["title"])} poster">' if v['poster'] else ''
     more=f'<li><a href="https://tile.stanfordtheatre.org/tile?q={urllib.parse.quote_plus(v["title"])}">Tile: {e(v["title"])}</a></li>'+(f'<li><a href="https://www.imdb.com/title/{v["imdb"]}/">IMDb: {e(v["title"])}</a></li>' if v['imdb'] else '')+f'<li><a href="https://en.wikipedia.org/wiki/{urllib.parse.quote(v["wt"].replace(" ","_"))}">Wikipedia: {e(v["wt"])}</a></li>'
     b=f'''<article class="film"><div class="top">{img}
-<div><h1>{e(v['title'])}</h1><div class="meta">{meta}</div>{CRED(k) or (f'<p class="cr">{e(v["desc"][:1].upper()+v["desc"][1:])}</p>' if v['desc'] else '')}<p class="plot">{e(v['syn'])}</p></div></div>
+<div><h1>{e(v['title'])}</h1><div class="meta">{meta}</div>{CRED(k,v['year']) or (f'<p class="cr">{e(v["desc"][:1].upper()+v["desc"][1:])}</p>' if v['desc'] else '')}{LOGOH(k,v['year'])}<p class="plot">{e(v['syn'])}</p></div></div>
 {(lambda fx:(f'<section><h2>Trivia</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['trivia'])+'</ul></section>' if fx.get('trivia') else '')+(f'<section><h2>Filming Locations</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['loc'])+'</ul></section>' if fx.get('loc') else ''))(CFX.get(k,{}))}
 <section><h2>Previous Showings</h2><p class="big">{len(FR_)} Run{"s" if len(FR_)!=1 else ""} • {fcs} Festival{"s" if fcs!=1 else ""}</p>{f'<p class="big">{tks:,} tickets sold</p>' if tks else ''}{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul>{more}</ul></section></article>'''
