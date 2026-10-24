@@ -25,6 +25,19 @@ NB=[(EMS,"October 16–18","2026-10-16","2026-10-18",[("north-by-northwest","7:3
 (EMS,"October 30-November 1","2026-10-30","2026-11-01",None),
 (PW,"October 29–November 1","2026-10-29","2026-11-01",[("mary-poppins","7:30 (plus 3:05 Sat/Sun)"),("the-wizard-of-oz","5:35, 10:00")]),
 (PW,"November 5–8","2026-11-05","2026-11-08",[("mary-poppins","7:30 (plus 3:05 Sat/Sun)"),("the-wizard-of-oz","5:35, 10:00")])]
+import re as _re0
+_MF0={k:v for v in "January February March April May June July August September October November December".split() for k in (v[:3],v[:4])}
+def _sp(t):
+    t=_re0.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b\.?(?=\s*\d)',lambda m:_MF0.get(m.group(1),m.group(1)),t)
+    return _re0.sub(r'\s*[-–—]\s*',' - ',t)
+def _dr(t,a,b):
+    f=_sp(t)
+    if len(f)<=38: return f
+    A=_dt.date.fromisoformat(a);B=_dt.date.fromisoformat(b);g=lambda d:f"{d.month}/{d.year%100:02d}"
+    return g(A)+' - '+g(B)
+_rng={u:(min(b[2] for b in NB if b[0]==u),max(b[3] for b in NB if b[0]==u)) for u in {b[0] for b in NB}}
+FEST=[(n,_dr(d,*_rng[u]),u,[(_sp(g),it) for g,it in gs],fl) for n,d,u,gs,fl in FEST]
+NB=[(u,_sp(l),a,b,it) for u,l,a,b,it in NB]
 FN={x[2]:(x[0],x[1]) for x in FEST}
 NB=[b for b in NB if b[4] or not any(o[0]!=b[0] and o[4] and o[2]<=b[3] and b[2]<=o[3] for o in NB)]
 def blk(b):
@@ -58,15 +71,15 @@ FJ=json.load(open('data/festivals.json'))
 def hr(a,b):
     A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); m=lambda d:d.strftime('%B')+' '+str(d.day)
     if A==B: return f"{m(A)}, {A.year}"
-    if A.year!=B.year: return f"{m(A)}, {A.year} – {m(B)}, {B.year}"
-    if A.month==B.month: return f"{m(A)}–{B.day}, {A.year}"
-    return f"{m(A)} – {m(B)}, {A.year}"
+    if A.year!=B.year: return f"{m(A)}, {A.year} - {m(B)}, {B.year}"
+    if A.month==B.month: return f"{m(A)} - {B.day}, {A.year}"
+    return f"{m(A)} - {m(B)}, {A.year}"
 DRMAX=38
 def hr2(a,b,n):
     tail=f" · {n} bill"+("" if n==1 else "s"); full=hr(a,b)+tail
     if len(full)<=DRMAX: return full
     A=_dt.date.fromisoformat(a); B=_dt.date.fromisoformat(b or a); f=lambda d:f"{d.month}/{d.year%100:02d}"
-    return (f(A) if f(A)==f(B) else f(A)+' – '+f(B))+tail
+    return (f(A) if f(A)==f(B) else f(A)+' - '+f(B))+tail
 import re as _re
 _MF={k:v for v in "January February March April May June July August September October November December".split() for k in (v[:3],v[:4])}
 def fullmo(t): return _re.sub(r'\s*[-–—]\s*',' - ',_fm(t))
@@ -115,7 +128,7 @@ def cols(groups,films,root):
     return o+'</div>'
 for name,dr,url,groups,films in FEST:
     p=PRES[url]
-    bl="".join(f'<h3>{fullmo(d)}</h3><ul class="sched">'+"".join(f'<li>'+(f'<a href="https://www.imdb.com/title/{i}">{e(t)}</a>' if i else e(t))+(f': <b>{tm}</b>' if tm else '')+'</li>' for t,i,tm in it)+'</ul>' for d,it in p['blocks'])
+    bl="".join(f'<h3>{_sp(d)}</h3><ul class="sched">'+"".join(f'<li>'+(f'<a href="https://www.imdb.com/title/{i}">{e(t)}</a>' if i else e(t))+(f': <b>{tm}</b>' if tm else '')+'</li>' for t,i,tm in it)+'</ul>' for d,it in p['blocks'])
     b=f'''<section class="fest"><h1>{e(name)}</h1><div class="dr" style="text-align:center">{dr}</div>{cols(groups,films,"../")}</section>
 <section class="fest pres"><h2>From the Stanford Theatre program page</h2><div class="sm">Preserved copy of the original page (text and images), saved Oct 23, 2026.</div>
 <img class="logo" src="img/stanford_theatre.gif" alt="Stanford Theatre logo"><div class="ptitle">Stanford Theatre Movie Guide</div>
