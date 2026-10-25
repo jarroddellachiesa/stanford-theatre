@@ -1,0 +1,18 @@
+{
+  "Eva Marie Saint": {
+    "img": "img/guests/eva-marie-saint.jpg",
+    "kind": "portrait (not from the appearance)",
+    "source": "https://commons.wikimedia.org/wiki/File:Eva_Marie_Saint_(1951).jpg",
+    "license": "Public domain",
+    "credit": "20th Century Fox. Photographer not credited",
+    "wikidata": "Q228928"
+  },
+  "Tippi Hedren": {
+    "img": "img/guests/tippi-hedren.jpg",
+    "kind": "portrait (not from the appearance)",
+    "source": "https://commons.wikimedia.org/wiki/File:Tippi_Hedren_in_1964.jpg",
+    "license": "Public domain",
+    "credit": "Hollywood Press Syndicate",
+    "wikidata": "Q142546"
+  }
+}

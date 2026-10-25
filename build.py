@@ -114,7 +114,7 @@ u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further 
 open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up").replace('<body>','<body data-mode="up">',1))
 P=['<section id="past"><h1 class="vh">Past</h1><p class="sm" style="text-align:center">Finished programs, newest first.</p>']
 for b in sorted(NB,key=lambda b:b[3],reverse=True):
-    x=blk(b).replace('<section class="fest blk"','<section class="fest blk pastb'+('' if b[3]<TODAY else ' hid')+'"',1)
+    x=blk(b).replace('<section class="fest blk','<section class="fest pastb'+('' if b[3]<TODAY else ' hid')+' blk',1)
     P.append(x)
 FJ=json.load(open('data/festivals.json'))
 _FIXN={'kurasawa':'Kurosawa','ray':'Satyajit Ray','fox':'20th Century-Fox','april':'April','horror':'Horror','holiday':'Holiday','summer':'Summer','winter':'Winter','cukor':'George Cukor','hitchcock':'Hitchcock'}
@@ -141,13 +141,12 @@ def _fm(t): return _re.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec
 P.append('<h2 style="text-align:center;margin-top:30px">Festival archive</h2><p class="sm" style="text-align:center">From the Stanford Theatre&#39;s past calendars, newest first. Tap a festival for its bills.</p>')
 for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-31' if x['year'] else '0000')),reverse=True):
     en=fe['end'] or ''
-    if en and en>=TODAY: continue
     dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
     bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+ANB(b)+''.join('<span class="bf2">'+e(_TA0.get(f['title'],f['title']))+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
-    P.append(f'<details class="fest arch" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an"><a class="pfl" href="festivals/past/{PSLUG(fe)}.html">{e(fe["name"][:110])}</a></span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
+    P.append(f'<details class="fest arch{" hid" if en and en>=TODAY else ""}" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an"><a class="pfl" href="festivals/past/{PSLUG(fe)}.html">{e(fe["name"][:110])}</a></span></summary><ul class="abl">{bl}</ul><p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(fe["file"])}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(fe["file"])}">Original</a></p></details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
-document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
+document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.querySelectorAll('details.arch').forEach(function(b){b.classList.toggle('hid',!!b.dataset.end&&b.dataset.end>=t);});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
 open('past.html','w').write(page("Past — Stanford Theatre","".join(P),"","past"))
 def tk(txt,c1,c2,gid): return f'<svg class="tk" viewBox="0 0 40 24" width="42" height="25" aria-hidden="true"><defs><linearGradient id="{gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient></defs><path d="M2 2h36v6a4 4 0 0 0 0 8v6H2v-6a4 4 0 0 0 0-8z" fill="url(#{gid})" stroke="#4a3a0a" stroke-width="1"/><path d="M10 4v16" stroke="#4a3a0a" stroke-width=".8" stroke-dasharray="1.6 1.6"/><text x="24" y="16" font-size="11" font-family="Georgia,serif" font-weight="700" fill="#3a0608" text-anchor="middle">{txt}</text></svg>'
 OG=tk("OG","#d3c780","#8a7a2e","gog"); OR=tk("OR","#ffe58a","#d29a1c","gor"); S1=tk("1st","#f4f6f8","#9aa3ab","gs1")
@@ -389,10 +388,23 @@ _os.makedirs('festivals/past',exist_ok=True)
 for _f in [x for x in _os.listdir('festivals/past') if x.endswith('.html')]: _os.remove('festivals/past/'+_f)
 _PF={}
 for s_ in F: _PF[(NJ(F[s_]['t']),F[s_]['y'])]=s_
+_PFT={}
+for s_ in F: _PFT.setdefault(NJ(F[s_]['t']),[]).append(s_)
 NPAST=0
+GJ=json.load(open('data/guests.json')) if _os.path.exists('data/guests.json') else {}
+def GUEST(b):
+    n=b.get('guest')
+    if not n: return ''
+    g=GJ.get(n) or {}; lab=e(b.get('guest_label') or 'Special Appearance')
+    im=f'<figure><img src="../../{g["img"]}" alt="{e(n)}"><figcaption>{e(g.get("credit") or "")} · {e(g.get("license") or "")} · <a href="{e(g["source"])}">source</a>{" · portrait, not from this appearance" if "not from" in (g.get("kind") or "") else ""}</figcaption></figure>' if g.get('img') else ''
+    return f'<div class="guest">{im}<div class="gl">{lab}</div><div class="gn">{e(n)}</div></div>'
+_SLC={v['slug']:v for v in COV.values()}
 def _pcard(fm):
     sl_=_PF.get((NJ(fm['title']),fm.get('year')))
+    if not sl_ and not fm.get('year') and len(_PFT.get(NJ(ALI(fm['title'])),[]))==1: sl_=_PFT[NJ(ALI(fm['title']))][0]  # yearless listing -> unique featured film
     cv=COV.get(FKEY(fm['title'],fm.get('year')))
+    if not cv and not sl_:
+        _s=_re0.sub(r'[^a-z0-9]+','-',ALI(fm['title']).lower()).strip('-'); cv=_SLC.get(f"{_s}-{fm.get('year')}") or (_SLC.get(_s) if _SLC.get(_s) and (not fm.get('year') or abs((_SLC[_s]['year'] or 0)-fm['year'])<=1) else None)
     if not sl_ and cv:
         im=f'<img src="../../{cv["poster"]}" alt="{e(cv["title"])} poster">' if cv['poster'] else ''
         return f'<div class="col"><a class="card{"" if im else " noimg"}" href="../../films/{cv["slug"]}.html">{im}<span>{e(cv["title"])}'+(f' ({cv["year"]})' if cv['year'] else '')+'</span>'+(f'<small>{cv["rt"]} min</small>' if cv['rt'] else '')+'</a></div>'
@@ -405,7 +417,7 @@ def _pcard(fm):
 for fe in FJ['festivals']:
     if not fe['blocks']: continue
     dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'Year not given')
-    bills=''.join(f'<section class="fest blk"><h3 class="bl">{e(fullmo(b["dates"]))}{ANB(b)}</h3><div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
+    bills=''.join(f'<section class="fest blk"><h3 class="bl">{e(fullmo(b["dates"]))}{ANB(b)}</h3>{GUEST(b)}<div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
     q=urllib.parse.quote(fe['file'])
     body=f'<section class="fest"><div class="dr dtop" style="text-align:center">{e(dr)}</div><h1>{e(fe["name"])}</h1><p class="sm" style="text-align:center">{len(fe["blocks"])} bill{"s" if len(fe["blocks"])!=1 else ""}</p></section>'+bills+f'<p class="sm" style="text-align:center"><a href="../archive/cal/{q}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{q}">Original</a> · <a href="../../past.html">All past festivals</a></p>'
     open(f'festivals/past/{PSLUG(fe)}.html','w').write(page(f"{fe['name']} — Stanford Theatre",body,"../../","past")); NPAST+=1

@@ -86,6 +86,11 @@ for f in sorted(glob.glob('cache/cal/*')):
             gaps[:]=[g for g in gaps if g[0]!=fn]
     if not name or 'University Ave' in name or len(name)>100:
         name=re.sub(r'%20',' ',fn.rsplit('.',1)[0])
+    for b in blocks:  # "... Special Appearance by" + person parsed as first film -> fold into header
+        if b['films'] and re.search(r'\b(appearance|guest|in person|introduced|hosted|presented|conversation with)\b[^~]*\bby\s*$|\bwith\s*$',b['dates'],re.I) and not b['films'][0].get('year') and not b['films'][0].get('times'):
+            who=b['films'].pop(0)['title']; d0=b['dates']; sc=re.search(r'schedule change',d0,re.I)
+            d0=re.sub(r'\s*~\s*schedule change\s*~\s*',' ~ ',d0,flags=re.I); parts=[p.strip() for p in d0.split('~') if p.strip()]
+            b['dates']=parts[0]+' – '+' '.join(parts[1:])+' '+who+(' (schedule change)' if sc else ''); b['guest']=who; b['guest_label']=re.sub(r'\s*by\s*$','',' '.join(parts[1:])).strip().title() or 'Special Appearance'
     for b in blocks:
         for fm in b['films']: fm['times']=re.sub(r'^\s*\((?:19|20)\d\d\)\s*','',fm['times']).strip()
     for b in [b for b in blocks if not b['start']]:
