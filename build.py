@@ -1,4 +1,5 @@
 import json,html,datetime,urllib.parse
+exec(open('tools/showing_fixes.py').read(),{})  # curated title/year answers (data/showing_fixes.json)
 src=open('/workspace/stanford-infographics/gen.py').read(); ns={}
 exec(src[:src.index('CSS=')],ns); F={f['slug']:f for f in ns['F']}
 T=json.load(open('/workspace/tile.json'))
@@ -327,12 +328,15 @@ def NKT(t):
     t=_ud2.normalize('NFD',t); t=''.join(c for c in t if not _ud2.combining(c)).lower()
     t=_re0.sub(r'\s*\((?:19|20)\d\d\)\s*$','',t).replace('&',' and ')
     t=_re0.sub(r"['’`]",'',t); return ' '.join(x for x in _re0.sub(r'[^a-z0-9]+',' ',t).split() if x not in('the','a','an'))
+import os as _o0
 TA=json.load(open('data/title_aliases.json')); ALI=lambda t:TA['aliases'].get(t,t); RMK={k:v for k,v in TA['remakes'].items() if len(v)>1}
 def FKEY(t,y=None):
     k=NKT(ALI(t))
     if k in RMK and y in RMK[k]: k+='#'+str(y)
+    elif k in _SPLIT: k=_SPLIT[k].get(str(y)) or _SPLIT[k].get('*') or k
     return k
-import os as _o0
+_SFX=json.load(open('data/showing_fixes.json')) if _o0.path.exists('data/showing_fixes.json') else {}
+_SPLIT=_SFX.get('split',{})
 CV=json.load(open('data/cover.json')); CM=json.load(open('data/cover_meta.json'))
 FEATK={'north by northwest':'north-by-northwest','on waterfront':'on-the-waterfront','mary poppins':'mary-poppins','wizard of oz':'the-wizard-of-oz'}
 COV={}  # key -> dict(slug,title,year,rt,poster)
@@ -352,7 +356,7 @@ for c in CV:
     sl=_re0.sub(r'[^a-z0-9]+','-',tt.lower()).strip('-')
     if sl in _used or '#' in k: sl+=f'-{yr}'
     _used.add(sl)
-    COV[k]=dict(slug=sl,title=tt,year=yr,rt=m.get('rt'),poster=(lambda f_:f_ if _o0.path.exists(f_) else None)('posters/c/'+_re0.sub(r'[^a-z0-9]+','-',k.replace('#','-')).strip('-')+'.jpg'),syn=_syn(m.get('ext')),desc=m.get('desc') or '',imdb=m.get('imdb'),wt=m['wt'])
+    COV[k]=dict(slug=sl,title=tt,year=yr,rt=m.get('rt'),poster=(lambda f_:f_ if _o0.path.exists(f_) else None)('posters/c/'+_re0.sub(r'[^a-z0-9]+','-',k.replace('#','-')).strip('-')+'.jpg'),syn=_SFX.get('syn',{}).get(k) or _syn(m.get('ext')),desc=_SFX.get('desc',{}).get(k) or m.get('desc') or '',imdb=m.get('imdb'),wt=m['wt'])
 NFP=0
 CFX=json.load(open('data/cover_facts.json')) if _o0.path.exists('data/cover_facts.json') else {}
 for _k,_w in (json.load(open('data/cover_wpfacts.json')) if _o0.path.exists('data/cover_wpfacts.json') else {}).items():
@@ -380,7 +384,7 @@ for k,v in COV.items():
 <section><h2>More</h2><ul>{more}</ul></section></article>'''
     open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../")); NFP+=1
 print('COVERPAGES',NFP)
-REDIR={'bread':'bread-love-and-dreams-pane-amore-e-fantasia','the-little-kidnappers-the-kidnappers':'the-kidnappers','steamboat-bill':'steamboat-bill-jr','monkey-business':'monkey-business-1952','the-merry-widow':'the-merry-widow-1934','the-mark-of-zorro':'the-mark-of-zorro-1940'}
+REDIR={'bread':'bread-love-and-dreams-pane-amore-e-fantasia','the-little-kidnappers-the-kidnappers':'the-kidnappers','steamboat-bill':'steamboat-bill-jr','monkey-business':'monkey-business-1952','the-merry-widow':'the-merry-widow-1934','the-mark-of-zorro':'the-mark-of-zorro-1940','seventh-heaven':'seventh-heaven-1927','march-of-the-wooden-soldiers-babes-in-toyland':'babes-in-toyland-1934'}
 for a_,b_ in REDIR.items():
     open(f'films/{a_}.html','w').write(f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{SITE}films/{b_}.html"><meta http-equiv="refresh" content="0; url={b_}.html"></head><body><p>This page moved to <a href="{b_}.html">{b_}.html</a>.</p></body></html>')
 FPM=dict({k:'films/'+s_+'.html' for k,s_ in FEATK.items()},**{k:'films/'+v['slug']+'.html' for k,v in COV.items()})

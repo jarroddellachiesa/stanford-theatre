@@ -1,0 +1,62 @@
+{
+ "_doc": "Curated per-showing title/year answers (Oct 25, 2026). Applied by tools/showing_fixes.py to data/showings.json + data/festivals.json on every build. 'assign' matches showings by title regex + start date range and sets the film key (run base); 'copy' lists extra keys that also get the showing (double bills of two versions). 'split' tells build.py which festival year maps to which page key.",
+ "aliases": {
+  "Seventh Heaven (silent)": "Seventh Heaven", "Seventh Heaven (sound)": "Seventh Heaven", "Seventh Heaven (1927)": "Seventh Heaven",
+  "A Christmas Carol (aka Scrooge)": "A Christmas Carol",
+  "True Confessions": "True Confession",
+  "Drums": "The Drum",
+  "Babes in Toyland (aka March of the Wooden Soldiers)": "Babes in Toyland",
+  "March of the Wooden Soldiers (Babes in Toyland)": "Babes in Toyland",
+  "March of the Wooden Soldiers": "Babes in Toyland"
+ },
+ "assign": [
+  {"re": "^seventh heaven", "from": "1937-04-25", "to": "1937-04-25", "key": "seventh heaven#1937", "title": "Seventh Heaven", "year": 1937},
+  {"re": "^seventh heaven( \\(sound\\))?$", "from": "2009-03-13", "to": "2009-03-13", "key": "seventh heaven#1937", "title": "Seventh Heaven", "year": 1937, "orig": "sound"},
+  {"re": "^seventh heaven( \\(silent\\))?$", "from": "2009-03-13", "to": "2009-03-13", "key": "seventh heaven#1927", "title": "Seventh Heaven", "year": 1927, "orig": "silent"},
+  {"re": "^seventh heaven", "from": "2012-01-01", "to": "2016-12-31", "key": "seventh heaven#1927", "title": "Seventh Heaven", "year": 1927},
+  {"re": "^gaslight", "from": "2001-11-02", "to": "2001-11-04", "key": "gaslight uk version", "title": "Gaslight (UK version)", "year": 1940},
+  {"re": "^a christmas carol", "from": "2006-12-21", "to": "2006-12-23", "key": "christmas carol", "title": "A Christmas Carol", "year": 1951},
+  {"re": "^true confessions?$", "from": "1938-01-02", "to": "1938-01-02", "key": "true confession", "title": "True Confession", "year": 1937},
+  {"re": "^(the )?drums?$", "from": "1938-12-01", "to": "1938-12-01", "key": "drum", "title": "The Drum", "year": 1938},
+  {"re": "^(the )?drums?$", "from": "1993-10-22", "to": "1993-10-22", "key": "drum", "title": "The Drum", "year": 1938},
+  {"re": "^anna karenina$", "from": "2010-09-25", "to": "2010-09-27", "key": "anna karenina", "year": 1935},
+  {"re": "^the prisoner of zenda$", "from": "2002-08-07", "to": "2002-08-07", "key": "prisoner of zenda#1922", "year": 1922, "copy": [{"key": "prisoner of zenda", "year": 1937}]},
+  {"re": "^the ten commandments$", "from": "1925-01-01", "to": "1926-12-31", "key": "ten commandments#1923", "year": 1923},
+  {"re": "^the ten commandments$", "from": "2003-07-30", "to": "2003-07-30", "key": "ten commandments#1923", "year": 1923},
+  {"re": "^the lodger$", "from": "2000-02-04", "to": "2000-02-04", "key": "lodger#1927", "year": 1927},
+  {"re": "^ben-hur$", "from": "2001-08-08", "to": "2001-08-08", "key": "ben hur#1925", "year": 1925},
+  {"re": "^the maltese falcon$", "from": "1931-01-01", "to": "1932-12-31", "key": "maltese falcon#1931", "year": 1931},
+  {"re": "^the maltese falcon$", "from": "1994-09-14", "to": "1994-09-16", "key": "maltese falcon", "year": 1941},
+  {"re": "^girl crazy$", "from": "1932-01-01", "to": "1932-12-31", "key": "girl crazy#1932", "year": 1932},
+  {"re": "^girl crazy$", "from": "2001-03-18", "to": "2001-03-19", "key": "girl crazy#1932", "year": 1932},
+  {"re": "^(babes in toyland|march of the wooden soldiers)", "from": "1934-01-01", "to": "1935-12-31", "key": "babes in toyland#1934", "title": "Babes in Toyland", "year": 1934},
+  {"re": "^(babes in toyland|march of the wooden soldiers)", "from": "1961-01-01", "to": "1962-12-31", "key": "babes in toyland#1961", "title": "Babes in Toyland", "year": 1961},
+  {"re": "^(babes in toyland|march of the wooden soldiers)", "from": "1992-12-20", "to": "1992-12-25", "key": "babes in toyland#1934", "title": "Babes in Toyland", "year": 1934},
+  {"re": "^(babes in toyland|march of the wooden soldiers)", "from": "2018-12-07", "to": "2018-12-09", "key": "babes in toyland#1934", "title": "Babes in Toyland", "year": 1934}
+ ],
+ "fest_year": [
+  {"re": "^gone with the wind$", "start": "2009-04-25", "year": 1939},
+  {"re": "^footlight parade$", "start": "2011-07-02", "year": 1933},
+  {"re": "^breakfast at tiffany", "start": "2017-05-19", "year": 1961},
+  {"re": "^american madness$", "start": "2009-06-16", "year": 1932},
+  {"re": "^the lodger$", "start": "2000-02-04", "year": 1927},
+  {"re": "^girl crazy$", "start": "2001-05-10", "year": 1943},
+  {"re": "^gaslight$", "start": "2001-11-02", "year": 1940, "title": "Gaslight (UK version)"},
+  {"re": "^gaslight$", "start": "2001-11-03", "year": 1940, "title": "Gaslight (UK version)"}
+ ],
+ "split": {
+  "seventh heaven": {"1927": "seventh heaven#1927", "1937": "seventh heaven#1937"},
+  "prisoner of zenda": {"1922": "prisoner of zenda#1922"},
+  "ten commandments": {"1923": "ten commandments#1923"},
+  "lodger": {"1926": "lodger#1927", "1927": "lodger#1927"},
+  "ben hur": {"1925": "ben hur#1925"},
+  "maltese falcon": {"1931": "maltese falcon#1931"},
+  "girl crazy": {"1932": "girl crazy#1932"},
+  "babes in toyland": {"1934": "babes in toyland#1934", "1961": "babes in toyland#1961"}
+ },
+ "majority_year": true,
+ "syn": {
+  "unchained goddess": "The Unchained Goddess (1958) is a color television film about what weather is and how it works. It was the fourth and last film in the Bell System Science Series produced by Frank Capra, who wrote the screenplay with Jonathan Latimer. Unlike the first three films in the series, it was directed by Richard Carlson, who also appears in it, with series host Frank C. Baxter. It was televised on February 12, 1958. Recent commentators have noted that the film shows an early concern with climate change caused by human activities."
+ },
+ "desc": {"unchained goddess": "1958 Bell System Science Series television film produced by Frank Capra"}
+}

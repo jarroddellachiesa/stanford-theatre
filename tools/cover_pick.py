@@ -1,5 +1,6 @@
 import json,collections,re,sys
 sys.path.insert(0,'tools')
+exec(open('tools/showing_fixes.py').read(),{})  # curated title/year answers
 d=json.load(open('data/showings.json'))
 G=collections.defaultdict(list)
 for x in d: G[x['run'].rsplit('|',1)[0]].append(x)
