@@ -19,7 +19,7 @@ def page(title,body,root="",act=""):
     A=lambda k:' class="on" aria-current="page"' if k==act else ""
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><link rel="stylesheet" href="{root}style.css?v={CSSV}"><link rel="icon" href="{root}favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="{root}icons/favicon-32.png"><link rel="apple-touch-icon" href="{root}icons/apple-touch-icon.png?v=4"><link rel="manifest" href="{root}manifest.webmanifest"><meta name="theme-color" content="#5a0e18"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Stanford"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if("serviceWorker" in navigator)addEventListener("load",function(){{var h=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener("controllerchange",function(){{if(h&&!sessionStorage.swr){{sessionStorage.swr=1;location.reload()}}}});navigator.serviceWorker.register("{root}sw.js",{{updateViaCache:"none"}}).then(function(r){{r.update()}})}})</script></head><body>
 <header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div></a><nav class="nav"><a href="{root}index.html"{A("now")}>Now Showing</a><span class="sep" aria-hidden="true">·</span><a href="{root}upcoming.html"{A("up")}>Upcoming</a><span class="sep" aria-hidden="true">·</span><a href="{root}past.html"{A("past")}>Past</a><span class="sep" aria-hidden="true">·</span><a href="{root}search.html"{A("search")}>Search</a></nav></header><main>{body}</main><script>(function(){{var t=new Intl.DateTimeFormat('en-CA',{{timeZone:'America/Los_Angeles'}}).format(new Date());document.querySelectorAll('[data-day]').forEach(function(d){{if(d.dataset.day<t)d.remove()}});document.querySelectorAll('.bill').forEach(function(b){{if(!b.querySelector('[data-day]'))b.remove()}});document.querySelectorAll('.ups').forEach(function(u){{if(!u.querySelector('[data-day]'))u.remove()}});}})();</script>
-<footer><address class="addr"><a href="{MAP}"><span class="an1">Stanford Theatre</span><br>221 University Avenue<br>Palo Alto, CA 94301</a></address></footer></body></html>'''
+<footer><button id="stlock" class="stlock" type="button" aria-label="Members stats" title="Stats">&#128274;</button><address class="addr"><a href="{MAP}"><span class="an1">Stanford Theatre</span><br>221 University Avenue<br>Palo Alto, CA 94301</a></address></footer><script src="{root}stats.js?v={CSSV}" data-root="{root}" defer></script></body></html>'''
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
 
 import datetime as _dt, zoneinfo as _zi
@@ -417,7 +417,7 @@ def _pcard(fm):
 for fe in FJ['festivals']:
     if not fe['blocks']: continue
     dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'Year not given')
-    bills=''.join(f'<section class="fest blk"><h3 class="bl">{e(fullmo(b["dates"]))}{ANB(b)}</h3>{GUEST(b)}<div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
+    bills=''.join(f'<section class="fest blk" data-start="{b.get("start") or ""}" data-end="{b.get("end") or b.get("start") or ""}"><h3 class="bl">{e(fullmo(b["dates"]))}{ANB(b)}</h3>{GUEST(b)}<div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
     q=urllib.parse.quote(fe['file'])
     body=f'<section class="fest"><div class="dr dtop" style="text-align:center">{e(dr)}</div><h1>{e(fe["name"])}</h1><p class="sm" style="text-align:center">{len(fe["blocks"])} bill{"s" if len(fe["blocks"])!=1 else ""}</p></section>'+bills+f'<p class="sm" style="text-align:center"><a href="../archive/cal/{q}">Archived calendar page</a> · <a href="https://www.stanfordtheatre.org/calendars/{q}">Original</a> · <a href="../../past.html">All past festivals</a></p>'
     open(f'festivals/past/{PSLUG(fe)}.html','w').write(page(f"{fe['name']} — Stanford Theatre",body,"../../","past")); NPAST+=1
@@ -438,3 +438,29 @@ for y in sorted(_YRS):
 Y.append('</section><script>(function(){function o(){var h=location.hash;if(/^#y\\d{4}$/.test(h)){var d=document.querySelector(h);if(d)d.open=true;}}addEventListener("hashchange",o);o();})();</script>')
 open('past.html','w').write(page("Past — Stanford Theatre","".join(P)+"".join(Y),"","past"))
 print('ORYEARS',len(_YRS),len(_OR))
+
+# --- Encrypted box-office stats (AES-GCM, PBKDF2-SHA256); plaintext stays in /workspace/private ---
+def _stats():
+    import os,base64,hashlib
+    pw=os.environ.get('STANFORD_STATS_PASSWORD') or os.environ.get('STATS_TEST_PASSWORD')
+    src=os.environ.get('STATS_PRIVATE','/workspace/private/stanford_stats.json')
+    if not pw or not os.path.exists(src): print('STATS skipped (no password or private data)'); return
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    S=json.load(open(src)); byk={}
+    for t,r in S.items(): byk.setdefault(NJ(ALI(t)),[]).extend(r)
+    out={}
+    for s_ in F:
+        r=byk.get(NJ(ALI(F[s_]['t'])))
+        if r: out[s_]=r
+    for k,v in COV.items():
+        if '#' in k: continue
+        r=byk.get(NJ(ALI(v['title'])))
+        if r: out[v['slug']]=r
+    pt=json.dumps({'v':1,'films':out},separators=(',',':')).encode()
+    salt=os.urandom(16); iv=os.urandom(12); it=310000
+    key=hashlib.pbkdf2_hmac('sha256',pw.encode(),salt,it,32)
+    ct=AESGCM(key).encrypt(iv,pt,None)
+    b=lambda x:base64.b64encode(x).decode()
+    json.dump({'alg':'AES-GCM','kdf':'PBKDF2-SHA256','iter':it,'salt':b(salt),'iv':b(iv),'ct':b(ct)},open('data/stats.enc.json','w'))
+    print('STATS encrypted films',len(out),'bytes',len(ct))
+_stats()

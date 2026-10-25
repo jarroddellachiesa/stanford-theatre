@@ -131,3 +131,14 @@ a.pfl,a.pfl:hover,a.pfl:visited{color:inherit;text-decoration:none}a.pfl:hover{c
 .guest figcaption{font-size:11px;color:#bfae86;margin-top:4px}.guest figcaption a{color:#e8c872}
 .guest .gl{font-family:Limelight,serif;color:#d4af37;letter-spacing:2px;font-size:18px;text-transform:uppercase}
 .guest .gn{font-family:Limelight,serif;color:#fff1cc;font-size:24px;letter-spacing:1px;text-shadow:0 0 12px #f5c24b66}
+/* stats lock */
+.stlock{display:block;margin:0 auto 8px;background:none;border:0;font-size:18px;opacity:.55;cursor:pointer;color:#e8c872}.stlock:hover{opacity:1}
+.stdlg{position:fixed;inset:0;background:#000b;display:flex;align-items:center;justify-content:center;z-index:99}
+.stdlg form{background:#2a0508;border:2px solid #d4af37;border-radius:10px;padding:18px;width:min(320px,88vw);color:#fff1cc;display:flex;flex-direction:column;gap:10px}
+.stdlg input[type=password]{font-size:17px;padding:8px;border-radius:6px;border:1px solid #d4af37;background:#120203;color:#fff}
+.stdlg .strem{font-size:14px}.stdlg .sterr{color:#ffb3b3;font-size:14px;margin:0}
+.stdlg div{display:flex;gap:10px;justify-content:flex-end}.stdlg button{padding:7px 14px;border-radius:16px;border:1px solid #d4af37;background:#d4af37;color:#2a0508;font-weight:800}.stdlg .stc0{background:none;color:#e8c872}
+.stx{border:2px solid #d4af37;border-radius:8px;background:rgba(0,0,0,.35);padding:14px 12px;margin:20px auto;max-width:900px}
+.stx table{width:100%;border-collapse:collapse;font-size:15px;margin:4px 0 12px}.stx th,.stx td{text-align:right;padding:3px 4px;border-bottom:1px solid #ffffff14}.stx th:first-child,.stx td:first-child{text-align:left}
+.stx .sth{color:#e8c872;margin-top:8px}.stx .stt td{font-weight:800;color:#fff1cc}.stx .stft{text-align:center;color:#fff1cc}
+.card .stc{display:block;color:#9fe3a8;font-size:13px;margin-top:2px}
