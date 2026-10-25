@@ -4,3 +4,4 @@ tools/wp_full_cache.json
 tools/wd_credits_cache.json
 tools/tile_cache/
 data/stats.plain*
+tools/watch_cache.json
