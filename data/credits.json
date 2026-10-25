@@ -14032,5 +14032,621 @@
 "Earl St. John"
 ],
 "studio": []
+},
+"phantom of opera#1925": {
+"qid": "Q927919",
+"star": [
+"Lon Chaney",
+"Mary Philbin",
+"Norman Kerry"
+],
+"star_ordered": false,
+"director": [
+"Rupert Julian",
+"Lon Chaney",
+"Edward Sedgwick"
+],
+"writer": [
+"Elliott J. Clawson",
+"Raymond L. Schrock",
+"Bernard McConville"
+],
+"producer": [
+"Carl Laemmle"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"strong man": {
+"qid": "Q2515935",
+"star": [
+"Harry Langdon",
+"Gertrude Astor",
+"Priscilla Bonner"
+],
+"star_ordered": false,
+"director": [
+"Frank Capra"
+],
+"writer": [
+"Hal Conklin",
+"Tay Garnett",
+"Arthur Ripley"
+],
+"producer": [
+"Harry Langdon"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"beau geste#1926": {
+"qid": "Q3637301",
+"star": [
+"Ronald Colman",
+"Neil Hamilton",
+"Ralph Forbes"
+],
+"star_ordered": false,
+"director": [
+"Herbert Brenon"
+],
+"writer": [
+"John Russell",
+"Herbert Brenon"
+],
+"producer": [
+"Jesse Louis Lasky",
+"Adolph Zukor",
+"William LeBaron"
+],
+"studio": [
+"Famous Players-Lasky Corporation"
+]
+},
+"cat and canary#1927": {
+"qid": "Q2336169",
+"star": [
+"Laura La Plante",
+"Forrest Stanley",
+"Creighton Hale"
+],
+"star_ordered": false,
+"director": [
+"Paul Leni"
+],
+"writer": [
+"Alfred A. Cohn",
+"Robert F. Hill",
+"Walter Anthony"
+],
+"producer": [
+"Paul Kohner",
+"Carl Laemmle"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"quality street": {
+"qid": "Q2395028",
+"star": [
+"Katharine Hepburn",
+"Franchot Tone",
+"Eric Blore"
+],
+"star_ordered": false,
+"director": [
+"George Stevens"
+],
+"writer": [
+"Allan Scott"
+],
+"producer": [
+"Pandro S. Berman"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"submarine": {
+"qid": "Q2172512",
+"star": [
+"Jack Holt",
+"Ralph Graves",
+"Dorothy Revier"
+],
+"star_ordered": false,
+"director": [
+"Frank Capra",
+"Irvin Willat"
+],
+"writer": [],
+"producer": [
+"Harry Cohn"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"vagabond king": {
+"qid": "Q1143603",
+"star": [
+"Jeanette MacDonald",
+"Warner Oland",
+"Dennis King"
+],
+"star_ordered": false,
+"director": [
+"Ludwig Berger"
+],
+"writer": [
+"Herman J. Mankiewicz"
+],
+"producer": [
+"Adolph Zukor"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"night nurse": {
+"qid": "Q1786993",
+"star": [
+"Barbara Stanwyck",
+"Ben Lyon",
+"Joan Blondell"
+],
+"star_ordered": false,
+"director": [
+"William A. Wellman"
+],
+"writer": [],
+"producer": [],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"five star final": {
+"qid": "Q906283",
+"star": [
+"Edward G. Robinson",
+"Marian Marsh",
+"H. B. Warner"
+],
+"star_ordered": false,
+"director": [
+"Mervyn LeRoy"
+],
+"writer": [
+"Robert Lord"
+],
+"producer": [
+"Hal B. Wallis"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"blonde crazy": {
+"qid": "Q3821468",
+"star": [
+"James Cagney",
+"Joan Blondell",
+"Guy Kibbee"
+],
+"star_ordered": false,
+"director": [
+"Roy Del Ruth"
+],
+"writer": [
+"Kubec Glasmon"
+],
+"producer": [],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"tarzan ape man": {
+"qid": "Q262793",
+"star": [
+"Johnny Weissmuller",
+"Neil Hamilton",
+"Maureen O'Sullivan"
+],
+"star_ordered": false,
+"director": [
+"W. S. Van Dyke"
+],
+"writer": [
+"Ivor Novello",
+"Cyril Hume"
+],
+"producer": [
+"Bernard H. Hyman",
+"Irving Thalberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"animal kingdom": {
+"qid": "Q1514624",
+"star": [
+"Leslie Howard",
+"Ann Harding",
+"Myrna Loy"
+],
+"star_ordered": false,
+"director": [
+"Edward H. Griffith",
+"George Cukor"
+],
+"writer": [
+"Edward H. Griffith",
+"Horace Jackson",
+"Philip Barry"
+],
+"producer": [
+"David O. Selznick"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"sign of cross": {
+"qid": "Q1546143",
+"star": [
+"Fredric March",
+"Elissa Landi",
+"Claudette Colbert"
+],
+"star_ordered": false,
+"director": [
+"Cecil B. DeMille"
+],
+"writer": [
+"Sidney Buchman",
+"Waldemar Young",
+"Dudley Nichols"
+],
+"producer": [
+"Cecil B. DeMille"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"madame butterfly": {
+"qid": "Q1883152",
+"star": [
+"Sylvia Sidney",
+"Cary Grant",
+"Charles Ruggles"
+],
+"star_ordered": false,
+"director": [
+"Marion Gering"
+],
+"writer": [
+"Josephine Lovett"
+],
+"producer": [
+"B. P. Schulberg"
+],
+"studio": []
+},
+"bureau of missing persons": {
+"qid": "Q1750405",
+"star": [
+"Pat O'Brien",
+"Lewis Stone",
+"Glenda Farrell"
+],
+"star_ordered": false,
+"director": [
+"Roy Del Ruth"
+],
+"writer": [
+"Robert Presnell Sr"
+],
+"producer": [
+"Henry Blanke"
+],
+"studio": []
+},
+"fashions of 1934": {
+"qid": "Q2405812",
+"star": [
+"William Powell",
+"Bette Davis",
+"Frank McHugh"
+],
+"star_ordered": false,
+"director": [
+"William Dieterle"
+],
+"writer": [
+"F. Hugh Herbert"
+],
+"producer": [
+"Henry Blanke"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"tarzan and his mate": {
+"qid": "Q1336251",
+"star": [
+"Johnny Weissmuller",
+"Maureen O'Sullivan",
+"Neil Hamilton"
+],
+"star_ordered": false,
+"director": [
+"Cedric Gibbons",
+"Jack Conway"
+],
+"writer": [
+"Edgar Rice Burroughs"
+],
+"producer": [
+"Bernard H. Hyman"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"dames": {
+"qid": "Q1440832",
+"star": [
+"Joan Blondell",
+"Dick Powell",
+"Ruby Keeler"
+],
+"star_ordered": false,
+"director": [
+"Ray Enright",
+"Busby Berkeley"
+],
+"writer": [
+"Robert Lord"
+],
+"producer": [
+"Hal B. Wallis"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"bordertown": {
+"qid": "Q1971611",
+"star": [
+"Paul Muni",
+"Bette Davis",
+"Margaret Lindsay"
+],
+"star_ordered": false,
+"director": [
+"Archie Mayo"
+],
+"writer": [],
+"producer": [
+"Jack Warner"
+],
+"studio": []
+},
+"good fairy": {
+"qid": "Q2588307",
+"star": [
+"Margaret Sullavan",
+"Herbert Marshall",
+"Frank Morgan"
+],
+"star_ordered": false,
+"director": [
+"William Wyler"
+],
+"writer": [
+"Preston Sturges",
+"Ferenc Molnár"
+],
+"producer": [
+"Carl Laemmle Jr."
+],
+"studio": []
+},
+"ruggles of red gap": {
+"qid": "Q1304355",
+"star": [
+"Charles Laughton",
+"ZaSu Pitts",
+"Mary Boland"
+],
+"star_ordered": false,
+"director": [
+"Leo McCarey"
+],
+"writer": [
+"Walter DeLeon",
+"Harlan Thompson"
+],
+"producer": [
+"Arthur Hornblow, Jr.",
+"Adolph Zukor"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"go into your dance": {
+"qid": "Q260389",
+"star": [
+"Al Jolson",
+"Ruby Keeler",
+"Glenda Farrell"
+],
+"star_ordered": false,
+"director": [
+"Archie Mayo"
+],
+"writer": [
+"Earl Baldwin"
+],
+"producer": [
+"Jack Warner"
+],
+"studio": []
+},
+"front page woman": {
+"qid": "Q3485749",
+"star": [
+"Bette Davis",
+"George Brent",
+"J. Carrol Naish"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"Laird Doyle",
+"Lillie Hayward"
+],
+"producer": [
+"Samuel Bischoff"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"alice adams": {
+"qid": "Q1619523",
+"star": [
+"Katharine Hepburn",
+"Fred MacMurray",
+"Fred Stone"
+],
+"star_ordered": false,
+"director": [
+"George Stevens"
+],
+"writer": [
+"Jane Murfin",
+"Dorothy Yost",
+"Booth Tarkington"
+],
+"producer": [
+"Pandro S. Berman"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"special agent": {
+"qid": "Q2826775",
+"star": [
+"Bette Davis",
+"George Brent",
+"Ricardo Cortez"
+],
+"star_ordered": false,
+"director": [
+"William Keighley"
+],
+"writer": [
+"Laird Doyle"
+],
+"producer": [
+"Samuel Bischoff",
+"Martin Mooney"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"way down east": {
+"qid": "Q1187189",
+"star": [
+"Lillian Gish",
+"Richard Barthelmess",
+"Lowell Sherman"
+],
+"star_ordered": false,
+"director": [
+"D. W. Griffith"
+],
+"writer": [
+"Anthony Paul Kelly",
+"D. W. Griffith"
+],
+"producer": [
+"D. W. Griffith"
+],
+"studio": [
+"D.W. Griffith Productions"
+]
+},
+"midsummer nights dream": {
+"qid": "Q1305191",
+"star": [
+"James Cagney",
+"Olivia de Havilland",
+"Anita Louise"
+],
+"star_ordered": false,
+"director": [
+"Max Reinhardt",
+"William Dieterle"
+],
+"writer": [
+"Charles Kenyon",
+"Mary C. McCall, Jr."
+],
+"producer": [
+"Henry Blanke"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"devil and deep": {
+"qid": "Q371592",
+"star": [
+"Tallulah Bankhead",
+"Gary Cooper",
+"Charles Laughton"
+],
+"star_ordered": false,
+"director": [
+"Marion Gering"
+],
+"writer": [
+"Benn Levy"
+],
+"producer": [],
+"studio": [
+"Paramount Pictures"
+]
+},
+"girl from tenth avenue": {
+"qid": "Q3549469",
+"star": [
+"Bette Davis",
+"Ian Hunter",
+"Colin Clive"
+],
+"star_ordered": false,
+"director": [
+"Alfred Edward Green"
+],
+"writer": [],
+"producer": [
+"Henry Blanke",
+"Robert Lord"
+],
+"studio": []
 }
 }
