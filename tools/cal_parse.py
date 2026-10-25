@@ -72,7 +72,8 @@ for f in sorted(glob.glob('cache/cal/*')):
                 for a,rest in re.findall(r'(?s)<a [^>]*imdb[^>]*>(.*?)</a>([^<]*)',p):
                     yr=re.search(r'\((\d{4})\)',p); href=re.search(r'href="([^"]*imdb[^"]*)"',p)
                     yy=re.search(r'%28(\d{4})%29|\((\d{4})\)',href.group(1) if href else '')
-                    films.append(dict(title=fixt(txt(a))[0],year=int(yy.group(1) or yy.group(2)) if yy else None,times=txt(rest)))
+                    tt,ey=fixt(txt(a)); ry=re.match(r'\s*\(((?:19|20)\d\d)\)',rest)
+                    films.append(dict(title=tt,year=int(yy.group(1) or yy.group(2)) if yy else (ey or (int(ry.group(1)) if ry else None)),times=txt(re.sub(r'^\s*\((?:19|20)\d\d\)','',rest))))
             if not films: continue
             rng=pd(dtxt,y) if y else None
             blocks.append(dict(dates=dtxt,start=rng[0] if rng else None,end=rng[1] if rng else None,films=films))

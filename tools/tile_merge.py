@@ -35,6 +35,14 @@ T={}
 for f in glob.glob('cache/tileq/*.html')+glob.glob('tile/*.html'):
     title,runs=parse(open(f,errors='replace').read())
     if title and runs: T[title]=runs
+RID={}
+for f in glob.glob('cache/tileq/*.html')+glob.glob('tile/*.html'):
+    for blk in open(f,errors='replace').read().split('<div class="festival')[1:]:
+        an=[(i,html.unescape(n).strip()) for i,n in re.findall(r'<a href="/tile\?id=(\d+)">([^<]*)</a>',blk)]
+        for mo,dd,yy in re.findall(r'<td class="mnth">(\w{3}) (\d+) &#x27;(\d\d)</td>',blk):
+            y=int(yy); y+=1900 if y>=80 else 2000
+            ds=dt.datetime.strptime(f"{mo} {dd} {y}","%b %d %Y").date().isoformat()
+            for i,n in an: RID.setdefault(ds,[]).append((i,n))
 tile=[]
 for title,runs in T.items():
     q=urllib.parse.quote_plus(title)
@@ -44,9 +52,10 @@ TA=json.load(open('stanford-site/data/title_aliases.json')); _AL=TA['aliases']; 
 for o in d+tile:
     c=_AL.get(o['title'])
     if c: o.setdefault('orig_title',o['title']); o['title']=c
+NK0=lambda t:' '.join(x for x in re.sub(r'[^a-z0-9]+',' ',re.sub(r"['’`]",'',re.sub(r'\s*\((?:19|20)\d\d\)\s*$','',t.lower()).replace('&',' and '))).split() if x not in('the','a','an'))
 seen=set();out=[]
 for o in sorted(d+tile,key=lambda o:(o['start'],o['source']!='Tile')):
-    k=(o['title'].lower(),o['start'],o['source'])
+    k=(o['title'].lower(),o['start'],o['source'],o.get('fyear') if NK0(o['title']) in _RM else None)
     if k in seen: continue
     seen.add(k); out.append(o)
 import unicodedata
@@ -90,6 +99,10 @@ for o in [x for x in out if x['source']=='Tile' and x['note'].startswith('w/ ')]
         kp=NK(_AL.get(pn,pn))
         if not kp or any(x['start']<=o['end'] and o['start']<=x['end'] for x in tl.get(kp,[])): continue
         n=dict(title=_AL.get(pn,pn),note='w/ '+o['title'],start=o['start'],end=o['end'],days=o.get('days'),tickets=None,source='Tile',url=o['url'],via=1,badge='')
+        ty=re.search(r'\(((?:19|20)\d\d)\)\s*$',pn)
+        if ty: n['tyear']=int(ty.group(1))
+        ids=[i for i,nm in RID.get(o['start'],[]) if nm==pn.strip()] or [i for i,nm in RID.get(o['start'],[]) if NK(_AL.get(nm,nm))==kp]
+        if ids: n['tile_id']=ids[0]
         tl.setdefault(kp,[]).append(n); syn.append(n)
 out+=syn
 # one chronological sequence per film; overlapping/adjacent dated entries = one run
@@ -99,16 +112,31 @@ _CAL={}
 for o in out:
     k0=NK(o['title'])
     if k0 in _RM and o['source']=='Stanford Theatre calendars' and o.get('fyear') in _RM[k0]: _CAL.setdefault(k0,[]).append(o)
+def _NEAR(y,ys):
+    c=[x for x in ys if abs(x-y)<=1]; return c[0] if c else None
+SIL=lambda o:bool(re.search(r'silent',(o.get('date_text') or '')+' '+(o.get('note') or '')+' '+o['title'],re.I))
+IDY={}
+def RY(o,k,ys,use_id):
+    y=o.get('fyear') if o.get('fyear') in ys else None
+    if y is None:
+        ov=[c for c in _CAL.get(k,[]) if c['start']<=(o.get('end') or o['start']) and o['start']<=(c.get('end') or c['start'])]
+        if ov: y=ov[0]['fyear']
+    if y is None and o.get('tyear'): y=_NEAR(o['tyear'],ys)
+    if y is None and use_id and o.get('tile_id') in IDY: y=IDY[o['tile_id']]
+    if y is None and SIL(o) and min(ys)<1929: y=min(ys)
+    if y is None and o['source']=='Stanford Theatre history page':
+        c=[x for x in ys if x<=int(o['start'][:4])]; y=c[-1] if c else None
+    return y
+for o in out:
+    k=NK(o['title'])
+    if OKD(o['start']) and k in _RM and o.get('tile_id'):
+        y=RY(o,k,_RM[k],False)
+        if y: IDY.setdefault(o['tile_id'],y)
 for o in out:
     if not OKD(o['start']): continue
     k=NK(o['title'])
     if k in _RM:
-        ys=_RM[k]; y=o.get('fyear') if o.get('fyear') in ys else None
-        if y is None:
-            ov=[c for c in _CAL.get(k,[]) if c['start']<=(o.get('end') or o['start']) and o['start']<=(c.get('end') or c['start'])]
-            if ov: y=ov[0]['fyear']
-            elif o['source']=='Stanford Theatre history page':
-                c=[x for x in ys if x<=int(o['start'][:4])]; y=c[-1] if c else None
+        y=RY(o,k,_RM[k],True)
         if y: o['year']=y; k=k+'#'+str(y)
     G.setdefault(k,[]).append(o)
 for k,L in G.items():

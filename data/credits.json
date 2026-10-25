@@ -9437,5 +9437,71 @@
 "studio": [
 "Universal Pictures"
 ]
+},
+"little women#1933": {
+"qid": "Q195274",
+"star": [
+"Katharine Hepburn",
+"Joan Bennett",
+"Jean Parker"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Victor Heerman",
+"Sarah Y. Mason"
+],
+"producer": [
+"Merian C. Cooper"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"waterloo bridge#1940": {
+"qid": "Q1367668",
+"star": [
+"Robert Taylor",
+"Vivien Leigh",
+"Lucile Watson"
+],
+"star_ordered": false,
+"director": [
+"Mervyn LeRoy"
+],
+"writer": [
+"Robert E. Sherwood",
+"S. N. Behrman",
+"Hans Rameau"
+],
+"producer": [
+"Sidney Franklin"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"monkey business#1931": {
+"qid": "Q776964",
+"star": [
+"Groucho Marx",
+"Harpo Marx",
+"Chico Marx"
+],
+"star_ordered": false,
+"director": [
+"Norman Z. McLeod"
+],
+"writer": [
+"Ben Hecht"
+],
+"producer": [
+"Herman J. Mankiewicz"
+],
+"studio": [
+"Paramount Pictures"
+]
 }
 }

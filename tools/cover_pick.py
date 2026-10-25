@@ -19,9 +19,12 @@ keys=[k for k in G if not BAD.search(k) and not BAD.search(G[k][0]['title']) and
 nr=lambda k:len({x['run'] for x in G[k] if x['source']!='Stanford Theatre history page'}); tk=lambda k:sum(x.get('tickets') or 0 for x in G[k])
 rank=sorted(keys,key=lambda k:(-nr(k),-tk(k)))
 top=rank[:200]; recent=[k for k in keys if any(x['start']>='2021-10-01' for x in G[k])]
+import os
+PREV=[o['key'] for o in json.load(open('data/cover.json'))] if os.path.exists('data/cover.json') else []
+keep=[k for k in PREV if k in G]  # never drop an existing page
 out=[]
-for k in dict.fromkeys(top+recent):
-    yr=Y[k].most_common(1)[0][0] if Y[k] else None
+for k in dict.fromkeys(top+recent+keep):
+    yr=int(k.split('#')[1]) if '#' in k else (Y[k].most_common(1)[0][0] if Y[k] else None)
     if yr is None:  # history: first showing year as upper bound
         pass
     t=TT.get(k) or collections.Counter(x['title'] for x in G[k]).most_common(1)[0][0]

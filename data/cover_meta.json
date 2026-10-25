@@ -893,7 +893,8 @@
 "imdb": "tt0037382",
 "pd": "1944",
 "film": true,
-"poster_src": "https://commons.wikimedia.org/wiki/File:To_Have_and_Have_Not_(1944_poster_-_insert).jpg"
+"poster_src": "https://commons.wikimedia.org/wiki/File:To_Have_and_Have_Not_(1944_poster_-_insert).jpg",
+"poster": "posters/c/to-have-and-have-not.jpg"
 },
 "rope": {
 "wt": "Rope (film)",
@@ -907,7 +908,8 @@
 "imdb": "tt0040746",
 "pd": "1948",
 "film": true,
-"poster_src": "https://en.wikipedia.org/wiki/File:Rope2.jpg"
+"poster_src": "https://en.wikipedia.org/wiki/File:Rope2.jpg",
+"poster": "posters/c/rope.jpg"
 },
 "dial m for murder": {
 "wt": "Dial M for Murder",
@@ -1831,7 +1833,8 @@
 "imdb": "tt0028249",
 "pd": "1936",
 "film": true,
-"poster_src": "https://commons.wikimedia.org/wiki/File:Show_Boat_(1936_film_poster).jpg"
+"poster_src": "https://commons.wikimedia.org/wiki/File:Show_Boat_(1936_film_poster).jpg",
+"poster": "posters/c/show-boat.jpg"
 },
 "heaven can wait": {
 "wt": "Heaven Can Wait (1943 film)",
@@ -3368,7 +3371,8 @@
 "imdb": "tt0026104",
 "pd": "1935",
 "film": true,
-"poster_src": "https://commons.wikimedia.org/wiki/File:Becky_Sharp_(1935_three-sheet_poster).jpg"
+"poster_src": "https://commons.wikimedia.org/wiki/File:Becky_Sharp_(1935_three-sheet_poster).jpg",
+"poster": "posters/c/becky-sharp.jpg"
 },
 "san francisco": {
 "wt": "San Francisco (1936 film)",
@@ -4008,7 +4012,8 @@
 "imdb": "tt0039645",
 "pd": "1947",
 "film": true,
-"poster_src": "https://en.wikipedia.org/wiki/File:My_Favorite_Brunette.jpg"
+"poster_src": "https://en.wikipedia.org/wiki/File:My_Favorite_Brunette.jpg",
+"poster": "posters/c/my-favorite-brunette.jpg"
 },
 "dark passage": {
 "wt": "Dark Passage (film)",
@@ -4720,7 +4725,8 @@
 "imdb": "tt0043526",
 "pd": "1951",
 "film": true,
-"poster_src": "https://en.wikipedia.org/wiki/File:Father%27s_Little_Dividend.jpg"
+"poster_src": "https://en.wikipedia.org/wiki/File:Father%27s_Little_Dividend.jpg",
+"poster": "posters/c/fathers-little-dividend.jpg"
 },
 "tea and sympathy": {
 "wt": "Tea and Sympathy (film)",
@@ -5210,7 +5216,8 @@
 "imdb": "tt0065112",
 "pd": "1969",
 "film": true,
-"poster_src": "https://en.wikipedia.org/wiki/File:Topaz_movieposter.jpg"
+"poster_src": "https://en.wikipedia.org/wiki/File:Topaz_movieposter.jpg",
+"poster": "posters/c/topaz.jpg"
 },
 "frenzy": {
 "wt": "Frenzy",
@@ -5460,7 +5467,8 @@
 "imdb": "tt0048260",
 "pd": "1955",
 "film": true,
-"poster_src": "https://en.wikipedia.org/wiki/File:Kismet_(1955_film)_poster.jpg"
+"poster_src": "https://en.wikipedia.org/wiki/File:Kismet_(1955_film)_poster.jpg",
+"poster": "posters/c/kismet-1955.jpg"
 },
 "bad day at black rock": {
 "wt": "Bad Day at Black Rock",
@@ -5626,7 +5634,8 @@
 "imdb": "tt0025301",
 "pd": "1934",
 "film": true,
-"poster_src": "https://commons.wikimedia.org/wiki/File:Imitation_of_Life_(1934_poster).jpg"
+"poster_src": "https://commons.wikimedia.org/wiki/File:Imitation_of_Life_(1934_poster).jpg",
+"poster": "posters/c/imitation-of-life-1934.jpg"
 },
 "werewolf of london": {
 "wt": "Werewolf of London",
@@ -5971,7 +5980,8 @@
 "rt": 128,
 "imdb": "tt0057277",
 "pd": "1963",
-"film": true
+"film": true,
+"poster": "posters/c/mahanagar.jpg"
 },
 "girl shy": {
 "wt": "Girl Shy",
@@ -5984,7 +5994,8 @@
 "rt": 87,
 "imdb": "tt0014945",
 "pd": "1924",
-"film": true
+"film": true,
+"poster": "posters/c/girl-shy.jpg"
 },
 "merry widow": {
 "wt": "The Merry Widow (1934 film)",
@@ -5997,7 +6008,8 @@
 "rt": 99,
 "imdb": "tt0025493",
 "pd": "1934",
-"film": true
+"film": true,
+"poster": "posters/c/merry-widow.jpg"
 },
 "westerner": {
 "wt": "The Westerner (1940 film)",
@@ -6008,7 +6020,8 @@
 "rt": 100,
 "imdb": "tt0033253",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/westerner.jpg"
 },
 "man i killed broken lullaby": {
 "wt": "Broken Lullaby",
@@ -6019,7 +6032,8 @@
 "rt": 76,
 "imdb": "tt0022725",
 "pd": "1932",
-"film": true
+"film": true,
+"poster": "posters/c/man-i-killed-broken-lullaby.jpg"
 },
 "seven samurai": {
 "wt": "Seven Samurai",
@@ -6030,7 +6044,8 @@
 "rt": 207,
 "imdb": "tt0047478",
 "pd": "1954",
-"film": true
+"film": true,
+"poster": "posters/c/seven-samurai.jpg"
 },
 "mummys hand": {
 "wt": "The Mummy's Hand",
@@ -6041,6 +6056,50 @@
 "rt": 67,
 "imdb": "tt0032818",
 "pd": "1940",
-"film": true
+"film": true,
+"poster": "posters/c/mummys-hand.jpg"
+},
+"little women#1933": {
+"wt": "Little Women (1933 film)",
+"qid": "Q195274",
+"img": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Little_Women_%281933%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+"desc": "1933 film by George Cukor",
+"ext": "Little Women is a 1933 American pre-Code drama film directed by George Cukor and produced by Merian C. Cooper and Kenneth MacGowan. It stars Katharine Hepburn, Joan Bennett, Frances Dee, and Jean Parker. The screenplay, written by Sarah Y. Mason and Victor Heerman, is based on the 1868\u20131869 two-volume novel of the same name by Louisa May Alcott. The film, which broke box office records, is considered one of RKO's most-liked with audiences in 1933. It has received generally positive reviews from film critics, both in the 1930s and more recently.\nSets were designed to closely resemble Alcott's house, and costumes were styled to represent the March family's poverty. The film, which was nominated for and won multiple awards, is the third screen adaptation of the book and the first adaptation with sound. It follows two silent versions made in 1917 and 1918. It has also inspired multiple adaptations and commercial products, being compared favorably to other film adaptations of the novel. It received an Academy Award for Best Adaptation and was nominated for additional Academy Awards.",
+"wy": 1933,
+"score": 6,
+"rt": 115,
+"imdb": "tt0024264",
+"pd": "1933",
+"film": true,
+"poster": "posters/c/little-women-1933.jpg"
+},
+"waterloo bridge#1940": {
+"wt": "Waterloo Bridge (1940 film)",
+"qid": "Q1367668",
+"img": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Vivien_Leigh_Lucille_Watson_Waterloo_Bridge_1940.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+"desc": "1940 film by Mervyn LeRoy",
+"ext": "Waterloo Bridge is a 1940 American drama film as well as the remake of the 1931 pre-Code film of the same name, adapted by S. N. Behrman, Hans Rameau and George Froeschel, from the 1930 play Waterloo Bridge by Robert E. Sherwood. In an extended flashback narration, it recounts the story of a dancer and an army captain who meet by chance on Waterloo Bridge in London. The film was made by Metro-Goldwyn-Mayer, directed by Mervyn LeRoy and produced by Sidney Franklin and Mervyn LeRoy. The music is by Herbert Stothart and cinematography by Joseph Ruttenberg.\nThe film stars Robert Taylor and Vivien Leigh. It was a success at the box office and nominated for two Academy Awards: Best Music for Herbert Stothart and Best Cinematography. It was also considered a personal favorite by both Leigh and Taylor.\nIn 1956, it was remade again as Gaby, which stars Leslie Caron and John Kerr.",
+"wy": 1940,
+"score": 6,
+"rt": 108,
+"imdb": "tt0033238",
+"pd": "1940",
+"film": true,
+"poster": "posters/c/waterloo-bridge-1940.jpg"
+},
+"monkey business#1931": {
+"wt": "Monkey Business (1931 film)",
+"qid": "Q776964",
+"img": "https://upload.wikimedia.org/wikipedia/en/0/0a/Monkey_Business_%281931%29_film_poster.jpg",
+"desc": "1931 film starring the four Marx Brothers",
+"ext": "Monkey Business is a 1931 American pre-Code comedy film. It is the third of the Marx Brothers' released movies (Groucho, Harpo, Chico and Zeppo), and the first with an original screenplay rather than an adaptation of one of their Broadway shows. The film also features Thelma Todd, Harry Woods, Ruth Hall and Rockliffe Fellowes. It is directed by Norman Z. McLeod with screenplay by S. J. Perelman and Will B. Johnstone. It will enter the public domain on January 1, 2027 due to being published in 1931 and subsequently renewed in 1959.",
+"wy": 1931,
+"score": 6,
+"rt": 77,
+"imdb": "tt0022158",
+"pd": "1931",
+"film": true,
+"poster": "posters/c/monkey-business-1931.jpg",
+"poster_src": "https://en.wikipedia.org/wiki/File:Monkey_Business_(1931)_film_poster.jpg"
 }
 }
