@@ -22,19 +22,22 @@
     "year": 2011
   },
   "Fox through 1935": {
-    "year": 2015
+    "year": 2015,
+    "name": "Fox Studios through 1935, including Silent Sundays"
   },
   "GWTW": {
     "year": 2014
   },
   "Hitchcock and Others": {
-    "year": 2018
+    "year": 2018,
+    "name": "Hitchcock and Other Masters of Suspense, plus Frankenstein at 200"
   },
   "Jennifer Jones": {
     "year": 2010
   },
   "John Wayne": {
-    "year": 2009
+    "year": 2009,
+    "name": "John Wayne"
   },
   "Lauren Bacall": {
     "year": 2014
@@ -58,10 +61,12 @@
     "year": 2012
   },
   "Vienna": {
-    "year": 2016
+    "year": 2016,
+    "name": "Vienna and the Movies"
   },
   "lemmon": {
-    "year": 2001
+    "year": 2001,
+    "name": "Jack Lemmon Film Festival"
   },
   "Fall Follies": {
     "year": 2002,
@@ -90,7 +95,7 @@
     "name": "Dear Old Hollywood"
   },
   "Astaire 2024": {
-    "name": "Fred Astaire"
+    "name": "Fred Astaire 2024"
   },
   "bogart97": {
     "name": "Featuring Humphrey Bogart"
@@ -120,18 +125,132 @@
     "name": "MORE HOLLYWOOD MUSICALS 1940-1950"
   },
   "Hitchcock 2024": {
-    "name": "Hitchcock, The Master of Suspense"
+    "name": "Hitchcock, The Master of Suspense 2024"
   },
   "Hitchcock 2025": {
-    "name": "Hitchcock, The Master of Suspense"
+    "name": "Hitchcock, The Master of Suspense 2025"
   },
   "Hitchcock 2026": {
-    "name": "Hitchcock, The Master of Suspense"
+    "name": "Hitchcock, The Master of Suspense 2026"
   },
   "Ray2018": {
-    "name": "Satyajit Ray Festival"
+    "name": "Satyajit Ray Festival 2018"
   },
   "sata": {
-    "name": "Satyajit Ray Festival"
+    "name": "Satyajit Ray Festival 1999"
+  },
+  "summer99": {
+    "name": "Summer 1999"
+  },
+  "summer02": {
+    "name": "Summer 2002: Billy Wilder Remembered and Cary Grant, Part 3"
+  },
+  "holiday2001": {
+    "name": "British and Sherlock Holmes Films and \"It's a Wonderful Life\""
+  },
+  "holiday1999": {
+    "name": "Favorites: Fall 1999 Series"
+  },
+  "holiday2000": {
+    "name": "Loretta Young: Holiday 2000"
+  },
+  "horror2000": {
+    "name": "Horror Program"
+  },
+  "hitchcock2000": {
+    "name": "Alfred Hitchcock Film Festival"
+  },
+  "feb98": {
+    "name": "February 1998"
+  },
+  "Bogie and Audrey": {
+    "name": "Humphrey Bogart and Audrey Hepburn"
+  },
+  "Cary2015": {
+    "name": "Cary Grant, plus Ernst Lubitsch and Rouben Mamoulian"
+  },
+  "Summer 2007": {
+    "name": "Summer 2007, including Films Starring Fred Astaire"
+  },
+  "Summer 2015": {
+    "name": "Summer 2015: Forty Classics from the Golden Age, including Kurosawa in August"
+  },
+  "Lewton 2017": {
+    "name": "The Films of Val Lewton"
+  },
+  "Fall 2010": {
+    "name": "Fall 2010, featuring Film Noir"
+  },
+  "CG2002-1": {
+    "name": "Cary Grant ~ The Complete Films, Part I"
+  },
+  "cg2-2002": {
+    "name": "Cary Grant ~ The Complete Films, Part II"
+  },
+  "Fall2005": {
+    "name": "Fall 2005"
+  },
+  "FilmNoir": {
+    "name": "Film Noir and Pre-Code"
+  },
+  "bob-hope-2003": {
+    "name": "Bob Hope 100th Birthday Festival, plus Remembering Gregory Peck"
+  },
+  "fox2006": {
+    "name": "20th Century-Fox Film Festival"
+  },
+  "jstewart-2004": {
+    "name": "James Stewart Festival, also Great Detective Series and Classic Hollywood 1934-1938"
+  },
+  "ray2003": {
+    "name": "Satyajit Ray Film Festival"
+  },
+  "summer2000": {
+    "name": "Summer 2000"
+  },
+  "summer2003": {
+    "name": "Summer 2003"
+  },
+  "summer2004": {
+    "name": "Summer 2004: Sixty-one Classic Movies, including 10 with Ronald Reagan and 9 Silent Pictures"
+  },
+  "summer2006": {
+    "name": "Summer 2006, featuring Judy Garland and Mickey Rooney"
+  },
+  "summer2k1": {
+    "name": "Summer 2001"
+  },
+  "winter1999": {
+    "name": "Winter 1999"
+  },
+  "winter2001": {
+    "name": "Hollywood Musicals, 1929-1939"
+  },
+  "winter2006": {
+    "name": "Winter 2006"
+  },
+  "winter2k": {
+    "name": "Winter 2000"
+  },
+  "Brando": {
+    "name": "Marlon Brando: His First Decade in Films, plus Nine Musicals with Fred Astaire and Ginger Rogers"
+  },
+  "Bogie 2008": {
+    "name": "Humphrey Bogart, also Holiday Favorites"
+  },
+  "Hitch 2009": {
+    "name": "Hitchcock 2009"
+  },
+  "Astaire 2014": {
+    "name": "Fred Astaire 2014"
+  },
+  "Astaire 2025": {
+    "name": "Fred Astaire 2025"
+  },
+  "Kurosawa 2020": {
+    "name": "Akira Kurosawa Film Festival 2020"
+  },
+  "Kurosawa": {
+    "name": "Akira Kurosawa Film Festival 2010"
   }
 }
