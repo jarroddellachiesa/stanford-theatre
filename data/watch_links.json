@@ -93,6 +93,44 @@
    }
   }
  ],
+ "angel and badman": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/angel_and_the_badman",
+   "id": "angel_and_the_badman",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q645771 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 100,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Angel and the Badman",
+    "year": "1947"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/angelandthebadman1947",
+   "id": "angelandthebadman1947",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q645771 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 95,
+    "license": "",
+    "title": "Angel and the Badman",
+    "year": null
+   }
+  }
+ ],
  "animal crackers": [
   {
    "source": "Internet Archive",
@@ -188,6 +226,44 @@
    }
   }
  ],
+ "bat whispers": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/bw5558885",
+   "id": "bw5558885",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q3985804 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 84,
+    "license": "",
+    "title": "The Bat Whispers",
+    "year": "1930"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/THEBATWHISPERSstanard35mmVersion",
+   "id": "THEBATWHISPERSstanard35mmVersion",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q3985804 P724",
+    "collections": [
+     "feature_films_picfixer",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 85,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "THE BAT WHISPERS (standard 35mm Version)",
+    "year": null
+   }
+  }
+ ],
  "beat devil": [
   {
    "source": "Internet Archive",
@@ -225,6 +301,26 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Becky Sharp (1935)",
     "year": null
+   }
+  }
+ ],
+ "beloved rogue": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheBelovedRogue",
+   "id": "TheBelovedRogue",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1192504 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 98,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "The Beloved Rogue",
+    "year": "1927"
    }
   }
  ],
@@ -358,6 +454,21 @@
    }
   }
  ],
+ "bonnie and clyde": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=pPOmR-00Brk",
+   "id": "pPOmR-00Brk",
+   "evidence": {
+    "via": "Wikidata Q181776 P1651",
+    "minutes": 111,
+    "title": "Bonnie and Clyde",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
  "brief encounter": [
   {
    "source": "YouTube",
@@ -370,6 +481,45 @@
     "minutes": 104,
     "title": "Brief Encounter (1945)",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "broken blossoms": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/brokenblossoms1919",
+   "id": "brokenblossoms1919",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q905932 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 89,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "broken blossoms (1919)",
+    "year": null
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/BrokenBlossoms_201312",
+   "id": "BrokenBlossoms_201312",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q905932 P724",
+    "collections": [
+     "silenthalloffame",
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 88,
+    "license": "",
+    "title": "\"Broken Blossoms\" (1919) director D. W. Griffith, cinematographer Billy Bitzer",
+    "year": "1919"
    }
   }
  ],
@@ -529,6 +679,26 @@
    }
   }
  ],
+ "chicago": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/chicago-1927-1080p-blu-ray-remux-avc-flac-2-0-toa",
+   "id": "chicago-1927-1080p-blu-ray-remux-avc-flac-2-0-toa",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 103,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Chicago (1927)",
+    "year": "1927-12-27"
+   }
+  }
+ ],
  "citizen kane": [
   {
    "source": "YouTube",
@@ -588,6 +758,41 @@
     "via": "Wikidata Q1766802 P1651",
     "minutes": 105,
     "title": "Clash by Night",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "clash of wolves": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-clash-of-the-wolves",
+   "id": "silent-clash-of-the-wolves",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q2423566 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 74,
+    "license": "",
+    "title": "Clash of the Wolves",
+    "year": "1925-11-28"
+   }
+  }
+ ],
+ "cleopatra#1963": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=CRVTWcWIPP4",
+   "id": "CRVTWcWIPP4",
+   "evidence": {
+    "via": "Wikidata Q4430 P1651",
+    "minutes": 251,
+    "title": "Cleopatra (1963)",
     "channel": "YouTube Movies"
    }
   }
@@ -714,6 +919,26 @@
     "minutes": 130,
     "title": "David Copperfield",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "dawn patrol": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the-dawn-patrol_1930",
+   "id": "the-dawn-patrol_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 108,
+    "license": "",
+    "title": "The Dawn Patrol",
+    "year": "1930-08-20"
    }
   }
  ],
@@ -863,6 +1088,26 @@
    }
   }
  ],
+ "diary of lost girl": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/diary-of-a-lost-girl-1929-1527085599333",
+   "id": "diary-of-a-lost-girl-1929-1527085599333",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q569699 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 113,
+    "license": "",
+    "title": "Diary Of A Lost Girl (1929) ENG sub",
+    "year": "1929"
+   }
+  }
+ ],
  "dinner at eight": [
   {
    "source": "YouTube",
@@ -875,6 +1120,44 @@
     "minutes": 106,
     "title": "Dinner At Eight",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "dixiana": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Dixiana1930",
+   "id": "Dixiana1930",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q5284777 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 99,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Dixiana (1930)",
+    "year": null
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Dixiana",
+   "id": "Dixiana",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q5284777 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 85,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Dixiana",
+    "year": "1930"
    }
   }
  ],
@@ -928,6 +1211,26 @@
     "minutes": 76,
     "title": "Don't Bother to Knock",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "douglas fairbanks in robin hood": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/FairbanksRobinHood1922",
+   "id": "FairbanksRobinHood1922",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2159851 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 133,
+    "license": "",
+    "title": "Robin Hood",
+    "year": "1922"
    }
   }
  ],
@@ -1031,6 +1334,26 @@
    }
   }
  ],
+ "eternal love": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/eternal-love_1929",
+   "id": "eternal-love_1929",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 72,
+    "license": "",
+    "title": "Eternal Love",
+    "year": "1929-05-11"
+   }
+  }
+ ],
  "fathers little dividend": [
   {
    "source": "Internet Archive",
@@ -1090,6 +1413,26 @@
    }
   }
  ],
+ "fazil": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/fazil_1928",
+   "id": "fazil_1928",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 80,
+    "license": "",
+    "title": "Fazil",
+    "year": "1928-06-04"
+   }
+  }
+ ],
  "flight": [
   {
    "source": "Internet Archive",
@@ -1127,6 +1470,46 @@
     "license": "",
     "title": "Follow Thru",
     "year": "1930-09-27"
+   }
+  }
+ ],
+ "fool there was": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/A_Fool_There_Was",
+   "id": "A_Fool_There_Was",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q933724 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 66,
+    "license": "http://creativecommons.org/licenses/by/3.0/",
+    "title": "A Fool There Was",
+    "year": "1915"
+   }
+  }
+ ],
+ "foolish wives": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-foolish-wives",
+   "id": "silent-foolish-wives",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 143,
+    "license": "",
+    "title": "Foolish Wives",
+    "year": "1922"
    }
   }
  ],
@@ -1328,6 +1711,26 @@
    }
   }
  ],
+ "godless girl": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the-godless-girl_1929",
+   "id": "the-godless-girl_1929",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 128,
+    "license": "",
+    "title": "The Godless Girl",
+    "year": "1929-03-11"
+   }
+  }
+ ],
  "gone with wind": [
   {
    "source": "YouTube",
@@ -1391,6 +1794,80 @@
    }
   }
  ],
+ "great flamarion": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Great_Flamarion_1945",
+   "id": "Great_Flamarion_1945",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q794395 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 78,
+    "license": "http://creativecommons.org/licenses/by/3.0/",
+    "title": "The Great Flamarion",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/greatflamarionthe",
+   "id": "greatflamarionthe",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q794395 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 78,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Great Flamarion (1945) [P&M] 480p (830MB)",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/1945-the-great-flamarion-el-gran-flamarion-anthony-mann-leg",
+   "id": "1945-the-great-flamarion-el-gran-flamarion-anthony-mann-leg",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q794395 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 78,
+    "license": "",
+    "title": "1945 - The Great Flamarion - El gran Flamarion - Anthony Mann - Leg",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/1945-the-great-flamarion-el-gran-flamarion-anthony-mann-vo",
+   "id": "1945-the-great-flamarion-el-gran-flamarion-anthony-mann-vo",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q794395 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 78,
+    "license": "",
+    "title": "1945 - The Great Flamarion - El gran Flamarion - Anthony Mann - VO",
+    "year": "1945"
+   }
+  }
+ ],
  "great ziegfeld": [
   {
    "source": "YouTube",
@@ -1440,6 +1917,41 @@
     "license": "",
     "title": "Greed",
     "year": "1925-01-26"
+   }
+  }
+ ],
+ "grumpy": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/grumpy_1930",
+   "id": "grumpy_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 74,
+    "license": "",
+    "title": "Grumpy",
+    "year": "1930-08-01"
+   }
+  }
+ ],
+ "heaven knows mr allison": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=c4dpDNGQ7ng",
+   "id": "c4dpDNGQ7ng",
+   "evidence": {
+    "via": "Wikidata Q1196849 P1651",
+    "minutes": 106,
+    "title": "Heaven Knows, Mr. Allison",
+    "channel": "YouTube Movies"
    }
   }
  ],
@@ -1588,6 +2100,26 @@
    }
   }
  ],
+ "hollywood revue of 1929": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the-hollywood-revue-of-1929_1929",
+   "id": "the-hollywood-revue-of-1929_1929",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 118,
+    "license": "",
+    "title": "The Hollywood Revue of 1929",
+    "year": "1929-11-23"
+   }
+  }
+ ],
  "hot water": [
   {
    "source": "Internet Archive",
@@ -1677,6 +2209,26 @@
    }
   }
  ],
+ "iron mask": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheIronMask1929CompleteSilent101minVersion",
+   "id": "TheIronMask1929CompleteSilent101minVersion",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q738056 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 101,
+    "license": "",
+    "title": "The Iron Mask 1929 Complete  Silent  101min  Version",
+    "year": null
+   }
+  }
+ ],
  "it": [
   {
    "source": "Internet Archive",
@@ -1697,6 +2249,40 @@
    }
   }
  ],
+ "jailhouse rock": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=NdIGE88olzU",
+   "id": "NdIGE88olzU",
+   "evidence": {
+    "via": "Wikidata Q536342 P1651",
+    "minutes": 97,
+    "title": "Jailhouse Rock",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "jazz singer": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/jazzsinger_Title_1",
+   "id": "jazzsinger_Title_1",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q465087 P724",
+    "collections": [
+     "opensource_movies",
+     "community"
+    ],
+    "minutes": 88,
+    "license": "",
+    "title": "The Jazz Singer",
+    "year": null
+   }
+  }
+ ],
  "jezebel": [
   {
    "source": "YouTube",
@@ -1709,6 +2295,59 @@
     "minutes": 104,
     "title": "Jezebel",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "just around corner": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=aWcLjPq0Gu0",
+   "id": "aWcLjPq0Gu0",
+   "evidence": {
+    "via": "Wikidata Q3213652 P1651",
+    "minutes": 71,
+    "title": "Just Around the Corner",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "just imagine": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/just-imagine_1930",
+   "id": "just-imagine_1930",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1523560 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 109,
+    "license": "",
+    "title": "Just Imagine",
+    "year": "1930"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/JustImagine_97",
+   "id": "JustImagine_97",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1523560 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 108,
+    "license": "",
+    "title": "Just Imagine",
+    "year": "1930"
    }
   }
  ],
@@ -1801,6 +2440,82 @@
    }
   }
  ],
+ "last of mrs cheyney": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the.-last.of.-mrs.-cheyney.-1929.-dvdrip.-600-mb.h-264.-mp-4",
+   "id": "the.-last.of.-mrs.-cheyney.-1929.-dvdrip.-600-mb.h-264.-mp-4",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 94,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Last of Mrs. Cheyney (1929)",
+    "year": "1929-07-26"
+   }
+  }
+ ],
+ "last time i saw paris": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/last_time_i_saw_paris",
+   "id": "last_time_i_saw_paris",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1158191 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 116,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Last Time I Saw Paris, The",
+    "year": "1954"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/cco2_TheLastTimeISawParis",
+   "id": "cco2_TheLastTimeISawParis",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1158191 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 116,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "The Last Time I Saw Paris",
+    "year": "1954"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheLastTimeISawParis720p1954",
+   "id": "TheLastTimeISawParis720p1954",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1158191 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 116,
+    "license": "",
+    "title": "The Last Time I Saw Paris",
+    "year": "1954"
+   }
+  }
+ ],
  "lawrence of arabia": [
   {
    "source": "YouTube",
@@ -1813,6 +2528,26 @@
     "minutes": 227,
     "title": "Lawrence Of Arabia",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "lazybones": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-lazybones",
+   "id": "silent-lazybones",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q3344761 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 86,
+    "license": "",
+    "title": "Lazybones",
+    "year": "1925-11-06"
    }
   }
  ],
@@ -1863,6 +2598,26 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Life with Father",
     "year": "1947"
+   }
+  }
+ ],
+ "liliom#1930": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/liliom_1930",
+   "id": "liliom_1930",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "archive.org search: title + year",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 92,
+    "license": "",
+    "title": "Liliom",
+    "year": "1930-10-05"
    }
   }
  ],
@@ -1952,6 +2707,44 @@
    }
   }
  ],
+ "lodger#1927": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheLodgerAStoryOfTheLondonFog_579",
+   "id": "TheLodgerAStoryOfTheLondonFog_579",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q504961 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 71,
+    "license": "",
+    "title": "The Lodger: A Story of the London Fog",
+    "year": null
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheLodger-AStoryOfTheLondonFog",
+   "id": "TheLodger-AStoryOfTheLondonFog",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q504961 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 71,
+    "license": "",
+    "title": "The Lodger - A Story Of The London Fog",
+    "year": null
+   }
+  }
+ ],
  "long pants": [
   {
    "source": "Internet Archive",
@@ -1969,6 +2762,26 @@
     "license": "",
     "title": "Long Pants",
     "year": "1927-03-26"
+   }
+  }
+ ],
+ "lost world": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the.-lost.-world.-1925.1080p.-blu-ray.x-264-sadpanda",
+   "id": "the.-lost.-world.-1925.1080p.-blu-ray.x-264-sadpanda",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 104,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Lost World (1925)",
+    "year": "1925-02-08"
    }
   }
  ],
@@ -1992,6 +2805,26 @@
    }
   }
  ],
+ "love affair": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/LoveAffair",
+   "id": "LoveAffair",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1620069 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 87,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Love Affair",
+    "year": "1939"
+   }
+  }
+ ],
  "love parade": [
   {
    "source": "Internet Archive",
@@ -2009,6 +2842,66 @@
     "license": "",
     "title": "The Love Parade",
     "year": "1929"
+   }
+  }
+ ],
+ "lucky star": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/lucky-star_1929",
+   "id": "lucky-star_1929",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 100,
+    "license": "",
+    "title": "Lucky Star",
+    "year": "1929-08-18"
+   }
+  }
+ ],
+ "madam satan": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/madam-satan_1930",
+   "id": "madam-satan_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 116,
+    "license": "",
+    "title": "Madam Satan",
+    "year": "1930-09-20"
+   }
+  }
+ ],
+ "madame dubarry": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-madame-dubarry",
+   "id": "silent-madame-dubarry",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q480109 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 114,
+    "license": "",
+    "title": "Madame DuBarry",
+    "year": "1919-11-26"
    }
   }
  ],
@@ -2039,6 +2932,26 @@
     "minutes": 120,
     "title": "The Man Who Knew Too Much",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "man who laughs": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the-man-who-laughs-1928-1080p-blu-ray-x-265-ghost",
+   "id": "the-man-who-laughs-1928-1080p-blu-ray-x-265-ghost",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 110,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Man Who Laughs (1928)",
+    "year": "1928-04-27"
    }
   }
  ],
@@ -2221,6 +3134,26 @@
    }
   }
  ],
+ "mollycoddle": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-the-mollycoddle",
+   "id": "silent-the-mollycoddle",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q3988363 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 86,
+    "license": "",
+    "title": "The Mollycoddle",
+    "year": "1920-06-13"
+   }
+  }
+ ],
  "monte carlo": [
   {
    "source": "Internet Archive",
@@ -2388,6 +3321,26 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "My Man Godfrey (1936)",
     "year": null
+   }
+  }
+ ],
+ "mysterious lady": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the-mysterious-lady-1928",
+   "id": "the-mysterious-lady-1928",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 89,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Mysterious Lady (1928)",
+    "year": "1928-08-04"
    }
   }
  ],
@@ -2650,6 +3603,26 @@
    }
   }
  ],
+ "parisian love": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-parisian-love",
+   "id": "silent-parisian-love",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q4345133 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 62,
+    "license": "",
+    "title": "Parisian Love",
+    "year": "1925-08-01"
+   }
+  }
+ ],
  "patsy": [
   {
    "source": "Internet Archive",
@@ -2853,6 +3826,34 @@
    }
   }
  ],
+ "philosophers stone parash pathar": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=vUoLZhdgVWQ",
+   "id": "vUoLZhdgVWQ",
+   "evidence": {
+    "via": "Wikidata Q102438 P1651",
+    "minutes": 152,
+    "title": "Harry Potter and the Philosopher’s Stone",
+    "channel": "YouTube Movies"
+   }
+  },
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=-ojN9LOtYF4",
+   "id": "-ojN9LOtYF4",
+   "evidence": {
+    "via": "Wikidata Q102438 P1651",
+    "minutes": 152,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
  "pillow talk": [
   {
    "source": "YouTube",
@@ -2865,6 +3866,26 @@
     "minutes": 103,
     "title": "Pillow Talk",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "plastic age": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-the-plastic-age",
+   "id": "silent-the-plastic-age",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1547717 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 73,
+    "license": "",
+    "title": "The Plastic Age",
+    "year": "1925-12-15"
    }
   }
  ],
@@ -2885,6 +3906,26 @@
     "license": "",
     "title": "The Pleasure Garden",
     "year": "1925"
+   }
+  }
+ ],
+ "pot o gold": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/pot_o_gold",
+   "id": "pot_o_gold",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1129189 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 86,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Pot o' Gold",
+    "year": "1941"
    }
   }
  ],
@@ -2956,6 +3997,41 @@
     "via": "Wikidata Q940014 P1651",
     "minutes": 113,
     "title": "Pride And Prejudice (1940)",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "prisoner of zenda#1922": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-the-prisoner-of-zenda",
+   "id": "silent-the-prisoner-of-zenda",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q179554 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 113,
+    "license": "",
+    "title": "The Prisoner of Zenda",
+    "year": "1922-09-11"
+   }
+  }
+ ],
+ "private life of sherlock holmes": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=1pWGauEgQkU",
+   "id": "1pWGauEgQkU",
+   "evidence": {
+    "via": "Wikidata Q604180 P1651",
+    "minutes": 125,
+    "title": "The Private Life of Sherlock Holmes",
     "channel": "YouTube Movies"
    }
   }
@@ -3173,6 +4249,26 @@
    }
   }
  ],
+ "regeneration": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-the-regeneration",
+   "id": "silent-the-regeneration",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q727334 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 72,
+    "license": "",
+    "title": "The Regeneration",
+    "year": "1915-09-13"
+   }
+  }
+ ],
  "riders of purple sage": [
   {
    "source": "Internet Archive",
@@ -3219,6 +4315,41 @@
     "via": "Wikidata Q1470997 P1651",
     "minutes": 91,
     "title": "River Of No Return",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "road to bali": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheRoadToBali",
+   "id": "TheRoadToBali",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q928126 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 91,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Road To Bali",
+    "year": "1952"
+   }
+  }
+ ],
+ "robe": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=mIC_wJmy0y0",
+   "id": "mIC_wJmy0y0",
+   "evidence": {
+    "via": "Wikidata Q1139023 P1651",
+    "minutes": 133,
+    "title": "The Robe",
     "channel": "YouTube Movies"
    }
   }
@@ -3333,6 +4464,75 @@
     "license": "",
     "title": "Safety Last!",
     "year": "1923-04-01"
+   }
+  }
+ ],
+ "santa fe trail": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Santa_Fe_Trail_movie",
+   "id": "Santa_Fe_Trail_movie",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1598010 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 110,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Santa Fe Trail",
+    "year": "1940"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Santa_Fe_Trail",
+   "id": "Santa_Fe_Trail",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1598010 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 109,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Santa Fe Trail",
+    "year": "1940"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/SantaFeTrail1940",
+   "id": "SantaFeTrail1940",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1598010 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 109,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Santa Fe Trail (1940)",
+    "year": null
+   }
+  },
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=HEzEgxjB5s4",
+   "id": "HEzEgxjB5s4",
+   "evidence": {
+    "via": "Wikidata Q1598010 P1651",
+    "minutes": 109,
+    "title": "Santa Fe Trail",
+    "channel": "YouTube Movies"
    }
   }
  ],
@@ -3499,6 +4699,64 @@
    }
   }
  ],
+ "second chorus": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/second_chorus",
+   "id": "second_chorus",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q948153 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 84,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Second Chorus",
+    "year": "1940"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/second_chorus_1940",
+   "id": "second_chorus_1940",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q948153 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 84,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Second Chorus",
+    "year": "1940"
+   }
+  }
+ ],
+ "sensation seekers": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/SensationSeekers1927",
+   "id": "SensationSeekers1927",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q19867454 P724",
+    "collections": [
+     "TheVideoCellarCollection",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 44,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Sensation Seekers",
+    "year": "1927"
+   }
+  }
+ ],
  "seven chances": [
   {
    "source": "Internet Archive",
@@ -3534,7 +4792,7 @@
    }
   }
  ],
- "seventh heaven": [
+ "seventh heaven#1927": [
   {
    "source": "Internet Archive",
    "url": "https://archive.org/details/7th-heaven",
@@ -3587,6 +4845,26 @@
    }
   }
  ],
+ "soul fire": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-soul-fire",
+   "id": "silent-soul-fire",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q7564150 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 71,
+    "license": "",
+    "title": "Soul-Fire",
+    "year": "1925-05-31"
+   }
+  }
+ ],
  "southerner": [
   {
    "source": "Internet Archive",
@@ -3607,6 +4885,21 @@
    }
   }
  ],
+ "spartacus": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=T0Va8AgPS4k",
+   "id": "T0Va8AgPS4k",
+   "evidence": {
+    "via": "Wikidata Q108297 P1651",
+    "minutes": 197,
+    "title": "Spartacus",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
  "speedy": [
   {
    "source": "Internet Archive",
@@ -3624,6 +4917,26 @@
     "license": "",
     "title": "Speedy",
     "year": "1928-04-07"
+   }
+  }
+ ],
+ "sporting venus": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-the-sporting-venus",
+   "id": "silent-the-sporting-venus",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q7766033 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 65,
+    "license": "",
+    "title": "The Sporting Venus",
+    "year": "1925-04-13"
    }
   }
  ],
@@ -3847,6 +5160,26 @@
    }
   }
  ],
+ "street angel": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/street-angel-1928",
+   "id": "street-angel-1928",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 101,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Street Angel (1928)",
+    "year": "1928-04-09"
+   }
+  }
+ ],
  "submarine": [
   {
    "source": "Internet Archive",
@@ -3864,6 +5197,26 @@
     "license": "",
     "title": "Submarine",
     "year": "1928-11-12"
+   }
+  }
+ ],
+ "sunnyside up": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/SunnysideUp_201512",
+   "id": "SunnysideUp_201512",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q7640731 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 122,
+    "license": "",
+    "title": "Sunnyside Up",
+    "year": "1929"
    }
   }
  ],
@@ -3898,6 +5251,26 @@
     "minutes": 220,
     "title": "The Ten Commandments (1956)",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "ten commandments#1923": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/ptp_the-ten-commandments_cecil-b-demille_m2ts_bd50_1080p_221534",
+   "id": "ptp_the-ten-commandments_cecil-b-demille_m2ts_bd50_1080p_221534",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1217715 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 136,
+    "license": "",
+    "title": "The Ten Commandments / Cecil B. DeMille / Blu-ray / BD50 / m2ts",
+    "year": "1923"
    }
   }
  ],
@@ -3987,6 +5360,21 @@
     "via": "Wikidata Q1217787 P1651",
     "minutes": 98,
     "title": "Die Zeitmaschine",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "titanic": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=m48YAVtVCpc",
+   "id": "m48YAVtVCpc",
+   "evidence": {
+    "via": "Wikidata Q1197729 P1651",
+    "minutes": 98,
+    "title": "Titanic",
     "channel": "YouTube Movies"
    }
   }
@@ -4091,6 +5479,46 @@
    }
   }
  ],
+ "up river": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/up-the-river_1930",
+   "id": "up-the-river_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 85,
+    "license": "",
+    "title": "Up the River",
+    "year": "1930-10-12"
+   }
+  }
+ ],
+ "upstream": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/upstream_1927",
+   "id": "upstream_1927",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 57,
+    "license": "",
+    "title": "Upstream",
+    "year": "1927-01-30"
+   }
+  }
+ ],
  "vagabond king": [
   {
    "source": "Internet Archive",
@@ -4182,6 +5610,26 @@
    }
   }
  ],
+ "when clouds roll by": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-when-the-clouds-roll-by",
+   "id": "silent-when-the-clouds-roll-by",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q5534710 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 85,
+    "license": "",
+    "title": "When the Clouds Roll by",
+    "year": "1919-12-28"
+   }
+  }
+ ],
  "white christmas": [
   {
    "source": "YouTube",
@@ -4194,6 +5642,26 @@
     "minutes": 120,
     "title": "White Christmas",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "white sister": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/ptp_the-white-sister_henry-king_dvd_x264_mkv_716x480_252423",
+   "id": "ptp_the-white-sister_henry-king_dvd_x264_mkv_716x480_252423",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q3015529 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 135,
+    "license": "",
+    "title": "The White Sister / DVD / x264 / MKV / 716x480 / Warner Archive Collection",
+    "year": "1923"
    }
   }
  ],
@@ -4298,6 +5766,26 @@
     "license": "https://creativecommons.org/publicdomain/mark/1.0/",
     "title": "A Woman Of Affairs (1928)",
     "year": "1928-12-15"
+   }
+  }
+ ],
+ "young man of manhattan": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/young-man-of-manhattan_1930",
+   "id": "young-man-of-manhattan_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 82,
+    "license": "",
+    "title": "Young Man of Manhattan",
+    "year": "1930-05-17"
    }
   }
  ],
