@@ -36,7 +36,7 @@ for k in keys:
         if NK(p['title'])==b and (any(abs(a-c)<=1 for a in _fy(k) for c in p['years']) or not _fy(k)):  # no festival year: title match only
             people.append(k); PWHY[k]=p['why']+' '+p['qid']; break
 out=[]
-MINRUNS=3  # also every festival film with at least this many runs
+MINRUNS=2  # also every festival film with at least this many runs
 many=[k for k in keys if nr(k)>=MINRUNS]
 for k in dict.fromkeys(top+recent+keep+people+many):
     yr=int(k.split('#')[1]) if '#' in k else (Y[k].most_common(1)[0][0] if Y[k] else None)

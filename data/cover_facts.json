@@ -799,7 +799,7 @@
 "Based on Animal Crackers (1928 musical)."
 ]
 },
-"around world in 80 days": {
+"around world in eighty days": {
 "loc": [
 "Madrid",
 "Japan",
@@ -4940,6 +4940,1535 @@
 "trivia": []
 },
 "long pants": {
+"loc": [],
+"trivia": []
+},
+"raffles": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Sound."
+]
+},
+"her sister from paris": {
+"loc": [],
+"trivia": []
+},
+"merry widow#1925": {
+"loc": [],
+"trivia": [
+"Based on The Merry Widow (operetta composed by Franz Lehár, libretto by Viktor Léon and Leo Stein)."
+]
+},
+"what happened to jones": {
+"loc": [],
+"trivia": [
+"Based on What Happened to Jones (play by George Broadhurst)."
+]
+},
+"gold rush": {
+"loc": [
+"Colorado"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Original Dramatic or Comedy Score; Academy Award for Best Sound."
+]
+},
+"whole towns talking": {
+"loc": [],
+"trivia": []
+},
+"faust": {
+"loc": [],
+"trivia": []
+},
+"it": {
+"loc": [
+"New York City"
+],
+"trivia": []
+},
+"jesse james": {
+"loc": [],
+"trivia": []
+},
+"actress": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Costume Design, Black-and-White."
+]
+},
+"woman of affairs": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Writing."
+]
+},
+"shopworn angel": {
+"loc": [],
+"trivia": []
+},
+"broadway melody": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Picture.",
+"Also nominated for: Academy Award for Best Actress; Academy Award for Best Director."
+]
+},
+"saturday night kid": {
+"loc": [],
+"trivia": []
+},
+"glorifying american girl": {
+"loc": [],
+"trivia": []
+},
+"anna christie": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Actress; Academy Award for Best Director; Academy Award for Best Cinematography.",
+"Based on Anna Christie (1921 play written by Eugene O'Neill)."
+]
+},
+"city girl": {
+"loc": [
+"Oregon"
+],
+"trivia": []
+},
+"all quiet on western front": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Picture.",
+"Won the Academy Award for Best Director.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Cinematography; Academy Award for Best Writing.",
+"Based on All Quiet on the Western Front (1929 novel by Erich Maria Remarque)."
+]
+},
+"way out west": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Score, Adaptation or Treatment."
+]
+},
+"sea wolf": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Special Effects.",
+"Based on The Sea-Wolf (novel by Jack London)."
+]
+},
+"little caesar": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Writing, Adapted Screenplay."
+]
+},
+"tarnished lady": {
+"loc": [],
+"trivia": []
+},
+"tabu": {
+"loc": [
+"Tahiti"
+],
+"trivia": [
+"Won the Academy Award for Best Cinematography.",
+"Selected for the National Board of Review: Top Ten Films."
+]
+},
+"girls about town": {
+"loc": [],
+"trivia": []
+},
+"private lives": {
+"loc": [],
+"trivia": []
+},
+"big parade": {
+"loc": [],
+"trivia": []
+},
+"arrowsmith": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Cinematography; Academy Award for Best Writing, Adapted Screenplay; Academy Award for Best Picture; Academy Award for Best Production Design."
+]
+},
+"rich are always with us": {
+"loc": [],
+"trivia": []
+},
+"merrily we go to hell": {
+"loc": [],
+"trivia": []
+},
+"impatient maiden": {
+"loc": [],
+"trivia": []
+},
+"dark horse": {
+"loc": [],
+"trivia": []
+},
+"red headed woman": {
+"loc": [],
+"trivia": []
+},
+"rebecca of sunnybrook farm": {
+"loc": [],
+"trivia": []
+},
+"doctor x": {
+"loc": [],
+"trivia": []
+},
+"blessed event": {
+"loc": [],
+"trivia": []
+},
+"smilin through": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Picture."
+]
+},
+"big broadcast": {
+"loc": [],
+"trivia": []
+},
+"i am fugitive from chain gang": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films.",
+"Won the National Board of Review Award for Best Film.",
+"Also nominated for: Academy Award for Best Actor; Academy Award for Best Picture; Academy Award for Best Sound."
+]
+},
+"lawyer man": {
+"loc": [],
+"trivia": []
+},
+"cynara": {
+"loc": [],
+"trivia": []
+},
+"woman accused": {
+"loc": [],
+"trivia": []
+},
+"cavalcade": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Picture.",
+"Won the Academy Award for Best Director.",
+"Won the Academy Award for Best Production Design.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Actress."
+]
+},
+"zoo in budapest": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films."
+]
+},
+"kiss before mirror": {
+"loc": [],
+"trivia": []
+},
+"pied piper": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Actor; Academy Award for Best Cinematography, Black-and-White.",
+"Based on Pied Piper (novel by Nevil Shute)."
+]
+},
+"too much harmony": {
+"loc": [],
+"trivia": []
+},
+"power and glory": {
+"loc": [],
+"trivia": []
+},
+"bombshell": {
+"loc": [],
+"trivia": [
+"Based on Bombshell (1933 play by Caroline Francke and Mack Crane)."
+]
+},
+"sons of desert": {
+"loc": [],
+"trivia": []
+},
+"jimmy gent": {
+"loc": [],
+"trivia": []
+},
+"were not dressing": {
+"loc": [],
+"trivia": [
+"Based on The Admirable Crichton (comic stage play written by J. M. Barrie)."
+]
+},
+"viva villa": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Writing, Adapted Screenplay; Academy Award for Best Sound."
+]
+},
+"murder at vanities": {
+"loc": [],
+"trivia": []
+},
+"here comes groom": {
+"loc": [],
+"trivia": []
+},
+"house of rothschild": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Picture."
+]
+},
+"caravan": {
+"loc": [],
+"trivia": []
+},
+"clive of india": {
+"loc": [],
+"trivia": []
+},
+"gold diggers of 1935": {
+"loc": [],
+"trivia": []
+},
+"our daily bread": {
+"loc": [],
+"trivia": []
+},
+"naughty marietta": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Sound.",
+"Also nominated for: Academy Award for Best Picture.",
+"Based on Naughty Marietta (comic opera in two acts by Victor Herbert)."
+]
+},
+"charlie chan in egypt": {
+"loc": [],
+"trivia": [
+"Based on Charlie Chan (fictional character)."
+]
+},
+"hands across table": {
+"loc": [],
+"trivia": []
+},
+"magnificent obsession": {
+"loc": [],
+"trivia": []
+},
+"under two flags": {
+"loc": [
+"California",
+"Arizona"
+],
+"trivia": [
+"Based on Under Two Flags (novel by Ouida)."
+]
+},
+"moons our home": {
+"loc": [],
+"trivia": []
+},
+"princess comes across": {
+"loc": [],
+"trivia": []
+},
+"suzy": {
+"loc": [],
+"trivia": []
+},
+"great ziegfeld": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Picture.",
+"Won the Academy Award for Best Actress.",
+"Also nominated for: Academy Award for Best Director; Academy Award for Best Story; Academy Award for Best Film Editing; Academy Award for Best Production Design."
+]
+},
+"pigskin parade": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Supporting Actor."
+]
+},
+"charge of light brigade": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Score, Adaptation or Treatment; Academy Award for Best Sound.",
+"Based on Charge of the Light Brigade (1854 charge of British light cavalry led by Lord Cardigan against Russian forces)."
+]
+},
+"tarzan escapes": {
+"loc": [],
+"trivia": []
+},
+"born to dance": {
+"loc": [],
+"trivia": []
+},
+"you only live once": {
+"loc": [],
+"trivia": []
+},
+"man who could work miracles": {
+"loc": [],
+"trivia": [
+"Based on The Man Who Could Work Miracles (short story by H. G. Wells)."
+]
+},
+"charlie chan at olympics": {
+"loc": [],
+"trivia": [
+"Based on Charlie Chan (fictional character)."
+]
+},
+"captains courageous": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Actor.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Film Editing; Academy Award for Best Writing, Adapted Screenplay.",
+"Based on Captains Courageous (1897 novel by Rudyard Kipling)."
+]
+},
+"wee willie winkie": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Production Design."
+]
+},
+"artists and models": {
+"loc": [],
+"trivia": []
+},
+"broadway melody of 1938": {
+"loc": [],
+"trivia": []
+},
+"varsity show": {
+"loc": [],
+"trivia": []
+},
+"nothing sacred": {
+"loc": [],
+"trivia": []
+},
+"youre sweetheart": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Production Design."
+]
+},
+"in old chicago": {
+"loc": [
+"Chicago"
+],
+"trivia": [
+"Won the Academy Award for Best Supporting Actress.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Story; Academy Award for Best Score, Adaptation or Treatment; Academy Award for Best Sound."
+]
+},
+"little miss broadway": {
+"loc": [],
+"trivia": []
+},
+"hold that co ed": {
+"loc": [],
+"trivia": []
+},
+"boys town": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Actor.",
+"Won the Academy Award for Best Story.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Director; Academy Award for Best Writing, Adapted Screenplay."
+]
+},
+"great waltz": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Cinematography.",
+"Also nominated for: Academy Award for Best Supporting Actress; Academy Award for Best Film Editing."
+]
+},
+"intolerance": {
+"loc": [],
+"trivia": []
+},
+"great man votes": {
+"loc": [],
+"trivia": []
+},
+"union pacific": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Special Effects."
+]
+},
+"young mr lincoln": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Story."
+]
+},
+"calling dr kildare": {
+"loc": [],
+"trivia": []
+},
+"andy hardy gets spring fever": {
+"loc": [],
+"trivia": []
+},
+"stanley and livingstone": {
+"loc": [
+"Tanzania"
+],
+"trivia": []
+},
+"in name only": {
+"loc": [],
+"trivia": []
+},
+"rains came": {
+"loc": [
+"San Diego"
+],
+"trivia": [
+"Won the Academy Award for Best Special Effects.",
+"Also nominated for: Academy Award for Best Cinematography, Black-and-White; Academy Award for Best Film Editing; Academy Award for Best Production Design; Academy Award for Best Original Score; and 1 more."
+]
+},
+"at circus": {
+"loc": [],
+"trivia": []
+},
+"drums along mohawk": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Supporting Actress; Academy Award for Best Cinematography, Color.",
+"Based on Drums Along the Mohawk (1936 novel by Walter D. Edmonds)."
+]
+},
+"grapes of wrath": {
+"loc": [
+"California",
+"New Mexico",
+"Arizona"
+],
+"trivia": [
+"Won the Academy Award for Best Supporting Actress.",
+"Won the Academy Award for Best Director.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Won the National Board of Review Award for Best Film.",
+"Also nominated for: Academy Award for Best Actor; Academy Award for Best Film Editing; Academy Award for Best Writing, Adapted Screenplay; Academy Award for Best Picture; and 1 more.",
+"Based on The Grapes of Wrath (1939 novel by John Steinbeck)."
+]
+},
+"farmers daughter": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Actress.",
+"Also nominated for: Academy Award for Best Supporting Actor.",
+"Based on Juurakon Hulda (play by Hella Wuolijoki)."
+]
+},
+"light that failed": {
+"loc": [
+"New Mexico"
+],
+"trivia": [
+"Based on The Light That Failed (novel by Rudyard Kipling)."
+]
+},
+"brother orchid": {
+"loc": [],
+"trivia": []
+},
+"rhythm on river": {
+"loc": [],
+"trivia": []
+},
+"lucky partners": {
+"loc": [],
+"trivia": [
+"Based on Good Luck (1935 film by Sacha Guitry)."
+]
+},
+"spring parade": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Cinematography, Black-and-White; Academy Award for Best Score, Adaptation or Treatment; Academy Award for Best Sound."
+]
+},
+"mr and mrs smith": {
+"loc": [],
+"trivia": []
+},
+"tobacco road": {
+"loc": [],
+"trivia": [
+"Based on Tobacco Road (1932 novel by Erskine Caldwell)."
+]
+},
+"big store": {
+"loc": [
+"Philadelphia"
+],
+"trivia": []
+},
+"sergeant york": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Actor.",
+"Won the Academy Award for Best Film Editing.",
+"Also nominated for: Academy Award for Best Supporting Actress; Academy Award for Best Supporting Actor; Academy Award for Best Director; Academy Award for Best Cinematography, Black-and-White; and 5 more."
+]
+},
+"babes on broadway": {
+"loc": [],
+"trivia": []
+},
+"two faced woman": {
+"loc": [],
+"trivia": []
+},
+"all through night": {
+"loc": [],
+"trivia": []
+},
+"roxie hart": {
+"loc": [],
+"trivia": [
+"Based on Chicago (1926 play by Maurine Dallas Watkins)."
+]
+},
+"falcon takes over": {
+"loc": [],
+"trivia": [
+"Based on Farewell, My Lovely (novel by Raymond Chandler)."
+]
+},
+"springtime in rockies": {
+"loc": [],
+"trivia": []
+},
+"black swan": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Cinematography, Color.",
+"Also nominated for: Academy Award for Best Original Dramatic or Comedy Score; Academy Award for Best Special Effects.",
+"Based on The Black Swan (1932 novel by Rafael Sabatini)."
+]
+},
+"once upon honeymoon": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Sound."
+]
+},
+"keeper of flame": {
+"loc": [],
+"trivia": []
+},
+"journey into fear": {
+"loc": [],
+"trivia": [
+"Based on Journey into Fear (novel by Eric Ambler)."
+]
+},
+"mr lucky": {
+"loc": [
+"New York City"
+],
+"trivia": []
+},
+"riding high": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Sound."
+]
+},
+"once upon time": {
+"loc": [],
+"trivia": []
+},
+"song of open road": {
+"loc": [
+"California"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Original Musical Score."
+]
+},
+"ill be seeing you": {
+"loc": [],
+"trivia": []
+},
+"without love": {
+"loc": [],
+"trivia": []
+},
+"bell for adano": {
+"loc": [],
+"trivia": []
+},
+"rhapsody in blue": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Original Musical Score; Academy Award for Best Sound."
+]
+},
+"anchors aweigh": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Original Musical Score.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Actor; Academy Award for Best Cinematography, Color."
+]
+},
+"dolly sisters": {
+"loc": [],
+"trivia": []
+},
+"night in casablanca": {
+"loc": [
+"California"
+],
+"trivia": []
+},
+"stranger": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Story."
+]
+},
+"strange love of martha ivers": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Story."
+]
+},
+"to each his own": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Actress.",
+"Also nominated for: Academy Award for Best Story."
+]
+},
+"three little girls in blue": {
+"loc": [],
+"trivia": []
+},
+"margie": {
+"loc": [],
+"trivia": []
+},
+"dead reckoning": {
+"loc": [],
+"trivia": []
+},
+"till clouds roll by": {
+"loc": [],
+"trivia": []
+},
+"forever amber": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Original Dramatic or Comedy Score.",
+"Based on Forever Amber (1944 novel by Kathleen Winsor)."
+]
+},
+"life with father": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Actor; Academy Award for Best Cinematography, Color; Academy Award for Best Art Direction, Color; Academy Award for Best Original Dramatic or Comedy Score.",
+"Based on Life with Father (1939 play by Howard Lindsay and Russel Crouse)."
+]
+},
+"big clock": {
+"loc": [],
+"trivia": [
+"Based on The Big Clock (novel by Kenneth Fearing)."
+]
+},
+"up in central park": {
+"loc": [],
+"trivia": [
+"Based on Up in Central Park (1945 musical)."
+]
+},
+"date with judy": {
+"loc": [],
+"trivia": []
+},
+"knock on any door": {
+"loc": [],
+"trivia": []
+},
+"take me out to ball game": {
+"loc": [],
+"trivia": []
+},
+"barkleys of broadway": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Cinematography, Color."
+]
+},
+"fountainhead": {
+"loc": [],
+"trivia": [
+"Based on The Fountainhead (novel by Ayn Rand)."
+]
+},
+"caught": {
+"loc": [],
+"trivia": []
+},
+"beyond forest": {
+"loc": [
+"Chicago"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Original Dramatic or Comedy Score."
+]
+},
+"they live by night": {
+"loc": [
+"Los Angeles"
+],
+"trivia": [
+"Based on Thieves Like Us (1937 novel by Edward Anderson)."
+]
+},
+"whirlpool": {
+"loc": [],
+"trivia": []
+},
+"phantom of opera#1943": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Cinematography, Color.",
+"Won the Academy Award for Best Art Direction, Color.",
+"Also nominated for: Academy Award for Best Original Musical Score; Academy Award for Best Sound.",
+"Based on The Phantom of the Opera (1910 novel by Gaston Leroux)."
+]
+},
+"on riviera": {
+"loc": [],
+"trivia": [
+"Won the Golden Globe Award for Best Actor – Motion Picture Musical or Comedy.",
+"Also nominated for: Academy Award for Best Art Direction, Color; Academy Award for Best Original Musical Score."
+]
+},
+"belles on their toes": {
+"loc": [
+"Santa Monica"
+],
+"trivia": [
+"Based on Belles on Their Toes (book by Ernestine Gilbreth Carey)."
+]
+},
+"ruby gentry": {
+"loc": [],
+"trivia": []
+},
+"invaders from mars": {
+"loc": [],
+"trivia": []
+},
+"peter pan": {
+"loc": [],
+"trivia": [
+"Based on Peter Pan (play and novel by James Matthew Barrie)."
+]
+},
+"stalag 17": {
+"loc": [
+"Woodland Hills"
+],
+"trivia": [
+"Won the Academy Award for Best Actor.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Supporting Actor; Academy Award for Best Director.",
+"Based on Stalag 17 (Broadway Show – Play)."
+]
+},
+"written on wind": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Supporting Actress.",
+"Also nominated for: Academy Award for Best Supporting Actor.",
+"Based on Written on the Wind (1946 novel)."
+]
+},
+"spirit of st louis": {
+"loc": [
+"Paris",
+"San Diego"
+],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Special Effects.",
+"Based on The Spirit of St. Louis (autobiographical work by Charles Lindbergh)."
+]
+},
+"peyton place": {
+"loc": [
+"Maine"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Picture; Academy Award for Best Supporting Actress; Academy Award for Best Supporting Actor; Academy Award for Best Actress; and 3 more.",
+"Based on Peyton Place (1956 novel by Grace Metalious)."
+]
+},
+"long hot summer": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films."
+]
+},
+"houseboat": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Writing, Original Screenplay."
+]
+},
+"south pacific": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Sound.",
+"Also nominated for: Academy Award for Best Cinematography, Color; Academy Award for Best Original Musical Score.",
+"Based on South Pacific (1949 musical by Richard Rodgers, Oscar Hammerstein II, and Joshua Logan).",
+"Based on Tales of the South Pacific (1947 novel by James A. Michener)."
+]
+},
+"operation petticoat": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Writing, Original Screenplay."
+]
+},
+"hells angels": {
+"loc": [
+"Sunset Las Palmas Studios"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Cinematography."
+]
+},
+"broadway bill": {
+"loc": [],
+"trivia": []
+},
+"divide and conquer": {
+"loc": [],
+"trivia": []
+},
+"battle of britain": {
+"loc": [],
+"trivia": []
+},
+"here is germany": {
+"loc": [],
+"trivia": []
+},
+"number 17 number seventeen": {
+"loc": [],
+"trivia": []
+},
+"love": {
+"loc": [],
+"trivia": [
+"Based on Anna Karenina (1877 novel by Leo Tolstoy)."
+]
+},
+"dr jack": {
+"loc": [],
+"trivia": []
+},
+"royal family of broadway": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Actor."
+]
+},
+"condemned": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Actor."
+]
+},
+"bulldog drummond": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Actor; Academy Award for Best Production Design."
+]
+},
+"lili": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Original Dramatic or Comedy Score.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Actress; Academy Award for Best Director; Academy Award for Best Cinematography, Color; Academy Award for Best Writing, Adapted Screenplay; and 1 more."
+]
+},
+"whirl of life": {
+"loc": [],
+"trivia": []
+},
+"doctors dilemma": {
+"loc": [],
+"trivia": []
+},
+"murder on orient express": {
+"loc": [
+"Istanbul",
+"Turkey"
+],
+"trivia": [
+"Won the Academy Award for Best Supporting Actress.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Actor; Academy Award for Best Cinematography; Academy Award for Best Writing, Adapted Screenplay; Academy Award for Best Costume Design; and 1 more.",
+"Based on Murder on the Orient Express (1934 novel by Agatha Christie)."
+]
+},
+"penguin pool murder": {
+"loc": [],
+"trivia": []
+},
+"gone to earth": {
+"loc": [],
+"trivia": [
+"Based on Gone to Earth (1917 novel by Mary Webb)."
+]
+},
+"paris when it sizzles": {
+"loc": [
+"Paris"
+],
+"trivia": []
+},
+"two for road": {
+"loc": [
+"Paris",
+"Saint-Tropez",
+"Nice"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Writing, Original Screenplay."
+]
+},
+"bridge on river kwai": {
+"loc": [
+"United Kingdom"
+],
+"trivia": [
+"Won the Academy Award for Best Picture.",
+"Won the Academy Award for Best Actor.",
+"Won the Academy Award for Best Director.",
+"Won the Academy Award for Best Cinematography.",
+"Won the Academy Award for Best Film Editing.",
+"Won the Academy Award for Best Writing, Adapted Screenplay.",
+"Won the Academy Award for Best Score, Adaptation or Treatment.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Won the National Board of Review Award for Best Film.",
+"Also nominated for: Academy Award for Best Supporting Actor."
+]
+},
+"lavender hill mob": {
+"loc": [
+"Paris"
+],
+"trivia": [
+"Won the Academy Award for Best Writing, Original Screenplay.",
+"Won the BAFTA Award for Best British Film.",
+"Also nominated for: Academy Award for Best Actor; BAFTA Award for Best Film; Directors Guild of America Award for Outstanding Directing – Feature Film."
+]
+},
+"man in white suit": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Writing, Adapted Screenplay."
+]
+},
+"red shoes": {
+"loc": [
+"Monaco",
+"Paris",
+"Pinewood Studios"
+],
+"trivia": [
+"Won the Academy Award for Best Art Direction, Color.",
+"Won the Academy Award for Best Original Dramatic or Comedy Score.",
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Story; Academy Award for Best Film Editing.",
+"Based on The Red Shoes (short story by Hans Christian Andersen)."
+]
+},
+"black narcissus": {
+"loc": [
+"Pinewood Studios"
+],
+"trivia": [
+"Won the Academy Award for Best Production Design.",
+"Won the Academy Award for Best Cinematography, Color.",
+"Won the Academy Award for Best Art Direction, Color.",
+"Based on Black Narcissus (novel by Rumer Godden)."
+]
+},
+"ace in hole": {
+"loc": [
+"New Mexico"
+],
+"trivia": [
+"Selected for the National Film Registry.",
+"Also nominated for: Academy Award for Best Writing, Original Screenplay; Golden Lion."
+]
+},
+"avanti": {
+"loc": [],
+"trivia": []
+},
+"nancy goes to rio": {
+"loc": [],
+"trivia": []
+},
+"tiger shark": {
+"loc": [
+"Hawaii",
+"San Diego"
+],
+"trivia": []
+},
+"mouthpiece": {
+"loc": [],
+"trivia": []
+},
+"public enemy": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Story."
+]
+},
+"beauty and boss": {
+"loc": [],
+"trivia": []
+},
+"ivanhoe": {
+"loc": [
+"Doune Castle"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Picture; Academy Award for Best Cinematography, Color; Academy Award for Best Original Dramatic or Comedy Score; Golden Globe Award for Best Film Promoting International Understanding.",
+"Based on Ivanhoe (1819 novel by Walter Scott)."
+]
+},
+"lady from shanghai": {
+"loc": [
+"San Francisco",
+"New York City"
+],
+"trivia": []
+},
+"miss sadie thompson": {
+"loc": [
+"Hawaii"
+],
+"trivia": []
+},
+"barefoot contessa": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Supporting Actor.",
+"Also nominated for: Academy Award for Best Writing, Original Screenplay."
+]
+},
+"kiss me deadly": {
+"loc": [
+"Malibu"
+],
+"trivia": [
+"Based on Kiss Me, Deadly (novel by Mickey Spillane)."
+]
+},
+"harder they fall": {
+"loc": [
+"New York City"
+],
+"trivia": [
+"Nominated for: Academy Award for Best Cinematography, Black-and-White.",
+"Based on The Harder They Fall (1947 novel by Budd Schulberg)."
+]
+},
+"big heat": {
+"loc": [],
+"trivia": []
+},
+"orphans of storm": {
+"loc": [],
+"trivia": []
+},
+"marrying kind": {
+"loc": [
+"New York City"
+],
+"trivia": []
+},
+"les girls": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Costume Design.",
+"Also nominated for: Academy Award for Best Production Design; Academy Award for Best Sound."
+]
+},
+"music room jalsaghar": {
+"loc": [],
+"trivia": [
+"Won the National Film Award for Second Best Feature Film.",
+"Won the National Film Award for Best Bengali Feature Film."
+]
+},
+"aranyer din ratri days and nights in forest": {
+"loc": [],
+"trivia": []
+},
+"middleman jana aranya": {
+"loc": [],
+"trivia": []
+},
+"jana aranya": {
+"loc": [],
+"trivia": [
+"Won the National Film Award for Best Direction."
+]
+},
+"creature from black lagoon": {
+"loc": [
+"Malibu"
+],
+"trivia": []
+},
+"it came from outer space": {
+"loc": [
+"California"
+],
+"trivia": []
+},
+"boo moon": {
+"loc": [],
+"trivia": []
+},
+"home maker": {
+"loc": [],
+"trivia": []
+},
+"paramount on parade": {
+"loc": [],
+"trivia": []
+},
+"summer stock": {
+"loc": [],
+"trivia": []
+},
+"cant help singing": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Original Musical Score."
+]
+},
+"pandoras box": {
+"loc": [],
+"trivia": [
+"Based on Pandora's Box (tragedy written by Frank Wedekind)."
+]
+},
+"sherlock holmes and secret weapon": {
+"loc": [],
+"trivia": [
+"Based on The Adventure of the Dancing Men (short story by Arthur Conan Doyle)."
+]
+},
+"sherlock holmes faces death": {
+"loc": [],
+"trivia": [
+"Based on The Adventure of the Musgrave Ritual (short story by Arthur Conan Doyle)."
+]
+},
+"clouds over europe q planes": {
+"loc": [],
+"trivia": []
+},
+"spider woman": {
+"loc": [],
+"trivia": []
+},
+"pearl of death": {
+"loc": [],
+"trivia": [
+"Based on The Adventure of the Six Napoleons (short story by Arthur Conan Doyle)."
+]
+},
+"canterbury tale": {
+"loc": [],
+"trivia": []
+},
+"house of fear": {
+"loc": [],
+"trivia": [
+"Based on The Five Orange Pips (short story by Arthur Conan Doyle)."
+]
+},
+"woman in green": {
+"loc": [],
+"trivia": []
+},
+"terror by night": {
+"loc": [],
+"trivia": []
+},
+"gambling ship": {
+"loc": [],
+"trivia": []
+},
+"born to be bad": {
+"loc": [],
+"trivia": []
+},
+"kiss and make up": {
+"loc": [],
+"trivia": []
+},
+"wedding present": {
+"loc": [],
+"trivia": []
+},
+"detour": {
+"loc": [],
+"trivia": [
+"Based on Detour (1939 novel by Martin M. Goldsmith)."
+]
+},
+"sin of nora moran": {
+"loc": [],
+"trivia": []
+},
+"two seconds": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films."
+]
+},
+"nayak hero": {
+"loc": [],
+"trivia": [
+"Won the National Film Award for Best Bengali Feature Film."
+]
+},
+"ghare baire home and world": {
+"loc": [],
+"trivia": [
+"Won the National Film Award for Best Supporting Actor.",
+"Won the National Film Award for Best Bengali Feature Film.",
+"Won the National Film Award for Best Costume Design.",
+"Based on Ghare-Bhaire (Bengali novel by Rabindranath Tagore)."
+]
+},
+"will success spoil rock hunter": {
+"loc": [],
+"trivia": []
+},
+"face in crowd": {
+"loc": [
+"New York City"
+],
+"trivia": []
+},
+"matter of life and death": {
+"loc": [],
+"trivia": []
+},
+"stella dallas#1925": {
+"loc": [],
+"trivia": [
+"Based on Stella Dallas (novel by Olive Higgins Prouty)."
+]
+},
+"oh rosalinda": {
+"loc": [],
+"trivia": []
+},
+"prelude to war": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Documentary Feature Film."
+]
+},
+"man who played god": {
+"loc": [],
+"trivia": []
+},
+"menace": {
+"loc": [],
+"trivia": []
+},
+"way back home": {
+"loc": [
+"California"
+],
+"trivia": []
+},
+"parachute jumper": {
+"loc": [],
+"trivia": []
+},
+"bank holiday": {
+"loc": [],
+"trivia": []
+},
+"ill be your sweetheart": {
+"loc": [],
+"trivia": []
+},
+"always bride": {
+"loc": [],
+"trivia": []
+},
+"man in grey": {
+"loc": [],
+"trivia": [
+"Based on The Man in Grey (novel by Eleanor Smith)."
+]
+},
+"prelude to fame": {
+"loc": [
+"Pinewood Studios"
+],
+"trivia": []
+},
+"lady surrenders love story": {
+"loc": [],
+"trivia": []
+},
+"love story": {
+"loc": [],
+"trivia": []
+},
+"drunken angel": {
+"loc": [],
+"trivia": []
+},
+"high and low": {
+"loc": [
+"Yokohama",
+"TOHO Studios Co., Ltd."
+],
+"trivia": [
+"Based on King's Ransom (1959 novel by Evan Hunter)."
+]
+},
+"something in wind": {
+"loc": [],
+"trivia": []
+},
+"for love of mary": {
+"loc": [],
+"trivia": []
+},
+"violent men": {
+"loc": [],
+"trivia": []
+},
+"chalk garden": {
+"loc": [],
+"trivia": [
+"Selected for the National Board of Review: Top Ten Films.",
+"Also nominated for: Academy Award for Best Supporting Actress."
+]
+},
+"little man what now": {
+"loc": [],
+"trivia": [
+"Based on Little Man, What Now? (novel by Hans Fallada)."
+]
+},
+"christmas holiday": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Original Dramatic or Comedy Score."
+]
+},
+"lady on train": {
+"loc": [],
+"trivia": [
+"Nominated for: Academy Award for Best Sound."
+]
+},
+"because of him": {
+"loc": [],
+"trivia": []
+},
+"seventh heaven": {
+"loc": [],
+"trivia": [
+"Won the Academy Award for Best Actress.",
+"Won the Academy Award for Best Director (Dramatic Picture).",
+"Won the Academy Award for Best Writing, Adapted Screenplay.",
+"Also nominated for: Academy Award for Best Picture; Academy Award for Best Production Design."
+]
+},
+"ziegfeld follies": {
+"loc": [],
+"trivia": [
+"Based on Ziegfeld Follies (theatrical revue series)."
+]
+},
+"toll of sea": {
+"loc": [],
+"trivia": []
+},
+"susan lenox her fall and rise": {
+"loc": [],
+"trivia": []
+},
+"three ages": {
+"loc": [],
+"trivia": [
+"Based on Intolerance (1916 epic silent film directed by D. W. Griffith)."
+]
+},
+"march of wooden soldiers babes in toyland": {
+"loc": [],
+"trivia": []
+},
+"inferno": {
+"loc": [],
+"trivia": []
+},
+"shatranj ke khiladi chess players": {
+"loc": [],
+"trivia": [
+"Nominated for: International Submission to the Academy Awards.",
+"Based on Shatranj ke khiladi (short story by Munshi Premchand)."
+]
+},
+"they met in dark": {
 "loc": [],
 "trivia": []
 }

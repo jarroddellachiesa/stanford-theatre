@@ -44,6 +44,25 @@
    }
   }
  ],
+ "all quiet on western front": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/All.Quiet.on.the.Western.Front.1930_201605",
+   "id": "All.Quiet.on.the.Western.Front.1930_201605",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q272599 P724",
+    "collections": [
+     "opensource_movies",
+     "community"
+    ],
+    "minutes": 133,
+    "license": "",
+    "title": "All Quiet on the Western Front",
+    "year": "1930"
+   }
+  }
+ ],
  "american in paris": [
   {
    "source": "YouTube",
@@ -111,6 +130,26 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "The Animal Kingdom",
     "year": "1932"
+   }
+  }
+ ],
+ "anna christie": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/anna-christie_1930",
+   "id": "anna-christie_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 86,
+    "license": "",
+    "title": "Anna Christie",
+    "year": "1930-12-22"
    }
   }
  ],
@@ -201,6 +240,26 @@
     "minutes": 222,
     "title": "Ben Hur (1959)",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "big parade": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-the-big-parade",
+   "id": "silent-the-big-parade",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1218520 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 151,
+    "license": "",
+    "title": "The Big Parade",
+    "year": "1925"
    }
   }
  ],
@@ -311,6 +370,26 @@
     "minutes": 104,
     "title": "Brief Encounter (1945)",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "bulldog drummond": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/bulldog-drummond-1929",
+   "id": "bulldog-drummond-1929",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q598245 P724",
+    "collections": [
+     "colorized-movies",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 89,
+    "license": "",
+    "title": "Bulldog Drummond 1929 colorized (Ronald Coleman)",
+    "year": "1929"
    }
   }
  ],
@@ -478,6 +557,26 @@
    }
   }
  ],
+ "city girl": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/city-girl_1930",
+   "id": "city-girl_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 88,
+    "license": "",
+    "title": "City Girl",
+    "year": "1930"
+   }
+  }
+ ],
  "clash by night": [
   {
    "source": "YouTube",
@@ -510,6 +609,26 @@
     "license": "",
     "title": "The Cocoanuts",
     "year": "1929-08-03"
+   }
+  }
+ ],
+ "condemned": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/condemned-1929_202506",
+   "id": "condemned-1929_202506",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 86,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Condemned (1929)",
+    "year": "1929-11-03"
    }
   }
  ],
@@ -598,6 +717,152 @@
    }
   }
  ],
+ "detour": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Detour",
+   "id": "Detour",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 68,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Detour",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Detour_66",
+   "id": "Detour_66",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 68,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Detour",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/detour-1945",
+   "id": "detour-1945",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 68,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Detour 1945 Colorized",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/detour1945HD",
+   "id": "detour1945HD",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 69,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Detour (1945) [HD]",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Detour_movie",
+   "id": "Detour_movie",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 68,
+    "license": "",
+    "title": "Detour",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/detour-1945-colorized-movie-720p-hd",
+   "id": "detour-1945-colorized-movie-720p-hd",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 68,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Detour (restored, colorized) (1946, film-noir, imdb score: 7.3)",
+    "year": null
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/detour.-1945.1080p.-blu-ray.-remux.-avc.-lpcm.-1.0-fgt",
+   "id": "detour.-1945.1080p.-blu-ray.-remux.-avc.-lpcm.-1.0-fgt",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 69,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Detour (1945) [P&M] 1080p Blu-ray (17.5GB)",
+    "year": "1945"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/detour_ipod",
+   "id": "detour_ipod",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2062566 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 68,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Detour (iPod)",
+    "year": "1945"
+   }
+  }
+ ],
  "dinner at eight": [
   {
    "source": "YouTube",
@@ -663,6 +928,26 @@
     "minutes": 76,
     "title": "Don't Bother to Knock",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "dr jack": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-dr-jack",
+   "id": "silent-dr-jack",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q512617 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 60,
+    "license": "",
+    "title": "Dr. Jack",
+    "year": "1922-11-26"
    }
   }
  ],
@@ -782,6 +1067,26 @@
     "license": "https://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Father's Little Dividend (1951) [HD]",
     "year": "1951"
+   }
+  }
+ ],
+ "faust": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/faust-1926_202505",
+   "id": "faust-1926_202505",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 107,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Faust (1926)",
+    "year": "1926-12-05"
    }
   }
  ],
@@ -1003,6 +1308,26 @@
    }
   }
  ],
+ "glorifying american girl": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/GlorifyingTheAmericanGirl_119",
+   "id": "GlorifyingTheAmericanGirl_119",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q3772447 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 94,
+    "license": "",
+    "title": "Glorifying the American Girl",
+    "year": "1929"
+   }
+  }
+ ],
  "gone with wind": [
   {
    "source": "YouTube",
@@ -1066,6 +1391,21 @@
    }
   }
  ],
+ "great ziegfeld": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=adbAxfiwP6M",
+   "id": "adbAxfiwP6M",
+   "evidence": {
+    "via": "Wikidata Q470218 P1651",
+    "minutes": 176,
+    "title": "The Great Ziegfeld",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
  "greed": [
   {
    "source": "Internet Archive",
@@ -1100,6 +1440,26 @@
     "license": "",
     "title": "Greed",
     "year": "1925-01-26"
+   }
+  }
+ ],
+ "hells angels": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/hells-angels_1930",
+   "id": "hells-angels_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1068328 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 132,
+    "license": "",
+    "title": "Hell's Angels",
+    "year": "1930-11-15"
    }
   }
  ],
@@ -1278,6 +1638,65 @@
    }
   }
  ],
+ "intolerance": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Intolerance",
+   "id": "Intolerance",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q192206 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 176,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Intolerance",
+    "year": "1916"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/INTOLERANCE_201407",
+   "id": "INTOLERANCE_201407",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q192206 P724",
+    "collections": [
+     "silenthalloffame",
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 197,
+    "license": "",
+    "title": "\"Intolerance\" (1916) director D. W. Griffith, cinematographer Billy Bitzer",
+    "year": "1916"
+   }
+  }
+ ],
+ "it": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/it-comedy-1927",
+   "id": "it-comedy-1927",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 77,
+    "license": "",
+    "title": "It (1927) ",
+    "year": "1927"
+   }
+  }
+ ],
  "jezebel": [
   {
    "source": "YouTube",
@@ -1427,6 +1846,56 @@
    }
   }
  ],
+ "life with father": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/LifeWithFather",
+   "id": "LifeWithFather",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2032599 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 118,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Life with Father",
+    "year": "1947"
+   }
+  }
+ ],
+ "little caesar": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=L4NLwiC-J_s",
+   "id": "L4NLwiC-J_s",
+   "evidence": {
+    "via": "Wikidata Q1199222 P1651",
+    "minutes": 78,
+    "title": "Little Caesar",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "little miss broadway": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=1VPQmnM1faE",
+   "id": "1VPQmnM1faE",
+   "evidence": {
+    "via": "Wikidata Q3819167 P1651",
+    "minutes": 72,
+    "title": "Little Miss Broadway",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
  "little princess": [
   {
    "source": "Internet Archive",
@@ -1500,6 +1969,26 @@
     "license": "",
     "title": "Long Pants",
     "year": "1927-03-26"
+   }
+  }
+ ],
+ "love": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/love_1928",
+   "id": "love_1928",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 81,
+    "license": "",
+    "title": "Love",
+    "year": "1928-01-02"
    }
   }
  ],
@@ -1694,6 +2183,26 @@
     "minutes": 113,
     "title": "Meet me in St. Louis",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "merry widow#1925": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the-merry-widow-1925_202507",
+   "id": "the-merry-widow-1925_202507",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 137,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Merry Widow (1925)",
+    "year": "1925-08-26"
    }
   }
  ],
@@ -1951,6 +2460,26 @@
    }
   }
  ],
+ "nothing sacred": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/NothingSacred",
+   "id": "NothingSacred",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q964771 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 74,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Nothing Sacred",
+    "year": "1937"
+   }
+  }
+ ],
  "of human bondage": [
   {
    "source": "Internet Archive",
@@ -2019,6 +2548,48 @@
    }
   }
  ],
+ "orphans of storm": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/OrphansoftheStorm",
+   "id": "OrphansoftheStorm",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q232133 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 144,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Orphans of the Storm",
+    "year": [
+     "1921",
+     "1922"
+    ]
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/OrphansOfTheStorm_201312",
+   "id": "OrphansOfTheStorm_201312",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q232133 P724",
+    "collections": [
+     "silenthalloffame",
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 150,
+    "license": "",
+    "title": "\"Orphans of the Storm\" (1921) director D. W. Griffith, cinematographer Billy Bitzer",
+    "year": "1921"
+   }
+  }
+ ],
  "our dancing daughters": [
   {
    "source": "Internet Archive",
@@ -2056,6 +2627,26 @@
     "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "title": "Our Hospitality",
     "year": null
+   }
+  }
+ ],
+ "pandoras box": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/pandoras-box_1930",
+   "id": "pandoras-box_1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 133,
+    "license": "",
+    "title": "Pandora's Box",
+    "year": "1930-02-22"
    }
   }
  ],
@@ -2132,6 +2723,26 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Penny Serenade",
     "year": "1941"
+   }
+  }
+ ],
+ "peter pan": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/silent-peter-pan",
+   "id": "silent-peter-pan",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1537132 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 102,
+    "license": "",
+    "title": "Peter Pan",
+    "year": "1924-12-29"
    }
   }
  ],
@@ -2297,6 +2908,43 @@
    }
   }
  ],
+ "prelude to war": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/PreludeToWar",
+   "id": "PreludeToWar",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1144659 P724",
+    "collections": [
+     "cinemocracy",
+     "moviesandfilms"
+    ],
+    "minutes": 52,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Why We Fight: Prelude to War",
+    "year": null
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/WhyWeFightPreludeToWarPt11943",
+   "id": "WhyWeFightPreludeToWarPt11943",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q1144659 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 52,
+    "license": "",
+    "title": "Prelude to War",
+    "year": "1942"
+   }
+  }
+ ],
  "pride and prejudice": [
   {
    "source": "YouTube",
@@ -2309,6 +2957,59 @@
     "minutes": 113,
     "title": "Pride And Prejudice (1940)",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "public enemy": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=a0-qhKAnvCY",
+   "id": "a0-qhKAnvCY",
+   "evidence": {
+    "via": "Wikidata Q1199902 P1651",
+    "minutes": 84,
+    "title": "The Public Enemy",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "raffles": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/raffles-1930",
+   "id": "raffles-1930",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1671105 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 71,
+    "license": "",
+    "title": "Raffles (1930)",
+    "year": null
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/raffles-1930-colorized",
+   "id": "raffles-1930-colorized",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1671105 P724",
+    "collections": [
+     "colorized-movies",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 71,
+    "license": "",
+    "title": "Raffles 1930 colorized (Ronald Coleman)",
+    "year": "1930"
    }
   }
  ],
@@ -2361,6 +3062,21 @@
     "via": "Wikidata Q34414 P1651",
     "minutes": 114,
     "title": "Rear Window",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "rebecca of sunnybrook farm": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=gGUWQ5AWU3o",
+   "id": "gGUWQ5AWU3o",
+   "evidence": {
+    "via": "Wikidata Q2205352 P1651",
+    "minutes": 81,
+    "title": "Rebecca of Sunnybrook Farm",
     "channel": "YouTube Movies"
    }
   }
@@ -2542,6 +3258,26 @@
    }
   }
  ],
+ "royal family of broadway": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/rfob77589",
+   "id": "rfob77589",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1790093 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 80,
+    "license": "",
+    "title": "The Royal Family of Broadway",
+    "year": "1930"
+   }
+  }
+ ],
  "royal wedding": [
   {
    "source": "Internet Archive",
@@ -2597,6 +3333,26 @@
     "license": "",
     "title": "Safety Last!",
     "year": "1923-04-01"
+   }
+  }
+ ],
+ "saturday night kid": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the-saturday-night-kid_1929",
+   "id": "the-saturday-night-kid_1929",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 64,
+    "license": "",
+    "title": "The Saturday Night Kid",
+    "year": "1929-10-25"
    }
   }
  ],
@@ -2778,6 +3534,25 @@
    }
   }
  ],
+ "seventh heaven": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/7th-heaven",
+   "id": "7th-heaven",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q368451 P724",
+    "collections": [
+     "opensource_movies",
+     "community"
+    ],
+    "minutes": 119,
+    "license": "",
+    "title": "7th Heaven",
+    "year": "1927-09-10"
+   }
+  }
+ ],
  "sherlock jr": [
   {
    "source": "Internet Archive",
@@ -2888,6 +3663,190 @@
    }
   }
  ],
+ "strange love of martha ivers": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Martha_Ivers",
+   "id": "Martha_Ivers",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q971265 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 116,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "The Strange Love of Martha Ivers",
+    "year": "1946"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/Martha_Ivers_movie",
+   "id": "Martha_Ivers_movie",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q971265 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 116,
+    "license": "",
+    "title": "Strange Love of Martha Ivers",
+    "year": "1946"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheStrangeLoveOfMarthaIvers",
+   "id": "TheStrangeLoveOfMarthaIvers",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q971265 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 116,
+    "license": "",
+    "title": "The Strange Love of Martha Ivers",
+    "year": "1946"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/1946-the-strange-love-of-martha-ivers-el-extrano-amor-de-martha-ivers-lewis-milestone-vo",
+   "id": "1946-the-strange-love-of-martha-ivers-el-extrano-amor-de-martha-ivers-lewis-milestone-vo",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q971265 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 115,
+    "license": "",
+    "title": "1946 - The Strange Love of Martha Ivers - El extraño amor de Martha Ivers - Lewis Milestone - VO",
+    "year": "1946"
+   }
+  }
+ ],
+ "stranger": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheStranger720p",
+   "id": "TheStranger720p",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q978770 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 95,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "The Stranger (720p HD)",
+    "year": "1946"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheStranger_0",
+   "id": "TheStranger_0",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q978770 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 91,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "The Stranger",
+    "year": "1946"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/1946-the-stranger-el-extrano-orson-welles-ve",
+   "id": "1946-the-stranger-el-extrano-orson-welles-ve",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q978770 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 95,
+    "license": "",
+    "title": "1946 - The Stranger - El extraño - Orson Welles - VE",
+    "year": "1946"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/le-criminel",
+   "id": "le-criminel",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q978770 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 94,
+    "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Le criminel",
+    "year": null
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/1946-the-stranger-el-extrano-orson-welles-vo",
+   "id": "1946-the-stranger-el-extrano-orson-welles-vo",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q978770 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 94,
+    "license": "",
+    "title": "1946 - The Stranger - El extraño - Orson Welles - VO",
+    "year": "1946"
+   }
+  },
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/the_stranger_film",
+   "id": "the_stranger_film",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q978770 P724",
+    "collections": [
+     "Film_Noir",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 91,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Stranger, The",
+    "year": "1946"
+   }
+  }
+ ],
  "submarine": [
   {
    "source": "Internet Archive",
@@ -2977,6 +3936,46 @@
    }
   }
  ],
+ "three ages": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/thethreeagesbusterkeaton",
+   "id": "thethreeagesbusterkeaton",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "Wikidata Q1257198 P724",
+    "collections": [
+     "Comedy_Films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 64,
+    "license": "",
+    "title": "The Three Ages - Buster Keaton",
+    "year": "2006"
+   }
+  }
+ ],
+ "till clouds roll by": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/till_the_clouds_roll_by",
+   "id": "till_the_clouds_roll_by",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q430852 P724",
+    "collections": [
+     "feature_films_unsorted",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 135,
+    "license": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "Till The Clouds Roll By",
+    "year": "1946"
+   }
+  }
+ ],
  "time machine": [
   {
    "source": "YouTube",
@@ -3019,6 +4018,26 @@
     "minutes": 100,
     "title": "To Have And Have Not",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "toll of sea": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/TheTollOfTheSeanovember261922",
+   "id": "TheTollOfTheSeanovember261922",
+   "evidence": {
+    "public_domain": "Wikidata P6216",
+    "via": "Wikidata Q2411291 P724",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 55,
+    "license": "",
+    "title": "The Toll of the Sea",
+    "year": "1922"
    }
   }
  ],
@@ -3244,6 +4263,41 @@
     "minutes": 102,
     "title": "The Wizard of Oz",
     "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "woman in green": [
+  {
+   "source": "YouTube",
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later",
+   "url": "https://www.youtube.com/watch?v=5PUqff2Hrs0",
+   "id": "5PUqff2Hrs0",
+   "evidence": {
+    "via": "Wikidata Q1212662 P1651",
+    "minutes": 67,
+    "title": "Sherlock Holmes: Woman in Green",
+    "channel": "YouTube Movies"
+   }
+  }
+ ],
+ "woman of affairs": [
+  {
+   "source": "Internet Archive",
+   "url": "https://archive.org/details/a-woman-of-affairs-1928",
+   "id": "a-woman-of-affairs-1928",
+   "evidence": {
+    "public_domain": "US release <= 1930",
+    "via": "archive.org search: title + year + runtime",
+    "collections": [
+     "silent_films",
+     "feature_films",
+     "moviesandfilms"
+    ],
+    "minutes": 91,
+    "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "A Woman Of Affairs (1928)",
+    "year": "1928-12-15"
    }
   }
  ],
