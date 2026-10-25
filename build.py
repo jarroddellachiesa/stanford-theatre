@@ -138,7 +138,7 @@ import re as _re
 _MF={k:v for v in "January February March April May June July August September October November December".split() for k in (v[:3],v[:4])}
 def fullmo(t): return _re.sub(r'\s*[-–—]\s*',' - ',_fm(t))
 def _fm(t): return _re.sub(r'\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\b\.?(?=\s*\d)',lambda m:_MF.get(m.group(1),m.group(1))+' ',t).replace('  ',' ')
-P.append('<h2 style="text-align:center;margin-top:30px">Festival archive</h2><p class="sm" style="text-align:center">From the Stanford Theatre&#39;s past calendars, newest first. Tap a festival for its bills.</p>')
+P.append('<h2 style="text-align:center;margin-top:30px">Festival Archive</h2><p class="sm" style="text-align:center">From the Stanford Theatre&#39;s past calendars, newest first. Tap a festival for its bills.</p>')
 for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-31' if x['year'] else '0000')),reverse=True):
     en=fe['end'] or ''
     dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
