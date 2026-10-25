@@ -112,7 +112,7 @@ for name,dr,url,groups,films in FEST:
     if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><div class="dr dtop">{dr}</div><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2>'+"".join(blk(b) for b in bs)+'</div>')
 u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further programs announced yet.</p></section>',JSF]
 open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up").replace('<body>','<body data-mode="up">',1))
-P=['<section id="past"><h1 class="vh">Past</h1><p class="sm" style="text-align:center">Finished programs, newest first.</p>']
+P=['<section id="past"><h1 class="vh">Past</h1>']
 for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk','<section class="fest pastb'+('' if b[3]<TODAY else ' hid')+' blk',1)
     P.append(x)
