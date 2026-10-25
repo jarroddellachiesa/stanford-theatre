@@ -22,7 +22,8 @@ TOPN=500
 top=rank[:TOPN]; recent=[k for k in keys if any(x['start']>='2021-10-01' for x in G[k])]
 import os
 PREV=[o['key'] for o in json.load(open('data/cover.json'))] if os.path.exists('data/cover.json') else []
-keep=[k for k in PREV if k in G]  # never drop an existing page
+_CM=json.load(open('data/cover_meta.json')) if os.path.exists('data/cover_meta.json') else {}
+keep=[k for k in dict.fromkeys(PREV+list(_CM)) if k in G]  # never drop an existing page: anything once covered (has metadata) stays
 # every Hitchcock-directed / John Wayne film that played a festival (data/rule_people.json, from tools/rule_people.py)
 PEOPLE=json.load(open('data/rule_people.json')) if os.path.exists('data/rule_people.json') else []
 def _fy(k):
