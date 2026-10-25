@@ -175,6 +175,61 @@
    "file": "assets/studios/toho-logo.png",
    "source": "https://commons.wikimedia.org/wiki/File:Toho_logo.svg",
    "license": "Public domain"
+  },
+  {
+   "studio": "Paramount Pictures",
+   "wikidata_names": [
+    "Paramount Pictures"
+   ],
+   "source": "supplied by site owner",
+   "license": "Supplied by site owner",
+   "from_year": 1914,
+   "to_year": 1914,
+   "file": "assets/studios/paramount-1914.png"
+  },
+  {
+   "studio": "Paramount Pictures",
+   "wikidata_names": [
+    "Paramount Pictures"
+   ],
+   "source": "supplied by site owner",
+   "license": "Supplied by site owner",
+   "from_year": 1915,
+   "to_year": 1916,
+   "file": "assets/studios/paramount-1914-1917.png"
+  },
+  {
+   "studio": "Paramount Pictures",
+   "wikidata_names": [
+    "Paramount Pictures"
+   ],
+   "source": "supplied by site owner",
+   "license": "Supplied by site owner",
+   "from_year": 1917,
+   "to_year": 1928,
+   "file": "assets/studios/paramount-1917-1967.png"
+  },
+  {
+   "studio": "Paramount Pictures",
+   "wikidata_names": [
+    "Paramount Pictures"
+   ],
+   "source": "supplied by site owner",
+   "license": "Supplied by site owner",
+   "from_year": 1937,
+   "to_year": 1967,
+   "file": "assets/studios/paramount-1917-1967.png"
+  },
+  {
+   "studio": "Paramount Pictures",
+   "wikidata_names": [
+    "Paramount Pictures"
+   ],
+   "source": "supplied by site owner",
+   "license": "Supplied by site owner",
+   "from_year": 1968,
+   "to_year": 2100,
+   "file": "assets/studios/paramount-1967.png"
   }
  ],
  "renames": [
