@@ -9503,5 +9503,4534 @@
 "studio": [
 "Paramount Pictures"
 ]
+},
+"genevieve": {
+"qid": "Q826565",
+"star": [
+"Dinah Sheridan",
+"John Gregson",
+"Kay Kendall"
+],
+"star_ordered": false,
+"director": [
+"Henry Cornelius"
+],
+"writer": [
+"William Rose"
+],
+"producer": [],
+"studio": [
+"The Rank Organisation"
+]
+},
+"my favorite wife": {
+"qid": "Q589729",
+"star": [
+"Irene Dunne",
+"Cary Grant",
+"Randolph Scott"
+],
+"star_ordered": false,
+"director": [
+"Garson Kanin"
+],
+"writer": [
+"Garson Kanin",
+"Samuel Spewack",
+"Bella Spewack"
+],
+"producer": [
+"Leo McCarey"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"wuthering heights": {
+"qid": "Q1140611",
+"star": [
+"Merle Oberon",
+"Laurence Olivier",
+"David Niven"
+],
+"star_ordered": false,
+"director": [
+"William Wyler"
+],
+"writer": [
+"Ben Hecht",
+"John Huston",
+"Charles MacArthur"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"Samuel Goldwyn Productions"
+]
+},
+"sullivans travels": {
+"qid": "Q1065711",
+"star": [
+"Joel McCrea",
+"Veronica Lake",
+"William Demarest"
+],
+"star_ordered": false,
+"director": [
+"Preston Sturges"
+],
+"writer": [
+"Preston Sturges"
+],
+"producer": [
+"Paul Jones",
+"Buddy DeSylva",
+"Preston Sturges"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"hound of baskervilles": {
+"qid": "Q1194465",
+"star": [
+"Basil Rathbone",
+"Nigel Bruce",
+"Richard Greene"
+],
+"star_ordered": false,
+"director": [
+"Sidney Lanfield"
+],
+"writer": [
+"Ernest Pascal"
+],
+"producer": [
+"Gene Markey"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"night and day": {
+"qid": "Q584824",
+"star": [
+"Cary Grant",
+"Alexis Smith",
+"Monty Woolley"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"William Bowers",
+"Charles Hoffman",
+"Leo Townsend"
+],
+"producer": [
+"Arthur Schwartz"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"dark victory": {
+"qid": "Q771927",
+"star": [
+"Ronald Reagan",
+"Humphrey Bogart",
+"Bette Davis"
+],
+"star_ordered": false,
+"director": [
+"Edmund Goulding"
+],
+"writer": [
+"Casey Robinson"
+],
+"producer": [
+"Hal B. Wallis",
+"David Lewis"
+],
+"studio": [
+"Warner Bros. Entertainment",
+"First National Pictures"
+]
+},
+"now voyager": {
+"qid": "Q1346566",
+"star": [
+"Bette Davis",
+"Paul Henreid",
+"Claude Rains"
+],
+"star_ordered": false,
+"director": [
+"Irving Rapper"
+],
+"writer": [
+"Casey Robinson"
+],
+"producer": [
+"Hal B. Wallis"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"camille": {
+"qid": "Q1213755",
+"star": [
+"Greta Garbo",
+"Robert Taylor",
+"Lionel Barrymore"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Zoë Akins",
+"Frances Marion",
+"James Hilton"
+],
+"producer": [
+"Bernard H. Hyman",
+"Irving Thalberg",
+"David Lewis"
+],
+"studio": [
+"Metro-Goldwyn-Mayer",
+"Warner Bros. Entertainment"
+]
+},
+"apartment for peggy": {
+"qid": "Q4779186",
+"star": [
+"Jeanne Crain",
+"William Holden",
+"Edmund Gwenn"
+],
+"star_ordered": false,
+"director": [
+"George Seaton"
+],
+"writer": [
+"George Seaton"
+],
+"producer": [
+"William Perlberg"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"julius caesar": {
+"qid": "Q734950",
+"star": [
+"Marlon Brando",
+"James Mason",
+"John Gielgud"
+],
+"star_ordered": false,
+"director": [
+"Joseph L. Mankiewicz"
+],
+"writer": [
+"Joseph L. Mankiewicz"
+],
+"producer": [
+"John Houseman"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"true confession": {
+"qid": "Q2249058",
+"star": [
+"Carole Lombard",
+"Fred MacMurray",
+"John Barrymore"
+],
+"star_ordered": false,
+"director": [
+"Wesley Ruggles"
+],
+"writer": [
+"Claude Binyon"
+],
+"producer": [
+"Albert Lewin"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"old dark house": {
+"qid": "Q1168873",
+"star": [
+"Boris Karloff",
+"Melvyn Douglas",
+"Charles Laughton"
+],
+"star_ordered": false,
+"director": [
+"James Whale"
+],
+"writer": [
+"R. C. Sherriff"
+],
+"producer": [
+"Carl Laemmle Jr."
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"kid brother": {
+"qid": "Q945230",
+"star": [
+"Jobyna Ralston",
+"Harold Lloyd",
+"Leo Willis"
+],
+"star_ordered": false,
+"director": [
+"Harold Lloyd",
+"Lewis Milestone",
+"Ted Wilde"
+],
+"writer": [
+"John Grey"
+],
+"producer": [
+"Harold Lloyd"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"navigator": {
+"qid": "Q1195998",
+"star": [
+"Buster Keaton",
+"Kathryn McGuire",
+"Noble Johnson"
+],
+"star_ordered": false,
+"director": [
+"Donald Crisp",
+"Buster Keaton"
+],
+"writer": [
+"Clyde Bruckman",
+"Jean Havez",
+"Joseph A. Mitchell"
+],
+"producer": [
+"Buster Keaton"
+],
+"studio": []
+},
+"follow thru": {
+"qid": "Q5464722",
+"star": [
+"Charles Rogers",
+"Nancy Carroll",
+"Zelma O'Neal"
+],
+"star_ordered": false,
+"director": [
+"Lloyd Corrigan"
+],
+"writer": [],
+"producer": [],
+"studio": []
+},
+"jungle princess": {
+"qid": "Q1056923",
+"star": [
+"Dorothy Lamour",
+"Ray Milland",
+"Ray Mala"
+],
+"star_ordered": false,
+"director": [
+"Wilhelm Thiele"
+],
+"writer": [
+"Charles Brackett",
+"Gerald Geraghty",
+"Cyril Hume"
+],
+"producer": [],
+"studio": [
+"Paramount Pictures"
+]
+},
+"three on match": {
+"qid": "Q2122780",
+"star": [
+"Joan Blondell",
+"Bette Davis",
+"Ann Dvorak"
+],
+"star_ordered": false,
+"director": [
+"Mervyn LeRoy"
+],
+"writer": [
+"Lucien Hubbard"
+],
+"producer": [
+"Samuel Bischoff",
+"Raymond Griffith",
+"Darryl F. Zanuck"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"madonna of seven moons": {
+"qid": "Q6728414",
+"star": [
+"Phyllis Calvert",
+"Stewart Granger"
+],
+"star_ordered": false,
+"director": [
+"Arthur Crabtree",
+"Roland Pertwee",
+"Margery Lawrence"
+],
+"writer": [
+"Roland Pertwee",
+"Margery Lawrence"
+],
+"producer": [
+"Roland Pertwee",
+"Margery Lawrence"
+],
+"studio": [
+"Gainsborough Pictures"
+]
+},
+"after thin man": {
+"qid": "Q1271874",
+"star": [
+"William Powell",
+"Myrna Loy",
+"James Stewart"
+],
+"star_ordered": false,
+"director": [
+"W. S. Van Dyke"
+],
+"writer": [
+"Albert Hackett",
+"Frances Goodrich",
+"Dashiell Hammett"
+],
+"producer": [
+"Hunt Stromberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"charulata": {
+"qid": "Q639597",
+"star": [
+"Soumitra Chatterjee",
+"Madhabi Mukherjee",
+"Bankim Ghosh"
+],
+"star_ordered": false,
+"director": [
+"Satyajit Ray"
+],
+"writer": [
+"Satyajit Ray"
+],
+"producer": [],
+"studio": []
+},
+"forbidden planet": {
+"qid": "Q1331230",
+"star": [
+"Leslie Nielsen",
+"Anne Francis",
+"Walter Pidgeon"
+],
+"star_ordered": false,
+"director": [
+"Fred M. Wilcox"
+],
+"writer": [
+"Cyril Hume",
+"Allen Adler"
+],
+"producer": [
+"Nicholas Nayfack"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"time machine": {
+"qid": "Q1217787",
+"star": [
+"Rod Taylor",
+"Alan Young",
+"Yvette Mimieux"
+],
+"star_ordered": false,
+"director": [
+"George Pal"
+],
+"writer": [
+"David Duncan"
+],
+"producer": [
+"George Pal"
+],
+"studio": []
+},
+"ladykillers": {
+"qid": "Q794306",
+"star": [
+"Alec Guinness",
+"Katie Johnson",
+"Herbert Lom"
+],
+"star_ordered": false,
+"director": [
+"Alexander Mackendrick"
+],
+"writer": [
+"William Rose"
+],
+"producer": [
+"Michael Balcon"
+],
+"studio": [
+"Ealing Studios"
+]
+},
+"jezebel": {
+"qid": "Q618741",
+"star": [
+"Bette Davis",
+"Henry Fonda",
+"George Brent"
+],
+"star_ordered": false,
+"director": [
+"William Wyler"
+],
+"writer": [
+"John Huston",
+"Abem Finkel",
+"Owen Davis"
+],
+"producer": [
+"Hal B. Wallis",
+"William Wyler"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"born yesterday": {
+"qid": "Q375594",
+"star": [
+"Judy Holliday",
+"Broderick Crawford",
+"William Holden"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Garson Kanin",
+"Albert Mannheimer"
+],
+"producer": [
+"S. Sylvan Simon"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"day earth stood still": {
+"qid": "Q425992",
+"star": [
+"Michael Rennie",
+"Patricia Neal",
+"Hugh Marlowe"
+],
+"star_ordered": false,
+"director": [
+"Robert Wise"
+],
+"writer": [
+"Edmund H. North"
+],
+"producer": [
+"Julian Blaustein"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"glenn miller story": {
+"qid": "Q698962",
+"star": [
+"James Stewart",
+"June Allyson",
+"Harry Morgan"
+],
+"star_ordered": false,
+"director": [
+"Anthony Mann"
+],
+"writer": [
+"Valentine Davies",
+"Oscar Brodney"
+],
+"producer": [
+"Aaron Rosenberg"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"bill of divorcement": {
+"qid": "Q981189",
+"star": [
+"John Barrymore",
+"Billie Burke",
+"Katharine Hepburn"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Howard Estabrook",
+"Harry Wagstaff Gribble"
+],
+"producer": [
+"David O. Selznick"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"national velvet": {
+"qid": "Q284686",
+"star": [
+"Mickey Rooney",
+"Donald Crisp",
+"Elizabeth Taylor"
+],
+"star_ordered": false,
+"director": [
+"Clarence Brown"
+],
+"writer": [
+"Helen Deutsch"
+],
+"producer": [
+"Pandro S. Berman"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"under capricorn": {
+"qid": "Q221842",
+"star": [
+"Michael Wilding",
+"Ingrid Bergman",
+"Joseph Cotten"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Hume Cronyn"
+],
+"producer": [
+"Sidney Bernstein, Baron Bernstein"
+],
+"studio": [
+"Transatlantic Pictures"
+]
+},
+"grand hotel": {
+"qid": "Q246656",
+"star": [
+"Greta Garbo",
+"Joan Crawford",
+"John Barrymore"
+],
+"star_ordered": false,
+"director": [
+"Edmund Goulding"
+],
+"writer": [
+"Béla Balázs",
+"William A. Drake",
+"Vicki Baum"
+],
+"producer": [
+"Irving Thalberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"innocents": {
+"qid": "Q666082",
+"star": [
+"Deborah Kerr",
+"Michael Redgrave",
+"Peter Wyngarde"
+],
+"star_ordered": false,
+"director": [
+"Jack Clayton"
+],
+"writer": [
+"William Archibald",
+"Truman Capote",
+"John Mortimer"
+],
+"producer": [
+"Jack Clayton"
+],
+"studio": []
+},
+"dark mirror": {
+"qid": "Q576249",
+"star": [
+"Olivia de Havilland",
+"Lew Ayres",
+"Thomas Mitchell"
+],
+"star_ordered": false,
+"director": [
+"Robert Siodmak"
+],
+"writer": [
+"Nunnally Johnson"
+],
+"producer": [
+"Nunnally Johnson"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"anatomy of murder": {
+"qid": "Q488376",
+"star": [
+"James Stewart",
+"Lee Remick",
+"Ben Gazzara"
+],
+"star_ordered": false,
+"director": [
+"Otto Preminger"
+],
+"writer": [
+"Wendell Mayes",
+"John D. Voelker"
+],
+"producer": [
+"Otto Preminger"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"hail conquering hero": {
+"qid": "Q826462",
+"star": [
+"Eddie Bracken",
+"Ella Raines",
+"William Demarest"
+],
+"star_ordered": false,
+"director": [
+"Preston Sturges"
+],
+"writer": [
+"Preston Sturges"
+],
+"producer": [
+"Buddy DeSylva"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"petrified forest": {
+"qid": "Q953939",
+"star": [
+"Leslie Howard",
+"Bette Davis",
+"Humphrey Bogart"
+],
+"star_ordered": false,
+"director": [
+"Archie Mayo"
+],
+"writer": [
+"Delmer Daves"
+],
+"producer": [
+"Hal B. Wallis"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"little foxes": {
+"qid": "Q565643",
+"star": [
+"Bette Davis",
+"Herbert Marshall",
+"Teresa Wright"
+],
+"star_ordered": false,
+"director": [
+"William Wyler"
+],
+"writer": [
+"Lillian Hellman",
+"Dorothy Parker",
+"Alan Campbell"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"RKO Pictures",
+"Samuel Goldwyn Productions"
+]
+},
+"love is many splendored thing": {
+"qid": "Q714941",
+"star": [
+"Jennifer Jones",
+"William Holden",
+"Isobel Elsom"
+],
+"star_ordered": false,
+"director": [
+"Henry King"
+],
+"writer": [
+"John Patrick"
+],
+"producer": [
+"Buddy Adler"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"baby face": {
+"qid": "Q682702",
+"star": [
+"Barbara Stanwyck",
+"George Brent",
+"Henry Kolker"
+],
+"star_ordered": false,
+"director": [
+"Alfred Edward Green"
+],
+"writer": [
+"Gene Markey",
+"Darryl F. Zanuck"
+],
+"producer": [
+"William LeBaron",
+"Raymond Griffith"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"double life": {
+"qid": "Q1232912",
+"star": [
+"Ronald Colman",
+"Signe Hasso",
+"Edmond O'Brien"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Ruth Gordon",
+"Garson Kanin"
+],
+"producer": [
+"Michael Kanin"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"pather panchali": {
+"qid": "Q622380",
+"star": [
+"Kanu Banerjee",
+"Karuna Banerjee",
+"Uma Dasgupta"
+],
+"star_ordered": false,
+"director": [
+"Satyajit Ray"
+],
+"writer": [
+"Satyajit Ray"
+],
+"producer": [
+"Government of West Bengal"
+],
+"studio": [
+"Government of West Bengal"
+]
+},
+"charlie chan at opera": {
+"qid": "Q3815017",
+"star": [
+"Warner Oland",
+"Boris Karloff",
+"Frank Conroy"
+],
+"star_ordered": false,
+"director": [
+"H. Bruce Humberstone"
+],
+"writer": [
+"Scott Darling"
+],
+"producer": [
+"John Stone"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"this happy breed": {
+"qid": "Q7785731",
+"star": [
+"Robert Newton",
+"Celia Johnson",
+"Stanley Holloway"
+],
+"star_ordered": false,
+"director": [
+"David Lean"
+],
+"writer": [
+"Anthony Havelock-Allan",
+"David Lean",
+"Ronald Neame"
+],
+"producer": [
+"Noël Coward"
+],
+"studio": []
+},
+"women": {
+"qid": "Q348678",
+"star": [
+"Norma Shearer",
+"Joan Crawford",
+"Rosalind Russell"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Anita Loos",
+"Jane Murfin",
+"F. Scott Fitzgerald"
+],
+"producer": [
+"Hunt Stromberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"marked woman": {
+"qid": "Q2542754",
+"star": [
+"Bette Davis",
+"Humphrey Bogart",
+"Mayo Methot"
+],
+"star_ordered": false,
+"director": [
+"Lloyd Bacon",
+"Michael Curtiz"
+],
+"writer": [
+"Robert Rossen",
+"Seton I. Miller"
+],
+"producer": [],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"its love im after": {
+"qid": "Q2481740",
+"star": [
+"Leslie Howard",
+"Bette Davis",
+"Olivia de Havilland"
+],
+"star_ordered": false,
+"director": [
+"Archie Mayo"
+],
+"writer": [
+"Casey Robinson"
+],
+"producer": [
+"Harry Joe Brown",
+"Hal B. Wallis"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"devil and daniel webster": {
+"qid": "Q1197377",
+"star": [
+"Edward Arnold",
+"Walter Huston",
+"Jane Darwell"
+],
+"star_ordered": false,
+"director": [
+"William Dieterle"
+],
+"writer": [
+"Stephen Vincent Benét"
+],
+"producer": [
+"William Dieterle"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"everybody sing": {
+"qid": "Q1911365",
+"star": [
+"Allan Jones",
+"Judy Garland",
+"Fanny Brice"
+],
+"star_ordered": false,
+"director": [
+"Edwin L. Marin"
+],
+"writer": [
+"Florence Ryerson"
+],
+"producer": [
+"Harry Rapf"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"damsel in distress": {
+"qid": "Q1304532",
+"star": [
+"Fred Astaire",
+"Joan Fontaine",
+"George Burns"
+],
+"star_ordered": false,
+"director": [
+"George Stevens"
+],
+"writer": [
+"P. G. Wodehouse",
+"Ernest Pagano",
+"S.K. Lauren"
+],
+"producer": [
+"Pandro S. Berman"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"dodsworth": {
+"qid": "Q185048",
+"star": [
+"Walter Huston",
+"Ruth Chatterton",
+"Paul Lukas"
+],
+"star_ordered": false,
+"director": [
+"William Wyler"
+],
+"writer": [
+"Sidney Howard"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"Samuel Goldwyn Productions"
+]
+},
+"wicked lady": {
+"qid": "Q14957241",
+"star": [
+"Felix Aylmer",
+"Griffith Jones",
+"James Mason"
+],
+"star_ordered": false,
+"director": [
+"Leslie Arliss"
+],
+"writer": [
+"Leslie Arliss"
+],
+"producer": [],
+"studio": [
+"Gainsborough Pictures"
+]
+},
+"roaring twenties": {
+"qid": "Q1219927",
+"star": [
+"James Cagney",
+"Lane Sisters",
+"Humphrey Bogart"
+],
+"star_ordered": false,
+"director": [
+"Raoul Walsh"
+],
+"writer": [
+"Mark Hellinger",
+"Jerry Wald",
+"Robert Rossen"
+],
+"producer": [
+"Hal B. Wallis",
+"Samuel Bischoff"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"hot water": {
+"qid": "Q3795464",
+"star": [
+"Harold Lloyd",
+"Jobyna Ralston",
+"Josephine Crowell"
+],
+"star_ordered": false,
+"director": [
+"Fred C. Newmeyer",
+"Sam Taylor"
+],
+"writer": [
+"Sam Taylor"
+],
+"producer": [
+"Harold Lloyd"
+],
+"studio": []
+},
+"our hospitality": {
+"qid": "Q1199039",
+"star": [
+"Buster Keaton",
+"Joe Keaton",
+"Natalie Talmadge"
+],
+"star_ordered": false,
+"director": [
+"Buster Keaton",
+"John G. Blystone"
+],
+"writer": [
+"Clyde Bruckman",
+"Jean Havez",
+"Joseph A. Mitchell"
+],
+"producer": [
+"Joseph M. Schenck"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"rings on her fingers": {
+"qid": "Q1057528",
+"star": [
+"Henry Fonda",
+"Gene Tierney",
+"Laird Cregar"
+],
+"star_ordered": false,
+"director": [
+"Rouben Mamoulian"
+],
+"writer": [
+"Emeric Pressburger"
+],
+"producer": [
+"Milton Sperling"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"four feathers": {
+"qid": "Q1114432",
+"star": [
+"John Clements",
+"June Duprez",
+"Ralph Richardson"
+],
+"star_ordered": false,
+"director": [
+"Zoltan Korda"
+],
+"writer": [
+"R. C. Sherriff",
+"Alfred Edward Woodley Mason"
+],
+"producer": [
+"Alexander Korda"
+],
+"studio": []
+},
+"cabin in cotton": {
+"qid": "Q1213617",
+"star": [
+"Richard Barthelmess",
+"Dorothy Jordan",
+"Bette Davis"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"Paul Green"
+],
+"producer": [
+"Hal B. Wallis",
+"Darryl F. Zanuck",
+"Jack Warner"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"belle of new york": {
+"qid": "Q3206606",
+"star": [
+"Fred Astaire",
+"Vera-Ellen",
+"Marjorie Main"
+],
+"star_ordered": false,
+"director": [
+"Charles Walters"
+],
+"writer": [
+"Robert O'Brien",
+"Chester Erskine"
+],
+"producer": [
+"Arthur Freed"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"love finds andy hardy": {
+"qid": "Q2733456",
+"star": [
+"Mickey Rooney",
+"Lewis Stone",
+"Judy Garland"
+],
+"star_ordered": false,
+"director": [
+"George B. Seitz"
+],
+"writer": [
+"William Ludwig"
+],
+"producer": [
+"Carey Wilson"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"kid galahad": {
+"qid": "Q998321",
+"star": [
+"Edward G. Robinson",
+"Bette Davis",
+"Humphrey Bogart"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"Seton I. Miller"
+],
+"producer": [
+"Samuel Bischoff",
+"Hal B. Wallis",
+"Jack Warner"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"ten commandments": {
+"qid": "Q746733",
+"star": [
+"Charlton Heston",
+"Yul Brynner",
+"Anne Baxter"
+],
+"star_ordered": false,
+"director": [
+"Cecil B. DeMille"
+],
+"writer": [
+"Æneas MacKenzie",
+"Jesse Louis Lasky Jr.",
+"Jack Gariss"
+],
+"producer": [
+"Cecil B. DeMille",
+"Henry Wilcoxon"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"cleopatra#1934": {
+"qid": "Q1100552",
+"star": [
+"Claudette Colbert",
+"Warren William",
+"Henry Wilcoxon"
+],
+"star_ordered": false,
+"director": [
+"Cecil B. DeMille"
+],
+"writer": [
+"Waldemar Young"
+],
+"producer": [
+"Cecil B. DeMille"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"devil to pay": {
+"qid": "Q3520615",
+"star": [
+"Ronald Colman",
+"Loretta Young",
+"Frederick Kerr"
+],
+"star_ordered": false,
+"director": [
+"George Fitzmaurice"
+],
+"writer": [
+"Frederick Lonsdale",
+"Benjamin Glazer"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"The Lot at Formosa"
+]
+},
+"sound of music": {
+"qid": "Q60072",
+"star": [
+"Julie Andrews",
+"Christopher Plummer",
+"Bill Lee"
+],
+"star_ordered": false,
+"director": [
+"Robert Wise"
+],
+"writer": [
+"Ernest Lehman"
+],
+"producer": [
+"Robert Wise"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"5000 fingers of dr t": {
+"qid": "Q1210771",
+"star": [
+"Tommy Rettig",
+"Mary Healy",
+"Hans Conried"
+],
+"star_ordered": false,
+"director": [
+"Roy Rowland"
+],
+"writer": [
+"Dr. Seuss",
+"Allan Scott"
+],
+"producer": [
+"Stanley Kramer"
+],
+"studio": [
+"Stanley Kramer Productions"
+]
+},
+"kiss me kate": {
+"qid": "Q2208041",
+"star": [
+"Kathryn Grayson",
+"Howard Keel",
+"Ann Miller"
+],
+"star_ordered": false,
+"director": [
+"George Sidney"
+],
+"writer": [
+"Dorothy Kingsley"
+],
+"producer": [
+"Jack Cummings"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"five graves to cairo": {
+"qid": "Q743795",
+"star": [
+"Franchot Tone",
+"Anne Baxter",
+"Akim Tamiroff"
+],
+"star_ordered": false,
+"director": [
+"Billy Wilder"
+],
+"writer": [
+"Charles Brackett",
+"Billy Wilder"
+],
+"producer": [
+"Charles Brackett"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"on town": {
+"qid": "Q32011",
+"star": [
+"Gene Kelly",
+"Frank Sinatra",
+"Ann Miller"
+],
+"star_ordered": false,
+"director": [
+"Gene Kelly",
+"Stanley Donen"
+],
+"writer": [
+"Adolph Green",
+"Betty Comden"
+],
+"producer": [
+"Arthur Freed",
+"Roger Edens"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"captain blood": {
+"qid": "Q1425815",
+"star": [
+"Errol Flynn",
+"Olivia de Havilland",
+"Basil Rathbone"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"Casey Robinson"
+],
+"producer": [
+"Harry Joe Brown",
+"Gordon Hollingshead"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"caine mutiny": {
+"qid": "Q5435430",
+"star": [
+"Humphrey Bogart",
+"José Ferrer",
+"Fred MacMurray"
+],
+"star_ordered": false,
+"director": [
+"Edward Dmytryk"
+],
+"writer": [
+"Michael Blankfort",
+"Stanley Roberts",
+"Herman Wouk"
+],
+"producer": [
+"Stanley Kramer"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"pride and prejudice": {
+"qid": "Q940014",
+"star": [
+"Laurence Olivier",
+"Greer Garson",
+"Maureen O'Sullivan"
+],
+"star_ordered": false,
+"director": [
+"Robert Z. Leonard"
+],
+"writer": [
+"Aldous Huxley",
+"Jane Murfin"
+],
+"producer": [
+"Hunt Stromberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"pillow talk": {
+"qid": "Q832487",
+"star": [
+"Rock Hudson",
+"Doris Day",
+"Tony Randall"
+],
+"star_ordered": false,
+"director": [
+"Michael Gordon"
+],
+"writer": [
+"Russell Rouse",
+"Maurice Richlin",
+"Stanley Shapiro"
+],
+"producer": [
+"Ross Hunter",
+"Martin Melcher"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"poor little rich girl": {
+"qid": "Q1753603",
+"star": [
+"Shirley Temple",
+"Alice Faye",
+"Jack Haley"
+],
+"star_ordered": false,
+"director": [
+"Irving Cummings"
+],
+"writer": [
+"Sam Hellman"
+],
+"producer": [],
+"studio": [
+"20th Century Studios"
+]
+},
+"rashomon": {
+"qid": "Q135465",
+"star": [
+"Toshirō Mifune",
+"Machiko Kyō",
+"Masayuki Mori"
+],
+"star_ordered": false,
+"director": [
+"Akira Kurosawa"
+],
+"writer": [
+"Shinobu Hashimoto",
+"Akira Kurosawa",
+"Ryūnosuke Akutagawa"
+],
+"producer": [],
+"studio": [
+"Kadokawa Pictures",
+"Daiei Film"
+]
+},
+"jason and argonauts": {
+"qid": "Q785555",
+"star": [
+"Todd Armstrong",
+"Nancy Kovack",
+"Honor Blackman"
+],
+"star_ordered": false,
+"director": [
+"Don Chaffey"
+],
+"writer": [
+"Alan Beverley Cross"
+],
+"producer": [
+"Charles H. Schneer"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"twentieth century": {
+"qid": "Q1788051",
+"star": [
+"John Barrymore",
+"Carole Lombard",
+"Walter Connolly"
+],
+"star_ordered": false,
+"director": [
+"Howard Hawks"
+],
+"writer": [
+"Ben Hecht",
+"Charles MacArthur",
+"Gene Fowler"
+],
+"producer": [
+"Howard Hawks"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"bend of river": {
+"qid": "Q1926164",
+"star": [
+"James Stewart",
+"Arthur Kennedy",
+"Julie Adams"
+],
+"star_ordered": false,
+"director": [
+"Anthony Mann"
+],
+"writer": [
+"Borden Chase"
+],
+"producer": [
+"Aaron Rosenberg"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"pat and mike": {
+"qid": "Q2031626",
+"star": [
+"Katharine Hepburn",
+"Spencer Tracy",
+"Aldo Ray"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Ruth Gordon",
+"Garson Kanin"
+],
+"producer": [
+"Lawrence Weingarten"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"portrait of jennie": {
+"qid": "Q1687008",
+"star": [
+"Jennifer Jones",
+"Joseph Cotten",
+"Ethel Barrymore"
+],
+"star_ordered": false,
+"director": [
+"William Dieterle"
+],
+"writer": [
+"Ben Hecht",
+"David O. Selznick",
+"Peter Berneis"
+],
+"producer": [
+"David O. Selznick"
+],
+"studio": []
+},
+"war of worlds": {
+"qid": "Q1113303",
+"star": [
+"Gene Barry",
+"Ann Robinson",
+"Cedric Hardwicke"
+],
+"star_ordered": false,
+"director": [
+"Byron Haskin"
+],
+"writer": [
+"H. G. Wells",
+"Barré Lyndon"
+],
+"producer": [
+"George Pal"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"world of apu apur sansar": {
+"qid": "Q622376",
+"star": [
+"Soumitra Chatterjee",
+"Sharmila Tagore"
+],
+"star_ordered": false,
+"director": [
+"Satyajit Ray"
+],
+"writer": [
+"Satyajit Ray"
+],
+"producer": [
+"Satyajit Ray"
+],
+"studio": []
+},
+"cat on hot tin roof": {
+"qid": "Q713979",
+"star": [
+"Elizabeth Taylor",
+"Paul Newman",
+"Burl Ives"
+],
+"star_ordered": false,
+"director": [
+"Richard Brooks"
+],
+"writer": [
+"Richard Brooks",
+"James Poe"
+],
+"producer": [
+"Lawrence Weingarten"
+],
+"studio": [
+"Metro-Goldwyn-Mayer",
+"KCET"
+]
+},
+"letter from unknown woman": {
+"qid": "Q914133",
+"star": [
+"Joan Fontaine",
+"Louis Jourdan",
+"Erskine Sanford"
+],
+"star_ordered": false,
+"director": [
+"Max Ophüls"
+],
+"writer": [
+"Max Ophüls",
+"Howard Koch"
+],
+"producer": [
+"John Houseman"
+],
+"studio": []
+},
+"black legion": {
+"qid": "Q1498404",
+"star": [
+"Humphrey Bogart",
+"Dick Foran",
+"Erin O'Brien-Moore"
+],
+"star_ordered": false,
+"director": [
+"Archie Mayo",
+"Michael Curtiz"
+],
+"writer": [
+"Abem Finkel"
+],
+"producer": [
+"Robert Lord"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"ben hur": {
+"qid": "Q180098",
+"star": [
+"Charlton Heston",
+"Jack Hawkins",
+"Haya Harareet"
+],
+"star_ordered": false,
+"director": [
+"William Wyler"
+],
+"writer": [
+"Karl Tunberg",
+"Gore Vidal",
+"Christopher Fry"
+],
+"producer": [
+"Sam Zimbalist"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"for me and my gal": {
+"qid": "Q2371931",
+"star": [
+"Judy Garland",
+"Gene Kelly",
+"George Murphy"
+],
+"star_ordered": false,
+"director": [
+"Busby Berkeley"
+],
+"writer": [
+"Fred F. Finklehoffe",
+"Sid Silvers"
+],
+"producer": [
+"Arthur Freed"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"how green was my valley": {
+"qid": "Q244448",
+"star": [
+"Walter Pidgeon",
+"Maureen O'Hara",
+"Anna Lee"
+],
+"star_ordered": false,
+"director": [
+"John Ford"
+],
+"writer": [
+"Philip Dunne"
+],
+"producer": [
+"Darryl F. Zanuck"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"more merrier": {
+"qid": "Q1620549",
+"star": [
+"Jean Arthur",
+"Joel McCrea",
+"Charles Coburn"
+],
+"star_ordered": false,
+"director": [
+"George Stevens"
+],
+"writer": [
+"Lewis R. Foster",
+"Frank Ross",
+"Richard Flournoy"
+],
+"producer": [
+"George Stevens"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"king kong": {
+"qid": "Q3876200",
+"star": [],
+"star_ordered": false,
+"director": [],
+"writer": [],
+"producer": [],
+"studio": []
+},
+"they drive by night": {
+"qid": "Q1464106",
+"star": [
+"George Raft",
+"Ann Sheridan",
+"Ida Lupino"
+],
+"star_ordered": false,
+"director": [
+"Raoul Walsh"
+],
+"writer": [
+"Jerry Wald"
+],
+"producer": [
+"Hal B. Wallis"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"man from laramie": {
+"qid": "Q1195497",
+"star": [
+"James Stewart",
+"Arthur Kennedy",
+"Donald Crisp"
+],
+"star_ordered": false,
+"director": [
+"Anthony Mann"
+],
+"writer": [
+"Philip Yordan"
+],
+"producer": [
+"William Goetz"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"its gift": {
+"qid": "Q1171371",
+"star": [
+"W. C. Fields",
+"Baby LeRoy",
+"Dell Henderson"
+],
+"star_ordered": false,
+"director": [
+"Norman Z. McLeod"
+],
+"writer": [
+"Jack Cunningham"
+],
+"producer": [
+"William LeBaron"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"separate tables": {
+"qid": "Q1520037",
+"star": [
+"Rita Hayworth",
+"Deborah Kerr",
+"David Niven"
+],
+"star_ordered": false,
+"director": [
+"Delbert Mann"
+],
+"writer": [
+"Terence Rattigan",
+"John Gay",
+"John Michael Hayes"
+],
+"producer": [
+"Harold Hecht"
+],
+"studio": [
+"Hecht-Hill-Lancaster Productions"
+]
+},
+"ball of fire": {
+"qid": "Q391452",
+"star": [
+"Gary Cooper",
+"Barbara Stanwyck",
+"Oskar Homolka"
+],
+"star_ordered": false,
+"director": [
+"Howard Hawks"
+],
+"writer": [
+"Charles Brackett",
+"Billy Wilder"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"Samuel Goldwyn Productions"
+]
+},
+"hamlet": {
+"qid": "Q27178",
+"star": [
+"Basil Sydney",
+"Eileen Herlie",
+"Jean Simmons"
+],
+"star_ordered": false,
+"director": [
+"Laurence Olivier"
+],
+"writer": [
+"Laurence Olivier"
+],
+"producer": [
+"Laurence Olivier"
+],
+"studio": [
+"Two Cities Films"
+]
+},
+"fog over frisco": {
+"qid": "Q1750399",
+"star": [
+"Bette Davis",
+"Donald Woods",
+"Margaret Lindsay"
+],
+"star_ordered": false,
+"director": [
+"William Dieterle"
+],
+"writer": [
+"Robert N. Lee"
+],
+"producer": [
+"Henry Blanke"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"why worry": {
+"qid": "Q2528654",
+"star": [
+"Harold Lloyd",
+"John Aasen",
+"Jobyna Ralston"
+],
+"star_ordered": false,
+"director": [
+"Sam Taylor"
+],
+"writer": [
+"Sam Taylor",
+"Ted Wilde"
+],
+"producer": [
+"Hal Roach",
+"Harold Lloyd"
+],
+"studio": []
+},
+"throne of blood": {
+"qid": "Q257818",
+"star": [
+"Toshirō Mifune",
+"Isuzu Yamada",
+"Takashi Shimura"
+],
+"star_ordered": false,
+"director": [
+"Akira Kurosawa"
+],
+"writer": [
+"Akira Kurosawa",
+"Shinobu Hashimoto",
+"Hideo Oguni"
+],
+"producer": [
+"Sōjirō Motoki"
+],
+"studio": [
+"Toho"
+]
+},
+"cameraman": {
+"qid": "Q2138984",
+"star": [
+"Buster Keaton",
+"Marceline Day",
+"Harold Goodwin"
+],
+"star_ordered": false,
+"director": [
+"Edward Sedgwick",
+"Buster Keaton"
+],
+"writer": [
+"Clyde Bruckman"
+],
+"producer": [
+"Buster Keaton",
+"Lawrence Weingarten"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"paradine case": {
+"qid": "Q506638",
+"star": [
+"Gregory Peck",
+"Ann Todd",
+"Alida Valli"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Alma Reville",
+"James Bridie",
+"Ben Hecht"
+],
+"producer": [
+"David O. Selznick"
+],
+"studio": [
+"Vanguard Films"
+]
+},
+"ikiru": {
+"qid": "Q152105",
+"star": [
+"Takashi Shimura",
+"Minoru Chiaki",
+"Bokuzen Hidari"
+],
+"star_ordered": false,
+"director": [
+"Akira Kurosawa"
+],
+"writer": [
+"Akira Kurosawa",
+"Shinobu Hashimoto",
+"Hideo Oguni"
+],
+"producer": [
+"Sōjirō Motoki"
+],
+"studio": [
+"Toho"
+]
+},
+"what price hollywood": {
+"qid": "Q2031960",
+"star": [
+"Constance Bennett",
+"Lowell Sherman",
+"Gregory Ratoff"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Jane Murfin",
+"Adela Rogers St. Johns",
+"Allen Rivkin"
+],
+"producer": [
+"Pandro S. Berman",
+"David O. Selznick"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"female": {
+"qid": "Q639354",
+"star": [
+"Ruth Chatterton",
+"George Brent",
+"Douglass Dumbrille"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz",
+"William Dieterle",
+"William A. Wellman"
+],
+"writer": [
+"Donald Henderson Clarke"
+],
+"producer": [
+"Robert Presnell Sr"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"another thin man": {
+"qid": "Q1271867",
+"star": [
+"William Powell",
+"Myrna Loy",
+"Otto Kruger"
+],
+"star_ordered": false,
+"director": [
+"W. S. Van Dyke"
+],
+"writer": [
+"Frances Goodrich",
+"Albert Hackett"
+],
+"producer": [
+"Hunt Stromberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"stowaway": {
+"qid": "Q2620671",
+"star": [
+"Shirley Temple",
+"Robert Young",
+"Alice Faye"
+],
+"star_ordered": false,
+"director": [
+"William A. Seiter"
+],
+"writer": [
+"William Conselman"
+],
+"producer": [
+"Harold Wilson"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"movie crazy": {
+"qid": "Q3284452",
+"star": [
+"Harold Lloyd",
+"Arthur Housman",
+"Constance Cummings"
+],
+"star_ordered": false,
+"director": [
+"Clyde Bruckman",
+"Harold Lloyd"
+],
+"writer": [
+"Harold Lloyd",
+"Clyde Bruckman"
+],
+"producer": [
+"Harold Lloyd"
+],
+"studio": [
+"Harold Lloyd"
+]
+},
+"morning glory": {
+"qid": "Q572789",
+"star": [
+"Katharine Hepburn",
+"Douglas Fairbanks Jr.",
+"Adolphe Menjou"
+],
+"star_ordered": false,
+"director": [
+"Lowell Sherman"
+],
+"writer": [
+"Howard J. Green"
+],
+"producer": [
+"Pandro S. Berman"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"hangover square": {
+"qid": "Q3126769",
+"star": [
+"Laird Cregar",
+"Linda Darnell",
+"George Sanders"
+],
+"star_ordered": false,
+"director": [
+"John Brahm"
+],
+"writer": [
+"Barré Lyndon"
+],
+"producer": [
+"Robert Bassler"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"were no angels": {
+"qid": "Q1539276",
+"star": [
+"Humphrey Bogart",
+"Peter Ustinov",
+"Aldo Ray"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"Ranald MacDougall",
+"Albert Husson"
+],
+"producer": [],
+"studio": [
+"Paramount Pictures"
+]
+},
+"seven days to noon": {
+"qid": "Q1389525",
+"star": [
+"Barry Jones",
+"André Morell",
+"Geoffrey Keen"
+],
+"star_ordered": false,
+"director": [
+"Roy Boulting",
+"John Boulting"
+],
+"writer": [
+"James Bernard",
+"Paul Dehn"
+],
+"producer": [
+"John Boulting",
+"Roy Boulting"
+],
+"studio": []
+},
+"charlie chan at treasure island": {
+"qid": "Q5084667",
+"star": [
+"Sidney Toler",
+"Cesar Romero",
+"Douglas Fowley"
+],
+"star_ordered": false,
+"director": [
+"Norman Foster"
+],
+"writer": [
+"John Larkin"
+],
+"producer": [
+"Ted Kaufman"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"adventures of sherlock holmes": {
+"qid": "Q1210852",
+"star": [
+"Basil Rathbone",
+"Nigel Bruce",
+"Ida Lupino"
+],
+"star_ordered": false,
+"director": [
+"Alfred L. Werker"
+],
+"writer": [
+"Edwin Blum",
+"William Gillette"
+],
+"producer": [
+"Darryl F. Zanuck"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"maytime": {
+"qid": "Q1407062",
+"star": [
+"Jeanette MacDonald",
+"Nelson Eddy",
+"John Barrymore"
+],
+"star_ordered": false,
+"director": [
+"Robert Z. Leonard"
+],
+"writer": [
+"Sigmund Romberg"
+],
+"producer": [
+"Hunt Stromberg",
+"Gregor Rabinovitch"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"come live with me": {
+"qid": "Q1145403",
+"star": [
+"James Stewart",
+"Hedy Lamarr",
+"Ian Hunter"
+],
+"star_ordered": false,
+"director": [
+"Clarence Brown"
+],
+"writer": [
+"Virginia Van Upp",
+"James Stewart",
+"Hedy Lamarr"
+],
+"producer": [
+"Clarence Brown"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"international house": {
+"qid": "Q12125111",
+"star": [
+"W. C. Fields",
+"Bela Lugosi",
+"George Burns"
+],
+"star_ordered": false,
+"director": [
+"A. Edward Sutherland"
+],
+"writer": [
+"Walter DeLeon"
+],
+"producer": [],
+"studio": [
+"Paramount Pictures"
+]
+},
+"strawberry blonde": {
+"qid": "Q1848335",
+"star": [
+"James Cagney",
+"Olivia de Havilland",
+"Rita Hayworth"
+],
+"star_ordered": false,
+"director": [
+"Raoul Walsh"
+],
+"writer": [
+"Julius J. Epstein",
+"Philip G. Epstein"
+],
+"producer": [
+"Hal B. Wallis"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"ex lady": {
+"qid": "Q1920879",
+"star": [
+"Bette Davis",
+"Gene Raymond",
+"Frank McHugh"
+],
+"star_ordered": false,
+"director": [
+"Robert Florey"
+],
+"writer": [
+"David Boehm"
+],
+"producer": [
+"Darryl F. Zanuck"
+],
+"studio": [
+"Vitaphone",
+"Warner Bros. Entertainment"
+]
+},
+"kanchenjungha": {
+"qid": "Q639628",
+"star": [
+"Chhabi Biswas",
+"N. Viswanathan",
+"Anil Chatterjee"
+],
+"star_ordered": false,
+"director": [
+"Satyajit Ray"
+],
+"writer": [
+"Satyajit Ray"
+],
+"producer": [
+"Satyajit Ray"
+],
+"studio": []
+},
+"flesh and devil": {
+"qid": "Q1366555",
+"star": [
+"Greta Garbo",
+"John Gilbert",
+"Lars Hanson"
+],
+"star_ordered": false,
+"director": [
+"Clarence Brown"
+],
+"writer": [
+"Benjamin Glazer"
+],
+"producer": [
+"Irving Thalberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"red dust": {
+"qid": "Q1262188",
+"star": [
+"Clark Gable",
+"Jean Harlow",
+"Mary Astor"
+],
+"star_ordered": false,
+"director": [
+"Victor Fleming"
+],
+"writer": [
+"Donald Ogden Stewart",
+"John Lee Mahin"
+],
+"producer": [
+"Irving Thalberg"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"life and death of colonel blimp": {
+"qid": "Q1319302",
+"star": [
+"Roger Livesey",
+"Deborah Kerr",
+"Anton Walbrook"
+],
+"star_ordered": false,
+"director": [
+"Michael Powell",
+"Emeric Pressburger"
+],
+"writer": [
+"Michael Powell",
+"Emeric Pressburger"
+],
+"producer": [
+"Michael Powell",
+"Emeric Pressburger"
+],
+"studio": [
+"Powell and Pressburger"
+]
+},
+"on avenue": {
+"qid": "Q7091287",
+"star": [
+"Dick Powell",
+"Madeleine Carroll",
+"Alice Faye"
+],
+"star_ordered": false,
+"director": [
+"Roy Del Ruth",
+"William A. Seiter"
+],
+"writer": [
+"Irving Berlin",
+"William Conselman"
+],
+"producer": [
+"Gene Markey",
+"Darryl F. Zanuck"
+],
+"studio": []
+},
+"satan met lady": {
+"qid": "Q2004290",
+"star": [
+"Bette Davis",
+"Warren William",
+"Marie Wilson"
+],
+"star_ordered": false,
+"director": [
+"William Dieterle"
+],
+"writer": [
+"Dashiell Hammett"
+],
+"producer": [
+"Henry Blanke"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"we live again": {
+"qid": "Q1537166",
+"star": [
+"Anna Sten",
+"Fredric March",
+"C. Aubrey Smith"
+],
+"star_ordered": false,
+"director": [
+"Rouben Mamoulian"
+],
+"writer": [
+"Maxwell Anderson",
+"Preston Sturges",
+"Paul Green"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"death takes holiday": {
+"qid": "Q1219315",
+"star": [
+"Fredric March",
+"Evelyn Venable",
+"Guy Standing"
+],
+"star_ordered": false,
+"director": [
+"Mitchell Leisen"
+],
+"writer": [
+"Maxwell Anderson",
+"Gladys Lehman"
+],
+"producer": [
+"E. Lloyd Sheldon"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"sunrise": {
+"qid": "Q431093",
+"star": [
+"Janet Gaynor",
+"Margaret Livingston",
+"George O'Brien"
+],
+"star_ordered": false,
+"director": [
+"F. W. Murnau"
+],
+"writer": [
+"Carl Mayer",
+"Hermann Sudermann"
+],
+"producer": [
+"William Fox"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"20 000 years in sing sing": {
+"qid": "Q210681",
+"star": [
+"Spencer Tracy",
+"Bette Davis",
+"Louis Calhern"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"Wilson Mizner",
+"Robert Lord"
+],
+"producer": [
+"Darryl F. Zanuck",
+"Raymond Griffith",
+"Robert Lord"
+],
+"studio": [
+"First National Pictures"
+]
+},
+"wake up and live": {
+"qid": "Q7960990",
+"star": [
+"Walter Winchell",
+"Ben Bernie",
+"Alice Faye"
+],
+"star_ordered": false,
+"director": [
+"Sidney Lanfield"
+],
+"writer": [
+"Harry Tugend"
+],
+"producer": [
+"Darryl F. Zanuck"
+],
+"studio": []
+},
+"strike up band": {
+"qid": "Q615028",
+"star": [
+"Judy Garland",
+"Mickey Rooney",
+"Paul Whiteman"
+],
+"star_ordered": false,
+"director": [
+"Busby Berkeley"
+],
+"writer": [
+"John Cherry Monks Jr."
+],
+"producer": [
+"Arthur Freed"
+],
+"studio": [
+"Metro-Goldwyn-Mayer",
+"Loews Cineplex Entertainment"
+]
+},
+"girl crazy": {
+"qid": "Q1526747",
+"star": [
+"Mickey Rooney",
+"Judy Garland",
+"June Allyson"
+],
+"star_ordered": false,
+"director": [
+"Norman Taurog",
+"Busby Berkeley"
+],
+"writer": [
+"Guy Bolton"
+],
+"producer": [
+"Arthur Freed"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"dangerous": {
+"qid": "Q849336",
+"star": [
+"Bette Davis",
+"Franchot Tone",
+"Margaret Lindsay"
+],
+"star_ordered": false,
+"director": [
+"Alfred Edward Green"
+],
+"writer": [
+"Laird Doyle"
+],
+"producer": [
+"Harry Joe Brown",
+"Hal B. Wallis",
+"Jack Warner"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"desire": {
+"qid": "Q2071375",
+"star": [
+"Marlene Dietrich",
+"Gary Cooper",
+"John Halliday"
+],
+"star_ordered": false,
+"director": [
+"Frank Borzage"
+],
+"writer": [
+"Edwin Justus Mayer",
+"Waldemar Young",
+"Samuel Hoffenstein"
+],
+"producer": [
+"Ernst Lubitsch"
+],
+"studio": []
+},
+"angel": {
+"qid": "Q589237",
+"star": [
+"Marlene Dietrich",
+"Herbert Marshall",
+"Melvyn Douglas"
+],
+"star_ordered": false,
+"director": [
+"Ernst Lubitsch"
+],
+"writer": [
+"Samson Raphaelson",
+"Frederick Lonsdale"
+],
+"producer": [
+"Ernst Lubitsch"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"beau geste#1939": {
+"qid": "Q1257031",
+"star": [
+"Gary Cooper",
+"Ray Milland",
+"Robert Preston"
+],
+"star_ordered": false,
+"director": [
+"William A. Wellman"
+],
+"writer": [
+"Robert Carson"
+],
+"producer": [
+"William A. Wellman"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"sea hawk": {
+"qid": "Q1194282",
+"star": [
+"Errol Flynn",
+"Brenda Marshall",
+"Claude Rains"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz"
+],
+"writer": [
+"Seton I. Miller",
+"Howard Koch"
+],
+"producer": [
+"Henry Blanke",
+"Hal B. Wallis"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"thief of bagdad": {
+"qid": "Q1192927",
+"star": [
+"Douglas Fairbanks",
+"Snitz Edwards",
+"Charles Belcher"
+],
+"star_ordered": false,
+"director": [
+"Raoul Walsh"
+],
+"writer": [
+"Achmed Abdullah"
+],
+"producer": [
+"Douglas Fairbanks"
+],
+"studio": [
+"United Artists"
+]
+},
+"lodger": {
+"qid": "Q3113934",
+"star": [
+"Merle Oberon",
+"George Sanders",
+"Laird Cregar"
+],
+"star_ordered": false,
+"director": [
+"John Brahm"
+],
+"writer": [
+"Barré Lyndon"
+],
+"producer": [
+"Robert Bassler"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"our vines have tender grapes": {
+"qid": "Q7111227",
+"star": [
+"Edward G. Robinson",
+"Margaret O'Brien"
+],
+"star_ordered": false,
+"director": [
+"Roy Rowland"
+],
+"writer": [
+"Dalton Trumbo"
+],
+"producer": [],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"man who knew too much#1934": {
+"qid": "Q506625",
+"star": [
+"Leslie Banks",
+"Edna Best",
+"Peter Lorre"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Charles Bennett",
+"Emlyn Williams"
+],
+"producer": [
+"Ivor Montagu",
+"Michael Balcon"
+],
+"studio": [
+"Gaumont-British Picture Corporation"
+]
+},
+"seven brides for seven brothers": {
+"qid": "Q662679",
+"star": [
+"Howard Keel",
+"Ruta Lee",
+"Jeff Richards"
+],
+"star_ordered": false,
+"director": [
+"Stanley Donen"
+],
+"writer": [
+"Albert Hackett",
+"Frances Goodrich",
+"Dorothy Kingsley"
+],
+"producer": [
+"Jack Cummings"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"mark of zorro#1920": {
+"qid": "Q1170907",
+"star": [
+"Douglas Fairbanks",
+"Marguerite De La Motte",
+"Noah Beery, Sr."
+],
+"star_ordered": false,
+"director": [
+"Fred Niblo"
+],
+"writer": [
+"Douglas Fairbanks"
+],
+"producer": [
+"Douglas Fairbanks"
+],
+"studio": [
+"United Artists"
+]
+},
+"sherlock jr": {
+"qid": "Q1569918",
+"star": [
+"Buster Keaton",
+"Kathryn McGuire",
+"Joe Keaton"
+],
+"star_ordered": false,
+"director": [
+"Buster Keaton",
+"Roscoe Arbuckle"
+],
+"writer": [
+"Clyde Bruckman",
+"Jean Havez",
+"Joseph A. Mitchell"
+],
+"producer": [
+"Joseph M. Schenck",
+"Buster Keaton"
+],
+"studio": [
+"Metro Pictures"
+]
+},
+"aparajito": {
+"qid": "Q622382",
+"star": [
+"Kanu Banerjee",
+"Karuna Banerjee",
+"Smaran Ghosal"
+],
+"star_ordered": false,
+"director": [
+"Satyajit Ray"
+],
+"writer": [
+"Satyajit Ray"
+],
+"producer": [],
+"studio": []
+},
+"late george apley": {
+"qid": "Q2140783",
+"star": [
+"Ronald Colman",
+"Vanessa Brown",
+"Richard Haydn"
+],
+"star_ordered": false,
+"director": [
+"Joseph L. Mankiewicz"
+],
+"writer": [
+"Philip Dunne",
+"George S. Kaufman"
+],
+"producer": [
+"Fred Kohlmar"
+],
+"studio": []
+},
+"seed": {
+"qid": "Q2258320",
+"star": [
+"John Boles",
+"Lois Wilson",
+"Genevieve Tobin"
+],
+"star_ordered": false,
+"director": [
+"John M. Stahl"
+],
+"writer": [
+"Gladys Lehman"
+],
+"producer": [
+"Carl Laemmle Jr.",
+"John M. Stahl",
+"Carl Laemmle"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"lawrence of arabia": {
+"qid": "Q228186",
+"star": [
+"Jack Hawkins",
+"Anthony Quinn",
+"Peter O'Toole"
+],
+"star_ordered": false,
+"director": [
+"David Lean"
+],
+"writer": [
+"Robert Bolt",
+"Michael Wilson",
+"T. E. Lawrence"
+],
+"producer": [
+"Sam Spiegel"
+],
+"studio": [
+"Horizon Pictures"
+]
+},
+"wait until dark": {
+"qid": "Q5493376",
+"star": [
+"Audrey Hepburn",
+"Alan Arkin",
+"Richard Crenna"
+],
+"star_ordered": false,
+"director": [
+"Terence Young"
+],
+"writer": [
+"Frederick Knott",
+"Robert Carrington",
+"Jane-Howard Hammerstein"
+],
+"producer": [
+"Mel Ferrer"
+],
+"studio": [
+"Warner Bros. Entertainment",
+"Warner Bros.-Seven Arts"
+]
+},
+"pal joey": {
+"qid": "Q1812591",
+"star": [
+"Rita Hayworth",
+"Frank Sinatra",
+"Kim Novak"
+],
+"star_ordered": false,
+"director": [
+"George Sidney"
+],
+"writer": [
+"Dorothy Kingsley",
+"John O'Hara"
+],
+"producer": [
+"Fred Kohlmar"
+],
+"studio": [
+"Columbia Pictures",
+"Essex"
+]
+},
+"lassie come home": {
+"qid": "Q684216",
+"star": [
+"Roddy McDowall",
+"Elsa Lanchester",
+"Donald Crisp"
+],
+"star_ordered": false,
+"director": [
+"Fred M. Wilcox"
+],
+"writer": [
+"Hugo Butler"
+],
+"producer": [
+"Samuel Marx"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"oklahoma": {
+"qid": "Q2017333",
+"star": [
+"Gordon MacRae",
+"Gloria Grahame",
+"Gene Nelson"
+],
+"star_ordered": false,
+"director": [
+"Fred Zinnemann"
+],
+"writer": [
+"Sonya Levien",
+"William Ludwig"
+],
+"producer": [
+"Arthur Hornblow, Jr."
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"mrs miniver": {
+"qid": "Q478371",
+"star": [
+"Greer Garson",
+"Walter Pidgeon",
+"Teresa Wright"
+],
+"star_ordered": false,
+"director": [
+"William Wyler"
+],
+"writer": [
+"George Froeschel",
+"James Hilton",
+"Arthur Wimperis"
+],
+"producer": [
+"Sidney Franklin"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"guys and dolls": {
+"qid": "Q1813582",
+"star": [
+"Marlon Brando",
+"Jean Simmons",
+"Frank Sinatra"
+],
+"star_ordered": false,
+"director": [
+"Joseph L. Mankiewicz"
+],
+"writer": [
+"Joseph L. Mankiewicz",
+"Ben Hecht",
+"Jo Swerling"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"Samuel Goldwyn Productions"
+]
+},
+"kind hearts and coronets": {
+"qid": "Q353753",
+"star": [
+"Dennis Price",
+"Valerie Hobson",
+"Joan Greenwood"
+],
+"star_ordered": false,
+"director": [
+"Robert Hamer"
+],
+"writer": [
+"John Dighton"
+],
+"producer": [
+"Michael Balcon",
+"Michael Relph"
+],
+"studio": [
+"Ealing Studios"
+]
+},
+"little colonel": {
+"qid": "Q2248695",
+"star": [
+"Shirley Temple",
+"Bill Robinson",
+"Lionel Barrymore"
+],
+"star_ordered": false,
+"director": [
+"David Butler"
+],
+"writer": [
+"William Conselman"
+],
+"producer": [
+"Buddy DeSylva"
+],
+"studio": [
+"Fox Film Corporation"
+]
+},
+"mr blandings builds his dream house": {
+"qid": "Q1704776",
+"star": [
+"Cary Grant",
+"Myrna Loy",
+"Melvyn Douglas"
+],
+"star_ordered": false,
+"director": [
+"H. C. Potter"
+],
+"writer": [
+"Melvin Frank",
+"Norman Panama"
+],
+"producer": [
+"Melvin Frank",
+"Dore Schary",
+"Norman Panama"
+],
+"studio": [
+"RKO Pictures",
+"Selznick International Pictures"
+]
+},
+"and then there were none": {
+"qid": "Q2517672",
+"star": [
+"Barry Fitzgerald",
+"Walter Huston",
+"Louis Hayward"
+],
+"star_ordered": false,
+"director": [
+"René Clair"
+],
+"writer": [
+"Dudley Nichols"
+],
+"producer": [
+"René Clair"
+],
+"studio": []
+},
+"place in sun": {
+"qid": "Q733627",
+"star": [
+"Montgomery Clift",
+"Elizabeth Taylor",
+"Shelley Winters"
+],
+"star_ordered": false,
+"director": [
+"George Stevens"
+],
+"writer": [
+"Michael Wilson",
+"Harry Brown",
+"Theodore Dreiser"
+],
+"producer": [
+"George Stevens"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"carousel": {
+"qid": "Q1265272",
+"star": [
+"Gordon MacRae",
+"Shirley Jones",
+"Cameron Mitchell"
+],
+"star_ordered": false,
+"director": [
+"Henry King"
+],
+"writer": [
+"Phoebe Ephron",
+"Henry Ephron"
+],
+"producer": [
+"Henry Ephron"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"one way passage": {
+"qid": "Q962536",
+"star": [
+"William Powell",
+"Kay Francis",
+"Aline MacMahon"
+],
+"star_ordered": false,
+"director": [
+"Tay Garnett"
+],
+"writer": [
+"Wilson Mizner",
+"Joe Jackson (talent manager)",
+"Robert Lord"
+],
+"producer": [
+"Robert Lord",
+"Hal B. Wallis"
+],
+"studio": []
+},
+"invasion of body snatchers": {
+"qid": "Q45386",
+"star": [
+"Kevin McCarthy",
+"Dana Wynter",
+"King Donovan"
+],
+"star_ordered": false,
+"director": [
+"Don Siegel"
+],
+"writer": [
+"Daniel Mainwaring",
+"Sam Peckinpah"
+],
+"producer": [
+"Walter Wanger"
+],
+"studio": [
+"Monogram Pictures"
+]
+},
+"david copperfield": {
+"qid": "Q1174069",
+"star": [
+"Maureen O'Sullivan",
+"Lionel Barrymore",
+"Basil Rathbone"
+],
+"star_ordered": false,
+"director": [
+"George Cukor"
+],
+"writer": [
+"Hugh Walpole",
+"Howard Estabrook",
+"Lenore J. Coffee"
+],
+"producer": [
+"David O. Selznick"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"secret life of walter mitty": {
+"qid": "Q1167551",
+"star": [
+"Danny Kaye",
+"Virginia Mayo",
+"Fay Bainter"
+],
+"star_ordered": false,
+"director": [
+"Norman Z. McLeod"
+],
+"writer": [
+"Philip Rapp"
+],
+"producer": [
+"Samuel Goldwyn"
+],
+"studio": [
+"Samuel Goldwyn Productions",
+"RKO Pictures"
+]
+},
+"streetcar named desire": {
+"qid": "Q212129",
+"star": [
+"Vivien Leigh",
+"Marlon Brando",
+"Kim Hunter"
+],
+"star_ordered": false,
+"director": [
+"Elia Kazan"
+],
+"writer": [
+"Tennessee Williams",
+"Oscar Saul"
+],
+"producer": [
+"Charles K. Feldman"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"great expectations": {
+"qid": "Q1282209",
+"star": [
+"John Mills",
+"Anthony Wager",
+"Jean Simmons"
+],
+"star_ordered": false,
+"director": [
+"David Lean"
+],
+"writer": [
+"David Lean",
+"Ronald Neame",
+"Anthony Havelock-Allan"
+],
+"producer": [
+"Anthony Havelock-Allan",
+"Ronald Neame"
+],
+"studio": [
+"Cineguild Productions"
+]
+},
+"woman of year": {
+"qid": "Q1212587",
+"star": [
+"Spencer Tracy",
+"Katharine Hepburn",
+"Fay Bainter"
+],
+"star_ordered": false,
+"director": [
+"George Stevens"
+],
+"writer": [
+"Ring Lardner Jr.",
+"Michael Kanin",
+"John Lee Mahin"
+],
+"producer": [
+"Joseph L. Mankiewicz"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"libeled lady": {
+"qid": "Q375578",
+"star": [
+"Spencer Tracy",
+"Jean Harlow",
+"Myrna Loy"
+],
+"star_ordered": false,
+"director": [
+"Jack Conway"
+],
+"writer": [
+"Maurine Dallas Watkins",
+"George Oppenheimer"
+],
+"producer": [
+"Lawrence Weingarten"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"force of evil": {
+"qid": "Q766089",
+"star": [
+"John Garfield",
+"Thomas Gomez",
+"Marie Windsor"
+],
+"star_ordered": false,
+"director": [
+"Abraham Polonsky"
+],
+"writer": [
+"Abraham Polonsky"
+],
+"producer": [],
+"studio": [
+"The Enterprise Studios"
+]
+},
+"stray dog": {
+"qid": "Q678972",
+"star": [
+"Toshirō Mifune",
+"Takashi Shimura",
+"Keiko Awaji"
+],
+"star_ordered": false,
+"director": [
+"Akira Kurosawa"
+],
+"writer": [
+"Akira Kurosawa",
+"Ryūzō Kikushima"
+],
+"producer": [
+"Sōjirō Motoki"
+],
+"studio": [
+"Toho"
+]
+},
+"i was male war bride": {
+"qid": "Q1525998",
+"star": [
+"Cary Grant",
+"Ann Sheridan",
+"Kenneth Tobey"
+],
+"star_ordered": false,
+"director": [
+"Howard Hawks"
+],
+"writer": [
+"Charles Lederer",
+"Leonard Spigelgass",
+"Hagar Wilde"
+],
+"producer": [
+"Sol C. Siegel"
+],
+"studio": []
+},
+"cheaper by dozen": {
+"qid": "Q2048579",
+"star": [
+"Clifton Webb",
+"Myrna Loy",
+"Jeanne Crain"
+],
+"star_ordered": false,
+"director": [
+"Walter Lang"
+],
+"writer": [
+"Lamar Trotti"
+],
+"producer": [
+"Lamar Trotti"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"war and peace": {
+"qid": "Q643811",
+"star": [
+"Audrey Hepburn",
+"Henry Fonda",
+"Mel Ferrer"
+],
+"star_ordered": false,
+"director": [
+"King Vidor"
+],
+"writer": [
+"Mario Camerini",
+"Ennio de Concini",
+"Ivo Perilli"
+],
+"producer": [
+"Dino De Laurentiis",
+"Carlo Ponti"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"bright eyes": {
+"qid": "Q2389107",
+"star": [
+"Shirley Temple",
+"James Dunn",
+"Jane Withers"
+],
+"star_ordered": false,
+"director": [
+"David Butler"
+],
+"writer": [
+"David Butler"
+],
+"producer": [
+"Sol M. Wurtzel"
+],
+"studio": [
+"Fox Film Corporation"
+]
+},
+"anna and king of siam": {
+"qid": "Q563731",
+"star": [
+"Irene Dunne",
+"Rex Harrison",
+"Linda Darnell"
+],
+"star_ordered": false,
+"director": [
+"John Cromwell"
+],
+"writer": [
+"Talbot Jennings",
+"Sally Benson"
+],
+"producer": [
+"Louis D. Lighton"
+],
+"studio": [
+"20th Century Studios"
+]
+},
+"solid gold cadillac": {
+"qid": "Q3549302",
+"star": [
+"Judy Holliday",
+"Paul Douglas",
+"Fred Clark"
+],
+"star_ordered": false,
+"director": [
+"Richard Quine"
+],
+"writer": [
+"George S. Kaufman"
+],
+"producer": [
+"Fred Kohlmar"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"four sons": {
+"qid": "Q2102724",
+"star": [
+"James Hall",
+"Frank Reicher",
+"John Wayne"
+],
+"star_ordered": false,
+"director": [
+"John Ford"
+],
+"writer": [],
+"producer": [
+"William Fox",
+"John Ford"
+],
+"studio": [
+"Fox Film Corporation"
+]
+},
+"noahs ark": {
+"qid": "Q3012177",
+"star": [
+"Dolores Costello",
+"George O'Brien",
+"Louise Fazenda"
+],
+"star_ordered": false,
+"director": [
+"Michael Curtiz",
+"Darryl F. Zanuck",
+"Anthony Coldeway"
+],
+"writer": [
+"Darryl F. Zanuck"
+],
+"producer": [
+"Darryl F. Zanuck"
+],
+"studio": [
+"Warner Bros. Entertainment"
+]
+},
+"jamaica inn": {
+"qid": "Q497005",
+"star": [
+"Charles Laughton",
+"Maureen O'Hara",
+"Emlyn Williams"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Sidney Gilliat",
+"Joan Harrison",
+"Daphne du Maurier"
+],
+"producer": [
+"Erich Pommer",
+"Charles Laughton"
+],
+"studio": []
+},
+"lady takes chance": {
+"qid": "Q3282810",
+"star": [
+"Jean Arthur",
+"John Wayne",
+"Charles Winninger"
+],
+"star_ordered": false,
+"director": [
+"William A. Seiter"
+],
+"writer": [
+"Robert Ardrey"
+],
+"producer": [
+"Frank Ross"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"they were expendable": {
+"qid": "Q1548954",
+"star": [
+"Robert Montgomery",
+"Donna Reed",
+"Jack Holt"
+],
+"star_ordered": false,
+"director": [
+"John Ford",
+"Robert Montgomery"
+],
+"writer": [
+"Frank Wead",
+"Norman Corwin"
+],
+"producer": [
+"John Ford"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"without reservations": {
+"qid": "Q1960870",
+"star": [
+"Claudette Colbert",
+"John Wayne",
+"Don DeFore"
+],
+"star_ordered": false,
+"director": [
+"Mervyn LeRoy"
+],
+"writer": [
+"Andrew Solt"
+],
+"producer": [
+"Jesse Louis Lasky"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"blackmail": {
+"qid": "Q916078",
+"star": [
+"Anny Ondra",
+"John Longden",
+"Cyril Ritchard"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Michael Powell",
+"Alfred Hitchcock"
+],
+"producer": [
+"John Maxwell"
+],
+"studio": [
+"Associated British Picture Corporation"
+]
+},
+"3 godfathers": {
+"qid": "Q528296",
+"star": [
+"John Wayne",
+"Pedro Armendáriz",
+"Harry Carey"
+],
+"star_ordered": false,
+"director": [
+"John Ford"
+],
+"writer": [
+"Laurence Stallings",
+"Frank S. Nugent"
+],
+"producer": [
+"Merian C. Cooper"
+],
+"studio": [
+"Argosy Pictures"
+]
+},
+"rio grande": {
+"qid": "Q1138393",
+"star": [
+"John Wayne",
+"Maureen O'Hara",
+"Ben Johnson"
+],
+"star_ordered": false,
+"director": [
+"John Ford"
+],
+"writer": [
+"James Kevin McGuinness"
+],
+"producer": [
+"Merian C. Cooper"
+],
+"studio": [
+"Republic Pictures"
+]
+},
+"pleasure garden": {
+"qid": "Q1211644",
+"star": [],
+"star_ordered": false,
+"director": [],
+"writer": [],
+"producer": [],
+"studio": []
+},
+"skin game": {
+"qid": "Q865983",
+"star": [
+"Edmund Gwenn",
+"Helen Haye",
+"C.V. France"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Alma Reville",
+"John Galsworthy",
+"Alfred Hitchcock"
+],
+"producer": [
+"John Maxwell"
+],
+"studio": [
+"Associated British Picture Corporation"
+]
+},
+"easy virtue": {
+"qid": "Q1278385",
+"star": [
+"Isabel Jeans",
+"Franklin Dyall",
+"Eric Bransby Williams"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Eliot Stannard",
+"Noël Coward"
+],
+"producer": [
+"Michael Balcon"
+],
+"studio": [
+"Gainsborough Pictures"
+]
+},
+"downhill": {
+"qid": "Q495820",
+"star": [
+"Ivor Novello",
+"Robin Irvine",
+"Isabel Jeans"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Eliot Stannard",
+"Ivor Novello",
+"Constance Collier"
+],
+"producer": [
+"Michael Balcon",
+"C. M. Woolf"
+],
+"studio": [
+"Gainsborough Pictures"
+]
+},
+"waltzes from vienna": {
+"qid": "Q570302",
+"star": [
+"Esmond Knight",
+"Jessie Matthews",
+"Edmund Gwenn"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Alma Reville",
+"Guy Bolton"
+],
+"producer": [
+"Tom Arnold"
+],
+"studio": [
+"Gaumont-British Picture Corporation"
+]
+},
+"champagne": {
+"qid": "Q1061079",
+"star": [
+"Alexander D'Arcy",
+"Betty Balfour",
+"Jean Bradin"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Alfred Hitchcock",
+"Eliot Stannard",
+"Walter C. Mycroft"
+],
+"producer": [
+"John Maxwell"
+],
+"studio": [
+"Associated British Picture Corporation"
+]
+},
+"family plot": {
+"qid": "Q47296",
+"star": [
+"Barbara Harris",
+"Bruce Dern",
+"Karen Black"
+],
+"star_ordered": false,
+"director": [
+"Alfred Hitchcock"
+],
+"writer": [
+"Ernest Lehman"
+],
+"producer": [
+"Alfred Hitchcock"
+],
+"studio": [
+"Universal Pictures"
+]
+},
+"new frontier": {
+"qid": "Q3338946",
+"star": [
+"John Wayne",
+"Raymond Hatton",
+"Jennifer Jones"
+],
+"star_ordered": false,
+"director": [
+"George Sherman"
+],
+"writer": [
+"Betty Burbridge"
+],
+"producer": [
+"William Berke"
+],
+"studio": [
+"Republic Pictures"
+]
+},
+"randy rides alone": {
+"qid": "Q3448634",
+"star": [
+"John Wayne",
+"George \"Gabby\" Hayes",
+"Yakima Canutt"
+],
+"star_ordered": false,
+"director": [
+"Harry L. Fraser"
+],
+"writer": [
+"Lindsley Parsons"
+],
+"producer": [
+"Paul Malvern"
+],
+"studio": [
+"Monogram Pictures",
+"Lone Star Productions"
+]
+},
+"sands of iwo jima": {
+"qid": "Q1143339",
+"star": [
+"John Wayne",
+"John Agar",
+"Forrest Tucker"
+],
+"star_ordered": false,
+"director": [
+"Allan Dwan"
+],
+"writer": [
+"James Edward Grant",
+"Harry Brown"
+],
+"producer": [
+"Edmund Grainger"
+],
+"studio": [
+"Republic Pictures"
+]
+},
+"in harms way": {
+"qid": "Q1362240",
+"star": [
+"John Wayne",
+"Kirk Douglas",
+"Henry Fonda"
+],
+"star_ordered": false,
+"director": [
+"Otto Preminger"
+],
+"writer": [
+"Wendell Mayes"
+],
+"producer": [
+"Otto Preminger"
+],
+"studio": [
+"Otto Preminger Film"
+]
+},
+"wings of eagles": {
+"qid": "Q1185095",
+"star": [
+"John Wayne",
+"Dan Dailey",
+"Maureen O'Hara"
+],
+"star_ordered": false,
+"director": [
+"John Ford"
+],
+"writer": [
+"William Haines",
+"Charles Schnee",
+"Frank Fenton"
+],
+"producer": [
+"Charles Schnee"
+],
+"studio": [
+"Metro-Goldwyn-Mayer"
+]
+},
+"hatari": {
+"qid": "Q144970",
+"star": [
+"John Wayne",
+"Elsa Martinelli",
+"Hardy Krüger"
+],
+"star_ordered": false,
+"director": [
+"Howard Hawks",
+"Paul Helmick"
+],
+"writer": [
+"Leigh Brackett"
+],
+"producer": [
+"Howard Hawks",
+"Paul Helmick"
+],
+"studio": []
+},
+"green berets": {
+"qid": "Q478333",
+"star": [
+"John Wayne",
+"David Janssen",
+"Jim Hutton"
+],
+"star_ordered": false,
+"director": [
+"John Wayne",
+"Ray Kellogg",
+"Mervyn LeRoy"
+],
+"writer": [
+"James Lee Barrett"
+],
+"producer": [
+"John Wayne",
+"Michael Wayne"
+],
+"studio": [
+"Batjac Productions"
+]
+},
+"true grit": {
+"qid": "Q603263",
+"star": [
+"John Wayne",
+"Glen Campbell",
+"Kim Darby"
+],
+"star_ordered": false,
+"director": [
+"Henry Hathaway"
+],
+"writer": [
+"Marguerite Roberts",
+"Charles Portis"
+],
+"producer": [
+"Hal B. Wallis"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"shootist": {
+"qid": "Q1199406",
+"star": [
+"John Wayne",
+"Lauren Bacall",
+"Ron Howard"
+],
+"star_ordered": false,
+"director": [
+"Don Siegel"
+],
+"writer": [
+"Miles Hood Swarthout",
+"Glendon Swarthout"
+],
+"producer": [
+"M. J. Frankovich",
+"William Edwin Self"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"rio lobo": {
+"qid": "Q673437",
+"star": [
+"John Wayne",
+"Jorge Rivero",
+"Jennifer O'Neill"
+],
+"star_ordered": false,
+"director": [
+"Howard Hawks"
+],
+"writer": [
+"Leigh Brackett"
+],
+"producer": [
+"Howard Hawks",
+"Paul Helmick"
+],
+"studio": []
+},
+"el dorado": {
+"qid": "Q1324120",
+"star": [
+"John Wayne",
+"Robert Mitchum",
+"James Caan"
+],
+"star_ordered": false,
+"director": [
+"Howard Hawks"
+],
+"writer": [
+"Leigh Brackett",
+"Harry Brown"
+],
+"producer": [
+"Howard Hawks",
+"Paul Helmick"
+],
+"studio": [
+"Paramount Pictures"
+]
+},
+"lady hamilton aka that hamilton woman": {
+"qid": "Q1637967",
+"star": [
+"Laurence Olivier",
+"Vivien Leigh",
+"Sara Allgood"
+],
+"star_ordered": false,
+"director": [
+"Alexander Korda"
+],
+"writer": [
+"Walter Reisch",
+"R. C. Sherriff"
+],
+"producer": [
+"Alexander Korda"
+],
+"studio": [
+"London Films"
+]
+},
+"apur sansar": {
+"qid": "Q622376",
+"star": [
+"Soumitra Chatterjee",
+"Sharmila Tagore"
+],
+"star_ordered": false,
+"director": [
+"Satyajit Ray"
+],
+"writer": [
+"Satyajit Ray"
+],
+"producer": [
+"Satyajit Ray"
+],
+"studio": []
+},
+"hemo magnificent": {
+"qid": "Q2042102",
+"star": [
+"June Foray",
+"Marvin Miller",
+"Sterling Holloway"
+],
+"star_ordered": false,
+"director": [
+"Frank Capra"
+],
+"writer": [],
+"producer": [],
+"studio": []
+},
+"unchained goddess": {
+"qid": "Q7716397",
+"star": [],
+"star_ordered": false,
+"director": [],
+"writer": [],
+"producer": [],
+"studio": []
+},
+"seventh voyage of sinbad": {
+"qid": "Q1545331",
+"star": [
+"Kerwin Mathews",
+"Torin Thatcher",
+"Kathryn Crosby"
+],
+"star_ordered": false,
+"director": [
+"Nathan Juran"
+],
+"writer": [
+"Ken Kolb"
+],
+"producer": [
+"Ray Harryhausen",
+"Charles H. Schneer"
+],
+"studio": [
+"Columbia Pictures"
+]
+},
+"scarlet pimpernel": {
+"qid": "Q3224830",
+"star": [
+"Leslie Howard",
+"Merle Oberon",
+"Raymond Massey"
+],
+"star_ordered": false,
+"director": [
+"Harold Young"
+],
+"writer": [
+"Lajos Bíró",
+"Robert E. Sherwood",
+"Alexander Korda"
+],
+"producer": [
+"Alexander Korda"
+],
+"studio": [
+"London Films"
+]
+},
+"on dangerous ground": {
+"qid": "Q1634259",
+"star": [
+"Ida Lupino",
+"Robert Ryan",
+"Ward Bond"
+],
+"star_ordered": false,
+"director": [
+"Nicholas Ray"
+],
+"writer": [
+"Albert Isaac Bezzerides",
+"Nicholas Ray"
+],
+"producer": [
+"John Houseman"
+],
+"studio": [
+"RKO Pictures"
+]
+},
+"importance of being earnest": {
+"qid": "Q1360769",
+"star": [
+"Michael Redgrave",
+"Michael Denison",
+"Edith Evans"
+],
+"star_ordered": false,
+"director": [
+"Anthony Asquith"
+],
+"writer": [
+"Anthony Asquith"
+],
+"producer": [
+"Earl St. John"
+],
+"studio": []
 }
 }

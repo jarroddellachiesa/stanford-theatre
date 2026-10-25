@@ -18,17 +18,29 @@ for fe in FJ:
 keys=[k for k in G if not BAD.search(k) and not BAD.search(G[k][0]['title']) and any(x['source']!='Stanford Theatre history page' for x in G[k])]
 nr=lambda k:len({x['run'] for x in G[k] if x['source']!='Stanford Theatre history page'}); tk=lambda k:sum(x.get('tickets') or 0 for x in G[k])
 rank=sorted(keys,key=lambda k:(-nr(k),-tk(k)))
-top=rank[:200]; recent=[k for k in keys if any(x['start']>='2021-10-01' for x in G[k])]
+TOPN=500
+top=rank[:TOPN]; recent=[k for k in keys if any(x['start']>='2021-10-01' for x in G[k])]
 import os
 PREV=[o['key'] for o in json.load(open('data/cover.json'))] if os.path.exists('data/cover.json') else []
 keep=[k for k in PREV if k in G]  # never drop an existing page
+# every Hitchcock-directed / John Wayne film that played a festival (data/rule_people.json, from tools/rule_people.py)
+PEOPLE=json.load(open('data/rule_people.json')) if os.path.exists('data/rule_people.json') else []
+def _fy(k):
+    if '#' in k: return [int(k.split('#')[1])]
+    return [y for y,_ in Y[k.split('#')[0]].most_common()] if Y[k.split('#')[0]] else []
+people=[]; PWHY={}
+for k in keys:
+    b=k.split('#')[0]
+    for p in PEOPLE:
+        if NK(p['title'])==b and (any(abs(a-c)<=1 for a in _fy(k) for c in p['years']) or not _fy(k)):  # no festival year: title match only
+            people.append(k); PWHY[k]=p['why']+' '+p['qid']; break
 out=[]
-for k in dict.fromkeys(top+recent+keep):
+for k in dict.fromkeys(top+recent+keep+people):
     yr=int(k.split('#')[1]) if '#' in k else (Y[k].most_common(1)[0][0] if Y[k] else None)
     if yr is None:  # history: first showing year as upper bound
         pass
     t=TT.get(k) or collections.Counter(x['title'] for x in G[k]).most_common(1)[0][0]
-    out.append(dict(key=k,title=t,year=yr,first=min(x['start'] for x in G[k]),runs=nr(k),top=k in top,recent=k in recent,yrs=dict(Y[k])))
+    out.append(dict(key=k,title=t,year=yr,first=min(x['start'] for x in G[k]),runs=nr(k),top=k in top,recent=k in recent,people=PWHY.get(k),yrs=dict(Y[k])))
 json.dump(out,open('data/cover.json','w'),indent=0)
 print(len(top),len(recent),len(out),sum(1 for o in out if not o['year']))
 print([o['title'] for o in out if not o['year']][:40])

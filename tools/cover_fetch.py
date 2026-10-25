@@ -11,11 +11,16 @@ def get(u):
 def norm(s): return re.sub(r'[^a-z0-9]','',re.sub(r'\(.*?\)','',s.lower()).replace('&','and'))
 W='https://en.wikipedia.org/w/api.php?'
 L=json.load(open('data/cover.json')); res={}
+OVR=json.load(open('data/cover_wt_overrides.json')) if os.path.exists('data/cover_wt_overrides.json') else {}
 for o in L:
     t=re.sub(r'\s*\(.*?\)\s*$','',o['title']).strip()
     q=f"{t} {o['year']} film" if o['year'] else f"{t} film"
     r=get(W+urllib.parse.urlencode(dict(action='query',format='json',generator='search',gsrsearch=q,gsrlimit=8,prop='description|pageimages|extracts|pageprops',exintro=1,explaintext=1,exlimit=8,piprop='original',ppprop='wikibase_item',redirects=1)))
     pages=sorted((r.get('query',{}).get('pages') or {}).values(),key=lambda p:p.get('index',99))
+    if o['key'] in OVR:  # curated exact article title (data/cover_wt_overrides.json)
+        r=get(W+urllib.parse.urlencode(dict(action='query',format='json',titles=OVR[o['key']],prop='description|pageimages|extracts|pageprops',exintro=1,explaintext=1,piprop='original',ppprop='wikibase_item',redirects=1)))
+        p=list((r.get('query',{}).get('pages') or {}).values())[0]; m=re.search(r'\b(1[89]\d\d|20[0-2]\d)\b',p.get('description','')+' '+p.get('extract','')[:300])
+        res[o['key']]=dict(wt=p['title'],qid=p.get('pageprops',{}).get('wikibase_item'),img=(p.get('original') or {}).get('source'),desc=p.get('description'),ext=p.get('extract',''),wy=int(m.group(1)) if m else None,score=9); continue
     fy=int(o['first'][:4]); best=None;bs=-9
     for p in pages:
         de=p.get('description','')+' '+p.get('extract','')[:300]; m=re.search(r'\b(1[89]\d\d|20[0-2]\d)\b.{0,40}?\bfilm',de)
