@@ -28,7 +28,7 @@ for k in dict.fromkeys(top+recent+keep):
     if yr is None:  # history: first showing year as upper bound
         pass
     t=TT.get(k) or collections.Counter(x['title'] for x in G[k]).most_common(1)[0][0]
-    out.append(dict(key=k,title=t,year=yr,first=min(x['start'] for x in G[k]),runs=nr(k),tickets=tk(k),top=k in top,recent=k in recent,yrs=dict(Y[k])))
+    out.append(dict(key=k,title=t,year=yr,first=min(x['start'] for x in G[k]),runs=nr(k),top=k in top,recent=k in recent,yrs=dict(Y[k])))
 json.dump(out,open('data/cover.json','w'),indent=0)
 print(len(top),len(recent),len(out),sum(1 for o in out if not o['year']))
 print([o['title'] for o in out if not o['year']][:40])
