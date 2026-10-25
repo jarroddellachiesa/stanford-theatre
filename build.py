@@ -222,7 +222,7 @@ def SLOGO(k,y):
 import os as _os
 WL=json.load(open("data/watch_links.json")) if _os.path.exists('data/watch_links.json') else {}
 def WATCH(k):
-    L=WL.get(k) or []
+    L=[x for x in (WL.get(k) or []) if not x.get('disabled')]
     if not L: return ''
     seen=[];h=[]
     for x in L:

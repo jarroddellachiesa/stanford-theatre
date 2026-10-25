@@ -30,7 +30,8 @@ def ia_ok(ident,rt):
     md=get('https://archive.org/metadata/'+urllib.parse.quote(ident))
     if not md or not md.get('metadata'): return None
     m=md['metadata']; col=m.get('collection'); col=[col] if isinstance(col,str) else (col or [])
-    vids=[f for f in md.get('files',[]) if re.search(r'\.(mp4|ogv|mpeg|mpg|avi|mkv|webm)$',f.get('name',''),re.I)]
+    if md.get('is_dark'): return None
+    vids=[f for f in md.get('files',[]) if re.search(r'\.(mp4|ogv|webm|m4v)$',f.get('name',''),re.I) and not f.get('private')]  # browser-playable only
     if not vids: return None
     L=max((float(f.get('length') or 0) for f in vids),default=0)/60 or mins(m.get('runtime'))
     if L and L<40: return None                      # shorts / clips / trailers
@@ -41,6 +42,7 @@ def yt_ok(vid):
     r=get('https://www.youtube.com/oembed?format=json&url='+urllib.parse.quote('https://www.youtube.com/watch?v='+vid))
     return r and dict(title=r.get('title'),channel=r.get('author_name'))
 # official studio / distributor / rights-holder channels only
+YT_ENABLED=False  # site owner: show archive.org links only for now
 OFFICIAL={'YouTube Movies','Warner Bros. Classics','Harold Lloyd','Paramount Vault','Sony Pictures Entertainment','MGM','Universal Pictures','20th Century Studios','Criterion Collection','British Pathé','BFI','Janus Films','Kino Lorber','Flicker Alley'}
 M=json.load(open('data/cover_meta.json')); COV={o['key']:o for o in json.load(open('data/cover.json'))}
 OUT={}
@@ -77,7 +79,7 @@ for k,o in COV.items():
         if ok and ok.get('channel') not in OFFICIAL: continue
         if not ok or re.search(r'trailer|teaser|clip|scene|excerpt|preview|featurette|review',ok.get('title') or '',re.I): continue
         if not yv['minutes'] and not re.search(r'full (movie|film)|complete film|full length',ok.get('title') or '',re.I): continue  # need duration or explicit full-film title
-        L.append(dict(source='YouTube',url='https://www.youtube.com/watch?v='+vid,id=vid,evidence=dict(via=f'Wikidata {q} P1651',minutes=yv['minutes'],**ok)))
+        L.append(dict(source='YouTube',disabled=not YT_ENABLED,disabled_reason='' if YT_ENABLED else 'YouTube links hidden by site owner (2026-10-25); kept for later',url='https://www.youtube.com/watch?v='+vid,id=vid,evidence=dict(via=f'Wikidata {q} P1651',minutes=yv['minutes'],**ok)))
     if PD and not any(x['source']=='Internet Archive' for x in L) and y:
         t=re.sub(r'\s*\(.*?\)\s*$','',o['title']).replace('"','')
         qq=f'title:("{t}") AND mediatype:movies AND collection:(feature_films OR moviesandfilms) AND year:[{y-1} TO {y+1}]'

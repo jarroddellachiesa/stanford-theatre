@@ -9,7 +9,9 @@
     "minutes": 86,
     "title": "The 39 Steps (1935)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "adventures of robin hood": [
@@ -22,7 +24,9 @@
     "minutes": 102,
     "title": "The Adventures of Robin Hood",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "affair to remember": [
@@ -35,7 +39,9 @@
     "minutes": 115,
     "title": "An Affair to Remember",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "american in paris": [
@@ -48,7 +54,9 @@
     "minutes": 113,
     "title": "An American in Paris",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "anastasia": [
@@ -61,7 +69,9 @@
     "minutes": 105,
     "title": "Anastasia",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "animal crackers": [
@@ -81,7 +91,8 @@
     "license": "",
     "title": "Animal Crackers",
     "year": "1930-09-06"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "animal kingdom": [
@@ -101,7 +112,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "The Animal Kingdom",
     "year": "1932"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "applause": [
@@ -121,7 +133,8 @@
     "license": "https://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Applause (1929)",
     "year": "1929"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "asphalt jungle": [
@@ -134,7 +147,9 @@
     "minutes": 112,
     "title": "The Asphalt Jungle",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "beat devil": [
@@ -154,7 +169,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Beat the Devil (1953)",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "becky sharp": [
@@ -174,7 +190,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Becky Sharp (1935)",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "ben hur": [
@@ -187,7 +204,9 @@
     "minutes": 222,
     "title": "Ben Hur (1959)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "big trail": [
@@ -207,7 +226,8 @@
     "license": "https://creativecommons.org/publicdomain/mark/1.0/",
     "title": "The Big Trail (1930)",
     "year": "1930-10-02"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "blackmail": [
@@ -226,7 +246,8 @@
     "license": "",
     "title": "Blackmail ( 1929)",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -244,7 +265,8 @@
     "license": "",
     "title": "Blackmail",
     "year": "1929"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "blue angel": [
@@ -264,7 +286,8 @@
     "license": "",
     "title": "The Blue Angel",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -282,7 +305,8 @@
     "license": "",
     "title": "Der Blaue Engel (1930)",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "cameraman": [
@@ -302,7 +326,8 @@
     "license": "https://creativecommons.org/publicdomain/mark/1.0/",
     "title": "The Cameraman (1928)",
     "year": "1928-09-22"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "camille": [
@@ -315,7 +340,9 @@
     "minutes": 109,
     "title": "Camille",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "captain blood": [
@@ -328,7 +355,9 @@
     "minutes": 119,
     "title": "Captain Blood (1935)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "casablanca": [
@@ -341,7 +370,9 @@
     "minutes": 103,
     "title": "Casablanca",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "cat and canary#1927": [
@@ -362,7 +393,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "The Cat and the Canary",
     "year": "1927"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "cat on hot tin roof": [
@@ -375,7 +407,9 @@
     "minutes": 108,
     "title": "Cat on a Hot Tin Roof",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "champagne": [
@@ -395,7 +429,8 @@
     "license": "",
     "title": "Champagne",
     "year": "1928-08-20"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "citizen kane": [
@@ -408,7 +443,9 @@
     "minutes": 119,
     "title": "Citizen Kane (70th Anniversary)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   },
   {
    "source": "YouTube",
@@ -419,7 +456,9 @@
     "minutes": 119,
     "title": "Citizen Kane",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "clash by night": [
@@ -432,7 +471,9 @@
     "minutes": 105,
     "title": "Clash by Night",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "cocoanuts": [
@@ -452,7 +493,8 @@
     "license": "",
     "title": "The Cocoanuts",
     "year": "1929-08-03"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "covered wagon": [
@@ -472,7 +514,8 @@
     "license": "",
     "title": "The Covered Wagon",
     "year": "1924-09-08"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "crowd": [
@@ -491,7 +534,8 @@
     "license": "",
     "title": "La Foule /The Crowd ( 1927, King Vidor Vost)",
     "year": "1927"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -507,7 +551,8 @@
     "license": "",
     "title": "The Crowd (1928)",
     "year": "1928-02-29"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "curly top": [
@@ -520,7 +565,9 @@
     "minutes": 75,
     "title": "Curly Top",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "david copperfield": [
@@ -533,7 +580,9 @@
     "minutes": 130,
     "title": "David Copperfield",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "dinner at eight": [
@@ -546,7 +595,9 @@
     "minutes": 106,
     "title": "Dinner At Eight",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "docks of new york": [
@@ -566,7 +617,8 @@
     "license": "",
     "title": "The Docks of New York",
     "year": "1928"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -584,7 +636,8 @@
     "license": "",
     "title": "1928 - The Dock of New York - Josef von Sternberg - Intertítulos en inglés y español",
     "year": "1928"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "dont bother to knock": [
@@ -597,7 +650,9 @@
     "minutes": 76,
     "title": "Don't Bother to Knock",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "duck soup": [
@@ -610,7 +665,9 @@
     "minutes": 69,
     "title": "Duck Soup",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "easter parade": [
@@ -623,7 +680,9 @@
     "minutes": 103,
     "title": "Easter Parade",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "easy virtue": [
@@ -643,7 +702,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "EasyVirtue(Alfred Hitchcock-1928) sub esp",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "el dorado": [
@@ -656,7 +716,9 @@
     "minutes": 126,
     "title": "El Dorado",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "fathers little dividend": [
@@ -679,7 +741,8 @@
      "1941",
      "1951"
     ]
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -695,7 +758,8 @@
     "license": "https://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Father's Little Dividend (1951) [HD]",
     "year": "1951"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "flight": [
@@ -715,7 +779,8 @@
     "license": "",
     "title": "Flight",
     "year": "1929"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "follow thru": [
@@ -735,7 +800,8 @@
     "license": "",
     "title": "Follow Thru",
     "year": "1930-09-27"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "footlight parade": [
@@ -748,7 +814,9 @@
     "minutes": 103,
     "title": "Footlight Parade",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "forbidden planet": [
@@ -761,7 +829,9 @@
     "minutes": 98,
     "title": "Forbidden Planet",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "four sons": [
@@ -781,7 +851,8 @@
     "license": "",
     "title": "Four Sons",
     "year": "1928-02-13"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "freshman": [
@@ -801,7 +872,8 @@
     "license": "",
     "title": "The Freshman",
     "year": "1925-09-20"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "general": [
@@ -825,7 +897,8 @@
      "1926",
      "1927"
     ]
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -844,7 +917,8 @@
     "license": "",
     "title": "\"The General\" (1926) starring Buster Keaton",
     "year": "1926"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "gentlemen prefer blondes": [
@@ -857,7 +931,9 @@
     "minutes": 91,
     "title": "Gentlemen Prefer Blondes",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "giant": [
@@ -870,7 +946,9 @@
     "minutes": 201,
     "title": "Giant",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "girl shy": [
@@ -890,7 +968,8 @@
     "license": "",
     "title": "Girl Shy",
     "year": "1924-04-20"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "gone with wind": [
@@ -903,7 +982,9 @@
     "minutes": 234,
     "title": "Gone With the Wind",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   },
   {
    "source": "YouTube",
@@ -914,7 +995,9 @@
     "minutes": 233,
     "title": "Gone With The Wind",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "greed": [
@@ -933,7 +1016,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Greed (1924) [VHS]",
     "year": "1924"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "his girl friday": [
@@ -953,7 +1037,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "His Girl Friday",
     "year": "1940"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -971,7 +1056,8 @@
     "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "title": "His Girl Friday - 1940",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -989,7 +1075,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "His Girl Friday ( 1940)",
     "year": "1940"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1007,7 +1094,8 @@
     "license": "",
     "title": "His Girl Friday 1940 colorized (Cary Grant)",
     "year": "1940"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1025,7 +1113,8 @@
     "license": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
     "title": "HIS GIRL FRIDAY (1940)",
     "year": "1940"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1043,7 +1132,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "His Girl Friday",
     "year": "1940"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "holiday inn": [
@@ -1056,7 +1146,9 @@
     "minutes": 101,
     "title": "Holiday Inn",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "hot water": [
@@ -1076,7 +1168,8 @@
     "license": "",
     "title": "Hot Water",
     "year": "1924-10-26"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "how green was my valley": [
@@ -1089,7 +1182,9 @@
     "minutes": 119,
     "title": "How Green Was My Valley",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "how to steal million": [
@@ -1102,7 +1197,9 @@
     "minutes": 123,
     "title": "How to Steal a Million",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "iron horse": [
@@ -1122,7 +1219,8 @@
     "license": "",
     "title": "The Iron Horse",
     "year": "1925-10-04"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "jezebel": [
@@ -1135,7 +1233,9 @@
     "minutes": 104,
     "title": "Jezebel",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "kid brother": [
@@ -1148,7 +1248,9 @@
     "minutes": 83,
     "title": "'The Kid Brother' (1927) - Harold Lloyd | Full Movie - Silent Film | Full HD 1080",
     "channel": "Harold Lloyd"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   },
   {
    "source": "Internet Archive",
@@ -1166,7 +1268,8 @@
     "license": "",
     "title": "The Kid Brother",
     "year": "1927-01-17"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "kid galahad": [
@@ -1179,7 +1282,9 @@
     "minutes": 102,
     "title": "Kid Galahad (1937)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "ladies of leisure": [
@@ -1199,7 +1304,8 @@
     "license": "",
     "title": "Ladies of Leisure",
     "year": "1930-04-05"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "lady windermeres fan": [
@@ -1220,7 +1326,8 @@
     "license": "http://creativecommons.org/licenses/by/3.0/",
     "title": "Lady Windermere's Fan",
     "year": "1925"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "lets make it legal": [
@@ -1233,7 +1340,9 @@
     "minutes": 77,
     "title": "Let's Make It Legal",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "lets make love": [
@@ -1246,7 +1355,9 @@
     "minutes": 119,
     "title": "Let's Make Love",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "love parade": [
@@ -1266,7 +1377,8 @@
     "license": "",
     "title": "The Love Parade",
     "year": "1929"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "maltese falcon": [
@@ -1279,7 +1391,9 @@
     "minutes": 100,
     "title": "The Maltese Falcon",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "man who knew too much#1956": [
@@ -1292,7 +1406,9 @@
     "minutes": 120,
     "title": "The Man Who Knew Too Much",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "mark of zorro#1920": [
@@ -1312,7 +1428,8 @@
     "license": "",
     "title": "Mark of Zorro",
     "year": "1920"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "marnie": [
@@ -1325,7 +1442,9 @@
     "minutes": 131,
     "title": "Marnie",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "marriage circle": [
@@ -1345,7 +1464,8 @@
     "license": "",
     "title": "The Marriage Circle",
     "year": "1924-02-10"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "meet john doe": [
@@ -1365,7 +1485,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Meet John Doe",
     "year": "1941"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1383,7 +1504,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Meet John Doe",
     "year": "1941"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1401,7 +1523,8 @@
     "license": "",
     "title": "Meet John Doe",
     "year": "1941"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1419,7 +1542,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "L'homme de la rue",
     "year": "1941"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "meet me in st louis": [
@@ -1432,7 +1556,9 @@
     "minutes": 113,
     "title": "Meet me in St. Louis",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "misfits": [
@@ -1445,7 +1571,9 @@
     "minutes": 125,
     "title": "The Misfits",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "monte carlo": [
@@ -1465,7 +1593,8 @@
     "license": "",
     "title": "Monte Carlo",
     "year": "1930-08-27"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "morocco": [
@@ -1485,7 +1614,8 @@
     "license": "",
     "title": "Morocco (1930)",
     "year": "1930"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1503,7 +1633,8 @@
     "license": "",
     "title": "Morocco",
     "year": "1930"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "my favorite brunette": [
@@ -1523,7 +1654,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "My Favorite Brunette",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1541,7 +1673,8 @@
     "license": "",
     "title": "My Favorite Brunette 1947 colorized (Bob Hope, Dorothy Lamour, Peter Lorre)",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1559,7 +1692,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "My Favorite Brunette",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1577,7 +1711,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "My Favorite Brunette",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1595,7 +1730,8 @@
     "license": "",
     "title": "My Favorite Brunette",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "my man godfrey": [
@@ -1615,7 +1751,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "My Man Godfrey (1936)",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "navigator": [
@@ -1635,7 +1772,8 @@
     "license": "https://creativecommons.org/publicdomain/mark/1.0/",
     "title": "The Navigator (1924)",
     "year": "1924-10-13"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "noahs ark": [
@@ -1648,7 +1786,9 @@
     "minutes": 99,
     "title": "Noah's Ark | Full 1928 Feature Film | Warner Classics",
     "channel": "Warner Bros. Classics"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "north by northwest": [
@@ -1661,7 +1801,9 @@
     "minutes": 136,
     "title": "North By Northwest",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "of human bondage": [
@@ -1681,7 +1823,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Of Human Bondage",
     "year": "1934"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1699,7 +1842,8 @@
     "license": "",
     "title": "Of Human Bondage",
     "year": "1934"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "on waterfront": [
@@ -1712,7 +1856,9 @@
     "minutes": 108,
     "title": "On The Waterfront",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "our dancing daughters": [
@@ -1732,7 +1878,8 @@
     "license": "",
     "title": "Our Dancing Daughters",
     "year": "1928-09-01"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "our hospitality": [
@@ -1752,7 +1899,8 @@
     "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "title": "Our Hospitality",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "patsy": [
@@ -1772,7 +1920,8 @@
     "license": "",
     "title": "The Patsy",
     "year": "1928-03-10"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "penny serenade": [
@@ -1792,7 +1941,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Penny Serenade",
     "year": "1941"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1810,7 +1960,8 @@
     "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "title": "Penny Serenade",
     "year": "1941"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1828,7 +1979,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Penny Serenade",
     "year": "1941"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "petrified forest": [
@@ -1841,7 +1993,9 @@
     "minutes": 82,
     "title": "The Petrified Forest",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "phantom of opera#1925": [
@@ -1861,7 +2015,8 @@
     "license": "",
     "title": "The Phantom of the Opera (1925) New York General Release Print",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1880,7 +2035,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "The Phantom of the Opera",
     "year": "1925"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1899,7 +2055,8 @@
     "license": "",
     "title": "\"The Phantom of the Opera\" (1925) starring Lon Chaney",
     "year": "1925"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -1918,7 +2075,8 @@
     "license": "",
     "title": "El Fantasma De La Ópera 1925 (sub Español)",
     "year": "1925"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "philadelphia story": [
@@ -1931,7 +2089,9 @@
     "minutes": 112,
     "title": "The Philadelphia Story",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "pillow talk": [
@@ -1944,7 +2104,9 @@
     "minutes": 103,
     "title": "Pillow Talk",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "pleasure garden": [
@@ -1964,7 +2126,8 @@
     "license": "",
     "title": "The Pleasure Garden",
     "year": "1925"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "power of press": [
@@ -1984,7 +2147,8 @@
     "license": "",
     "title": "The Power of the Press",
     "year": "1928-10-31"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "pride and prejudice": [
@@ -1997,7 +2161,9 @@
     "minutes": 113,
     "title": "Pride And Prejudice (1940)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "randy rides alone": [
@@ -2017,7 +2183,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Randy Rides Alone",
     "year": "1934"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2035,7 +2202,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Randy Rides Alone (1934)",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "rear window": [
@@ -2048,7 +2216,9 @@
     "minutes": 114,
     "title": "Rear Window",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "red house": [
@@ -2068,7 +2238,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "The Red House",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2086,7 +2257,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "THE RED HOUSE video & audio upgrade",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2104,7 +2276,8 @@
     "license": "",
     "title": "1947 - The Red House - La casa roja - Delmer Daves - VE",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2122,7 +2295,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "The Red House",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2140,7 +2314,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "The Red House iPod",
     "year": "1947"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "riders of purple sage": [
@@ -2160,7 +2335,8 @@
     "license": "",
     "title": "Riders of the Purple Sage",
     "year": "1925-03-15"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "rio bravo": [
@@ -2173,7 +2349,9 @@
     "minutes": 141,
     "title": "Rio Bravo",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "river of no return": [
@@ -2186,7 +2364,9 @@
     "minutes": 91,
     "title": "River Of No Return",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "roman holiday": [
@@ -2199,7 +2379,9 @@
     "minutes": 118,
     "title": "Roman Holiday",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "royal wedding": [
@@ -2219,7 +2401,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Royal Wedding",
     "year": "1951"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2237,7 +2420,8 @@
     "license": "",
     "title": "Royal Wedding",
     "year": "1951"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "safety last": [
@@ -2257,7 +2441,8 @@
     "license": "",
     "title": "Safety Last!",
     "year": "1923-04-01"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "scarlet street": [
@@ -2277,7 +2462,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Scarlet Street",
     "year": "1945"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2295,7 +2481,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Scarlet Street",
     "year": "1945"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2313,7 +2500,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Scarlet Street 1945 HD",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2331,7 +2519,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Scarlet Street (remastered edition) (1945, Dir: Fritz Lang, noir, imdb score: 7.8)",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2349,7 +2538,8 @@
     "license": "",
     "title": "1945 - Scarlet Street - Perversidad - Mala mujer - Fritz Lang 1",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2367,7 +2557,8 @@
     "license": "",
     "title": "Scarlet Street (1946) Director: Fritz Lang, Stars Edward G. Robinson, Joan Bennett, Dan Duryea - Film Noir",
     "year": "1946"
-   }
+   },
+   "checked": "2026-10-25"
   },
   {
    "source": "Internet Archive",
@@ -2385,7 +2576,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Scarlet Street with subtitles",
     "year": "1945"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "searchers": [
@@ -2398,7 +2590,9 @@
     "minutes": 119,
     "title": "The Searchers (1956)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "seven year itch": [
@@ -2411,7 +2605,9 @@
     "minutes": 104,
     "title": "The Seven Year Itch",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "sherlock jr": [
@@ -2430,7 +2626,8 @@
     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
     "title": "Sherlock Jr. 1924",
     "year": "1924"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "some like it hot": [
@@ -2443,7 +2640,9 @@
     "minutes": 122,
     "title": "Some Like It Hot",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "speedy": [
@@ -2463,7 +2662,8 @@
     "license": "",
     "title": "Speedy",
     "year": "1928-04-07"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "steamboat bill jr": [
@@ -2484,7 +2684,8 @@
     "license": "http://creativecommons.org/licenses/publicdomain/",
     "title": "Steamboat Bill, Jr.",
     "year": "1928"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "stowaway": [
@@ -2497,7 +2698,9 @@
     "minutes": 87,
     "title": "Stowaway",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "submarine": [
@@ -2517,7 +2720,8 @@
     "license": "",
     "title": "Submarine",
     "year": "1928-11-12"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "sunrise": [
@@ -2536,7 +2740,8 @@
     "license": "",
     "title": "Amanecer Sunrise, A Song Of Two Humans",
     "year": null
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "ten commandments": [
@@ -2549,7 +2754,9 @@
     "minutes": 220,
     "title": "The Ten Commandments (1956)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "theres no business like show business": [
@@ -2562,7 +2769,9 @@
     "minutes": 117,
     "title": "There's No Business Like Show Business",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "thief of bagdad": [
@@ -2582,7 +2791,8 @@
     "license": "",
     "title": "Thief of Bagdad",
     "year": "1924"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "time machine": [
@@ -2595,7 +2805,9 @@
     "minutes": 98,
     "title": "Die Zeitmaschine",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "to catch thief": [
@@ -2608,7 +2820,9 @@
     "minutes": 106,
     "title": "To Catch A Thief",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "to have and have not": [
@@ -2621,7 +2835,9 @@
     "minutes": 100,
     "title": "To Have And Have Not",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "treasure of sierra madre": [
@@ -2634,7 +2850,9 @@
     "minutes": 126,
     "title": "Treasure of the Sierra Madre",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "tumbleweeds": [
@@ -2654,7 +2872,8 @@
     "license": "",
     "title": "Tumbleweeds",
     "year": "1925-12-27"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "unforgiven": [
@@ -2667,7 +2886,9 @@
     "minutes": 121,
     "title": "Unforgiven",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "vagabond king": [
@@ -2687,7 +2908,8 @@
     "license": "",
     "title": "The Vagabond King",
     "year": "1930-02-17"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "vertigo": [
@@ -2700,7 +2922,9 @@
     "minutes": 128,
     "title": "Vertigo",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "war of worlds": [
@@ -2713,7 +2937,9 @@
     "minutes": 85,
     "title": "The War of the Worlds (1953)",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "way down east": [
@@ -2734,7 +2960,8 @@
     "license": "",
     "title": "\"Way Down East\" (1920) director D. W. Griffith, cinematographer Billy Bitzer",
     "year": "1920"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "white christmas": [
@@ -2747,7 +2974,9 @@
     "minutes": 120,
     "title": "White Christmas",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "why worry": [
@@ -2767,7 +2996,8 @@
     "license": "",
     "title": "Why Worry?",
     "year": "1923-09-09"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ],
  "witness for prosecution": [
@@ -2780,7 +3010,9 @@
     "minutes": 116,
     "title": "Witness for the Prosecution",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "wizard of oz": [
@@ -2793,7 +3025,9 @@
     "minutes": 102,
     "title": "The Wizard of Oz",
     "channel": "YouTube Movies"
-   }
+   },
+   "disabled": true,
+   "disabled_reason": "YouTube links hidden by site owner (2026-10-25); kept for later"
   }
  ],
  "younger generation": [
@@ -2813,7 +3047,8 @@
     "license": "",
     "title": "The Younger Generation",
     "year": "1929-03-04"
-   }
+   },
+   "checked": "2026-10-25"
   }
  ]
 }
