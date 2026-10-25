@@ -24,12 +24,13 @@ function reveal(){
     var w=document.createElement('div');w.innerHTML=h;ft?ft.parentNode.insertBefore(w.firstChild,ft):tgt.appendChild(w.firstChild);
   }
   document.querySelectorAll('section[data-start]').forEach(function(sec){
-    var a=sec.dataset.start,b=sec.dataset.end||a;if(!a)return;
-    sec.querySelectorAll('a.card').forEach(function(c){
-      if(c.querySelector('.stc'))return;var mm=(c.getAttribute('href')||'').match(/films\/([^\/]+)\.html/);if(!mm||!F[mm[1]])return;
-      var P={},days=[];F[mm[1]].forEach(function(r){r.days.forEach(function(d){if(d[0]>=a&&d[0]<=b){P[r.prog]=1;days.push(d)}})});
-      if(!days.length)return;var s=sum(days),x=document.createElement('small');x.className='stc';
-      x.textContent='#'+Object.keys(P).join(', #')+' · '+n(s[0])+' · '+$(s[1]);c.appendChild(x)})});
+    var a=sec.dataset.start,b=sec.dataset.end||a;if(!a||sec.querySelector('.stb'))return;
+    var P={},seen={},A=0,G=0;
+    sec.querySelectorAll('a.card').forEach(function(c){var mm=(c.getAttribute('href')||'').match(/films\/([^\/]+)\.html/);if(!mm||!F[mm[1]])return;
+      F[mm[1]].forEach(function(r){r.days.forEach(function(d){if(d[0]>=a&&d[0]<=b){P[r.prog]=1;var k=r.prog+'|'+d[0];if(!seen[k]){seen[k]=1;A+=d[2];G+=d[3]}}})})});
+    var ks=Object.keys(P);if(!ks.length)return;var x=document.createElement('div');x.className='stb';
+    x.textContent='Program #'+ks.join(', #')+' · '+n(A)+' admissions · '+$(G);
+    var cols=sec.querySelector('.cols');cols?cols.parentNode.insertBefore(x,cols.nextSibling):sec.appendChild(x)});
 }
 function unlock(raw){return enc().then(function(E){return dec(raw,E)}).then(function(d){D=d;reveal();return true})}
 function lock(){try{sessionStorage.removeItem(K);localStorage.removeItem(K)}catch(e){}location.reload()}

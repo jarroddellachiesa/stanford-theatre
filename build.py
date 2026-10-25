@@ -156,6 +156,7 @@ TICKET=OR
 import unicodedata as _ud
 RT=tk("@N@","#e8564f","#8e1a16","grt")
 SH=json.load(open('data/showings.json'))
+for o in SH: o.pop('tickets',None)  # attendance is published only inside encrypted stats
 ETY=json.load(open('data/entry_types.json')) if __import__('os').path.exists('data/entry_types.json') else {}
 for o in SH:
     if o.get('badge')=='Original Run': o['type']=ETY.get(o['title']+'|'+o['start'],'unknown')
@@ -264,7 +265,7 @@ for s,k in K.items():
     fest=[x for x in FEST if s in x[4]][0]
     sl_=SLUG[fest[2]]; sched="".join(f'<div class="bill" data-end="{en}">'+DAYS(st,en,items,sl_,only=s)+'</div>' for u,lab,st,en,items in NB if items and any(a==s for a,_ in items))
     FR_=FILMRUNS(f['t'])
-    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
+    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]
     ORR=[o for o in FR_ if o.get('badge')]
     OGS=''
@@ -279,7 +280,7 @@ for s,k in K.items():
 <section class="ups"><h2>Upcoming Showings</h2>{sched}</section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
-<section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p><p class="big">{t['tk']} tickets sold</p>{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
+<section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p>{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li></ul></section></article>'''
     open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../"))
 
@@ -352,7 +353,7 @@ for k,v in COV.items():
     FR_=FILMRUNS(v['title'],key=k)
     if not FR_: continue
     if all(o.get('type') not in (None,'feature') for o in FR_) and not _o2.path.exists(f'films/{v["slug"]}.html'): continue  # non-feature entries never get new film pages
-    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+(f' · {o["tickets"]:,} tickets' if o.get('tickets') is not None else '')+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
+    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]; ORR=[o for o in FR_ if o.get('badge')]; OGS=''
     if OGR:
         rng=FRp(OGR[0]['start'],max((o.get('end') or o['start']) for o in OGR)) if len(OGR)>1 else FRp(OGR[0]['start'],OGR[0].get('end'))
@@ -365,7 +366,7 @@ for k,v in COV.items():
     b=f'''<article class="film"><div class="top">{img}
 <div><h1>{e(v['title'])}</h1><div class="meta">{meta}</div>{LOGOH(k,v['year'])}{CRED(k,v['year']) or (f'<p class="cr">{e(v["desc"][:1].upper()+v["desc"][1:])}</p>' if v['desc'] else '')}<p class="plot">{e(v['syn'])}</p></div></div>
 {(lambda fx:(f'<section><h2>Trivia</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['trivia'])+'</ul></section>' if fx.get('trivia') else '')+(f'<section><h2>Filming Locations</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['loc'])+'</ul></section>' if fx.get('loc') else ''))(CFX.get(k,{}))}
-<section><h2>Previous Showings</h2><p class="big">{len(FR_)} Run{"s" if len(FR_)!=1 else ""} • {fcs} Festival{"s" if fcs!=1 else ""}</p>{f'<p class="big">{tks:,} tickets sold</p>' if tks else ''}{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
+<section><h2>Previous Showings</h2><p class="big">{len(FR_)} Run{"s" if len(FR_)!=1 else ""} • {fcs} Festival{"s" if fcs!=1 else ""}</p>{''}{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul>{more}</ul></section></article>'''
     open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../")); NFP+=1
 print('COVERPAGES',NFP)

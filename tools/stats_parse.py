@@ -20,7 +20,7 @@ def parse(t):
         i+=1
     return title,list(runs.values())
 S={}
-for f in glob.glob('/workspace/cache/tileq/*.html')+glob.glob('/workspace/tile/*.html'):
+for f in glob.glob('/workspace/cache/tileq/*.html')+glob.glob('/workspace/tile/*.html')+glob.glob('/workspace/private/tile_cache/*.html'):
     t,r=parse(open(f,errors='replace').read())
     if t and r: S[t]=sorted(r,key=lambda x:x['days'][0][0])
 os.makedirs(os.path.dirname(OUT),exist_ok=True); json.dump(S,open(OUT,'w')); os.chmod(OUT,0o600)

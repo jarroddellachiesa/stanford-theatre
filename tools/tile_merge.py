@@ -149,6 +149,7 @@ for k,L in G.items():
         elif e_>ce: ce=e_
         o['n']=n; o['run']=k+'|'+str(n)
 out.sort(key=lambda o:(o['start'],o['source']!='Tile'))
+for o in out: o.pop('tickets',None)  # attendance only in encrypted stats
 with open(P0,'w') as fh: json.dump(out,fh,ensure_ascii=False)
 open('stanford-site/data/showings.js','w').write('window.SHOWINGS='+json.dumps(out,ensure_ascii=False)+';')
 for s in ['Tile','Stanford Theatre history page','Stanford Theatre calendars']:

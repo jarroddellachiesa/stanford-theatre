@@ -142,3 +142,4 @@ a.pfl,a.pfl:hover,a.pfl:visited{color:inherit;text-decoration:none}a.pfl:hover{c
 .stx table{width:100%;border-collapse:collapse;font-size:15px;margin:4px 0 12px}.stx th,.stx td{text-align:right;padding:3px 4px;border-bottom:1px solid #ffffff14}.stx th:first-child,.stx td:first-child{text-align:left}
 .stx .sth{color:#e8c872;margin-top:8px}.stx .stt td{font-weight:800;color:#fff1cc}.stx .stft{text-align:center;color:#fff1cc}
 .card .stc{display:block;color:#9fe3a8;font-size:13px;margin-top:2px}
+.stb{text-align:center;color:#9fe3a8;font-size:14px;font-weight:700;margin:10px auto 2px;padding:5px 10px;border-top:1px solid #d4af3755;max-width:420px}
