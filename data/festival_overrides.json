@@ -252,5 +252,20 @@
   },
   "Kurosawa": {
     "name": "Akira Kurosawa Film Festival 2010"
+  },
+  "Christmas 2025": {
+    "year": 2025,
+    "name": "Holiday Program"
+  },
+  "Hitchcock 05": {
+    "year": 2005,
+    "name": "Alfred Hitchcock, April 2005"
+  },
+  "Sturges-Marx Bros": {
+    "year": 2005,
+    "name": "The best of Preston Sturges and the Marx Brothers"
+  },
+  "Summer 2022": {
+    "name": "Summer 2022 + Extended Summer Calendar"
   }
 }
