@@ -267,5 +267,8 @@
   },
   "Summer 2022": {
     "name": "Summer 2022 + Extended Summer Calendar"
+  },
+  "Extended Summer calendar": {
+    "merge_into": "Summer 2022.html"
   }
 }

@@ -118,6 +118,13 @@ for f in sorted(glob.glob('cache/cal/*')):
     if ov.get('name'): name=ov['name']
     if blocks: F.append(dict(name=name or fn.rsplit('.',1)[0],file=fn,year=y,blocks=blocks,start=min((b['start'] for b in blocks if b['start']),default=None),end=max((b['end'] for b in blocks if b['end']),default=None)))
     else: gaps.append((fn,'no bills parsed'))
+for _src in [x for x in F if OV.get(x['file'].rsplit('.',1)[0].replace('%20',' '),{}).get('merge_into')]:
+    _t=[x for x in F if x['file']==OV[_src['file'].rsplit('.',1)[0].replace('%20',' ')]['merge_into']]
+    if not _t: continue
+    _t=_t[0]; F.remove(_src); _t.setdefault('extra_files',[]).append(_src['file'])
+    for _b in _src['blocks']:
+        if not any(_b['start']==o['start'] for o in _t['blocks']): _t['blocks'].append(_b)
+    _t['end']=max([o['end'] for o in _t['blocks'] if o['end']],default=_t['end'])
 os.makedirs('stanford-site/data',exist_ok=True)
 json.dump(dict(festivals=F,gaps=gaps),open('stanford-site/data/festivals.json','w'),ensure_ascii=False)
 print(len(F),'festivals',sum(len(x['blocks']) for x in F),'bills')
