@@ -29,8 +29,8 @@ def _DIM(rel):
 EAGER_N=4  # first N poster cards on a page load eagerly (above the fold)
 def _eager(body):
     if 'fetchpriority="high"' in body: return body
-    for i in range(EAGER_N): body=body.replace(' decoding="async" loading="lazy"',' decoding="async" fetchpriority="high" data-e' if i==0 else ' decoding="async" data-e',1)
-    return body.replace(' data-e','')
+    for i in range(EAGER_N): body=body.replace(' decoding="async" loading="lazy"',' decoding="async" fetchpriority="high" data-eagerx' if i==0 else ' decoding="async" data-eagerx',1)
+    return body.replace(' data-eagerx','')
 def POSTER(src,alt,cls='',full=False,sizes='160px'):
     """src is the JPG path as used in the page (may start with ../). Emits <picture> with WebP srcset when generated."""
     pre=_re0.match(r'(?:\.\./)*',src).group(0); rel=src[len(pre):]
@@ -82,6 +82,13 @@ def STDR(a,b=None):
     return f"{m(A)} - {m(B)}, {A.year}"
 def _dr(t,a,b): return STDR(a,b)
 _rng={u:(min(b[2] for b in NB if b[0]==u and (b[4] or not any(c[0]==u and c[4] for c in NB))),max(b[3] for b in NB if b[0]==u and (b[4] or not any(c[0]==u and c[4] for c in NB)))) for u in {b[0] for b in NB}}  # range from scheduled bills
+ARCH={EMS:'eva-marie-saint.html',PW:'poppins-wizard-2026.html'}
+PRES={EMS:dict(title="Remembering Eva Marie Saint",sub="October 2026",days="Friday · Saturday · Sunday",
+  blocks=[("October 16-18",[("North by Northwest (1959)","tt0053125","7:30 (plus 3:00 Sat/Sun)"),("On the Waterfront (1954)","tt0047296","5:30, 10:00")]),
+          ("October 23-25",[("North by Northwest (1959)","tt0053125","7:30 (plus 3:00 Sat/Sun)"),("On the Waterfront (1954)","tt0047296","5:30, 10:00")])]),
+ PW:dict(title=None,sub=None,days="Thursday · Friday · Saturday · Sunday",
+  blocks=[("October 29 - November 1",[("Mary Poppins (1964)","tt0058331","7:30 (plus 3:05 Sat/Sun)"),("The Wizard of Oz (1939)","tt0032138","5:35, 10:00")]),
+          ("November 5-8",[("Mary Poppins (1964)","tt0058331","7:30 (plus 3:05 Sat/Sun)"),("The Wizard of Oz (1939)","tt0032138","5:35, 10:00")])])}
 FEST=[(n,_dr(d,*_rng[u]),u,[(_sp(g),it) for g,it in gs],fl) for n,d,u,gs,fl in FEST]
 NB=[(u,_sp(l),a,b,it) for u,l,a,b,it in NB]
 _MN='January|February|March|April|May|June|July|August|September|October|November|December'
@@ -152,11 +159,37 @@ for name,dr,url,groups,films in FEST:
     if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><div class="dr dtop">{dr}</div><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2>'+"".join(blk(b) for b in bs)+'</div>')
 u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further programs announced yet.</p></section>',JSF]
 open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up",desc="Upcoming films and festivals at the Stanford Theatre in Palo Alto, with dates and showtimes.").replace('<body>','<body data-mode="up">',1))
+FJ=json.load(open('data/festivals.json'))
+# ---- auto-archive: a current festival whose last showing is before today (Pacific) becomes a past festival ----
+_MNUM={m:i for i,m in enumerate(['January','February','March','April','May','June','July','August','September','October','November','December'],1)}
+def _bdates(lab,yr):
+    m=_re0.fullmatch(r'\s*([A-Z][a-z]+)\s+(\d+)\s*(?:[-–]\s*(?:([A-Z][a-z]+)\s+)?(\d+))?\s*',lab)
+    if not m: return None,None
+    a=f"{yr}-{_MNUM[m.group(1)]:02d}-{int(m.group(2)):02d}"; mo=m.group(3) or m.group(1)
+    return a,(f"{yr}-{_MNUM[mo]:02d}-{int(m.group(4)):02d}" if m.group(4) else a)
+ENDED={}
+for _n,_d,_u,_g,_fl in FEST:
+    _a,_b=_rng[_u]
+    if _b>=TODAY: continue
+    _file=urllib.parse.unquote(_u.rsplit('/',1)[1])
+    if any(x['file']==_file for x in FJ['festivals']): ENDED[_u]=_file; continue
+    _bl=[]
+    for _lab,_its in PRES[_u]['blocks']:
+        _s,_e=_bdates(_lab,_a[:4])
+        _fs=[]
+        for _t,_imdb,_tm in _its:
+            _m=_re0.fullmatch(r'(.*?)\s*\((\d{4})\)',_t); _fs.append(dict(title=_m.group(1) if _m else _t,year=int(_m.group(2)) if _m else None,times=_tm))
+        _bl.append(dict(dates=_lab,start=_s,end=_e,films=_fs))
+    FJ['festivals'].append(dict(name=_n,file=_file,year=int(_a[:4]),start=_a,end=_b,blocks=_bl))
+    ENDED[_u]=_file
+    _cal='festivals/archive/cal/'+_file
+    if not _os.path.exists(_cal) and _os.path.exists('festivals/archive/'+ARCH[_u]):
+        import shutil as _sh; _sh.copyfile('festivals/archive/'+ARCH[_u],_cal)
+print('ENDED festivals',list(ENDED.values()))
 P=['<section id="past"><h1 class="vh">Past</h1>']
-for b in sorted(NB,key=lambda b:b[3],reverse=True):
+for b in sorted([b for b in NB if b[0] not in ENDED],key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk','<section class="fest pastb'+('' if b[3]<TODAY else ' hid')+' blk',1)
     P.append(x)
-FJ=json.load(open('data/festivals.json'))
 _FIXN={'kurasawa':'Kurosawa','ray':'Satyajit Ray','fox':'20th Century-Fox','april':'April','horror':'Horror','holiday':'Holiday','summer':'Summer','winter':'Winter','cukor':'George Cukor','hitchcock':'Hitchcock'}
 def FN(n):
     m=_re0.fullmatch(r'([a-z]+)(\d{4})',n or '')
@@ -312,7 +345,7 @@ TILE={}  # slug -> private link; only shipped inside the encrypted stats payload
 def FESTLINK(o):
     for n_,d_,u_,g_,fl_ in FEST:
         a_,b_=_rng[u_]
-        if o['start']<=b_ and (o.get('end') or o['start'])>=a_: return '../festivals/'+SLUG[u_]+'.html'
+        if o['start']<=b_ and (o.get('end') or o['start'])>=a_: return ('../festivals/past/'+PSLUG({'file':ENDED[u_]})+'.html') if u_ in ENDED else '../festivals/'+SLUG[u_]+'.html'
     u=o.get('url') or ''; return '../'+u if u.startswith('festivals/past/') and o['source']!='Tile' else None  # only our own festival pages
 for s,k in K.items():
     f=F[s];t=T[k]; TILE[s]='https://tile.stanfordtheatre.org/tile?q='+TQ[k]
@@ -340,13 +373,6 @@ for s,k in K.items():
 
 # ---- festival pages ----
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
-ARCH={EMS:'eva-marie-saint.html',PW:'poppins-wizard-2026.html'}
-PRES={EMS:dict(title="Remembering Eva Marie Saint",sub="October 2026",days="Friday · Saturday · Sunday",
-  blocks=[("October 16-18",[("North by Northwest (1959)","tt0053125","7:30 (plus 3:00 Sat/Sun)"),("On the Waterfront (1954)","tt0047296","5:30, 10:00")]),
-          ("October 23-25",[("North by Northwest (1959)","tt0053125","7:30 (plus 3:00 Sat/Sun)"),("On the Waterfront (1954)","tt0047296","5:30, 10:00")])]),
- PW:dict(title=None,sub=None,days="Thursday · Friday · Saturday · Sunday",
-  blocks=[("October 29 - November 1",[("Mary Poppins (1964)","tt0058331","7:30 (plus 3:05 Sat/Sun)"),("The Wizard of Oz (1939)","tt0032138","5:35, 10:00")]),
-          ("November 5-8",[("Mary Poppins (1964)","tt0058331","7:30 (plus 3:05 Sat/Sun)"),("The Wizard of Oz (1939)","tt0032138","5:35, 10:00")])])}
 NOTE='Additional movie information links provided courtesy of the <a href="https://www.imdb.com/">Internet Movie Database</a>. Note: The Internet Movie Database is a commercial enterprise. We link only so you can get additional movie info. We do not endorse any product on other sites.'
 def cols(groups,films,root):
     o='<div class="cols">'
@@ -355,6 +381,9 @@ def cols(groups,films,root):
         o+=f'<div class="col"><a class="card" href="{root}films/{s}.html">{POSTER(f"{root}posters/{s}.jpg",F[s]["t"]+" poster")}<span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a>{st}</div>'
     return o+'</div>'
 for name,dr,url,groups,films in FEST:
+    if url in ENDED:
+        _to='past/'+PSLUG({'file':ENDED[url]})+'.html'
+        open(f'festivals/{SLUG[url]}.html','w').write(f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{SITE}festivals/{_to}"><meta http-equiv="refresh" content="0; url={_to}"></head><body><a href="{_to}">{e(name)}</a></body></html>'); continue
     p=PRES[url]
     bl="".join(f'<h3>{_sp(d)}</h3><ul class="sched">'+"".join(f'<li>'+(f'<a href="https://www.imdb.com/title/{i}">{e(t)}</a>' if i else e(t))+(f': <b>{tm}</b>' if tm else '')+'</li>' for t,i,tm in it)+'</ul>' for d,it in p['blocks'])
     b=f'''<section class="fest"><div class="dr dtop" style="text-align:center">{dr}</div><h1>{e(name)}</h1>{cols(groups,films,"../")}</section>
