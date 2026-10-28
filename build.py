@@ -144,7 +144,8 @@ if(M==='now'){r.slice(1).forEach(function(b){b.remove();});}else if(r[0])r[0].re
 document.querySelectorAll('.fgrp').forEach(function(g){if(!g.querySelector('.blk'))g.remove();});
 var em=document.getElementById('empty');if(em&&!document.querySelector('.blk'))em.style.display='block';})();</script>"""
 h=['<section id="now"><h1 class="vh">Now Showing</h1>']+[blk(b) for b in live]+['<p id="empty" class="sm" style="display:none;text-align:center">Nothing scheduled right now — see <a href="past.html">Past</a>.</p></section>',JSF]
-open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h),"","now").replace('<body>','<body data-mode="now">',1))
+DISCLAIMER='<p class="disc">This is an unofficial, fan-created site for reference and research purposes only. It is not affiliated with the Stanford Theatre. For showtimes and tickets, visit the official site at <a href="https://www.stanfordtheatre.org/">stanfordtheatre.org</a>.</p>'
+open('index.html','w').write(page("Stanford Theatre — Now Showing","".join(h),"","now").replace('</footer>',DISCLAIMER+'</footer>',1).replace('<body>','<body data-mode="now">',1))
 u=['<section id="upcoming"><h1 class="vh">Upcoming</h1>']
 for name,dr,url,groups,films in FEST:
     bs=[b for b in live if b[0]==url]
@@ -216,9 +217,10 @@ for o in SH:
         if b.get('start')==o['start'] or (b['start'] and b['start']<=o['start']<=(b.get('end') or b['start'])):
             ts=[ALI0(f['title']) for f in b['films']]
             if ALI0(o['title']) in ts: pw=[t for t in ts if t!=ALI0(o['title'])]; break
-    o['note']=fe['name'][:80]+(' · w/ '+', '.join(pw) if pw else '')
+    o['note']=fe['name']+(' · w/ '+', '.join(pw) if pw else '')
 print('RUNLINKS ours',NMATCH[0],'fallback',NMATCH[1])
-open('data/showings.js','w').write('window.SHOWINGS='+json.dumps(SH,ensure_ascii=False)+';')
+PUBSRC='Box office records'  # public label for the private ledger source
+open('data/showings.js','w').write('window.SHOWINGS='+json.dumps([dict(o,source=PUBSRC,url='') if o['source']=='Tile' else o for o in SH],ensure_ascii=False)+';')
 def NJ(t):
     t=_ud.normalize('NFD',str(t)); t=''.join(c for c in t if not _ud.combining(c)).lower().replace('&',' and ')
     t=_re0.sub(r"['’`]",'',t); w=[x for x in _re0.sub(r'[^a-z0-9]+',' ',t).split() if x and x not in('the','a','an')]
@@ -304,17 +306,20 @@ def DD(o):
     if o['source']=='Tile' or not o.get('date_text'): return FRp(o['start'],o.get('end')) or o['start']
     x=_re0.search(r'\(([^)]*day[^)]*)\)',o['date_text']); r=FRp(o['start'],o.get('end'))
     return (r+(' ('+DT(x.group(1)).replace('–',' - ')+')' if x else '')) if r else DT(o['date_text'])
+def RUNDATE(o):
+    l=FESTLINK(o); return f'<a class="sd" href="{e(l)}">{e(DD(o))}</a>' if l else f'<span class="sd">{e(DD(o))}</span>'
+TILE={}  # slug -> private link; only shipped inside the encrypted stats payload
 def FESTLINK(o):
     for n_,d_,u_,g_,fl_ in FEST:
         a_,b_=_rng[u_]
         if o['start']<=b_ and (o.get('end') or o['start'])>=a_: return '../festivals/'+SLUG[u_]+'.html'
-    u=o['url']; return u if u.startswith('http') else '../'+u
+    u=o.get('url') or ''; return None if (not u or u.startswith('http') or o['source']=='Tile') else '../'+u
 for s,k in K.items():
-    f=F[s];t=T[k]
+    f=F[s];t=T[k]; TILE[s]='https://tile.stanfordtheatre.org/tile?q='+TQ[k]
     fest=[x for x in FEST if s in x[4]][0]
     sl_=SLUG[fest[2]]; sched="".join(f'<div class="bill" data-end="{en}">'+DAYS(st,en,items,sl_,only=s)+'</div>' for u,lab,st,en,items in NB if items and any(a==s for a,_ in items))
     FR_=FILMRUNS(f['t'])
-    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
+    runs="".join(f'<li>{BADGE(o)} {RUNDATE(o)}'+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]
     ORR=[o for o in FR_ if o.get('badge')]
     OGS=''
@@ -330,7 +335,7 @@ for s,k in K.items():
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
 <section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p>{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
-<section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li></ul></section></article>'''
+<section><h2>More</h2><ul id="more"><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li></ul></section></article>'''
     open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../",desc=f"{f['t']}"+(f" ({f['y']})" if f.get('y') else "")+f" at the Stanford Theatre, Palo Alto. {f.get('plot') or ''}",img=f"posters/{s}.jpg"))
 
 # ---- festival pages ----
@@ -405,7 +410,7 @@ for k,v in COV.items():
     FR_=FILMRUNS(v['title'],key=k)
     if not FR_: continue
     if all(o.get('type') not in (None,'feature') for o in FR_) and not _o2.path.exists(f'films/{v["slug"]}.html'): continue  # non-feature entries never get new film pages
-    runs="".join(f'<li>{BADGE(o)} <a class="sd" href="{e(FESTLINK(o))}">{e(DD(o))}</a>'+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
+    runs="".join(f'<li>{BADGE(o)} {RUNDATE(o)}'+''.join(f'<span class="rl">{e(x)}</span>' for x in (o.get('note') or '').split(' · ') if x.strip())+'</li>' for o in FR_)
     OGR=[o for o in FR_ if 'Stanford Theatre history page' in o.get('srcs',{})]; ORR=[o for o in FR_ if o.get('badge')]; OGS=''
     if OGR:
         rng=FRp(OGR[0]['start'],max((o.get('end') or o['start']) for o in OGR)) if len(OGR)>1 else FRp(OGR[0]['start'],OGR[0].get('end'))
@@ -414,12 +419,13 @@ for k,v in COV.items():
     tks=sum(o['tickets'] for o in FR_ if o.get('tickets')); fcs=len({o['url'] for o in SH if o.get('run','').rsplit('|',1)[0]==k and o['source']=='Stanford Theatre calendars'})
     meta=' ★ '.join(x for x in [str(v['year']) if v['year'] else '',f"{v['rt']} min" if v['rt'] else ''] if x)
     img=POSTER("../"+v["poster"],v["title"]+" poster","poster",True,"280px") if v['poster'] else ''
-    more=f'<li><a href="https://tile.stanfordtheatre.org/tile?q={urllib.parse.quote_plus(v["title"])}">Tile: {e(v["title"])}</a></li>'+(f'<li><a href="https://www.imdb.com/title/{v["imdb"]}/">IMDb: {e(v["title"])}</a></li>' if v['imdb'] else '')+f'<li><a href="https://en.wikipedia.org/wiki/{urllib.parse.quote(v["wt"].replace(" ","_"))}">Wikipedia: {e(v["wt"])}</a></li>'
+    TILE[v['slug']]='https://tile.stanfordtheatre.org/tile?q='+urllib.parse.quote_plus(v["title"])
+    more=''+(f'<li><a href="https://www.imdb.com/title/{v["imdb"]}/">IMDb: {e(v["title"])}</a></li>' if v['imdb'] else '')+f'<li><a href="https://en.wikipedia.org/wiki/{urllib.parse.quote(v["wt"].replace(" ","_"))}">Wikipedia: {e(v["wt"])}</a></li>'
     b=f'''<article class="film"><div class="top">{img}
 <div><h1>{e(v['title'])}</h1><div class="meta">{meta}</div>{LOGOH(k,v['year'])}{CRED(k,v['year']) or (f'<p class="cr">{e(v["desc"][:1].upper()+v["desc"][1:])}</p>' if v['desc'] else '')}<p class="plot">{e(v['syn'])}</p>{WATCH(k)}</div></div>
 {(lambda fx:(f'<section><h2>Trivia</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['trivia'])+'</ul></section>' if fx.get('trivia') else '')+(f'<section><h2>Filming Locations</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['loc'])+'</ul></section>' if fx.get('loc') else ''))(CFX.get(k,{}))}
 <section><h2>Previous Showings</h2><p class="big">{len(FR_)} Run{"s" if len(FR_)!=1 else ""} • {fcs} Festival{"s" if fcs!=1 else ""}</p>{''}{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
-<section><h2>More</h2><ul>{more}</ul></section></article>'''
+<section><h2>More</h2><ul id="more">{more}</ul></section></article>'''
     open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../",desc=f"{v['title']}"+(f" ({v['year']})" if v['year'] else "")+f" at the Stanford Theatre, Palo Alto. {v['syn'] or v['desc'] or ''}",img=v['poster'])); NFP+=1
 print('COVERPAGES',NFP)
 REDIR={'bread':'bread-love-and-dreams-pane-amore-e-fantasia','the-little-kidnappers-the-kidnappers':'the-kidnappers','steamboat-bill':'steamboat-bill-jr','monkey-business':'monkey-business-1952','the-merry-widow':'the-merry-widow-1934','the-mark-of-zorro':'the-mark-of-zorro-1940','seventh-heaven':'seventh-heaven-1927','march-of-the-wooden-soldiers-babes-in-toyland':'babes-in-toyland-1934'}
@@ -428,7 +434,7 @@ for a_,b_ in REDIR.items():
 FPM=dict({k:'films/'+s_+'.html' for k,s_ in FEATK.items()},**{k:'films/'+v['slug']+'.html' for k,v in COV.items()})
 # ---- search page ----
 SJS=open('tools/search.js').read(); SJS=_re0.sub(r'^var FP=\{.*?\};','var FP='+json.dumps(FPM)+';',SJS,count=1,flags=_re0.M)
-sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and Tile box-office records. </p>
+sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and box-office records. </p>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
 <div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run at the theatre</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
@@ -509,7 +515,7 @@ def _stats():
         if '#' in k: continue
         r=byk.get(NJ(ALI(v['title'])))
         if r: out[v['slug']]=r
-    pt=json.dumps({'v':1,'films':out},separators=(',',':')).encode()
+    pt=json.dumps({'v':1,'films':out,'tile':TILE,'tl':'Tile'},separators=(',',':')).encode()
     salt=os.urandom(16); iv=os.urandom(12); it=310000
     key=hashlib.pbkdf2_hmac('sha256',pw.encode(),salt,it,32)
     ct=AESGCM(key).encrypt(iv,pt,None)

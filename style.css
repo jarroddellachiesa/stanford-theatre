@@ -147,3 +147,4 @@ a.pfl,a.pfl:hover,a.pfl:visited{color:inherit;text-decoration:none}a.pfl:hover{c
 
 picture{display:contents}.plink{display:contents}
 picture img,img.poster,.card img{height:auto}
+.disc{font-size:13px;line-height:1.5;color:#e8c872;opacity:.85;max-width:640px;margin:10px auto 0;text-align:center}.disc a{color:inherit}

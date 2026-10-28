@@ -1,0 +1,4 @@
+exclude:
+  - tools
+  - build.py
+  - data/showings.json
