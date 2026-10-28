@@ -260,7 +260,14 @@ for o in SH:
     o['note']=fe['name']+(' · w/ '+', '.join(pw) if pw else '')
 print('RUNLINKS ours',NMATCH[0],'fallback',NMATCH[1])
 PUBSRC='Box office records'  # public label for the private ledger source
-open('data/showings.js','w').write('window.SHOWINGS='+json.dumps([dict(o,source=PUBSRC,url='') if o['source']=='Tile' else o for o in SH],ensure_ascii=False)+';')
+def PUBURL(o):
+    """Public link for a showing: only our own festival pages (current or past), else ''."""
+    for _n,_d,_u,_g,_f in FEST:
+        _a,_b=_rng[_u]
+        if o['start']<=_b and (o.get('end') or o['start'])>=_a: return ('festivals/past/'+PSLUG({'file':ENDED[_u]})+'.html') if _u in ENDED else 'festivals/'+SLUG[_u]+'.html'
+    u=o.get('url') or ''
+    return u if u.startswith('festivals/past/') and o['source']!='Tile' else ''
+open('data/showings.js','w').write('window.SHOWINGS='+json.dumps([dict(o,source=PUBSRC if o['source']=='Tile' else o['source'],url=PUBURL(o)) for o in SH],ensure_ascii=False)+';')
 def NJ(t):
     t=_ud.normalize('NFD',str(t)); t=''.join(c for c in t if not _ud.combining(c)).lower().replace('&',' and ')
     t=_re0.sub(r"['’`]",'',t); w=[x for x in _re0.sub(r'[^a-z0-9]+',' ',t).split() if x and x not in('the','a','an')]
