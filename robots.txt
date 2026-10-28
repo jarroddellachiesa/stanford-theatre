@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /stanford-site/
+Disallow: /stanford-theatre/
+Disallow: /tools/
+
+Sitemap: https://stanfordtheatre.dellachiesa.us/sitemap.xml

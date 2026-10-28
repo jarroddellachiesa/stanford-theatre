@@ -16,9 +16,31 @@ _TA0=json.load(open('data/title_aliases.json'))['aliases']
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
 import hashlib as _hl
 CSSV=_hl.md5(open('style.css','rb').read()+open('sw.js','rb').read()).hexdigest()[:8]
-def page(title,body,root="",act=""):
+# ---- posters (WebP + JPG fallback) and page meta ----
+import os as _os, re as _re0
+def POSTER(src,alt,cls='',full=False,sizes='160px'):
+    """src is the JPG path as used in the page (may start with ../). Emits <picture> with WebP srcset when generated."""
+    pre=_re0.match(r'(?:\.\./)*',src).group(0); rel=src[len(pre):]
+    c=f' class="{cls}"' if cls else ''
+    im=f'<img{c} src="{src}" alt="{e(alt)}">'
+    if rel.startswith('posters/') and rel.endswith('.jpg'):
+        b=rel[len('posters/'):-4]; sm,lg=f'posters/s/{b}.webp',f'posters/w/{b}.webp'
+        ss=[f'{pre}{p} {w}w' for p,w in ((sm,480),(lg,1200)) if _os.path.exists(p)]
+        if len(ss)==1: ss=[ss[0].rsplit(' ',1)[0]]
+        if ss: im=f'<picture><source type="image/webp" srcset="{", ".join(ss)}" sizes="{sizes}">{im}</picture>'
+    return f'<a class="plink" href="{src}" title="Open full-size poster">{im}</a>' if full else im
+def _clip(t,n=155):
+    t=_re0.sub(r'\s+',' ',_re0.sub(r'<[^>]+>','',html.unescape(t or ''))).strip()
+    return t if len(t)<=n else t[:n].rsplit(' ',1)[0].rstrip(',;:—-')+'…'
+SITE_DESC="A fan guide to the Stanford Theatre at 221 University Avenue, Palo Alto: now showing, upcoming films, and past festivals."
+def META(title,desc,img):
+    d=e(_clip(desc or SITE_DESC)); i=SITE+(img or 'icons/icon-512.png')
+    return (f'<meta name="description" content="{d}"><meta property="og:type" content="website"><meta property="og:site_name" content="Stanford Theatre Movie Guide">'
+            f'<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{d}"><meta property="og:image" content="{e(i)}">'
+            f'<meta name="twitter:card" content="{"summary_large_image" if img else "summary"}"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{e(i)}">')
+def page(title,body,root="",act="",desc=None,img=None):
     A=lambda k:' class="on" aria-current="page"' if k==act else ""
-    return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title><link rel="stylesheet" href="{root}style.css?v={CSSV}"><link rel="icon" href="{root}favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="{root}icons/favicon-32.png"><link rel="apple-touch-icon" href="{root}icons/apple-touch-icon.png?v=4"><link rel="manifest" href="{root}manifest.webmanifest"><meta name="theme-color" content="#5a0e18"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Stanford"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if("serviceWorker" in navigator)addEventListener("load",function(){{var h=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener("controllerchange",function(){{if(h&&!sessionStorage.swr){{sessionStorage.swr=1;location.reload()}}}});navigator.serviceWorker.register("{root}sw.js",{{updateViaCache:"none"}}).then(function(r){{r.update()}})}})</script></head><body>
+    return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title>{META(title,desc,img)}<link rel="stylesheet" href="{root}style.css?v={CSSV}"><link rel="icon" href="{root}favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="{root}icons/favicon-32.png"><link rel="apple-touch-icon" href="{root}icons/apple-touch-icon.png?v=4"><link rel="manifest" href="{root}manifest.webmanifest"><meta name="theme-color" content="#5a0e18"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Stanford"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if("serviceWorker" in navigator)addEventListener("load",function(){{var h=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener("controllerchange",function(){{if(h&&!sessionStorage.swr){{sessionStorage.swr=1;location.reload()}}}});navigator.serviceWorker.register("{root}sw.js",{{updateViaCache:"none"}}).then(function(r){{r.update()}})}})</script></head><body>
 <header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div></a><nav class="nav"><a href="{root}index.html"{A("now")}>Now Showing</a><span class="sep" aria-hidden="true">·</span><a href="{root}upcoming.html"{A("up")}>Upcoming</a><span class="sep" aria-hidden="true">·</span><a href="{root}past.html"{A("past")}>Past</a><span class="sep" aria-hidden="true">·</span><a href="{root}search.html"{A("search")}>Search</a></nav></header><main>{body}</main><script>(function(){{var t=new Intl.DateTimeFormat('en-CA',{{timeZone:'America/Los_Angeles'}}).format(new Date());document.querySelectorAll('[data-day]').forEach(function(d){{if(d.dataset.day<t)d.remove()}});document.querySelectorAll('.bill').forEach(function(b){{if(!b.querySelector('[data-day]'))b.remove()}});document.querySelectorAll('.ups').forEach(function(u){{if(!u.querySelector('[data-day]'))u.remove()}});}})();</script>
 <footer><button id="stlock" class="stlock" type="button" aria-label="Members stats" title="Stats">&#128274;</button><address class="addr"><a href="{MAP}"><span class="an1">Stanford Theatre</span><br>221 University Avenue<br>Palo Alto, CA 94301</a></address></footer><script src="{root}stats.js?v={CSSV}" data-root="{root}" defer></script></body></html>'''
 def ft(s): f=F[s]; return f"{e(f['t'])} ({f['y']})"
@@ -90,7 +112,7 @@ def blk(b):
     url,lab,st,en,items=b; nm,dr=FN[url]; sl=SLUG[url]
     head=f'<div class="bf"><div class="dr dtop">{dr}</div><h2><a href="festivals/{sl}.html">{e(nm)}</a></h2></div>'
     if items:
-        body='<div class="cols">'+"".join(f'<div class="col"><a class="card" href="films/{s}.html"><img src="posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a></div>' for s,t in items)+'</div>'
+        body='<div class="cols">'+"".join(f'<div class="col"><a class="card" href="films/{s}.html">{POSTER(f"posters/{s}.jpg",F[s]["t"]+" poster")}<span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a></div>' for s,t in items)+'</div>'
         body+='<div class="days">'+DAYS(st,en,items,sl,compact=True)+'</div>'
     else: body='<p class="tba">To Be Announced</p>'
     if SPLITCARD and items:  # experiment: closed screenshot card, showtimes below it (set SPLITCARD=False to revert)
@@ -112,7 +134,7 @@ for name,dr,url,groups,films in FEST:
     bs=[b for b in live if b[0]==url]
     if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><div class="dr dtop">{dr}</div><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2>'+"".join(blk(b) for b in bs)+'</div>')
 u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further programs announced yet.</p></section>',JSF]
-open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up").replace('<body>','<body data-mode="up">',1))
+open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up",desc="Upcoming films and festivals at the Stanford Theatre in Palo Alto, with dates and showtimes.").replace('<body>','<body data-mode="up">',1))
 P=['<section id="past"><h1 class="vh">Past</h1>']
 for b in sorted(NB,key=lambda b:b[3],reverse=True):
     x=blk(b).replace('<section class="fest blk','<section class="fest pastb'+('' if b[3]<TODAY else ' hid')+' blk',1)
@@ -286,14 +308,14 @@ for s,k in K.items():
         if ORR: OGS+=f'<p class="big ogsum"><span class="badge or" title="{TOR}">{OR}</span> Original Run: {e(DD(ORR[0]))}</p>'
     print('FILMRUNS',f['t'],len(FR_),'old',len(t['runs']))
     li=lambda L:"".join(f'<li>{x}</li>' for x in L)
-    b=f'''<article class="film"><div class="top"><img class="poster" src="../posters/{s}.jpg" alt="{e(f['t'])} poster">
+    b=f'''<article class="film"><div class="top">{POSTER(f"../posters/{s}.jpg",f["t"]+" poster","poster",True,"280px")}
 <div><h1>{e(f['t'])}</h1><div class="meta">{' ★ '.join(x for x in [str(f.get('y') or ''),f"{f['rt']} min" if f.get('rt') else ''] if x)}</div>{LOGOH(_FK[s],f.get('y'))}{CRED(_FK[s],f.get('y')) or f'<p class="cr">{e(f["credit"])}</p>'}<p class="plot">{e(f['plot'])}</p>{WATCH(_FK[s])}</div></div>
 <section class="ups"><h2>Upcoming Showings</h2>{sched}</section>
 <section><h2>Trivia</h2><ul>{li(f['rick'])}</ul></section>
 <section><h2>Filming Locations</h2><ul>{li(f['loc'])}</ul></section>
 <section><h2>Previous Showings</h2><p class="big">{t['tc']} Showings • {t['fc']} Festivals</p>{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul><li><a href="https://tile.stanfordtheatre.org/tile?q={TQ[k]}">Tile: {e(f['t'])}</a></li><li><a href="https://www.imdb.com/title/{IMDB[k]}/">IMDb: {e(f['t'])}</a></li></ul></section></article>'''
-    open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../"))
+    open(f'films/{s}.html','w').write(page(f"{f['t']} — Stanford Theatre",DT(b),"../",desc=f"{f['t']}"+(f" ({f['y']})" if f.get('y') else "")+f" at the Stanford Theatre, Palo Alto. {f.get('plot') or ''}",img=f"posters/{s}.jpg"))
 
 # ---- festival pages ----
 SLUG={EMS:'remembering-eva-marie-saint',PW:'mary-poppins-the-wizard-of-oz'}
@@ -309,7 +331,7 @@ def cols(groups,films,root):
     o='<div class="cols">'
     for s in films:
         st="".join(f'<div class="dg">{fullmo(d)}</div><div class="tm">{t}</div>' for d,items in groups for a2,t in items if a2==s)
-        o+=f'<div class="col"><a class="card" href="{root}films/{s}.html"><img src="{root}posters/{s}.jpg" alt="{e(F[s]["t"])} poster"><span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a>{st}</div>'
+        o+=f'<div class="col"><a class="card" href="{root}films/{s}.html">{POSTER(f"{root}posters/{s}.jpg",F[s]["t"]+" poster")}<span>{ft(s)}</span><small>{F[s]["rt"]} min</small></a>{st}</div>'
     return o+'</div>'
 for name,dr,url,groups,films in FEST:
     p=PRES[url]
@@ -320,7 +342,7 @@ for name,dr,url,groups,films in FEST:
 {f'<h3 class="pt">{p["title"]}</h3>' if p['title'] else ''}{f'<div class="dr">{p["sub"]}</div>' if p['sub'] else ''}<div class="days">{p['days']}</div>{bl}
 <p class="sm">{NOTE}</p></section>
 <p class="orig"><a href="{url}">Original Stanford Theatre page</a> · <a href="archive/{ARCH[url]}">archived HTML</a></p>'''
-    open(f'festivals/{SLUG[url]}.html','w').write(page(f"{name} — Stanford Theatre",b,"../"))
+    open(f'festivals/{SLUG[url]}.html','w').write(page(f"{name} — Stanford Theatre",b,"../",desc=f"{name}, {dr}, at the Stanford Theatre in Palo Alto."))
 
 # ---- covered films (last 5 years + top 200) ----
 import unicodedata as _ud2
@@ -375,14 +397,14 @@ for k,v in COV.items():
         if ORR: OGS+=f'<p class="big ogsum"><span class="badge or" title="{TOR}">{OR}</span> Original Run: {e(DD(ORR[0]))}</p>'
     tks=sum(o['tickets'] for o in FR_ if o.get('tickets')); fcs=len({o['url'] for o in SH if o.get('run','').rsplit('|',1)[0]==k and o['source']=='Stanford Theatre calendars'})
     meta=' ★ '.join(x for x in [str(v['year']) if v['year'] else '',f"{v['rt']} min" if v['rt'] else ''] if x)
-    img=f'<img class="poster" src="../{v["poster"]}" alt="{e(v["title"])} poster">' if v['poster'] else ''
+    img=POSTER("../"+v["poster"],v["title"]+" poster","poster",True,"280px") if v['poster'] else ''
     more=f'<li><a href="https://tile.stanfordtheatre.org/tile?q={urllib.parse.quote_plus(v["title"])}">Tile: {e(v["title"])}</a></li>'+(f'<li><a href="https://www.imdb.com/title/{v["imdb"]}/">IMDb: {e(v["title"])}</a></li>' if v['imdb'] else '')+f'<li><a href="https://en.wikipedia.org/wiki/{urllib.parse.quote(v["wt"].replace(" ","_"))}">Wikipedia: {e(v["wt"])}</a></li>'
     b=f'''<article class="film"><div class="top">{img}
 <div><h1>{e(v['title'])}</h1><div class="meta">{meta}</div>{LOGOH(k,v['year'])}{CRED(k,v['year']) or (f'<p class="cr">{e(v["desc"][:1].upper()+v["desc"][1:])}</p>' if v['desc'] else '')}<p class="plot">{e(v['syn'])}</p>{WATCH(k)}</div></div>
 {(lambda fx:(f'<section><h2>Trivia</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['trivia'])+'</ul></section>' if fx.get('trivia') else '')+(f'<section><h2>Filming Locations</h2><ul>'+''.join(f'<li>{e(x)}</li>' for x in fx['loc'])+'</ul></section>' if fx.get('loc') else ''))(CFX.get(k,{}))}
 <section><h2>Previous Showings</h2><p class="big">{len(FR_)} Run{"s" if len(FR_)!=1 else ""} • {fcs} Festival{"s" if fcs!=1 else ""}</p>{''}{OGS}<h3>All runs on record ({len(FR_)}):</h3><ul class="runs fl">{runs}</ul></section>
 <section><h2>More</h2><ul>{more}</ul></section></article>'''
-    open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../")); NFP+=1
+    open(f'films/{v["slug"]}.html','w').write(page(f"{v['title']} — Stanford Theatre",DT(b),"../",desc=f"{v['title']}"+(f" ({v['year']})" if v['year'] else "")+f" at the Stanford Theatre, Palo Alto. {v['syn'] or v['desc'] or ''}",img=v['poster'])); NFP+=1
 print('COVERPAGES',NFP)
 REDIR={'bread':'bread-love-and-dreams-pane-amore-e-fantasia','the-little-kidnappers-the-kidnappers':'the-kidnappers','steamboat-bill':'steamboat-bill-jr','monkey-business':'monkey-business-1952','the-merry-widow':'the-merry-widow-1934','the-mark-of-zorro':'the-mark-of-zorro-1940','seventh-heaven':'seventh-heaven-1927','march-of-the-wooden-soldiers-babes-in-toyland':'babes-in-toyland-1934'}
 for a_,b_ in REDIR.items():
@@ -395,7 +417,7 @@ sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1><p class="sm">Bi
 <div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run at the theatre</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js?v={CSSV}"></script><script>var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};'''+SJS+'''</script>'''
-open('search.html','w').write(page("Search — Stanford Theatre",sb,"","search"))
+open('search.html','w').write(page("Search — Stanford Theatre",sb,"","search",desc="Search every film and showing in the Stanford Theatre Movie Guide."))
 
 # ---- past festival pages ----
 import os as _os
@@ -421,13 +443,13 @@ def _pcard(fm):
     if not cv and not sl_:
         _s=_re0.sub(r'[^a-z0-9]+','-',ALI(fm['title']).lower()).strip('-'); cv=_SLC.get(f"{_s}-{fm.get('year')}") or (_SLC.get(_s) if _SLC.get(_s) and (not fm.get('year') or abs((_SLC[_s]['year'] or 0)-fm['year'])<=1) else None)
     if not sl_ and cv:
-        im=f'<img src="../../{cv["poster"]}" alt="{e(cv["title"])} poster">' if cv['poster'] else ''
+        im=POSTER("../../"+cv["poster"],cv["title"]+" poster") if cv['poster'] else ''
         return f'<div class="col"><a class="card{"" if im else " noimg"}" href="../../films/{cv["slug"]}.html">{im}<span>{e(cv["title"])}'+(f' ({cv["year"]})' if cv['year'] else '')+'</span>'+(f'<small>{cv["rt"]} min</small>' if cv['rt'] else '')+'</a></div>'
     fm=dict(fm,title=ALI(fm['title']))
     yr=f" ({fm['year']})" if fm.get('year') else ''
     tm=''
     if sl_:
-        return f'<div class="col"><a class="card" href="../../films/{sl_}.html"><img src="../../posters/{sl_}.jpg" alt="{e(F[sl_]["t"])} poster"><span>{e(F[sl_]["t"])} ({F[sl_]["y"]})</span><small>{F[sl_]["rt"]} min</small></a>{tm}</div>'
+        return f'<div class="col"><a class="card" href="../../films/{sl_}.html">{POSTER(f"../../posters/{sl_}.jpg",F[sl_]["t"]+" poster")}<span>{e(F[sl_]["t"])} ({F[sl_]["y"]})</span><small>{F[sl_]["rt"]} min</small></a>{tm}</div>'
     return f'<div class="col"><div class="card noimg"><span>{e(fm["title"])}{yr}</span></div>{tm}</div>'
 for fe in FJ['festivals']:
     if not fe['blocks']: continue
@@ -435,7 +457,7 @@ for fe in FJ['festivals']:
     bills=''.join(f'<section class="fest blk" data-start="{b.get("start") or ""}" data-end="{b.get("end") or b.get("start") or ""}"><h3 class="bl">{e(fullmo(b["dates"]))}{ANB(b)}</h3>{GUEST(b)}<div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
     q=urllib.parse.quote(fe['file'])
     body=f'<section class="fest"><div class="dr dtop" style="text-align:center">{e(dr)}</div><h1>{e(fe["name"])}</h1><p class="sm" style="text-align:center">{len(fe["blocks"])} bill{"s" if len(fe["blocks"])!=1 else ""}</p></section>'+bills+"".join(f'<p class="sm" style="text-align:center"><a href="../archive/cal/{urllib.parse.quote(_x)}">Archived</a> • <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(_x)}">StanfordTheatre.org Original</a>{" (" + e(_x.rsplit(".",1)[0]) + ")" if fe.get("extra_files") else ""}</p>' for _x in [fe["file"]]+fe.get("extra_files",[]))
-    open(f'festivals/past/{PSLUG(fe)}.html','w').write(page(f"{fe['name']} — Stanford Theatre",body,"../../","past")); NPAST+=1
+    open(f'festivals/past/{PSLUG(fe)}.html','w').write(page(f"{fe['name']} — Stanford Theatre",body,"../../","past",desc=f"{fe['name']}, {dr}, at the Stanford Theatre in Palo Alto. {len(fe['blocks'])} program{'s' if len(fe['blocks'])!=1 else ''}.")); NPAST+=1
 print('PASTPAGES',NPAST)
 # --- Original runs by year on past.html (pre-festival era) ---
 _OR=sorted([o for o in SH if o.get('badge')=='Original Run'],key=lambda o:(o['start'],o.get('n',0)))
@@ -451,7 +473,7 @@ for y in sorted(_YRS):
         li+=f'<li><span class="yd">{e(FRp(o["start"],o.get("end")) or o["start"])}</span> {TYB(o)}<b>{tt}</b>'+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>'
     Y.append(f'<details class="fest arch yr" id="y{y}"><summary><span class="an yh">{y}</span> <span class="dr">{len(_YRS[y])} showing{"s" if len(_YRS[y])!=1 else ""}</span></summary><ul class="yl">{li}</ul><p class="sm"><a href="history/years/{y}.htm">Archived history page</a></p></details>')
 Y.append('</section><script>(function(){function o(){var h=location.hash;if(/^#y\\d{4}$/.test(h)){var d=document.querySelector(h);if(d)d.open=true;}}addEventListener("hashchange",o);o();})();</script>')
-open('past.html','w').write(page("Past — Stanford Theatre","".join(P)+"".join(Y),"","past"))
+open('past.html','w').write(page("Past — Stanford Theatre","".join(P)+"".join(Y),"","past",desc="Past festivals and showings at the Stanford Theatre in Palo Alto, organized by festival and by year."))
 print('ORYEARS',len(_YRS),len(_OR))
 
 # --- Encrypted box-office stats (AES-GCM, PBKDF2-SHA256); plaintext stays in /workspace/private ---
@@ -479,3 +501,20 @@ def _stats():
     json.dump({'alg':'AES-GCM','kdf':'PBKDF2-SHA256','iter':it,'salt':b(salt),'iv':b(iv),'ct':b(ct)},open('data/stats.enc.json','w'))
     print('STATS encrypted films',len(out),'bytes',len(ct))
 _stats()
+
+# ---- sitemap.xml + robots.txt ----
+def _sitemap():
+    import glob
+    skip=('stanford-site/','stanford-theatre/','tools/','404.html')
+    u=[]
+    for p in sorted(glob.glob('**/*.html',recursive=True)+glob.glob('**/*.htm',recursive=True)):
+        if p.startswith(skip): continue
+        try: h=open(p,errors='ignore').read(4000)
+        except Exception: continue
+        if 'http-equiv="refresh' in h or 'noindex' in h: continue
+        loc=SITE+('' if p=='index.html' else urllib.parse.quote(p))
+        u.append(f'<url><loc>{html.escape(loc)}</loc></url>')
+    open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+'\n'.join(u)+'\n</urlset>\n')
+    open('robots.txt','w').write(f'User-agent: *\nDisallow: /stanford-site/\nDisallow: /stanford-theatre/\nDisallow: /tools/\n\nSitemap: {SITE}sitemap.xml\n')
+    print('SITEMAP urls',len(u))
+_sitemap()

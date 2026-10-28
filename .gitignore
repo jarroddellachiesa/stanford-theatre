@@ -5,3 +5,6 @@ tools/wd_credits_cache.json
 tools/tile_cache/
 data/stats.plain*
 tools/watch_cache.json
+stanford-site/
+stanford-theatre/
+tools/wd_films/
