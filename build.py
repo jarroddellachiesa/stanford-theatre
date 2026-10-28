@@ -536,7 +536,7 @@ for y in sorted(_YRS):
         tt=f'<a href="{e(fp)}">{e(o["title"])}</a>' if fp else e(o['title'])
         if o['start']=='1925-06-09' and '<p class="opd"' not in li: li+='<p class="opd"><span class="an100">Opening Day</span> June 9, 1925 — the Stanford Theatre opens</p>'
         li+=f'<li><span class="yd">{e(FRp(o["start"],o.get("end")) or o["start"])}</span> {TYB(o)}<b>{tt}</b>'+(f' <span class="rn">· {e(o["note"])}</span>' if o.get('note') else '')+'</li>'
-    Y.append(f'<details class="fest arch yr" id="y{y}"><summary><span class="an yh">{y}</span> <span class="dr">{len(_YRS[y])} showing{"s" if len(_YRS[y])!=1 else ""}</span></summary><ul class="yl">{li}</ul><p class="sm"><a href="history/years/{y}.htm">Archived history page</a></p></details>')
+    Y.append(f'<details class="fest arch yr" id="y{y}"><summary><span class="an yh">{y}</span> <span class="dr">{len(_YRS[y])} showing{"s" if len(_YRS[y])!=1 else ""}</span></summary><ul class="yl">{li}</ul></details>')
 Y.append('</section><script>(function(){function o(){var h=location.hash;if(/^#y\\d{4}$/.test(h)){var d=document.querySelector(h);if(d)d.open=true;}}addEventListener("hashchange",o);o();})();</script>')
 open('past.html','w').write(page("Past — Stanford Theatre","".join(P)+"".join(Y),"","past",desc="Past festivals and showings at the Stanford Theatre in Palo Alto, organized by festival and by year."))
 print('ORYEARS',len(_YRS),len(_OR))
@@ -570,7 +570,7 @@ _stats()
 # ---- sitemap.xml + robots.txt ----
 def _sitemap():
     import glob
-    skip=('stanford-site/','stanford-theatre/','tools/','404.html','festivals/archive/')
+    skip=('stanford-site/','stanford-theatre/','tools/','404.html','festivals/archive/','history/years/')
     u=[]
     for p in sorted(glob.glob('**/*.html',recursive=True)+glob.glob('**/*.htm',recursive=True)):
         if p.startswith(skip): continue
