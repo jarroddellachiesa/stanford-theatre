@@ -18,11 +18,26 @@ import hashlib as _hl
 CSSV=_hl.md5(open('style.css','rb').read()+open('sw.js','rb').read()).hexdigest()[:8]
 # ---- posters (WebP + JPG fallback) and page meta ----
 import os as _os, re as _re0
+_DIMC={}
+def _DIM(rel):
+    if rel not in _DIMC:
+        try:
+            from PIL import Image as _Im
+            with _Im.open(rel) as _i: _DIMC[rel]=_i.size
+        except Exception: _DIMC[rel]=None
+    return _DIMC[rel]
+EAGER_N=4  # first N poster cards on a page load eagerly (above the fold)
+def _eager(body):
+    if 'fetchpriority="high"' in body: return body
+    for i in range(EAGER_N): body=body.replace(' decoding="async" loading="lazy"',' decoding="async" fetchpriority="high" data-e' if i==0 else ' decoding="async" data-e',1)
+    return body.replace(' data-e','')
 def POSTER(src,alt,cls='',full=False,sizes='160px'):
     """src is the JPG path as used in the page (may start with ../). Emits <picture> with WebP srcset when generated."""
     pre=_re0.match(r'(?:\.\./)*',src).group(0); rel=src[len(pre):]
     c=f' class="{cls}"' if cls else ''
-    im=f'<img{c} src="{src}" alt="{e(alt)}">'
+    wh=_DIM(rel); wh=f' width="{wh[0]}" height="{wh[1]}"' if wh else ''
+    ld=' decoding="async" fetchpriority="high"' if full else ' decoding="async" loading="lazy"'
+    im=f'<img{c} src="{src}" alt="{e(alt)}"{wh}{ld}>'
     if rel.startswith('posters/') and rel.endswith('.jpg'):
         b=rel[len('posters/'):-4]; sm,lg=f'posters/s/{b}.webp',f'posters/w/{b}.webp'
         ss=[f'{pre}{p} {w}w' for p,w in ((sm,480),(lg,1200)) if _os.path.exists(p)]
@@ -39,6 +54,7 @@ def META(title,desc,img):
             f'<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{d}"><meta property="og:image" content="{e(i)}">'
             f'<meta name="twitter:card" content="{"summary_large_image" if img else "summary"}"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{e(i)}">')
 def page(title,body,root="",act="",desc=None,img=None):
+    body=_eager(body)
     A=lambda k:' class="on" aria-current="page"' if k==act else ""
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)}</title>{META(title,desc,img)}<link rel="stylesheet" href="{root}style.css?v={CSSV}"><link rel="icon" href="{root}favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="{root}icons/favicon-32.png"><link rel="apple-touch-icon" href="{root}icons/apple-touch-icon.png?v=4"><link rel="manifest" href="{root}manifest.webmanifest"><meta name="theme-color" content="#5a0e18"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Stanford"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if("serviceWorker" in navigator)addEventListener("load",function(){{var h=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener("controllerchange",function(){{if(h&&!sessionStorage.swr){{sessionStorage.swr=1;location.reload()}}}});navigator.serviceWorker.register("{root}sw.js",{{updateViaCache:"none"}}).then(function(r){{r.update()}})}})</script></head><body>
 <header class="mq"><a href="{root}index.html"><div class="m1">THE STANFORD THEATRE</div></a><nav class="nav"><a href="{root}index.html"{A("now")}>Now Showing</a><span class="sep" aria-hidden="true">·</span><a href="{root}upcoming.html"{A("up")}>Upcoming</a><span class="sep" aria-hidden="true">·</span><a href="{root}past.html"{A("past")}>Past</a><span class="sep" aria-hidden="true">·</span><a href="{root}search.html"{A("search")}>Search</a></nav></header><main>{body}</main><script>(function(){{var t=new Intl.DateTimeFormat('en-CA',{{timeZone:'America/Los_Angeles'}}).format(new Date());document.querySelectorAll('[data-day]').forEach(function(d){{if(d.dataset.day<t)d.remove()}});document.querySelectorAll('.bill').forEach(function(b){{if(!b.querySelector('[data-day]'))b.remove()}});document.querySelectorAll('.ups').forEach(function(u){{if(!u.querySelector('[data-day]'))u.remove()}});}})();</script>
