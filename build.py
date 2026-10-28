@@ -313,7 +313,7 @@ def FESTLINK(o):
     for n_,d_,u_,g_,fl_ in FEST:
         a_,b_=_rng[u_]
         if o['start']<=b_ and (o.get('end') or o['start'])>=a_: return '../festivals/'+SLUG[u_]+'.html'
-    u=o.get('url') or ''; return None if (not u or u.startswith('http') or o['source']=='Tile') else '../'+u
+    u=o.get('url') or ''; return '../'+u if u.startswith('festivals/past/') and o['source']!='Tile' else None  # only our own festival pages
 for s,k in K.items():
     f=F[s];t=T[k]; TILE[s]='https://tile.stanfordtheatre.org/tile?q='+TQ[k]
     fest=[x for x in FEST if s in x[4]][0]
