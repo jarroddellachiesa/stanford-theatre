@@ -159,6 +159,13 @@ for name,dr,url,groups,films in FEST:
     if bs: u.append(f'<div class="fgrp" data-fest="{SLUG[url]}"><div class="dr dtop">{dr}</div><h2 class="gh"><a href="festivals/{SLUG[url]}.html">{e(name)}</a></h2>'+"".join(blk(b) for b in bs)+'</div>')
 u+=['<p id="empty" class="sm" style="display:none;text-align:center">No further programs announced yet.</p></section>',JSF]
 open('upcoming.html','w').write(page("Stanford Theatre — Upcoming","".join(u),"","up",desc="Upcoming films and festivals at the Stanford Theatre in Palo Alto, with dates and showtimes.").replace('<body>','<body data-mode="up">',1))
+ARCHL={}  # admin-only archive/original links; shipped only inside the encrypted stats payload
+def ADM(links,cls='sm',style=''):
+    """links: list of [text, href] pairs or None separators. Returns an empty placeholder filled by stats.js after unlock."""
+    k=_hl.md5(json.dumps(links).encode()).hexdigest()[:10]; ARCHL[k]=links
+    return f'<p class="{cls} adm" data-k="{k}"{f" style={chr(34)}{style}{chr(34)}" if style else ""} hidden></p>'
+def ARCHP(files,style='',label=False):
+    return ''.join(ADM([['Archived','/festivals/archive/cal/'+urllib.parse.quote(_x)],['StanfordTheatre.org Original','https://www.stanfordtheatre.org/calendars/'+urllib.parse.quote(_x)]]+([[' ('+_x.rsplit('.',1)[0]+')',None]] if label else []),style=style) for _x in files)
 FJ=json.load(open('data/festivals.json'))
 # ---- auto-archive: a current festival whose last showing is before today (Pacific) becomes a past festival ----
 _MNUM={m:i for i,m in enumerate(['January','February','March','April','May','June','July','August','September','October','November','December'],1)}
@@ -216,7 +223,7 @@ for fe in sorted(FJ['festivals'],key=lambda x:(x['end'] or (str(x['year'])+'-12-
     en=fe['end'] or ''
     dr=hr2(fe['start'],fe['end'],len(fe['blocks'])) if fe['start'] else (str(fe['year']) if fe['year'] else 'year not given')
     bl=''.join('<li><b class="bd">'+e(fullmo(b['dates']))+':</b>'+ANB(b)+''.join('<span class="bf2">'+e(_TA0.get(f['title'],f['title']))+(' ('+str(f['year'])+')' if f['year'] else '')+(' <span class="tm2">'+e(f['times'])+'</span>' if f['times'] else '')+'</span>' for f in b['films'])+'</li>' for b in fe['blocks'])
-    P.append(f'<details class="fest arch{" hid" if en and en>=TODAY else ""}" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an"><a class="pfl" href="festivals/past/{PSLUG(fe)}.html">{e(fe["name"][:110])}</a></span></summary><ul class="abl">{bl}</ul>{"".join(f'<p class="sm"><a href="festivals/archive/cal/{urllib.parse.quote(_x)}">Archived</a> • <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(_x)}">StanfordTheatre.org Original</a></p>' for _x in [fe["file"]]+fe.get("extra_files",[]))}</details>')
+    P.append(f'<details class="fest arch{" hid" if en and en>=TODAY else ""}" data-end="{en}"><summary><span class="dr dtop">{dr}</span> <span class="an"><a class="pfl" href="festivals/past/{PSLUG(fe)}.html">{e(fe["name"][:110])}</a></span></summary><ul class="abl">{bl}</ul>{ARCHP([fe["file"]]+fe.get("extra_files",[]))}</details>')
 P.append('<p id="nopast" class="sm" style="text-align:center">No finished programs yet.</p></section>')
 P.append("""<script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date());var n=0;
 document.querySelectorAll('.pastb').forEach(function(b){var p=b.dataset.end<t;b.classList.toggle('hid',!p);if(p)n++;});document.querySelectorAll('details.arch').forEach(function(b){b.classList.toggle('hid',!!b.dataset.end&&b.dataset.end>=t);});document.getElementById('nopast').style.display=n?'none':'';})();</script>""")
@@ -391,7 +398,7 @@ for name,dr,url,groups,films in FEST:
 <img class="logo" src="img/stanford_theatre.gif" alt="Stanford Theatre logo"><div class="ptitle">Stanford Theatre Movie Guide</div>
 {f'<h3 class="pt">{p["title"]}</h3>' if p['title'] else ''}{f'<div class="dr">{p["sub"]}</div>' if p['sub'] else ''}<div class="days">{p['days']}</div>{bl}
 <p class="sm">{NOTE}</p></section>
-<p class="orig"><a href="{url}">Original Stanford Theatre page</a> · <a href="archive/{ARCH[url]}">archived HTML</a></p>'''
+{ADM([['Original Stanford Theatre page',url],['archived HTML','/festivals/archive/'+ARCH[url]]],'orig')}'''
     open(f'festivals/{SLUG[url]}.html','w').write(page(f"{name} — Stanford Theatre",b,"../",desc=f"{name}, {dr}, at the Stanford Theatre in Palo Alto."))
 
 # ---- covered films (last 5 years + top 200) ----
@@ -463,9 +470,9 @@ for a_,b_ in REDIR.items():
 FPM=dict({k:'films/'+s_+'.html' for k,s_ in FEATK.items()},**{k:'films/'+v['slug']+'.html' for k,v in COV.items()})
 # ---- search page ----
 SJS=open('tools/search.js').read(); SJS=_re0.sub(r'^var FP=\{.*?\};','var FP='+json.dumps(FPM)+';',SJS,count=1,flags=_re0.M)
-sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1><p class="sm">Billings from the theatre's history pages (1925 - 1961), its archived calendars (1997 - present) and box-office records. </p>
+sb=f'''<section class="fest"><h1 class="vh">Search Showings</h1>
 <input id="q" type="search" placeholder="Film title, star, or year…" autofocus>
-<div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings (history pages)</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run at the theatre</span></div>
+<div class="legend"><span class="li"><span class="badge og" title="{TOG}">{OG}</span> Original Billings</span><span class="li"><span class="badge or" title="{TOR}">{OR}</span> Original Run</span><span class="li"><span class="badge s1">{S1}</span> first showing on record</span><span class="li"><span class="badge rt">{tk("5","#e8564f","#8e1a16","grt2")}</span> Nth run at the theatre</span></div>
 <div id="count" class="sm"></div><ul id="res" class="res"></ul></section>
 <script src="data/showings.js?v={CSSV}"></script><script>var OG={json.dumps(OG)},OR={json.dumps(OR)},S1={json.dumps(S1)},RT={json.dumps(tk("@N@","#e8564f","#8e1a16","grt"))},TOG={json.dumps(TOG)},TOR={json.dumps(TOR)};'''+SJS+'''</script>'''
 open('search.html','w').write(page("Search — Stanford Theatre",sb,"","search",desc="Search every film and showing in the Stanford Theatre Movie Guide."))
@@ -507,7 +514,7 @@ for fe in FJ['festivals']:
     dr=hr(fe['start'],fe['end']) if fe['start'] else (str(fe['year']) if fe['year'] else 'Year not given')
     bills=''.join(f'<section class="fest blk" data-start="{b.get("start") or ""}" data-end="{b.get("end") or b.get("start") or ""}"><h3 class="bl">{e(fullmo(b["dates"]))}{ANB(b)}</h3>{GUEST(b)}<div class="cols">'+''.join(_pcard(fm) for fm in b['films'])+'</div></section>' for b in fe['blocks'])
     q=urllib.parse.quote(fe['file'])
-    body=f'<section class="fest"><div class="dr dtop" style="text-align:center">{e(dr)}</div><h1>{e(fe["name"])}</h1><p class="sm" style="text-align:center">{len(fe["blocks"])} bill{"s" if len(fe["blocks"])!=1 else ""}</p></section>'+bills+"".join(f'<p class="sm" style="text-align:center"><a href="../archive/cal/{urllib.parse.quote(_x)}">Archived</a> • <a href="https://www.stanfordtheatre.org/calendars/{urllib.parse.quote(_x)}">StanfordTheatre.org Original</a>{" (" + e(_x.rsplit(".",1)[0]) + ")" if fe.get("extra_files") else ""}</p>' for _x in [fe["file"]]+fe.get("extra_files",[]))
+    body=f'<section class="fest"><div class="dr dtop" style="text-align:center">{e(dr)}</div><h1>{e(fe["name"])}</h1><p class="sm" style="text-align:center">{len(fe["blocks"])} bill{"s" if len(fe["blocks"])!=1 else ""}</p></section>'+bills+ARCHP([fe["file"]]+fe.get("extra_files",[]),'text-align:center',bool(fe.get("extra_files")))
     open(f'festivals/past/{PSLUG(fe)}.html','w').write(page(f"{fe['name']} — Stanford Theatre",body,"../../","past",desc=f"{fe['name']}, {dr}, at the Stanford Theatre in Palo Alto. {len(fe['blocks'])} program{'s' if len(fe['blocks'])!=1 else ''}.")); NPAST+=1
 print('PASTPAGES',NPAST)
 # --- Original runs by year on past.html (pre-festival era) ---
@@ -544,7 +551,7 @@ def _stats():
         if '#' in k: continue
         r=byk.get(NJ(ALI(v['title'])))
         if r: out[v['slug']]=r
-    pt=json.dumps({'v':1,'films':out,'tile':TILE,'tl':'Tile'},separators=(',',':')).encode()
+    pt=json.dumps({'v':1,'films':out,'tile':TILE,'tl':'Tile','arch':ARCHL},separators=(',',':')).encode()
     salt=os.urandom(16); iv=os.urandom(12); it=310000
     key=hashlib.pbkdf2_hmac('sha256',pw.encode(),salt,it,32)
     ct=AESGCM(key).encrypt(iv,pt,None)
@@ -556,7 +563,7 @@ _stats()
 # ---- sitemap.xml + robots.txt ----
 def _sitemap():
     import glob
-    skip=('stanford-site/','stanford-theatre/','tools/','404.html')
+    skip=('stanford-site/','stanford-theatre/','tools/','404.html','festivals/archive/')
     u=[]
     for p in sorted(glob.glob('**/*.html',recursive=True)+glob.glob('**/*.htm',recursive=True)):
         if p.startswith(skip): continue
@@ -566,6 +573,6 @@ def _sitemap():
         loc=SITE+('' if p=='index.html' else urllib.parse.quote(p))
         u.append(f'<url><loc>{html.escape(loc)}</loc></url>')
     open('sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+'\n'.join(u)+'\n</urlset>\n')
-    open('robots.txt','w').write(f'User-agent: *\nDisallow: /stanford-site/\nDisallow: /stanford-theatre/\nDisallow: /tools/\n\nSitemap: {SITE}sitemap.xml\n')
+    open('robots.txt','w').write(f'User-agent: *\nDisallow: /stanford-site/\nDisallow: /stanford-theatre/\nDisallow: /tools/\nDisallow: /festivals/archive/\n\nSitemap: {SITE}sitemap.xml\n')
     print('SITEMAP urls',len(u))
 _sitemap()

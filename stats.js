@@ -13,6 +13,7 @@ function sum(days){var a=0,g=0;days.forEach(function(d){a+=d[2];g+=d[3]});return
 function reveal(){
   document.documentElement.classList.add('st-unlocked');var L=document.getElementById('stlock');if(L){L.innerHTML='&#128275;';L.title='Lock stats'}
   var F=D.films||{},m=location.pathname.match(/films\/([^\/]+)\.html$/);
+  var AR=D.arch||{};document.querySelectorAll('.adm[data-k]').forEach(function(p){var L=AR[p.dataset.k];if(!L||p.childNodes.length)return;L.forEach(function(x,i){if(x[1]){if(p.querySelector('a'))p.appendChild(document.createTextNode(' \u2022 '));var a=document.createElement('a');a.href=x[1];a.textContent=x[0];p.appendChild(a)}else p.appendChild(document.createTextNode(x[0]))});p.hidden=false});
   var TL=D.tile||{},mu=document.getElementById('more');if(m&&TL[m[1]]&&mu&&!document.getElementById('stl')){var li=document.createElement('li');li.id='stl';var al=document.createElement('a');al.href=TL[m[1]];al.textContent=(D.tl||'')+': '+((document.querySelector('h1')||{}).textContent||'');li.appendChild(al);mu.insertBefore(li,mu.firstChild)}
   if(m&&F[m[1]]&&!document.getElementById('stx')){
     var runs=F[m[1]],T=[0,0],h='<section id="stx" class="stx"><h2>Box Office</h2>';
